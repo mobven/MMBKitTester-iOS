@@ -1,0 +1,52 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AccountSecurity",
+        "repositoryURL": "https://github.com/mobven/AccountSecurity",
+        "state": {
+          "branch": "develop",
+          "revision": "093889ba73f72c767a8ca8597b75f75c050a6bbf",
+          "version": null
+        }
+      },
+      {
+        "package": "AppSecurity",
+        "repositoryURL": "https://github.com/mobven/AppSecurity",
+        "state": {
+          "branch": "develop",
+          "revision": "e6bf8a5a784a9fefaa7c2986125580b67e0e17f5",
+          "version": null
+        }
+      },
+      {
+        "package": "CryptoSwift",
+        "repositoryURL": "https://github.com/krzyzanowskim/CryptoSwift.git",
+        "state": {
+          "branch": "master",
+          "revision": "ce8f270c936c8f7ba84a772427ce4e8251920afc",
+          "version": null
+        }
+      },
+      {
+        "package": "KeychainAccess",
+        "repositoryURL": "https://github.com/kishikawakatsumi/KeychainAccess",
+        "state": {
+          "branch": "master",
+          "revision": "c801c3f13edc581d2e9441b5146e767ad55e078f",
+          "version": null
+        }
+      },
+      {
+        "package": "MMBKit",
+        "repositoryURL": "https://github.com/mobven/MMBKit.git",
+        "state": {
+          "branch": "develop",
+          "revision": "4807419897f60d7b7240c6bbef42097a3450c08e",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
