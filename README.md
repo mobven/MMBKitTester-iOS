@@ -1,9 +1,8 @@
 # MMBKit Test Application
 Sample application for demonstrating MMBKit. All Modules integrated with SPM.
 
-### Modules
+### Developed Modules
 #### App Security
-Developed with features:
 - Prevent Snapshots
 - Jailbreak Detection
 - Secure Textfields
@@ -14,11 +13,14 @@ Developed with features:
 #### Account Security
 - Authentication with Biometrics
 - Timed Cache
+
+### Active Development
+#### One Link
+
+### Remaining Modules
 #### Secure Network
 #### UI Components
 #### State Machine Forms
 #### Permission Manager
 #### Pin Locator
-#### One Link
-Development in Progress
 #### Error Kit

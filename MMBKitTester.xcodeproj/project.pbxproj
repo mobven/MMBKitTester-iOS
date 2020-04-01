@@ -32,7 +32,6 @@
 		6D93202B2432A2E8004C8A3C /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D93202A2432A2E8004C8A3C /* Module.swift */; };
 		6D93202D2432A30F004C8A3C /* SecureStoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D93202C2432A30F004C8A3C /* SecureStoreType.swift */; };
 		6D9320312432A471004C8A3C /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9320302432A471004C8A3C /* UIViewController.swift */; };
-		6D93203324346FE8004C8A3C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6D93203224346FE8004C8A3C /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -294,7 +293,6 @@
 			files = (
 				6D931FEA243228F1004C8A3C /* LaunchScreen.storyboard in Resources */,
 				6D931FE7243228F1004C8A3C /* Assets.xcassets in Resources */,
-				6D93203324346FE8004C8A3C /* README.md in Resources */,
 				6D931FE5243228EF004C8A3C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
