@@ -80,10 +80,3 @@ fastlane/test_output
 fastlane/README.md
 reports/
 firebase-debug.log
-
-# Each module has its own git
-
-Networking
-Core
-AppSecurity
-AccountSecurity
