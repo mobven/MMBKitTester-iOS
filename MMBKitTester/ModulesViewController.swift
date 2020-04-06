@@ -18,7 +18,7 @@ class ModulesViewController: UITableViewController {
         .init(name: "State Machine Forms", identifier: ""),
         .init(name: "Permission Manager", identifier: ""),
         .init(name: "Pin Locator", identifier: ""),
-        .init(name: "One Link", identifier: ""),
+        .init(name: "One Link", identifier: "OneLinkViewController"),
         .init(name: "Error Kit", identifier: "")
     ]
     
