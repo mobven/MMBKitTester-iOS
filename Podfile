@@ -8,6 +8,8 @@ target 'MMBKitTester' do
   # Pods for MMBKitTester
 
   pod 'Firebase/Messaging'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/DynamicLinks'
 
   target 'MMBKitTesterTests' do
     inherit! :search_paths

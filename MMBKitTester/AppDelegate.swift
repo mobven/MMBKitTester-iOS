@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Handle universal links if application started with one
         if let url = launchOptions?[.url] as? URL {
-            _ = self.application(application, open: url)
+            self.application(application, open: url)
         }
         
         return true
@@ -61,7 +61,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController?.showAlert(title: title, message: message, doneButton: "Done")
     }
     
+    func application(_ application: UIApplication,
+                     continue userActivity: NSUserActivity,
+                     restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+        guard let url = userActivity.webpageURL else { return false }
+        let handled = DynamicLinks.dynamicLinks().handleUniversalLink(url) { (dynamiclink, _) in
+            guard let dynamicLinkUrl = dynamiclink?.url else { return }
+            self.application(application, open: dynamicLinkUrl)
+        }
+        if !handled {
+            return self.application(application, open: url)
+        }
+        return handled
+    }
+    
     /// Handle universal links
+    @discardableResult
     func application(_ app: UIApplication, open url: URL,
                      options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
         if let link = AppLink(url: url) {
