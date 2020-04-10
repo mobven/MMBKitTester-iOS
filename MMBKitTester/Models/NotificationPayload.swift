@@ -8,6 +8,7 @@
 
 import Foundation
 
+// swiftlint:disable identifier_name
 struct Payload: Encodable {
     var to: String
     var notification: Notification
@@ -16,3 +17,4 @@ struct Payload: Encodable {
         var data: String
     }
 }
+// swiftlint:enable identifier_name
