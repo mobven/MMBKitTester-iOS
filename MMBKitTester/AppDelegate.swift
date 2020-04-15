@@ -11,6 +11,7 @@ import MMBKit
 import AppSecurity
 import AccountSecurity
 import OneLink
+import UIComponents
 import Firebase
 
 @UIApplicationMain
@@ -22,7 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        MMBKit.setup(with: [AppSecurity.shared, AccountSecurity.shared, OneLink.shared])
+        MMBKit.setup(with: [
+            AppSecurity.shared, AccountSecurity.shared,
+            OneLink.shared
+        ])
         
         FirebaseApp.configure()
         

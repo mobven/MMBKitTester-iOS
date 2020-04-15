@@ -14,7 +14,7 @@ class ModulesViewController: UITableViewController {
         .init(name: "App Security", identifier: "AppSecurityViewController"),
         .init(name: "Account Security", identifier: "AccountSecurityViewController"),
         .init(name: "Secure Network", identifier: ""),
-        .init(name: "UI Components", identifier: ""),
+        .init(name: "UI Components", identifier: "UIComponentsViewController"),
         .init(name: "State Machine Forms", identifier: ""),
         .init(name: "Permission Manager", identifier: ""),
         .init(name: "Pin Locator", identifier: ""),

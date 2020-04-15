@@ -54,6 +54,15 @@
           "revision": "7818a92c9198ad82b4619e43bc81489ed536c771",
           "version": null
         }
+      },
+      {
+        "package": "UIComponents",
+        "repositoryURL": "https://github.com/mobven/UIComponents.git",
+        "state": {
+          "branch": "develop",
+          "revision": "a522d97df5c936ccf231f62d666bc2cbf987e237",
+          "version": null
+        }
       }
     ]
   },
