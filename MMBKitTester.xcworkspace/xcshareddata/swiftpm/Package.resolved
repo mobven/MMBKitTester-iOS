@@ -6,7 +6,7 @@
         "repositoryURL": "https://github.com/mobven/AccountSecurity",
         "state": {
           "branch": "develop",
-          "revision": "89db2fd91b9c0a21bee7c727aff7d918d88419bf",
+          "revision": "b7cf437387789fa9901caea201c41e5e63b9e9d9",
           "version": null
         }
       },
@@ -24,7 +24,7 @@
         "repositoryURL": "https://github.com/krzyzanowskim/CryptoSwift.git",
         "state": {
           "branch": "master",
-          "revision": "1ac0864321a415601676ef3901514db40e97d6ad",
+          "revision": "39f08ac5269361a50c08ce1e2f41989bfc4b1ec8",
           "version": null
         }
       },
@@ -51,7 +51,7 @@
         "repositoryURL": "https://github.com/mobven/OneLink.git",
         "state": {
           "branch": "develop",
-          "revision": "7818a92c9198ad82b4619e43bc81489ed536c771",
+          "revision": "5ede96e10df758e4351c2805b1a263d031bf95ee",
           "version": null
         }
       },
@@ -60,7 +60,7 @@
         "repositoryURL": "https://github.com/mobven/UIComponents.git",
         "state": {
           "branch": "develop",
-          "revision": "a522d97df5c936ccf231f62d666bc2cbf987e237",
+          "revision": "a1d49fcd7d98f202dfcf4b8ba66eb9b359c1e510",
           "version": null
         }
       }

@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         MMBKit.setup(with: [
             AppSecurity.shared, AccountSecurity.shared,
-            OneLink.shared
+            OneLink.shared, UIComponents.shared
         ])
         
         FirebaseApp.configure()
