@@ -24,7 +24,7 @@
         "repositoryURL": "https://github.com/krzyzanowskim/CryptoSwift.git",
         "state": {
           "branch": "master",
-          "revision": "39f08ac5269361a50c08ce1e2f41989bfc4b1ec8",
+          "revision": "9bd2fe4e2717f1da24b355ffab6b5d56dd8515eb",
           "version": null
         }
       },
@@ -33,7 +33,7 @@
         "repositoryURL": "https://github.com/kishikawakatsumi/KeychainAccess",
         "state": {
           "branch": "master",
-          "revision": "c801c3f13edc581d2e9441b5146e767ad55e078f",
+          "revision": "88161d9868959ebdb17436a2f8ca49503bea873e",
           "version": null
         }
       },
@@ -60,7 +60,7 @@
         "repositoryURL": "https://github.com/mobven/UIComponents.git",
         "state": {
           "branch": "develop",
-          "revision": "08ff40bf4bb506549f7f95776932c21e2318080b",
+          "revision": "72be2abbc1a137b57cf717cb27855116913b0ee7",
           "version": null
         }
       }

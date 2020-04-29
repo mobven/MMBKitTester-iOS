@@ -1279,6 +1279,38 @@ It's secure 🎉</string>
             </objects>
             <point key="canvasLocation" x="3596" y="3061"/>
         </scene>
+        <!--Amount Input View Controller-->
+        <scene sceneID="9UO-cN-Ucc">
+            <objects>
+                <viewController storyboardIdentifier="AmountInputViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ifB-g6-Uwm" customClass="AmountInputViewController" customModule="MMBKitTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kG2-US-5aT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="znl-i6-7uJ" customClass="AmountInputView" customModule="UIComponents">
+                                <rect key="frame" x="20" y="64" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="OQ3-5e-yoE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="u5G-3c-5XH" firstAttribute="trailing" secondItem="znl-i6-7uJ" secondAttribute="trailing" constant="20" id="XAh-tn-Ft4"/>
+                            <constraint firstItem="znl-i6-7uJ" firstAttribute="leading" secondItem="u5G-3c-5XH" secondAttribute="leading" constant="20" id="rLh-Cl-6Gb"/>
+                            <constraint firstItem="znl-i6-7uJ" firstAttribute="top" secondItem="u5G-3c-5XH" secondAttribute="top" constant="20" id="xKR-qK-gwh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="u5G-3c-5XH"/>
+                    </view>
+                    <connections>
+                        <outlet property="amountInputView" destination="znl-i6-7uJ" id="Bmj-8L-YjZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OUL-1N-F5h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4526" y="3061"/>
+        </scene>
         <!--Components View Controller-->
         <scene sceneID="V7c-Tg-qRQ">
             <objects>

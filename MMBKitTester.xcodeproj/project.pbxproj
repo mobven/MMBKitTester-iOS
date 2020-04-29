@@ -17,6 +17,7 @@
 		6D8BA19B243A4869004493A9 /* AppLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BA19A243A4869004493A9 /* AppLink.swift */; };
 		6D8BA19D243A495B004493A9 /* AnnouncementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BA19C243A495B004493A9 /* AnnouncementsViewController.swift */; };
 		6D8BA19F243A4977004493A9 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BA19E243A4977004493A9 /* CardDetailViewController.swift */; };
+		6D8DC0BF24596761005553BA /* AmountInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8DC0BE24596761005553BA /* AmountInputViewController.swift */; };
 		6D931FDE243228EF004C8A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D931FDD243228EF004C8A3C /* AppDelegate.swift */; };
 		6D931FE5243228EF004C8A3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D931FE3243228EF004C8A3C /* Main.storyboard */; };
 		6D931FE7243228F1004C8A3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D931FE6243228F1004C8A3C /* Assets.xcassets */; };
@@ -69,6 +70,7 @@
 		6D8BA19A243A4869004493A9 /* AppLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLink.swift; sourceTree = "<group>"; };
 		6D8BA19C243A495B004493A9 /* AnnouncementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementsViewController.swift; sourceTree = "<group>"; };
 		6D8BA19E243A4977004493A9 /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
+		6D8DC0BE24596761005553BA /* AmountInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountInputViewController.swift; sourceTree = "<group>"; };
 		6D931FDA243228EF004C8A3C /* MMBKitTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMBKitTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D931FDD243228EF004C8A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D931FE4243228EF004C8A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -136,18 +138,11 @@
 			isa = PBXGroup;
 			children = (
 				6D5410D924477ADE000A8B1D /* UIComponentsViewController.swift */,
-				6D5410D324474A3A000A8B1D /* KeyValueLabel */,
-			);
-			path = UIComponents;
-			sourceTree = "<group>";
-		};
-		6D5410D324474A3A000A8B1D /* KeyValueLabel */ = {
-			isa = PBXGroup;
-			children = (
 				6D5410D424474A50000A8B1D /* KVLabelViewController.swift */,
 				6D4E40122454DB3100B8CC67 /* KVListViewController.swift */,
+				6D8DC0BE24596761005553BA /* AmountInputViewController.swift */,
 			);
-			path = KeyValueLabel;
+			path = UIComponents;
 			sourceTree = "<group>";
 		};
 		6D8BA194243A4498004493A9 /* OneLink */ = {
@@ -523,6 +518,7 @@
 				6D93202D2432A30F004C8A3C /* SecureStoreType.swift in Sources */,
 				6D9320262432964C004C8A3C /* BiometricsViewController.swift in Sources */,
 				6DAF982F243B2F6C00CF9AAA /* NotificationPayload.swift in Sources */,
+				6D8DC0BF24596761005553BA /* AmountInputViewController.swift in Sources */,
 				6D93202424327B52004C8A3C /* ForceUpdateViewController.swift in Sources */,
 				6D9320282432966E004C8A3C /* TimedCacheViewController.swift in Sources */,
 			);

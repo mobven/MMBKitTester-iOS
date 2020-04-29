@@ -18,7 +18,7 @@ class UIComponentsViewController: UITableViewController {
         var components = ModuleSection(name: "Components", modules: [])
         components.modules.append(.init(name: "Key-Value Label", identifier: "KVLabelViewController"))
         components.modules.append(.init(name: "Key-Value List", identifier: "KVListViewController"))
-        components.modules.append(.init(name: "Amount-Input View", identifier: ""))
+        components.modules.append(.init(name: "Amount-Input View", identifier: "AmountInputViewController"))
         components.modules.append(.init(name: "Custom Navigation View", identifier: ""))
         components.modules.append(.init(name: "Custom Popups", identifier: ""))
         components.modules.append(.init(name: "Add-On Features", identifier: ""))
