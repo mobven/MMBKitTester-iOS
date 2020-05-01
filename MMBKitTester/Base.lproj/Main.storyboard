@@ -1311,6 +1311,55 @@ It's secure 🎉</string>
             </objects>
             <point key="canvasLocation" x="4526" y="3061"/>
         </scene>
+        <!--Custom Popups View Controller-->
+        <scene sceneID="Q1e-V4-0lV">
+            <objects>
+                <viewController storyboardIdentifier="CustomPopupsViewController" id="r9K-ye-coq" customClass="CustomPopupsViewController" customModule="MMBKitTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W88-eO-A3e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39q-Ba-ISp">
+                                <rect key="frame" x="20" y="64" width="374" height="30"/>
+                                <state key="normal" title="Present Classic Alert"/>
+                                <connections>
+                                    <action selector="presentClassicAlert" destination="r9K-ye-coq" eventType="touchUpInside" id="Nz1-eA-QXE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5b-pJ-eg8">
+                                <rect key="frame" x="20" y="124" width="374" height="30"/>
+                                <state key="normal" title="Present Custom View Alert"/>
+                                <connections>
+                                    <action selector="presentCustomAlert" destination="r9K-ye-coq" eventType="touchUpInside" id="LIY-Vp-ng7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4r-cb-qbB">
+                                <rect key="frame" x="20" y="184" width="374" height="30"/>
+                                <state key="normal" title="Present Alert with Key Value List"/>
+                                <connections>
+                                    <action selector="presentCustomKeyValueListAlert" destination="r9K-ye-coq" eventType="touchUpInside" id="dMF-US-HE2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="39q-Ba-ISp" firstAttribute="top" secondItem="feG-1O-RoG" secondAttribute="top" constant="20" id="9oV-ag-PGi"/>
+                            <constraint firstItem="y4r-cb-qbB" firstAttribute="top" secondItem="C5b-pJ-eg8" secondAttribute="bottom" constant="30" id="Hsc-Lg-Pk2"/>
+                            <constraint firstItem="feG-1O-RoG" firstAttribute="trailing" secondItem="y4r-cb-qbB" secondAttribute="trailing" constant="20" id="U7b-Cb-55e"/>
+                            <constraint firstItem="C5b-pJ-eg8" firstAttribute="top" secondItem="39q-Ba-ISp" secondAttribute="bottom" constant="30" id="Xi9-9H-lt6"/>
+                            <constraint firstItem="feG-1O-RoG" firstAttribute="trailing" secondItem="39q-Ba-ISp" secondAttribute="trailing" constant="20" id="XpL-Hc-0jH"/>
+                            <constraint firstItem="y4r-cb-qbB" firstAttribute="leading" secondItem="feG-1O-RoG" secondAttribute="leading" constant="20" id="bTu-hm-ENw"/>
+                            <constraint firstItem="39q-Ba-ISp" firstAttribute="leading" secondItem="feG-1O-RoG" secondAttribute="leading" constant="20" id="h0Z-od-svr"/>
+                            <constraint firstItem="feG-1O-RoG" firstAttribute="trailing" secondItem="C5b-pJ-eg8" secondAttribute="trailing" constant="20" id="hzm-xN-lny"/>
+                            <constraint firstItem="C5b-pJ-eg8" firstAttribute="leading" secondItem="feG-1O-RoG" secondAttribute="leading" constant="20" id="kxz-KU-9Xa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="feG-1O-RoG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aXY-SW-1vO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5464" y="3061"/>
+        </scene>
         <!--Components View Controller-->
         <scene sceneID="V7c-Tg-qRQ">
             <objects>

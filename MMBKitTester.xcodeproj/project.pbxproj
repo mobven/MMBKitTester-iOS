@@ -3,17 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6660DA0B4D5B7507E26F577C /* Pods_MMBKitTester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3227ECF86F65F265974F9C /* Pods_MMBKitTester.framework */; };
 		6D4E40132454DB3100B8CC67 /* KVListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4E40122454DB3100B8CC67 /* KVListViewController.swift */; };
 		6D5410D524474A50000A8B1D /* KVLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5410D424474A50000A8B1D /* KVLabelViewController.swift */; };
-		6D5410D824475F2B000A8B1D /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 6D5410D724475F2B000A8B1D /* UIComponents */; };
 		6D5410DA24477ADE000A8B1D /* UIComponentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5410D924477ADE000A8B1D /* UIComponentsViewController.swift */; };
 		6D8BA196243A44AD004493A9 /* OneLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BA195243A44AD004493A9 /* OneLinkViewController.swift */; };
-		6D8BA199243A4551004493A9 /* OneLink in Frameworks */ = {isa = PBXBuildFile; productRef = 6D8BA198243A4551004493A9 /* OneLink */; };
 		6D8BA19B243A4869004493A9 /* AppLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BA19A243A4869004493A9 /* AppLink.swift */; };
 		6D8BA19D243A495B004493A9 /* AnnouncementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BA19C243A495B004493A9 /* AnnouncementsViewController.swift */; };
 		6D8BA19F243A4977004493A9 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BA19E243A4977004493A9 /* CardDetailViewController.swift */; };
@@ -23,8 +20,6 @@
 		6D931FE7243228F1004C8A3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D931FE6243228F1004C8A3C /* Assets.xcassets */; };
 		6D931FEA243228F1004C8A3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D931FE8243228F1004C8A3C /* LaunchScreen.storyboard */; };
 		6D931FF5243228F1004C8A3C /* MMBKitTesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D931FF4243228F1004C8A3C /* MMBKitTesterTests.swift */; };
-		6D9320012432295C004C8A3C /* AppSecurity in Frameworks */ = {isa = PBXBuildFile; productRef = 6D9320002432295C004C8A3C /* AppSecurity */; };
-		6D9320042432297E004C8A3C /* AccountSecurity in Frameworks */ = {isa = PBXBuildFile; productRef = 6D9320032432297E004C8A3C /* AccountSecurity */; };
 		6D932008243229C5004C8A3C /* ModulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D932007243229C5004C8A3C /* ModulesViewController.swift */; };
 		6D93200C24322AE3004C8A3C /* AccountSecurityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D93200B24322AE3004C8A3C /* AccountSecurityViewController.swift */; };
 		6D93200E24322BE7004C8A3C /* AppSecurityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D93200D24322BE7004C8A3C /* AppSecurityViewController.swift */; };
@@ -47,6 +42,20 @@
 		6DAF982F243B2F6C00CF9AAA /* NotificationPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF982E243B2F6C00CF9AAA /* NotificationPayload.swift */; };
 		6DAF9831243B308400CF9AAA /* FCMCurl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF9830243B308400CF9AAA /* FCMCurl.swift */; };
 		6DAF9833243B33B900CF9AAA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF9832243B33B900CF9AAA /* User.swift */; };
+		6DFF0F60245ABD120035C890 /* AccountSecurity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFF0F59245ABD0F0035C890 /* AccountSecurity.framework */; };
+		6DFF0F61245ABD120035C890 /* AccountSecurity.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFF0F59245ABD0F0035C890 /* AccountSecurity.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6DFF0F62245ABD140035C890 /* AppSecurity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFF0F5A245ABD0F0035C890 /* AppSecurity.framework */; };
+		6DFF0F63245ABD140035C890 /* AppSecurity.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFF0F5A245ABD0F0035C890 /* AppSecurity.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6DFF0F64245ABD160035C890 /* OneLink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFF0F5B245ABD0F0035C890 /* OneLink.framework */; };
+		6DFF0F65245ABD160035C890 /* OneLink.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFF0F5B245ABD0F0035C890 /* OneLink.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6DFF0F66245ABD170035C890 /* Pods_MMBKitTester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3227ECF86F65F265974F9C /* Pods_MMBKitTester.framework */; };
+		6DFF0F86245CBBB20035C890 /* CustomPopupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF0F85245CBBB20035C890 /* CustomPopupsViewController.swift */; };
+		6DFF0F88245CBBF20035C890 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF0F87245CBBF20035C890 /* CustomAlert.swift */; };
+		6DFF0F8A245CBC640035C890 /* CustomAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DFF0F89245CBC640035C890 /* CustomAlert.xib */; };
+		6DFF0F8C245CBCEB0035C890 /* CustomKeyValueListAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF0F8B245CBCEB0035C890 /* CustomKeyValueListAlert.swift */; };
+		6DFF0F8E245CBCFE0035C890 /* CustomKeyValueListAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DFF0F8D245CBCFE0035C890 /* CustomKeyValueListAlert.xib */; };
+		6DFF0F91245CBF6C0035C890 /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFF0F8F245CBF670035C890 /* UIComponents.framework */; };
+		6DFF0F92245CBF6C0035C890 /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFF0F8F245CBF670035C890 /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		864D50E772FB2F9A38CEC034 /* Pods_MMBKitTesterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 922D4F6CC5A2F78F2E29C089 /* Pods_MMBKitTesterTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +68,23 @@
 			remoteInfo = MMBKitTester;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6D8DC0CC2459746F005553BA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6DFF0F63245ABD140035C890 /* AppSecurity.framework in Embed Frameworks */,
+				6DFF0F65245ABD160035C890 /* OneLink.framework in Embed Frameworks */,
+				6DFF0F92245CBF6C0035C890 /* UIComponents.framework in Embed Frameworks */,
+				6DFF0F61245ABD120035C890 /* AccountSecurity.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		071305D7D8766BA6E6741BDD /* Pods-MMBKitTesterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBKitTesterTests.release.xcconfig"; path = "Target Support Files/Pods-MMBKitTesterTests/Pods-MMBKitTesterTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +130,15 @@
 		6DAF982E243B2F6C00CF9AAA /* NotificationPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPayload.swift; sourceTree = "<group>"; };
 		6DAF9830243B308400CF9AAA /* FCMCurl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCMCurl.swift; sourceTree = "<group>"; };
 		6DAF9832243B33B900CF9AAA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6DFF0F59245ABD0F0035C890 /* AccountSecurity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AccountSecurity.framework; sourceTree = "<group>"; };
+		6DFF0F5A245ABD0F0035C890 /* AppSecurity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppSecurity.framework; sourceTree = "<group>"; };
+		6DFF0F5B245ABD0F0035C890 /* OneLink.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OneLink.framework; sourceTree = "<group>"; };
+		6DFF0F85245CBBB20035C890 /* CustomPopupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopupsViewController.swift; sourceTree = "<group>"; };
+		6DFF0F87245CBBF20035C890 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		6DFF0F89245CBC640035C890 /* CustomAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlert.xib; sourceTree = "<group>"; };
+		6DFF0F8B245CBCEB0035C890 /* CustomKeyValueListAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomKeyValueListAlert.swift; sourceTree = "<group>"; };
+		6DFF0F8D245CBCFE0035C890 /* CustomKeyValueListAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomKeyValueListAlert.xib; sourceTree = "<group>"; };
+		6DFF0F8F245CBF670035C890 /* UIComponents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UIComponents.framework; sourceTree = "<group>"; };
 		7C55600B130C3D48F52FA44F /* Pods-MMBKitTester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBKitTester.debug.xcconfig"; path = "Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester.debug.xcconfig"; sourceTree = "<group>"; };
 		922D4F6CC5A2F78F2E29C089 /* Pods_MMBKitTesterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMBKitTesterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A63A91710C4207F027CA8DC1 /* Pods-MMBKitTesterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBKitTesterTests.debug.xcconfig"; path = "Target Support Files/Pods-MMBKitTesterTests/Pods-MMBKitTesterTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -115,11 +150,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D8BA199243A4551004493A9 /* OneLink in Frameworks */,
-				6D9320042432297E004C8A3C /* AccountSecurity in Frameworks */,
-				6D9320012432295C004C8A3C /* AppSecurity in Frameworks */,
-				6660DA0B4D5B7507E26F577C /* Pods_MMBKitTester.framework in Frameworks */,
-				6D5410D824475F2B000A8B1D /* UIComponents in Frameworks */,
+				6DFF0F66245ABD170035C890 /* Pods_MMBKitTester.framework in Frameworks */,
+				6DFF0F62245ABD140035C890 /* AppSecurity.framework in Frameworks */,
+				6DFF0F60245ABD120035C890 /* AccountSecurity.framework in Frameworks */,
+				6DFF0F64245ABD160035C890 /* OneLink.framework in Frameworks */,
+				6DFF0F91245CBF6C0035C890 /* UIComponents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +176,7 @@
 				6D5410D424474A50000A8B1D /* KVLabelViewController.swift */,
 				6D4E40122454DB3100B8CC67 /* KVListViewController.swift */,
 				6D8DC0BE24596761005553BA /* AmountInputViewController.swift */,
+				6DFF0F84245CBB9C0035C890 /* CustomPopups */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -271,9 +307,25 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		6DFF0F84245CBB9C0035C890 /* CustomPopups */ = {
+			isa = PBXGroup;
+			children = (
+				6DFF0F85245CBBB20035C890 /* CustomPopupsViewController.swift */,
+				6DFF0F87245CBBF20035C890 /* CustomAlert.swift */,
+				6DFF0F89245CBC640035C890 /* CustomAlert.xib */,
+				6DFF0F8B245CBCEB0035C890 /* CustomKeyValueListAlert.swift */,
+				6DFF0F8D245CBCFE0035C890 /* CustomKeyValueListAlert.xib */,
+			);
+			path = CustomPopups;
+			sourceTree = "<group>";
+		};
 		8BCFF828680210ED26EC0E12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6DFF0F8F245CBF670035C890 /* UIComponents.framework */,
+				6DFF0F59245ABD0F0035C890 /* AccountSecurity.framework */,
+				6DFF0F5A245ABD0F0035C890 /* AppSecurity.framework */,
+				6DFF0F5B245ABD0F0035C890 /* OneLink.framework */,
 				3D3227ECF86F65F265974F9C /* Pods_MMBKitTester.framework */,
 				922D4F6CC5A2F78F2E29C089 /* Pods_MMBKitTesterTests.framework */,
 			);
@@ -304,6 +356,7 @@
 				6D931FD7243228EF004C8A3C /* Frameworks */,
 				6D931FD8243228EF004C8A3C /* Resources */,
 				95E53F6E0D52333210561A3B /* [CP] Embed Pods Frameworks */,
+				6D8DC0CC2459746F005553BA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,10 +364,6 @@
 			);
 			name = MMBKitTester;
 			packageProductDependencies = (
-				6D9320002432295C004C8A3C /* AppSecurity */,
-				6D9320032432297E004C8A3C /* AccountSecurity */,
-				6D8BA198243A4551004493A9 /* OneLink */,
-				6D5410D724475F2B000A8B1D /* UIComponents */,
 			);
 			productName = MMBKitTester;
 			productReference = 6D931FDA243228EF004C8A3C /* MMBKitTester.app */;
@@ -368,10 +417,6 @@
 			);
 			mainGroup = 6D931FD1243228EF004C8A3C;
 			packageReferences = (
-				6D931FFF2432295C004C8A3C /* XCRemoteSwiftPackageReference "AppSecurity" */,
-				6D9320022432297E004C8A3C /* XCRemoteSwiftPackageReference "AccountSecurity" */,
-				6D8BA197243A4551004493A9 /* XCRemoteSwiftPackageReference "OneLink" */,
-				6D5410D624475F2B000A8B1D /* XCRemoteSwiftPackageReference "UIComponents" */,
 			);
 			productRefGroup = 6D931FDB243228EF004C8A3C /* Products */;
 			projectDirPath = "";
@@ -391,7 +436,9 @@
 				6D931FEA243228F1004C8A3C /* LaunchScreen.storyboard in Resources */,
 				6DAF982C243B126900CF9AAA /* GoogleService-Info.plist in Resources */,
 				6D931FE7243228F1004C8A3C /* Assets.xcassets in Resources */,
+				6DFF0F8E245CBCFE0035C890 /* CustomKeyValueListAlert.xib in Resources */,
 				6D931FE5243228EF004C8A3C /* Main.storyboard in Resources */,
+				6DFF0F8A245CBC640035C890 /* CustomAlert.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +540,7 @@
 			files = (
 				6DAF9833243B33B900CF9AAA /* User.swift in Sources */,
 				6D932008243229C5004C8A3C /* ModulesViewController.swift in Sources */,
+				6DFF0F8C245CBCEB0035C890 /* CustomKeyValueListAlert.swift in Sources */,
 				6D93201C243251B8004C8A3C /* SecureStoreViewController.swift in Sources */,
 				6D93202B2432A2E8004C8A3C /* Module.swift in Sources */,
 				6D8BA19F243A4977004493A9 /* CardDetailViewController.swift in Sources */,
@@ -514,6 +562,7 @@
 				6D93201E24325773004C8A3C /* SecureStoreWriteViewController.swift in Sources */,
 				6D93201824324F07004C8A3C /* PassCodeViewController.swift in Sources */,
 				6DAF9831243B308400CF9AAA /* FCMCurl.swift in Sources */,
+				6DFF0F86245CBBB20035C890 /* CustomPopupsViewController.swift in Sources */,
 				6D932012243248AE004C8A3C /* PreventRecordingViewController.swift in Sources */,
 				6D93202D2432A30F004C8A3C /* SecureStoreType.swift in Sources */,
 				6D9320262432964C004C8A3C /* BiometricsViewController.swift in Sources */,
@@ -521,6 +570,7 @@
 				6D8DC0BF24596761005553BA /* AmountInputViewController.swift in Sources */,
 				6D93202424327B52004C8A3C /* ForceUpdateViewController.swift in Sources */,
 				6D9320282432966E004C8A3C /* TimedCacheViewController.swift in Sources */,
+				6DFF0F88245CBBF20035C890 /* CustomAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,10 +735,18 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RE9892F24F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MMBKitTester/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobven.ios.MMBKitTester;
@@ -708,10 +766,18 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RE9892F24F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MMBKitTester/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobven.ios.MMBKitTester;
@@ -799,64 +865,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		6D5410D624475F2B000A8B1D /* XCRemoteSwiftPackageReference "UIComponents" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mobven/UIComponents.git";
-			requirement = {
-				branch = develop;
-				kind = branch;
-			};
-		};
-		6D8BA197243A4551004493A9 /* XCRemoteSwiftPackageReference "OneLink" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mobven/OneLink.git";
-			requirement = {
-				branch = develop;
-				kind = branch;
-			};
-		};
-		6D931FFF2432295C004C8A3C /* XCRemoteSwiftPackageReference "AppSecurity" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mobven/AppSecurity";
-			requirement = {
-				branch = develop;
-				kind = branch;
-			};
-		};
-		6D9320022432297E004C8A3C /* XCRemoteSwiftPackageReference "AccountSecurity" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mobven/AccountSecurity";
-			requirement = {
-				branch = develop;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		6D5410D724475F2B000A8B1D /* UIComponents */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6D5410D624475F2B000A8B1D /* XCRemoteSwiftPackageReference "UIComponents" */;
-			productName = UIComponents;
-		};
-		6D8BA198243A4551004493A9 /* OneLink */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6D8BA197243A4551004493A9 /* XCRemoteSwiftPackageReference "OneLink" */;
-			productName = OneLink;
-		};
-		6D9320002432295C004C8A3C /* AppSecurity */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6D931FFF2432295C004C8A3C /* XCRemoteSwiftPackageReference "AppSecurity" */;
-			productName = AppSecurity;
-		};
-		6D9320032432297E004C8A3C /* AccountSecurity */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6D9320022432297E004C8A3C /* XCRemoteSwiftPackageReference "AccountSecurity" */;
-			productName = AccountSecurity;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6D931FD2243228EF004C8A3C /* Project object */;
 }
