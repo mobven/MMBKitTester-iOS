@@ -9,6 +9,7 @@ target 'MMBKitTester' do
 
   pod 'Firebase/Messaging'
   pod 'Firebase/Analytics'
+  pod 'Firebase/Performance'
   pod 'Firebase/DynamicLinks'
 
   target 'MMBKitTesterTests' do
