@@ -50,25 +50,26 @@ alert.present(over: self)
 
 ## Attributes
 Alerts can be customized using `Alert.appearance` options.
+*Warning*: If your application supports dark/light mode appearance, use colors which have both color state.
 ```swift
 // Color of the title displayed using `Alert(title:message:)`       
-Alert.appearance.titleColor = .blue
+Alert.appearance.titleColor = .systemBlue
 // Font of the title displayed using `Alert(title:message:)`
 Alert.appearance.titleFont = UIFont.boldSystemFont(ofSize: 22)
 // Color of the message displayed using `Alert(title:message:)`
-Alert.appearance.messageColor = .darkGray
+Alert.appearance.messageColor = .systemGray
 // Font of the message displayed using `Alert(title:message:)`
 Alert.appearance.messageFont = UIFont.systemFont(ofSize: 17)
 // Text color of the button with `default` type.
-Alert.appearance.defaultButtonTextColor = .white
+Alert.appearance.defaultButtonTextColor = .systemWhite
 // Background color of the button with `default` type.
-Alert.appearance.defaultButtonBackgroundColor = .orange
+Alert.appearance.defaultButtonBackgroundColor = .systemOrange
 // Font of the button with `default` type.
 Alert.appearance.defaultButtonFont = UIFont.boldSystemFont(ofSize: 17)
 // Text color of the button with `destructive` type.
-Alert.appearance.destructiveButtonTextColor = .white
+Alert.appearance.destructiveButtonTextColor = .systemWhite
 // Background color of the button with `destructive` type.
-Alert.appearance.destructiveButtonBackgroundColor = .lightGray
+Alert.appearance.destructiveButtonBackgroundColor = .systemGray
 // Font of the button with `destructive` type.
 Alert.appearance.destructiveButtonFont = UIFont.boldSystemFont(ofSize: 17)
 // Content insets for custom alert view. Default  value is 20 all around.

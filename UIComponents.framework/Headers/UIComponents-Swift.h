@@ -190,6 +190,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import CoreGraphics;
 @import Foundation;
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -337,10 +338,47 @@ SWIFT_CLASS("_TtC12UIComponents22KeyValueListTitleLabel")
 
 
 
+
+@class UITextPosition;
+@class UITextRange;
+@class UITextSelectionRect;
+
+/// <code>UITextField</code> with date picker as input view.
+SWIFT_CLASS("_TtC12UIComponents21UIDatePickerTextfield")
+@interface UIDatePickerTextfield : UITextField
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (BOOL)resignFirstResponder SWIFT_WARN_UNUSED_RESULT;
+- (void)reloadInputViews;
+- (CGRect)caretRectForPosition:(UITextPosition * _Nonnull)position SWIFT_WARN_UNUSED_RESULT;
+- (NSArray<UITextSelectionRect *> * _Nonnull)selectionRectsForRange:(UITextRange * _Nonnull)range SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)canPerformAction:(SEL _Nonnull)action withSender:(id _Nullable)sender SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+/// <code>UITextField</code> with picker as input view.
+SWIFT_CLASS("_TtC12UIComponents17UIPickerTextfield")
+@interface UIPickerTextfield : UITextField
+- (BOOL)resignFirstResponder SWIFT_WARN_UNUSED_RESULT;
+- (void)reloadInputViews;
+- (CGRect)caretRectForPosition:(UITextPosition * _Nonnull)position SWIFT_WARN_UNUSED_RESULT;
+- (NSArray<UITextSelectionRect *> * _Nonnull)selectionRectsForRange:(UITextRange * _Nonnull)range SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)canPerformAction:(SEL _Nonnull)action withSender:(id _Nullable)sender SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
 @interface UITextField (SWIFT_EXTENSION(UIComponents))
 /// Placeholder color of the textfield.
 @property (nonatomic, strong) IBInspectable UIColor * _Nonnull placeholderColor;
 @end
+
+
+
+
 
 
 
@@ -540,6 +578,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import CoreGraphics;
 @import Foundation;
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -687,10 +726,47 @@ SWIFT_CLASS("_TtC12UIComponents22KeyValueListTitleLabel")
 
 
 
+
+@class UITextPosition;
+@class UITextRange;
+@class UITextSelectionRect;
+
+/// <code>UITextField</code> with date picker as input view.
+SWIFT_CLASS("_TtC12UIComponents21UIDatePickerTextfield")
+@interface UIDatePickerTextfield : UITextField
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (BOOL)resignFirstResponder SWIFT_WARN_UNUSED_RESULT;
+- (void)reloadInputViews;
+- (CGRect)caretRectForPosition:(UITextPosition * _Nonnull)position SWIFT_WARN_UNUSED_RESULT;
+- (NSArray<UITextSelectionRect *> * _Nonnull)selectionRectsForRange:(UITextRange * _Nonnull)range SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)canPerformAction:(SEL _Nonnull)action withSender:(id _Nullable)sender SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+/// <code>UITextField</code> with picker as input view.
+SWIFT_CLASS("_TtC12UIComponents17UIPickerTextfield")
+@interface UIPickerTextfield : UITextField
+- (BOOL)resignFirstResponder SWIFT_WARN_UNUSED_RESULT;
+- (void)reloadInputViews;
+- (CGRect)caretRectForPosition:(UITextPosition * _Nonnull)position SWIFT_WARN_UNUSED_RESULT;
+- (NSArray<UITextSelectionRect *> * _Nonnull)selectionRectsForRange:(UITextRange * _Nonnull)range SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)canPerformAction:(SEL _Nonnull)action withSender:(id _Nullable)sender SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
 @interface UITextField (SWIFT_EXTENSION(UIComponents))
 /// Placeholder color of the textfield.
 @property (nonatomic, strong) IBInspectable UIColor * _Nonnull placeholderColor;
 @end
+
+
+
+
 
 
 

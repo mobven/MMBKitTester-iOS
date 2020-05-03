@@ -21,7 +21,7 @@ class UIComponentsViewController: UITableViewController {
         components.modules.append(.init(name: "Amount-Input View", identifier: "AmountInputViewController"))
         components.modules.append(.init(name: "Custom Navigation View", identifier: ""))
         components.modules.append(.init(name: "Custom Popups", identifier: "CustomPopupsViewController"))
-        components.modules.append(.init(name: "Add-On Features", identifier: ""))
+        components.modules.append(.init(name: "Add-On Features", identifier: "AddOnFeaturesViewController"))
         sections.append(components)
         sections.append(.init(name: "Custom Dashboard", modules: [
             .init(name: "Custom Dashboard", identifier: "")

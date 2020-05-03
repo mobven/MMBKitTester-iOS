@@ -1360,6 +1360,51 @@ It's secure 🎉</string>
             </objects>
             <point key="canvasLocation" x="5464" y="3061"/>
         </scene>
+        <!--Add On Features View Controller-->
+        <scene sceneID="Fme-bw-XJn">
+            <objects>
+                <viewController storyboardIdentifier="AddOnFeaturesViewController" id="BWs-Cn-XH3" customClass="AddOnFeaturesViewController" customModule="MMBKitTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HM2-w5-i1d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Choose color" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="27V-lQ-r1c" customClass="UIPickerTextfield" customModule="UIComponents">
+                                <rect key="frame" x="20" y="64" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="tgT-jV-dDZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="01/11/2011" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JqE-Cq-SYG" customClass="UIDatePickerTextfield" customModule="UIComponents">
+                                <rect key="frame" x="20" y="129" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5rh-we-nTA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="27V-lQ-r1c" firstAttribute="leading" secondItem="zaI-KR-y0Z" secondAttribute="leading" constant="20" id="71Z-9f-vjb"/>
+                            <constraint firstItem="27V-lQ-r1c" firstAttribute="top" secondItem="zaI-KR-y0Z" secondAttribute="top" constant="20" id="BL7-Ae-IO9"/>
+                            <constraint firstItem="JqE-Cq-SYG" firstAttribute="top" secondItem="27V-lQ-r1c" secondAttribute="bottom" constant="25" id="Fei-CP-1rV"/>
+                            <constraint firstItem="zaI-KR-y0Z" firstAttribute="trailing" secondItem="27V-lQ-r1c" secondAttribute="trailing" constant="20" id="eot-Vb-jnY"/>
+                            <constraint firstItem="zaI-KR-y0Z" firstAttribute="trailing" secondItem="JqE-Cq-SYG" secondAttribute="trailing" constant="20" id="mZC-7B-XJf"/>
+                            <constraint firstItem="JqE-Cq-SYG" firstAttribute="leading" secondItem="zaI-KR-y0Z" secondAttribute="leading" constant="20" id="nLG-hF-zKZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zaI-KR-y0Z"/>
+                    </view>
+                    <connections>
+                        <outlet property="datePickerTextfield" destination="JqE-Cq-SYG" id="vwX-tR-MnG"/>
+                        <outlet property="pickerTextfield" destination="27V-lQ-r1c" id="moW-50-mv7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fzq-fA-O4x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6339" y="3061"/>
+        </scene>
         <!--Components View Controller-->
         <scene sceneID="V7c-Tg-qRQ">
             <objects>

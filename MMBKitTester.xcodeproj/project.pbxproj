@@ -42,6 +42,11 @@
 		6DAF982F243B2F6C00CF9AAA /* NotificationPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF982E243B2F6C00CF9AAA /* NotificationPayload.swift */; };
 		6DAF9831243B308400CF9AAA /* FCMCurl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF9830243B308400CF9AAA /* FCMCurl.swift */; };
 		6DAF9833243B33B900CF9AAA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF9832243B33B900CF9AAA /* User.swift */; };
+		6DC7EC62245F0F470023537C /* KeychainAccess.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC7EC60245F0F470023537C /* KeychainAccess.o */; };
+		6DC7EC63245F0F470023537C /* CryptoSwift.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC7EC61245F0F470023537C /* CryptoSwift.o */; };
+		6DC7EC65245F0F7C0023537C /* AddOnFeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC7EC64245F0F7C0023537C /* AddOnFeaturesViewController.swift */; };
+		6DC7EC68245F0F900023537C /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC7EC66245F0F8B0023537C /* UIComponents.framework */; };
+		6DC7EC69245F0F900023537C /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC7EC66245F0F8B0023537C /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6DFF0F60245ABD120035C890 /* AccountSecurity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFF0F59245ABD0F0035C890 /* AccountSecurity.framework */; };
 		6DFF0F61245ABD120035C890 /* AccountSecurity.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFF0F59245ABD0F0035C890 /* AccountSecurity.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6DFF0F62245ABD140035C890 /* AppSecurity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFF0F5A245ABD0F0035C890 /* AppSecurity.framework */; };
@@ -54,8 +59,6 @@
 		6DFF0F8A245CBC640035C890 /* CustomAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DFF0F89245CBC640035C890 /* CustomAlert.xib */; };
 		6DFF0F8C245CBCEB0035C890 /* CustomKeyValueListAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF0F8B245CBCEB0035C890 /* CustomKeyValueListAlert.swift */; };
 		6DFF0F8E245CBCFE0035C890 /* CustomKeyValueListAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DFF0F8D245CBCFE0035C890 /* CustomKeyValueListAlert.xib */; };
-		6DFF0F91245CBF6C0035C890 /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFF0F8F245CBF670035C890 /* UIComponents.framework */; };
-		6DFF0F92245CBF6C0035C890 /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFF0F8F245CBF670035C890 /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		864D50E772FB2F9A38CEC034 /* Pods_MMBKitTesterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 922D4F6CC5A2F78F2E29C089 /* Pods_MMBKitTesterTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,7 +81,7 @@
 			files = (
 				6DFF0F63245ABD140035C890 /* AppSecurity.framework in Embed Frameworks */,
 				6DFF0F65245ABD160035C890 /* OneLink.framework in Embed Frameworks */,
-				6DFF0F92245CBF6C0035C890 /* UIComponents.framework in Embed Frameworks */,
+				6DC7EC69245F0F900023537C /* UIComponents.framework in Embed Frameworks */,
 				6DFF0F61245ABD120035C890 /* AccountSecurity.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -130,6 +133,10 @@
 		6DAF982E243B2F6C00CF9AAA /* NotificationPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPayload.swift; sourceTree = "<group>"; };
 		6DAF9830243B308400CF9AAA /* FCMCurl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCMCurl.swift; sourceTree = "<group>"; };
 		6DAF9832243B33B900CF9AAA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6DC7EC60245F0F470023537C /* KeychainAccess.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = KeychainAccess.o; sourceTree = "<group>"; };
+		6DC7EC61245F0F470023537C /* CryptoSwift.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = CryptoSwift.o; sourceTree = "<group>"; };
+		6DC7EC64245F0F7C0023537C /* AddOnFeaturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOnFeaturesViewController.swift; sourceTree = "<group>"; };
+		6DC7EC66245F0F8B0023537C /* UIComponents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UIComponents.framework; sourceTree = "<group>"; };
 		6DFF0F59245ABD0F0035C890 /* AccountSecurity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AccountSecurity.framework; sourceTree = "<group>"; };
 		6DFF0F5A245ABD0F0035C890 /* AppSecurity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppSecurity.framework; sourceTree = "<group>"; };
 		6DFF0F5B245ABD0F0035C890 /* OneLink.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OneLink.framework; sourceTree = "<group>"; };
@@ -138,7 +145,6 @@
 		6DFF0F89245CBC640035C890 /* CustomAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlert.xib; sourceTree = "<group>"; };
 		6DFF0F8B245CBCEB0035C890 /* CustomKeyValueListAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomKeyValueListAlert.swift; sourceTree = "<group>"; };
 		6DFF0F8D245CBCFE0035C890 /* CustomKeyValueListAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomKeyValueListAlert.xib; sourceTree = "<group>"; };
-		6DFF0F8F245CBF670035C890 /* UIComponents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UIComponents.framework; sourceTree = "<group>"; };
 		7C55600B130C3D48F52FA44F /* Pods-MMBKitTester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBKitTester.debug.xcconfig"; path = "Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester.debug.xcconfig"; sourceTree = "<group>"; };
 		922D4F6CC5A2F78F2E29C089 /* Pods_MMBKitTesterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMBKitTesterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A63A91710C4207F027CA8DC1 /* Pods-MMBKitTesterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBKitTesterTests.debug.xcconfig"; path = "Target Support Files/Pods-MMBKitTesterTests/Pods-MMBKitTesterTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -151,10 +157,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DFF0F66245ABD170035C890 /* Pods_MMBKitTester.framework in Frameworks */,
+				6DC7EC68245F0F900023537C /* UIComponents.framework in Frameworks */,
 				6DFF0F62245ABD140035C890 /* AppSecurity.framework in Frameworks */,
 				6DFF0F60245ABD120035C890 /* AccountSecurity.framework in Frameworks */,
+				6DC7EC63245F0F470023537C /* CryptoSwift.o in Frameworks */,
+				6DC7EC62245F0F470023537C /* KeychainAccess.o in Frameworks */,
 				6DFF0F64245ABD160035C890 /* OneLink.framework in Frameworks */,
-				6DFF0F91245CBF6C0035C890 /* UIComponents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +185,7 @@
 				6D4E40122454DB3100B8CC67 /* KVListViewController.swift */,
 				6D8DC0BE24596761005553BA /* AmountInputViewController.swift */,
 				6DFF0F84245CBB9C0035C890 /* CustomPopups */,
+				6DC7EC64245F0F7C0023537C /* AddOnFeaturesViewController.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -322,7 +331,9 @@
 		8BCFF828680210ED26EC0E12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6DFF0F8F245CBF670035C890 /* UIComponents.framework */,
+				6DC7EC61245F0F470023537C /* CryptoSwift.o */,
+				6DC7EC60245F0F470023537C /* KeychainAccess.o */,
+				6DC7EC66245F0F8B0023537C /* UIComponents.framework */,
 				6DFF0F59245ABD0F0035C890 /* AccountSecurity.framework */,
 				6DFF0F5A245ABD0F0035C890 /* AppSecurity.framework */,
 				6DFF0F5B245ABD0F0035C890 /* OneLink.framework */,
@@ -568,6 +579,7 @@
 				6D9320262432964C004C8A3C /* BiometricsViewController.swift in Sources */,
 				6DAF982F243B2F6C00CF9AAA /* NotificationPayload.swift in Sources */,
 				6D8DC0BF24596761005553BA /* AmountInputViewController.swift in Sources */,
+				6DC7EC65245F0F7C0023537C /* AddOnFeaturesViewController.swift in Sources */,
 				6D93202424327B52004C8A3C /* ForceUpdateViewController.swift in Sources */,
 				6D9320282432966E004C8A3C /* TimedCacheViewController.swift in Sources */,
 				6DFF0F88245CBBF20035C890 /* CustomAlert.swift in Sources */,
