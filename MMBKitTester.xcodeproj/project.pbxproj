@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -42,19 +42,11 @@
 		6DAF982F243B2F6C00CF9AAA /* NotificationPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF982E243B2F6C00CF9AAA /* NotificationPayload.swift */; };
 		6DAF9831243B308400CF9AAA /* FCMCurl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF9830243B308400CF9AAA /* FCMCurl.swift */; };
 		6DAF9833243B33B900CF9AAA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF9832243B33B900CF9AAA /* User.swift */; };
-		6DC7EC62245F0F470023537C /* KeychainAccess.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC7EC60245F0F470023537C /* KeychainAccess.o */; };
-		6DC7EC63245F0F470023537C /* CryptoSwift.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC7EC61245F0F470023537C /* CryptoSwift.o */; };
 		6DC7EC65245F0F7C0023537C /* AddOnFeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC7EC64245F0F7C0023537C /* AddOnFeaturesViewController.swift */; };
-		6DC7EC68245F0F900023537C /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC7EC66245F0F8B0023537C /* UIComponents.framework */; };
-		6DC7EC69245F0F900023537C /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC7EC66245F0F8B0023537C /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6DC7ECC42460166E0023537C /* MMBKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC7ECC2246016660023537C /* MMBKit.framework */; };
-		6DC7ECC52460166E0023537C /* MMBKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC7ECC2246016660023537C /* MMBKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6DFF0F60245ABD120035C890 /* AccountSecurity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFF0F59245ABD0F0035C890 /* AccountSecurity.framework */; };
-		6DFF0F61245ABD120035C890 /* AccountSecurity.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFF0F59245ABD0F0035C890 /* AccountSecurity.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6DFF0F62245ABD140035C890 /* AppSecurity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFF0F5A245ABD0F0035C890 /* AppSecurity.framework */; };
-		6DFF0F63245ABD140035C890 /* AppSecurity.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFF0F5A245ABD0F0035C890 /* AppSecurity.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6DFF0F64245ABD160035C890 /* OneLink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFF0F5B245ABD0F0035C890 /* OneLink.framework */; };
-		6DFF0F65245ABD160035C890 /* OneLink.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFF0F5B245ABD0F0035C890 /* OneLink.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6DC7ECC8246018C10023537C /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 6DC7ECC7246018C10023537C /* UIComponents */; };
+		6DC7ECCB246018D10023537C /* OneLink in Frameworks */ = {isa = PBXBuildFile; productRef = 6DC7ECCA246018D10023537C /* OneLink */; };
+		6DC7ECCE246018ED0023537C /* AppSecurity in Frameworks */ = {isa = PBXBuildFile; productRef = 6DC7ECCD246018ED0023537C /* AppSecurity */; };
+		6DC7ECD1246019110023537C /* AccountSecurity in Frameworks */ = {isa = PBXBuildFile; productRef = 6DC7ECD0246019110023537C /* AccountSecurity */; };
 		6DFF0F66245ABD170035C890 /* Pods_MMBKitTester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3227ECF86F65F265974F9C /* Pods_MMBKitTester.framework */; };
 		6DFF0F86245CBBB20035C890 /* CustomPopupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF0F85245CBBB20035C890 /* CustomPopupsViewController.swift */; };
 		6DFF0F88245CBBF20035C890 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF0F87245CBBF20035C890 /* CustomAlert.swift */; };
@@ -81,11 +73,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6DFF0F63245ABD140035C890 /* AppSecurity.framework in Embed Frameworks */,
-				6DC7ECC52460166E0023537C /* MMBKit.framework in Embed Frameworks */,
-				6DFF0F65245ABD160035C890 /* OneLink.framework in Embed Frameworks */,
-				6DC7EC69245F0F900023537C /* UIComponents.framework in Embed Frameworks */,
-				6DFF0F61245ABD120035C890 /* AccountSecurity.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,14 +123,7 @@
 		6DAF982E243B2F6C00CF9AAA /* NotificationPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPayload.swift; sourceTree = "<group>"; };
 		6DAF9830243B308400CF9AAA /* FCMCurl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCMCurl.swift; sourceTree = "<group>"; };
 		6DAF9832243B33B900CF9AAA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		6DC7EC60245F0F470023537C /* KeychainAccess.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = KeychainAccess.o; sourceTree = "<group>"; };
-		6DC7EC61245F0F470023537C /* CryptoSwift.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = CryptoSwift.o; sourceTree = "<group>"; };
 		6DC7EC64245F0F7C0023537C /* AddOnFeaturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOnFeaturesViewController.swift; sourceTree = "<group>"; };
-		6DC7EC66245F0F8B0023537C /* UIComponents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UIComponents.framework; sourceTree = "<group>"; };
-		6DC7ECC2246016660023537C /* MMBKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MMBKit.framework; sourceTree = "<group>"; };
-		6DFF0F59245ABD0F0035C890 /* AccountSecurity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AccountSecurity.framework; sourceTree = "<group>"; };
-		6DFF0F5A245ABD0F0035C890 /* AppSecurity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppSecurity.framework; sourceTree = "<group>"; };
-		6DFF0F5B245ABD0F0035C890 /* OneLink.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OneLink.framework; sourceTree = "<group>"; };
 		6DFF0F85245CBBB20035C890 /* CustomPopupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopupsViewController.swift; sourceTree = "<group>"; };
 		6DFF0F87245CBBF20035C890 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		6DFF0F89245CBC640035C890 /* CustomAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlert.xib; sourceTree = "<group>"; };
@@ -160,14 +140,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DC7ECC42460166E0023537C /* MMBKit.framework in Frameworks */,
+				6DC7ECCE246018ED0023537C /* AppSecurity in Frameworks */,
+				6DC7ECCB246018D10023537C /* OneLink in Frameworks */,
+				6DC7ECC8246018C10023537C /* UIComponents in Frameworks */,
+				6DC7ECD1246019110023537C /* AccountSecurity in Frameworks */,
 				6DFF0F66245ABD170035C890 /* Pods_MMBKitTester.framework in Frameworks */,
-				6DC7EC68245F0F900023537C /* UIComponents.framework in Frameworks */,
-				6DFF0F62245ABD140035C890 /* AppSecurity.framework in Frameworks */,
-				6DFF0F60245ABD120035C890 /* AccountSecurity.framework in Frameworks */,
-				6DC7EC63245F0F470023537C /* CryptoSwift.o in Frameworks */,
-				6DC7EC62245F0F470023537C /* KeychainAccess.o in Frameworks */,
-				6DFF0F64245ABD160035C890 /* OneLink.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,13 +313,6 @@
 		8BCFF828680210ED26EC0E12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6DC7EC61245F0F470023537C /* CryptoSwift.o */,
-				6DC7EC60245F0F470023537C /* KeychainAccess.o */,
-				6DC7ECC2246016660023537C /* MMBKit.framework */,
-				6DC7EC66245F0F8B0023537C /* UIComponents.framework */,
-				6DFF0F59245ABD0F0035C890 /* AccountSecurity.framework */,
-				6DFF0F5A245ABD0F0035C890 /* AppSecurity.framework */,
-				6DFF0F5B245ABD0F0035C890 /* OneLink.framework */,
 				3D3227ECF86F65F265974F9C /* Pods_MMBKitTester.framework */,
 				922D4F6CC5A2F78F2E29C089 /* Pods_MMBKitTesterTests.framework */,
 			);
@@ -381,6 +351,10 @@
 			);
 			name = MMBKitTester;
 			packageProductDependencies = (
+				6DC7ECC7246018C10023537C /* UIComponents */,
+				6DC7ECCA246018D10023537C /* OneLink */,
+				6DC7ECCD246018ED0023537C /* AppSecurity */,
+				6DC7ECD0246019110023537C /* AccountSecurity */,
 			);
 			productName = MMBKitTester;
 			productReference = 6D931FDA243228EF004C8A3C /* MMBKitTester.app */;
@@ -434,6 +408,10 @@
 			);
 			mainGroup = 6D931FD1243228EF004C8A3C;
 			packageReferences = (
+				6DC7ECC6246018C10023537C /* XCRemoteSwiftPackageReference "UIComponents" */,
+				6DC7ECC9246018D10023537C /* XCRemoteSwiftPackageReference "OneLink" */,
+				6DC7ECCC246018ED0023537C /* XCRemoteSwiftPackageReference "AppSecurity" */,
+				6DC7ECCF246019110023537C /* XCRemoteSwiftPackageReference "AccountSecurity" */,
 			);
 			productRefGroup = 6D931FDB243228EF004C8A3C /* Products */;
 			projectDirPath = "";
@@ -883,6 +861,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6DC7ECC6246018C10023537C /* XCRemoteSwiftPackageReference "UIComponents" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mobven/UIComponents.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		6DC7ECC9246018D10023537C /* XCRemoteSwiftPackageReference "OneLink" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mobven/OneLink.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		6DC7ECCC246018ED0023537C /* XCRemoteSwiftPackageReference "AppSecurity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mobven/AppSecurity.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		6DC7ECCF246019110023537C /* XCRemoteSwiftPackageReference "AccountSecurity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mobven/AccountSecurity.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6DC7ECC7246018C10023537C /* UIComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DC7ECC6246018C10023537C /* XCRemoteSwiftPackageReference "UIComponents" */;
+			productName = UIComponents;
+		};
+		6DC7ECCA246018D10023537C /* OneLink */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DC7ECC9246018D10023537C /* XCRemoteSwiftPackageReference "OneLink" */;
+			productName = OneLink;
+		};
+		6DC7ECCD246018ED0023537C /* AppSecurity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DC7ECCC246018ED0023537C /* XCRemoteSwiftPackageReference "AppSecurity" */;
+			productName = AppSecurity;
+		};
+		6DC7ECD0246019110023537C /* AccountSecurity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DC7ECCF246019110023537C /* XCRemoteSwiftPackageReference "AccountSecurity" */;
+			productName = AccountSecurity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6D931FD2243228EF004C8A3C /* Project object */;
 }
