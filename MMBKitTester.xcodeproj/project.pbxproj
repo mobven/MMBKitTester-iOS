@@ -47,6 +47,7 @@
 		6DC7EC65245F0F7C0023537C /* AddOnFeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC7EC64245F0F7C0023537C /* AddOnFeaturesViewController.swift */; };
 		6DC7EC68245F0F900023537C /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC7EC66245F0F8B0023537C /* UIComponents.framework */; };
 		6DC7EC69245F0F900023537C /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC7EC66245F0F8B0023537C /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6DC7EC6B246000730023537C /* MMBKit.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC7EC6A246000730023537C /* MMBKit.o */; };
 		6DFF0F60245ABD120035C890 /* AccountSecurity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFF0F59245ABD0F0035C890 /* AccountSecurity.framework */; };
 		6DFF0F61245ABD120035C890 /* AccountSecurity.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFF0F59245ABD0F0035C890 /* AccountSecurity.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6DFF0F62245ABD140035C890 /* AppSecurity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFF0F5A245ABD0F0035C890 /* AppSecurity.framework */; };
@@ -137,6 +138,7 @@
 		6DC7EC61245F0F470023537C /* CryptoSwift.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = CryptoSwift.o; sourceTree = "<group>"; };
 		6DC7EC64245F0F7C0023537C /* AddOnFeaturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOnFeaturesViewController.swift; sourceTree = "<group>"; };
 		6DC7EC66245F0F8B0023537C /* UIComponents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UIComponents.framework; sourceTree = "<group>"; };
+		6DC7EC6A246000730023537C /* MMBKit.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = MMBKit.o; sourceTree = "<group>"; };
 		6DFF0F59245ABD0F0035C890 /* AccountSecurity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AccountSecurity.framework; sourceTree = "<group>"; };
 		6DFF0F5A245ABD0F0035C890 /* AppSecurity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppSecurity.framework; sourceTree = "<group>"; };
 		6DFF0F5B245ABD0F0035C890 /* OneLink.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OneLink.framework; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DFF0F66245ABD170035C890 /* Pods_MMBKitTester.framework in Frameworks */,
+				6DC7EC6B246000730023537C /* MMBKit.o in Frameworks */,
 				6DC7EC68245F0F900023537C /* UIComponents.framework in Frameworks */,
 				6DFF0F62245ABD140035C890 /* AppSecurity.framework in Frameworks */,
 				6DFF0F60245ABD120035C890 /* AccountSecurity.framework in Frameworks */,
@@ -333,6 +336,7 @@
 			children = (
 				6DC7EC61245F0F470023537C /* CryptoSwift.o */,
 				6DC7EC60245F0F470023537C /* KeychainAccess.o */,
+				6DC7EC6A246000730023537C /* MMBKit.o */,
 				6DC7EC66245F0F8B0023537C /* UIComponents.framework */,
 				6DFF0F59245ABD0F0035C890 /* AccountSecurity.framework */,
 				6DFF0F5A245ABD0F0035C890 /* AppSecurity.framework */,
