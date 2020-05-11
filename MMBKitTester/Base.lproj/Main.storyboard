@@ -195,7 +195,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One link for managing screens for deep linking, push notification, 3d touch actions etc." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7K-mQ-3lp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One link for managing screens for deep linking, push notification, etc." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7K-mQ-3lp">
                                 <rect key="frame" x="20" y="64" width="374" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -279,7 +279,7 @@ https://bkt.com/cards/?id=1533</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X2j-Rf-5u6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1870" y="2294"/>
+            <point key="canvasLocation" x="1869.5652173913045" y="2293.5267857142858"/>
         </scene>
         <!--Announcements View Controller-->
         <scene sceneID="d9l-H1-ywM">
