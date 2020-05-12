@@ -1,0 +1,217 @@
+
+{
+  "forms": [
+    {
+      "title": "Personal Info",
+      "fields": [
+        {
+          "id": "nameSurname",
+          "label": "Name Surname",
+          "placeholder": "Name Surname",
+          "type": "text",
+          "inputType": "text",
+          "value": "",
+          "rules": {
+            "regex": "xyz",
+            "message": "xyz message"
+          }
+        },
+        {
+          "id": "tckn",
+          "label": "Identity Number",
+          "placeholder": "Identity Number",
+          "type": "text",
+          "inputType": "text",
+          "value": "",
+          "rules": {
+            "regex": "xyz",
+            "message": "xyz message"
+          }
+        },
+        {
+          "id": "324651846t278",
+          "label": "Birthdate",
+          "placeholder": "Birtdate",
+          "type": "select",
+          "inputType": "datepicker",
+          "value": "",
+          "rules": {
+            "dateFormat": "dd/MM/yyyy"
+          }
+        },
+        {
+          "id": "city",
+          "label": "Choose City",
+          "placeholder": "Choose City",
+          "type": "select",
+          "value": "",
+          "options": [
+            {
+              "id": "34",
+              "name": "Istanbul"
+            },
+            {
+              "id": "10",
+              "name": "Baku"
+            }
+          ],
+          "rules": {
+            "regex": "xyz",
+            "message": "xyz message"
+          }
+        },
+        {
+          "id": "gender",
+          "label": "Gender",
+          "placeholder": "Gender",
+          "type": "radio",
+          "value": "",
+          "options": [
+            {
+              "id": "0",
+              "name": "Woman"
+            },
+            {
+              "id": "1",
+              "name": "Man"
+            }
+          ],
+          "rules": {
+            "regex": "xyz",
+            "message": "xyz message"
+          }
+        },
+        {
+          "id": "t&c",
+          "label": "Terms and conditions",
+          "placeholder": "",
+          "type": "checkbox",
+          "value": "",
+          "status": false,
+          "rules": {
+            "regex": "xyz",
+            "message": "xyz message"
+          }
+        },
+        {
+          "id": "privacy",
+          "label": "Privacy Policy",
+          "placeholder": "",
+          "type": "checkbox",
+          "value": "",
+          "status": false,
+          "rules": {
+            "regex": "xyz",
+            "message": "xyz message"
+          }
+        },
+        {
+          "id": "submit",
+          "type": "action",
+          "value": "Submit",
+          "actionType": "next"
+        }
+      ]
+    },
+    {
+      "title": "Personal Info",
+      "fields": [
+        {
+          "id": "nameSurname",
+          "label": "Name Surname",
+          "placeholder": "Name Surname",
+          "type": "text",
+          "inputType": "text",
+          "value": "",
+          "rules": {
+            "regex": "xyz",
+            "message": "xyz message"
+          }
+        },
+        {
+          "id": "324651846t278",
+          "label": "Birthdate",
+          "placeholder": "Birtdate",
+          "type": "select",
+          "inputType": "datepicker",
+          "value": "",
+          "rules": {
+            "dateFormat": "dd/MM/yyyy"
+          }
+        },
+        {
+          "id": "city",
+          "label": "Choose City",
+          "placeholder": "Choose City",
+          "type": "select",
+          "value": "",
+          "options": [
+            {
+              "id": "34",
+              "name": "Istanbul"
+            },
+            {
+              "id": "10",
+              "name": "Baku"
+            }
+          ],
+          "rules": {
+            "regex": "xyz",
+            "message": "xyz message"
+          }
+        },
+        {
+          "id": "gender",
+          "label": "Gender",
+          "placeholder": "Gender",
+          "type": "radio",
+          "value": "",
+          "options": [
+            {
+              "id": "0",
+              "name": "Woman"
+            },
+            {
+              "id": "1",
+              "name": "Man"
+            }
+          ],
+          "rules": {
+            "regex": "xyz",
+            "message": "xyz message"
+          }
+        },
+        {
+          "id": "t&c",
+          "label": "Terms and conditions",
+          "placeholder": "",
+          "type": "checkbox",
+          "value": "",
+          "status": false,
+          "rules": {
+            "regex": "xyz",
+            "message": "xyz message"
+          }
+        },
+        {
+          "id": "privacy",
+          "label": "Privacy Policy",
+          "placeholder": "",
+          "type": "checkbox",
+          "value": "",
+          "status": false,
+          "rules": {
+            "regex": "xyz",
+            "message": "xyz message"
+          }
+        },
+        {
+          "id": "submit",
+          "type": "action",
+          "value": "Submit",
+          "actionType": "request"
+        }
+      ]
+    }
+  ]
+}

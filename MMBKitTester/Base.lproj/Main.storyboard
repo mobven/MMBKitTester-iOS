@@ -3,7 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -1432,6 +1432,36 @@ It's secure 🎉</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3i5-RI-7KA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1870" y="3061"/>
+        </scene>
+        <!--State Machine Forms View Controller-->
+        <scene sceneID="hcI-Oe-n9c">
+            <objects>
+                <viewController storyboardIdentifier="StateMachineFormsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HCG-bo-HgP" customClass="StateMachineFormsViewController" customModule="MMBKitTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vYF-9h-SaY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ge1-Lf-j7S" customClass="StateMachineForm" customModule="StateMachineForms">
+                                <rect key="frame" x="0.0" y="68" width="414" height="794"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="EfL-q5-5hf" firstAttribute="trailing" secondItem="Ge1-Lf-j7S" secondAttribute="trailing" id="Fwo-Si-OPD"/>
+                            <constraint firstItem="Ge1-Lf-j7S" firstAttribute="leading" secondItem="EfL-q5-5hf" secondAttribute="leading" id="dma-q1-kBv"/>
+                            <constraint firstItem="EfL-q5-5hf" firstAttribute="bottom" secondItem="Ge1-Lf-j7S" secondAttribute="bottom" id="r8a-Un-2Lb"/>
+                            <constraint firstItem="Ge1-Lf-j7S" firstAttribute="top" secondItem="EfL-q5-5hf" secondAttribute="top" constant="24" id="wwg-H4-vgD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EfL-q5-5hf"/>
+                    </view>
+                    <connections>
+                        <outlet property="stateMachineForm" destination="Ge1-Lf-j7S" id="Pn1-wq-nyH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1dM-VZ-ZT4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1861" y="3782"/>
         </scene>
     </scenes>
 </document>

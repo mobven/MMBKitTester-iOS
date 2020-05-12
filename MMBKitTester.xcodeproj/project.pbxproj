@@ -53,6 +53,21 @@
 		6DFF0F8A245CBC640035C890 /* CustomAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DFF0F89245CBC640035C890 /* CustomAlert.xib */; };
 		6DFF0F8C245CBCEB0035C890 /* CustomKeyValueListAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF0F8B245CBCEB0035C890 /* CustomKeyValueListAlert.swift */; };
 		6DFF0F8E245CBCFE0035C890 /* CustomKeyValueListAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DFF0F8D245CBCFE0035C890 /* CustomKeyValueListAlert.xib */; };
+		6F521709246A848200F7E28E /* StateMachineFormsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F521708246A848200F7E28E /* StateMachineFormsViewController.swift */; };
+		6F52170F246A8BAF00F7E28E /* StateMachineForms in Frameworks */ = {isa = PBXBuildFile; productRef = 6F52170E246A8BAF00F7E28E /* StateMachineForms */; };
+		6F521711246A922C00F7E28E /* forms.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F521710246A922C00F7E28E /* forms.json */; };
+		6F521714246A9A3200F7E28E /* UIDatePickerTextFieldBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F521713246A9A3200F7E28E /* UIDatePickerTextFieldBinder.swift */; };
+		6F521717246AA28100F7E28E /* MMBTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F521716246AA28100F7E28E /* MMBTextField.swift */; };
+		6F521719246AA38A00F7E28E /* MMBTextFieldBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F521718246AA38A00F7E28E /* MMBTextFieldBinder.swift */; };
+		6F52171B246AA88F00F7E28E /* MMBCheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F52171A246AA88F00F7E28E /* MMBCheckBoxView.swift */; };
+		6F52171D246AAB3500F7E28E /* MMBCheckBoxBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F52171C246AAB3500F7E28E /* MMBCheckBoxBinder.swift */; };
+		6F52171F246AE50F00F7E28E /* MMBButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F52171E246AE50F00F7E28E /* MMBButton.swift */; };
+		6F521721246AE58700F7E28E /* MMBButtonBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F521720246AE58700F7E28E /* MMBButtonBinder.swift */; };
+		6F521723246AEBFA00F7E28E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F521722246AEBFA00F7E28E /* UIColor.swift */; };
+		6F521725246AED9B00F7E28E /* UITextPickerBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F521724246AED9B00F7E28E /* UITextPickerBinder.swift */; };
+		6F521727246AF2AA00F7E28E /* MMBRadioButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F521726246AF2AA00F7E28E /* MMBRadioButtonView.swift */; };
+		6F52172A246AF4CA00F7E28E /* MMBRadioButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F521729246AF4CA00F7E28E /* MMBRadioButtonItem.swift */; };
+		6F52172C246AFF7600F7E28E /* MMBRadioButtonViewBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F52172B246AFF7600F7E28E /* MMBRadioButtonViewBinder.swift */; };
 		864D50E772FB2F9A38CEC034 /* Pods_MMBKitTesterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 922D4F6CC5A2F78F2E29C089 /* Pods_MMBKitTesterTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -129,6 +144,20 @@
 		6DFF0F89245CBC640035C890 /* CustomAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlert.xib; sourceTree = "<group>"; };
 		6DFF0F8B245CBCEB0035C890 /* CustomKeyValueListAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomKeyValueListAlert.swift; sourceTree = "<group>"; };
 		6DFF0F8D245CBCFE0035C890 /* CustomKeyValueListAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomKeyValueListAlert.xib; sourceTree = "<group>"; };
+		6F521708246A848200F7E28E /* StateMachineFormsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateMachineFormsViewController.swift; sourceTree = "<group>"; };
+		6F521710246A922C00F7E28E /* forms.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = forms.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		6F521713246A9A3200F7E28E /* UIDatePickerTextFieldBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDatePickerTextFieldBinder.swift; sourceTree = "<group>"; };
+		6F521716246AA28100F7E28E /* MMBTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMBTextField.swift; sourceTree = "<group>"; };
+		6F521718246AA38A00F7E28E /* MMBTextFieldBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMBTextFieldBinder.swift; sourceTree = "<group>"; };
+		6F52171A246AA88F00F7E28E /* MMBCheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMBCheckBoxView.swift; sourceTree = "<group>"; };
+		6F52171C246AAB3500F7E28E /* MMBCheckBoxBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMBCheckBoxBinder.swift; sourceTree = "<group>"; };
+		6F52171E246AE50F00F7E28E /* MMBButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMBButton.swift; sourceTree = "<group>"; };
+		6F521720246AE58700F7E28E /* MMBButtonBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMBButtonBinder.swift; sourceTree = "<group>"; };
+		6F521722246AEBFA00F7E28E /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		6F521724246AED9B00F7E28E /* UITextPickerBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextPickerBinder.swift; sourceTree = "<group>"; };
+		6F521726246AF2AA00F7E28E /* MMBRadioButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMBRadioButtonView.swift; sourceTree = "<group>"; };
+		6F521729246AF4CA00F7E28E /* MMBRadioButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMBRadioButtonItem.swift; sourceTree = "<group>"; };
+		6F52172B246AFF7600F7E28E /* MMBRadioButtonViewBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMBRadioButtonViewBinder.swift; sourceTree = "<group>"; };
 		7C55600B130C3D48F52FA44F /* Pods-MMBKitTester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBKitTester.debug.xcconfig"; path = "Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester.debug.xcconfig"; sourceTree = "<group>"; };
 		922D4F6CC5A2F78F2E29C089 /* Pods_MMBKitTesterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMBKitTesterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A63A91710C4207F027CA8DC1 /* Pods-MMBKitTesterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBKitTesterTests.debug.xcconfig"; path = "Target Support Files/Pods-MMBKitTesterTests/Pods-MMBKitTesterTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -142,6 +171,7 @@
 			files = (
 				6DC7ECCE246018ED0023537C /* AppSecurity in Frameworks */,
 				6DC7ECCB246018D10023537C /* OneLink in Frameworks */,
+				6F52170F246A8BAF00F7E28E /* StateMachineForms in Frameworks */,
 				6DC7ECC8246018C10023537C /* UIComponents in Frameworks */,
 				6DC7ECD1246019110023537C /* AccountSecurity in Frameworks */,
 				6DFF0F66245ABD170035C890 /* Pods_MMBKitTester.framework in Frameworks */,
@@ -213,7 +243,9 @@
 				6D932006243229AF004C8A3C /* AccountSecurity */,
 				6D8BA194243A4498004493A9 /* OneLink */,
 				6D5410D224474A2E000A8B1D /* UIComponents */,
+				6F521707246A844500F7E28E /* StateMachineForms */,
 				6D9320292432A2D6004C8A3C /* Models */,
+				6F521715246AA25300F7E28E /* Views */,
 				6D93202F2432A45C004C8A3C /* Extensions */,
 				6D931FDD243228EF004C8A3C /* AppDelegate.swift */,
 				6D931FE3243228EF004C8A3C /* Main.storyboard */,
@@ -221,6 +253,7 @@
 				6D931FE8243228F1004C8A3C /* LaunchScreen.storyboard */,
 				6D931FEB243228F1004C8A3C /* Info.plist */,
 				6DAF982B243B126900CF9AAA /* GoogleService-Info.plist */,
+				6F521710246A922C00F7E28E /* forms.json */,
 			);
 			path = MMBKitTester;
 			sourceTree = "<group>";
@@ -294,6 +327,7 @@
 			isa = PBXGroup;
 			children = (
 				6D9320302432A471004C8A3C /* UIViewController.swift */,
+				6F521722246AEBFA00F7E28E /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -308,6 +342,48 @@
 				6DFF0F8D245CBCFE0035C890 /* CustomKeyValueListAlert.xib */,
 			);
 			path = CustomPopups;
+			sourceTree = "<group>";
+		};
+		6F521707246A844500F7E28E /* StateMachineForms */ = {
+			isa = PBXGroup;
+			children = (
+				6F521712246A9A1800F7E28E /* Forms */,
+				6F521708246A848200F7E28E /* StateMachineFormsViewController.swift */,
+			);
+			path = StateMachineForms;
+			sourceTree = "<group>";
+		};
+		6F521712246A9A1800F7E28E /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				6F521713246A9A3200F7E28E /* UIDatePickerTextFieldBinder.swift */,
+				6F521724246AED9B00F7E28E /* UITextPickerBinder.swift */,
+				6F521718246AA38A00F7E28E /* MMBTextFieldBinder.swift */,
+				6F52171C246AAB3500F7E28E /* MMBCheckBoxBinder.swift */,
+				6F521720246AE58700F7E28E /* MMBButtonBinder.swift */,
+				6F52172B246AFF7600F7E28E /* MMBRadioButtonViewBinder.swift */,
+			);
+			path = Forms;
+			sourceTree = "<group>";
+		};
+		6F521715246AA25300F7E28E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6F521728246AF44500F7E28E /* RadioButtonView */,
+				6F521716246AA28100F7E28E /* MMBTextField.swift */,
+				6F52171A246AA88F00F7E28E /* MMBCheckBoxView.swift */,
+				6F52171E246AE50F00F7E28E /* MMBButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6F521728246AF44500F7E28E /* RadioButtonView */ = {
+			isa = PBXGroup;
+			children = (
+				6F521726246AF2AA00F7E28E /* MMBRadioButtonView.swift */,
+				6F521729246AF4CA00F7E28E /* MMBRadioButtonItem.swift */,
+			);
+			path = RadioButtonView;
 			sourceTree = "<group>";
 		};
 		8BCFF828680210ED26EC0E12 /* Frameworks */ = {
@@ -355,6 +431,7 @@
 				6DC7ECCA246018D10023537C /* OneLink */,
 				6DC7ECCD246018ED0023537C /* AppSecurity */,
 				6DC7ECD0246019110023537C /* AccountSecurity */,
+				6F52170E246A8BAF00F7E28E /* StateMachineForms */,
 			);
 			productName = MMBKitTester;
 			productReference = 6D931FDA243228EF004C8A3C /* MMBKitTester.app */;
@@ -412,6 +489,7 @@
 				6DC7ECC9246018D10023537C /* XCRemoteSwiftPackageReference "OneLink" */,
 				6DC7ECCC246018ED0023537C /* XCRemoteSwiftPackageReference "AppSecurity" */,
 				6DC7ECCF246019110023537C /* XCRemoteSwiftPackageReference "AccountSecurity" */,
+				6F52170D246A8BAF00F7E28E /* XCRemoteSwiftPackageReference "StateMachineForms" */,
 			);
 			productRefGroup = 6D931FDB243228EF004C8A3C /* Products */;
 			projectDirPath = "";
@@ -434,6 +512,7 @@
 				6DFF0F8E245CBCFE0035C890 /* CustomKeyValueListAlert.xib in Resources */,
 				6D931FE5243228EF004C8A3C /* Main.storyboard in Resources */,
 				6DFF0F8A245CBC640035C890 /* CustomAlert.xib in Resources */,
+				6F521711246A922C00F7E28E /* forms.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,36 +614,49 @@
 			files = (
 				6DAF9833243B33B900CF9AAA /* User.swift in Sources */,
 				6D932008243229C5004C8A3C /* ModulesViewController.swift in Sources */,
+				6F52171B246AA88F00F7E28E /* MMBCheckBoxView.swift in Sources */,
 				6DFF0F8C245CBCEB0035C890 /* CustomKeyValueListAlert.swift in Sources */,
 				6D93201C243251B8004C8A3C /* SecureStoreViewController.swift in Sources */,
 				6D93202B2432A2E8004C8A3C /* Module.swift in Sources */,
 				6D8BA19F243A4977004493A9 /* CardDetailViewController.swift in Sources */,
+				6F521717246AA28100F7E28E /* MMBTextField.swift in Sources */,
 				6D8BA19B243A4869004493A9 /* AppLink.swift in Sources */,
 				6D9320312432A471004C8A3C /* UIViewController.swift in Sources */,
+				6F521721246AE58700F7E28E /* MMBButtonBinder.swift in Sources */,
 				6D5410D524474A50000A8B1D /* KVLabelViewController.swift in Sources */,
 				6D5410DA24477ADE000A8B1D /* UIComponentsViewController.swift in Sources */,
 				6D93201424324A83004C8A3C /* JailbreakDetectionViewController.swift in Sources */,
 				6D93202224327225004C8A3C /* BaseTypeViewController.swift in Sources */,
 				6D93200C24322AE3004C8A3C /* AccountSecurityViewController.swift in Sources */,
+				6F521719246AA38A00F7E28E /* MMBTextFieldBinder.swift in Sources */,
 				6D93201024323162004C8A3C /* PreventSnapshotsViewController.swift in Sources */,
 				6D93202024325797004C8A3C /* SecureStoreReadViewController.swift in Sources */,
 				6D8BA196243A44AD004493A9 /* OneLinkViewController.swift in Sources */,
 				6D8BA19D243A495B004493A9 /* AnnouncementsViewController.swift in Sources */,
 				6D93200E24322BE7004C8A3C /* AppSecurityViewController.swift in Sources */,
 				6D93201624324DDD004C8A3C /* SecureTextfieldViewController.swift in Sources */,
+				6F52172A246AF4CA00F7E28E /* MMBRadioButtonItem.swift in Sources */,
 				6D4E40132454DB3100B8CC67 /* KVListViewController.swift in Sources */,
+				6F521723246AEBFA00F7E28E /* UIColor.swift in Sources */,
 				6D931FDE243228EF004C8A3C /* AppDelegate.swift in Sources */,
 				6D93201E24325773004C8A3C /* SecureStoreWriteViewController.swift in Sources */,
 				6D93201824324F07004C8A3C /* PassCodeViewController.swift in Sources */,
+				6F52172C246AFF7600F7E28E /* MMBRadioButtonViewBinder.swift in Sources */,
 				6DAF9831243B308400CF9AAA /* FCMCurl.swift in Sources */,
 				6DFF0F86245CBBB20035C890 /* CustomPopupsViewController.swift in Sources */,
+				6F521714246A9A3200F7E28E /* UIDatePickerTextFieldBinder.swift in Sources */,
 				6D932012243248AE004C8A3C /* PreventRecordingViewController.swift in Sources */,
 				6D93202D2432A30F004C8A3C /* SecureStoreType.swift in Sources */,
 				6D9320262432964C004C8A3C /* BiometricsViewController.swift in Sources */,
+				6F52171F246AE50F00F7E28E /* MMBButton.swift in Sources */,
 				6DAF982F243B2F6C00CF9AAA /* NotificationPayload.swift in Sources */,
+				6F52171D246AAB3500F7E28E /* MMBCheckBoxBinder.swift in Sources */,
 				6D8DC0BF24596761005553BA /* AmountInputViewController.swift in Sources */,
+				6F521709246A848200F7E28E /* StateMachineFormsViewController.swift in Sources */,
 				6DC7EC65245F0F7C0023537C /* AddOnFeaturesViewController.swift in Sources */,
+				6F521725246AED9B00F7E28E /* UITextPickerBinder.swift in Sources */,
 				6D93202424327B52004C8A3C /* ForceUpdateViewController.swift in Sources */,
+				6F521727246AF2AA00F7E28E /* MMBRadioButtonView.swift in Sources */,
 				6D9320282432966E004C8A3C /* TimedCacheViewController.swift in Sources */,
 				6DFF0F88245CBBF20035C890 /* CustomAlert.swift in Sources */,
 			);
@@ -895,6 +987,14 @@
 				kind = branch;
 			};
 		};
+		6F52170D246A8BAF00F7E28E /* XCRemoteSwiftPackageReference "StateMachineForms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mobven/StateMachineForms.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -917,6 +1017,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6DC7ECCF246019110023537C /* XCRemoteSwiftPackageReference "AccountSecurity" */;
 			productName = AccountSecurity;
+		};
+		6F52170E246A8BAF00F7E28E /* StateMachineForms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F52170D246A8BAF00F7E28E /* XCRemoteSwiftPackageReference "StateMachineForms" */;
+			productName = StateMachineForms;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
