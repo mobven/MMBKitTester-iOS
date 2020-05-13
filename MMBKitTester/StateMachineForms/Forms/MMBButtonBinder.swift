@@ -11,18 +11,24 @@ import StateMachineForms
 
 class MMBButtonBinder: StateMachineForm.Binder {
     
-    typealias StateMachineFormType = MMBButton
+    typealias StateMachineViewType = MMBButton
     
-    init() {
-        super.init(.action)
-        self.minimumHeight = 45
-        self.viewType = StateMachineFormType.self
+    public class var builder: StateMachineForm.Binder.Builder {
+        return Builder(binder: Self.self, viewType: StateMachineViewType.self,
+                       type: .action, minimumHeight: 45)
     }
     
-    override var value: String? {
-        didSet {
-            (view as? StateMachineFormType)?.setTitle(value, for: .normal)
+    required public init(view: UIView,
+                         type: Forms.Field.ViewType, inputType: Forms.Field.InputType? = nil,
+                         field: Forms.Field, delegate: FormBinderDelegate) {
+        super.init(view: view, type: type, inputType: inputType, field: field, delegate: delegate)
+        (view as? StateMachineViewType)?.setTitle(value, for: .normal)
+        (view as? StateMachineViewType)?.addTarget(self, action: #selector(actionClicked), for: .touchUpInside)
+    }
+    
+    @objc func actionClicked() {
+        if let action = actionType {
+            self.delegate?.formBinderAction(action)
         }
     }
-    
 }

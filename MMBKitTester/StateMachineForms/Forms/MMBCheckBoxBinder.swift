@@ -11,33 +11,29 @@ import StateMachineForms
 
 class MMBCheckBoxBinder: StateMachineForm.Binder {
     
-    typealias StateMachineFormType = MMBCheckBoxView
+    typealias StateMachineViewType = MMBCheckBoxView
+    
+    public class var builder: StateMachineForm.Binder.Builder {
+         return Builder(binder: Self.self, viewType: StateMachineViewType.self,
+                        type: .checkbox, minimumHeight: 50)
+     }
+     
+     required public init(view: UIView,
+                          type: Forms.Field.ViewType, inputType: Forms.Field.InputType? = nil,
+                          field: Forms.Field, delegate: FormBinderDelegate) {
+         super.init(view: view, type: type, inputType: inputType, field: field, delegate: delegate)
+         (view as? StateMachineViewType)?.delegate = self
+         (view as? StateMachineViewType)?.setTitle(label)
+         self.delegate?.formBinderValueChanged(binder: self, value: value)
+     }
     
     var isSelected: Bool {
-        return (view as? StateMachineFormType)?.isSelected ?? false
-    }
-
-    init() {
-        super.init(.checkbox)
-        self.minimumHeight = 30
-        self.viewType = StateMachineFormType.self
-    }
-    
-    override var view: StateMachineForm.Binder.StateMachineViewType! {
-        didSet {
-            (view as? StateMachineFormType)?.delegate = self
-        }
-    }
-    
-    override var label: String? {
-        didSet {
-            (view as? StateMachineFormType)?.setTitle(label)
-        }
+        return (view as? StateMachineViewType)?.isSelected ?? false
     }
 }
 
 extension MMBCheckBoxBinder: MMBCheckBoxViewDelegate {
     func checkBox(_ checkBox: MMBCheckBoxView, isSelected: Bool) {
-        self.delegate?.formBinderValueChanged(view: checkBox, value: checkBox)
+        self.delegate?.formBinderValueChanged(binder: self, value: checkBox)
     }
 }

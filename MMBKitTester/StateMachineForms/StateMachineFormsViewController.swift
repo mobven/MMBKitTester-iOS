@@ -13,7 +13,7 @@ import StateMachineForms
 class StateMachineFormsViewController: UIViewController {
 
     @IBOutlet weak var stateMachineForm: StateMachineForm!
-    
+        
     var service = StateMachineFormsService(className: "Forms")
     
     var pageIndex = 0
@@ -23,22 +23,30 @@ class StateMachineFormsViewController: UIViewController {
         super.viewDidLoad()
         self.stateMachineForm.setInitialData(storedFormdata)
         
-        stateMachineForm.register(binder: MMBTextFieldBinder())
-        stateMachineForm.register(binder: UIDatePickerTextFieldBinder())
-        stateMachineForm.register(binder: UIPickerTextFieldBinder())
-        stateMachineForm.register(binder: MMBCheckBoxBinder())
-        stateMachineForm.register(binder: MMBButtonBinder())
-        stateMachineForm.register(binder: MMBRadioButtonViewBinder())
+        stateMachineForm.register(builder: MMBTextFieldBinder.builder)
+        stateMachineForm.register(builder: UIDatePickerTextFieldBinder.builder)
+        stateMachineForm.register(builder: UIPickerTextFieldBinder.builder)
+        stateMachineForm.register(builder: MMBCheckBoxBinder.builder)
+        stateMachineForm.register(builder: MMBButtonBinder.builder)
+        stateMachineForm.register(builder: MMBRadioButtonViewBinder.builder)
+        stateMachineForm.register(builder: AccountViewBinder.builder)
         
         stateMachineForm.delegate = self
         stateMachineForm.itemInsets = UIEdgeInsets(top: 8, left: 32, bottom: 8, right: 32)
-        self.getForms()
+        
+        self.getForms(onParse: true)
     }
     
-    func getForms() {
-        self.service.getFormsClass { [weak self] (form, error) in
-            guard let self = self else { return }
-            if error == nil, let form = form?[self.pageIndex] {
+    func getForms(onParse: Bool) {
+        if onParse {
+            self.service.getFormsClass { [weak self] (form, error) in
+                guard let self = self else { return }
+                if error == nil, let form = form?[self.pageIndex] {
+                    self.stateMachineForm.feed(form)
+                }
+            }
+        } else {
+            if let form = formData?.forms?[pageIndex] {
                 self.stateMachineForm.feed(form)
             }
         }
@@ -52,12 +60,12 @@ class StateMachineFormsViewController: UIViewController {
 }
 
 extension StateMachineFormsViewController: StateMachineFormDelegate {
-    func stateMachineFormAction(with actionType: Forms.Field.ActionType, data: [FormData]) {
+    func stateMachineForm(_ stateMachineForm: StateMachineForm, takeAction actionType: Forms.Field.ActionType, data: [FormData]) {
         switch actionType {
         case .back:
             self.navigationController?.popViewController(animated: true)
         case .next:
-            if formData?.forms?.count == pageIndex {
+            if formData?.forms?.count == (pageIndex + 1) {
                 break
             } else {
                 guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "StateMachineFormsViewController") as? StateMachineFormsViewController else { return }
@@ -70,5 +78,18 @@ extension StateMachineFormsViewController: StateMachineFormDelegate {
         }
         
         print(data)
+    }
+    
+    func stateMachineForm(_ stateMachineForm: StateMachineForm, navigateBinder binder: StateMachineForm.Binder) {
+        guard let viewController = storyboard?.instantiateViewController(withIdentifier: "AccountsViewController") as? AccountsViewController else { return }
+        viewController.options = binder.options
+        
+        viewController.optionSelected = { option in
+            (binder as? AccountViewBinder)?.configure(option: option)
+        }
+        
+        let navController = UINavigationController(rootViewController: viewController)
+        navController.modalPresentationStyle = .fullScreen
+        self.present(navController, animated: true, completion: nil)
     }
 }

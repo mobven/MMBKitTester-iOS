@@ -14,40 +14,26 @@ class UIPickerTextFieldBinder: StateMachineForm.Binder {
     public typealias StateMachineViewType = UIPickerTextfield
     
     /// Initializes binder with `UITextField` as input field.
-    public init() {
-        super.init(.select)
-        self.minimumHeight = 50
-        self.viewType = StateMachineViewType.self
+    public class var builder: StateMachineForm.Binder.Builder {
+        return Builder(binder: Self.self, viewType: StateMachineViewType.self,
+                       type: .select, minimumHeight: 50)
     }
     
-    override var view: StateMachineForm.Binder.StateMachineViewType! {
-        didSet {
-            (view as? StateMachineViewType)?.pickerDelegate = self
-            self.setPickerUI()
-        }
+    required public init(view: UIView,
+                         type: Forms.Field.ViewType, inputType: Forms.Field.InputType? = nil,
+                         field: Forms.Field, delegate: FormBinderDelegate) {
+        super.init(view: view, type: type, inputType: inputType, field: field, delegate: delegate)
+        (view as? StateMachineViewType)?.pickerDelegate = self
+        (view as? StateMachineViewType)?.placeholder = placeholder
+        (view as? StateMachineViewType)?.text = value
+        (view as? StateMachineViewType)?.setToolbar(title: label, button: "Close", target: self, action: #selector(closePicker))
+        setPickerUI()
+        self.delegate?.formBinderValueChanged(binder: self, value: value)
     }
-    
-    public override var placeholder: String? {
-        didSet {
-            (view as? StateMachineViewType)?.placeholder = placeholder
-        }
-    }
-    
-    public override var value: String? {
-        didSet {
-            (view as? StateMachineViewType)?.text = value
-        }
-    }
-    
-    override var label: String? {
-        didSet {
-            (view as? StateMachineViewType)?.setToolbar(title: label, button: "Close", target: self, action: #selector(closePicker))
-        }
-    }
-    
+
     @objc private func closePicker() {
         view.resignFirstResponder()
-        self.delegate?.formBinderValueChanged(view: view, value: options?[(view as? StateMachineViewType)?.selectedRow ?? 0])
+        self.delegate?.formBinderValueChanged(binder: self, value: options?[(view as? StateMachineViewType)?.selectedRow ?? 0])
     }
     
     func setPickerUI() {
@@ -68,7 +54,7 @@ extension UIPickerTextFieldBinder: UIPickerTextfieldDelegate {
     }
     
     func pickerTextfield(_ pickerTextfield: UIPickerTextfield, didSelectRow row: Int) {
-        self.delegate?.formBinderValueChanged(view: pickerTextfield, value: options?[row])
+        self.delegate?.formBinderValueChanged(binder: self, value: options?[row])
     }
 }
 

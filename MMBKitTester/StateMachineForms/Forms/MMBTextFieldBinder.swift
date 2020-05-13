@@ -11,30 +11,24 @@ import StateMachineForms
 
 class MMBTextFieldBinder: StateMachineForm.Binder {
     
-    typealias StateMachineFormType = MMBTextField
-    
-    init() {
-        super.init(.text, inputType: .text)
-        self.minimumHeight = 50
-        self.viewType = StateMachineFormType.self
+    typealias StateMachineViewType = MMBTextField
+
+    public class var builder: StateMachineForm.Binder.Builder {
+        return Builder(binder: Self.self, viewType: StateMachineViewType.self,
+                       type: .text, minimumHeight: 50)
     }
     
-    override var view: StateMachineForm.Binder.StateMachineViewType! {
-        didSet {
-            (view as? StateMachineFormType)?.delegate = self
+    required public init(view: UIView,
+                         type: Forms.Field.ViewType, inputType: Forms.Field.InputType? = nil,
+                         field: Forms.Field, delegate: FormBinderDelegate) {
+        super.init(view: view, type: type, inputType: inputType, field: field, delegate: delegate)
+        (view as? StateMachineViewType)?.delegate = self
+        if inputType == .password {
+            (view as? StateMachineViewType)?.isSecureTextEntry = true
         }
-    }
-    
-    override var placeholder: String? {
-        didSet {
-            (view as? StateMachineFormType)?.placeholder = placeholder
-        }
-    }
-    
-    override var value: String? {
-        didSet {
-            (view as? StateMachineFormType)?.text = value
-        }
+        (view as? StateMachineViewType)?.placeholder = placeholder
+        (view as? StateMachineViewType)?.text = value
+        self.delegate?.formBinderValueChanged(binder: self, value: value)
     }
 }
 
@@ -43,7 +37,7 @@ extension MMBTextFieldBinder: UITextFieldDelegate {
                           shouldChangeCharactersIn range: NSRange,
                           replacementString string: String) -> Bool {
         let text = (textField.text as NSString?)?.replacingCharacters(in: range, with: string)
-        delegate?.formBinderValueChanged(view: textField, value: text)
+        delegate?.formBinderValueChanged(binder: self, value: text)
         return true
     }
 }

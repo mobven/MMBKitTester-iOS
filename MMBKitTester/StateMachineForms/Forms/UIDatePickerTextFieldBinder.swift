@@ -14,46 +14,27 @@ class UIDatePickerTextFieldBinder: StateMachineForm.Binder {
     
     typealias StateMachineViewType = UIDatePickerTextfield
     
-    init() {
-        super.init(.select, inputType: .date)
-        self.minimumHeight = 50
-        self.viewType = StateMachineViewType.self
+    public class var builder: StateMachineForm.Binder.Builder {
+        return Builder(binder: Self.self, viewType: StateMachineViewType.self,
+                       type: .select, inputType: .date, minimumHeight: 50)
     }
     
-    override var view: StateMachineForm.Binder.StateMachineViewType! {
-        didSet {
-            (view as? StateMachineViewType)?.datePicker.maximumDate = Date()
-            self.setPickerUI()
-        }
-    }
-    
-    override var placeholder: String?{
-        didSet {
-            (view as? StateMachineViewType)?.placeholder = placeholder
-        }
-    }
-    
-    override var value: String? {
-        didSet {
-            (view as? StateMachineViewType)?.text = value
-        }
-    }
-    
-    override var label: String? {
-        didSet {
-            (view as? StateMachineViewType)?.setToolbar(title: label, button: "Close", target: self, action: #selector(closePicker))
-        }
-    }
-    
-    override var rules: Forms.Field.Rules? {
-        didSet {
-            (view as? StateMachineViewType)?.dateFormat = rules?.dateFormat
-        }
+    required public init(view: UIView,
+                         type: Forms.Field.ViewType, inputType: Forms.Field.InputType? = nil,
+                         field: Forms.Field, delegate: FormBinderDelegate) {
+        super.init(view: view, type: type, inputType: inputType, field: field, delegate: delegate)
+        (view as? StateMachineViewType)?.datePicker.maximumDate = Date()
+        (view as? StateMachineViewType)?.placeholder = placeholder
+        (view as? StateMachineViewType)?.text = value
+        (view as? StateMachineViewType)?.setToolbar(title: label, button: "Close", target: self, action: #selector(closePicker))
+        (view as? StateMachineViewType)?.dateFormat = rules?.dateFormat
+        setPickerUI()
+        self.delegate?.formBinderValueChanged(binder: self, value: value)
     }
     
     @objc func closePicker() {
         view.resignFirstResponder()
-        delegate?.formBinderValueChanged(view: view, value: (view as? StateMachineViewType)?.date)
+        delegate?.formBinderValueChanged(binder: self, value: (view as? StateMachineViewType)?.date)
     }
     
     func setPickerUI() {

@@ -108,13 +108,13 @@
         {
           "id": "submit",
           "type": "action",
-          "value": "Submit",
+          "value": "Next",
           "actionType": "next"
         }
       ]
     },
     {
-      "title": "Personal Info",
+      "title": "Account Info",
       "fields": [
         {
           "id": "nameSurname",
@@ -129,77 +129,30 @@
           }
         },
         {
-          "id": "324651846t278",
-          "label": "Birthdate",
-          "placeholder": "Birtdate",
-          "type": "select",
-          "inputType": "datepicker",
-          "value": "",
-          "rules": {
-            "dateFormat": "dd/MM/yyyy"
-          }
-        },
-        {
-          "id": "city",
-          "label": "Choose City",
-          "placeholder": "Choose City",
-          "type": "select",
-          "value": "",
+          "id": "accountView",
+          "label": "32314124124",
+          "placeholder": "accountView",
+          "type": "custom",
+          "inputType": "account",
+          "value": "459.23 TL",
           "options": [
             {
-              "id": "34",
-              "name": "Istanbul"
+              "id": "32314124124",
+              "name": "459.23 TL"
             },
             {
-              "id": "10",
-              "name": "Baku"
-            }
-          ],
-          "rules": {
-            "regex": "xyz",
-            "message": "xyz message"
-          }
-        },
-        {
-          "id": "gender",
-          "label": "Gender",
-          "placeholder": "Gender",
-          "type": "radio",
-          "value": "",
-          "options": [
-            {
-              "id": "0",
-              "name": "Woman"
+              "id": "54614124124",
+              "name": "3587.67 TL"
             },
             {
-              "id": "1",
-              "name": "Man"
+              "id": "54876524124",
+              "name": "2376.98 TL"
+            },
+            {
+              "id": "27656524124",
+              "name": "376.98 TL"
             }
           ],
-          "rules": {
-            "regex": "xyz",
-            "message": "xyz message"
-          }
-        },
-        {
-          "id": "t&c",
-          "label": "Terms and conditions",
-          "placeholder": "",
-          "type": "checkbox",
-          "value": "",
-          "status": false,
-          "rules": {
-            "regex": "xyz",
-            "message": "xyz message"
-          }
-        },
-        {
-          "id": "privacy",
-          "label": "Privacy Policy",
-          "placeholder": "",
-          "type": "checkbox",
-          "value": "",
-          "status": false,
           "rules": {
             "regex": "xyz",
             "message": "xyz message"
@@ -209,7 +162,7 @@
           "id": "submit",
           "type": "action",
           "value": "Submit",
-          "actionType": "request"
+          "actionType": "next"
         }
       ]
     }

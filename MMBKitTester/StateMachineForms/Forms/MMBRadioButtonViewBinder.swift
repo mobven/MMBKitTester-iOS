@@ -11,24 +11,20 @@ import StateMachineForms
 
 class MMBRadioButtonViewBinder: StateMachineForm.Binder {
     
-    typealias StateMachineFormType = MMBRadioButtonView
+    typealias StateMachineViewType = MMBRadioButtonView
     
-    init() {
-        super.init(.radio)
-        self.viewType = StateMachineFormType.self
+    public class var builder: StateMachineForm.Binder.Builder {
+        return Builder(binder: Self.self, viewType: StateMachineViewType.self,
+                       type: .radio, minimumHeight: 50)
     }
     
-    override var view: StateMachineForm.Binder.StateMachineViewType! {
-        didSet {
-            (view as? StateMachineFormType)?.dataSource = self
-            (view as? StateMachineFormType)?.delegate = self
-        }
-    }
-    
-    override var options: [Forms.Field.Option]? {
-        didSet {
-           (view as? StateMachineFormType)?.reloadData()
-        }
+    required public init(view: UIView,
+                         type: Forms.Field.ViewType, inputType: Forms.Field.InputType? = nil,
+                         field: Forms.Field, delegate: FormBinderDelegate) {
+        super.init(view: view, type: type, inputType: inputType, field: field, delegate: delegate)
+        (view as? StateMachineViewType)?.dataSource = self
+        (view as? StateMachineViewType)?.delegate = self
+        (view as? StateMachineViewType)?.reloadData()
     }
 }
 
@@ -46,6 +42,6 @@ extension MMBRadioButtonViewBinder: MMBRadioButtonViewDataSource {
 
 extension MMBRadioButtonViewBinder: MMBRadioButtonViewDelegate {
     func radioButon(_ view: MMBRadioButtonView, didSelectAt row: Int) {
-        self.delegate?.formBinderValueChanged(view: self.view, value: options?[row])
+        self.delegate?.formBinderValueChanged(binder: self, value: options?[row])
     }
 }

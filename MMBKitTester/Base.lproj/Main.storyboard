@@ -1463,5 +1463,64 @@ It's secure 🎉</string>
             </objects>
             <point key="canvasLocation" x="1861" y="3782"/>
         </scene>
+        <!--Accounts View Controller-->
+        <scene sceneID="XCi-zc-LH1">
+            <objects>
+                <viewController storyboardIdentifier="AccountsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FMJ-Mj-7oS" customClass="AccountsViewController" customModule="MMBKitTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kvC-aR-n65">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rjT-d7-HEt">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AccountSelectionCell" rowHeight="96" id="Ak9-Ar-6Tn" customClass="AccountSelectionCell" customModule="MMBKitTester" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="96"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ak9-Ar-6Tn" id="cFm-OJ-dZl">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ukv-bC-Ba5" customClass="AccountView" customModule="MMBKitTester" customModuleProvider="target">
+                                                    <rect key="frame" x="32" y="8" width="350" height="80"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ukv-bC-Ba5" firstAttribute="leading" secondItem="cFm-OJ-dZl" secondAttribute="leading" constant="32" id="Imc-an-uYq"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ukv-bC-Ba5" secondAttribute="trailing" constant="32" id="Qif-cP-S1l"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ukv-bC-Ba5" secondAttribute="bottom" constant="8" id="eS0-Ca-vOJ"/>
+                                                <constraint firstItem="Ukv-bC-Ba5" firstAttribute="top" secondItem="cFm-OJ-dZl" secondAttribute="top" constant="8" id="pbZ-mG-yEC"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="accountView" destination="Ukv-bC-Ba5" id="74p-Yf-M3X"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="FMJ-Mj-7oS" id="dsf-Zi-Izm"/>
+                                    <outlet property="delegate" destination="FMJ-Mj-7oS" id="LYD-8o-yfs"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LH1-f7-cW4" firstAttribute="trailing" secondItem="rjT-d7-HEt" secondAttribute="trailing" id="RRc-BC-Z8a"/>
+                            <constraint firstItem="rjT-d7-HEt" firstAttribute="leading" secondItem="LH1-f7-cW4" secondAttribute="leading" id="TTd-yB-CqR"/>
+                            <constraint firstItem="LH1-f7-cW4" firstAttribute="bottom" secondItem="rjT-d7-HEt" secondAttribute="bottom" id="ecq-mc-LoE"/>
+                            <constraint firstItem="rjT-d7-HEt" firstAttribute="top" secondItem="LH1-f7-cW4" secondAttribute="top" id="xET-tW-hyV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LH1-f7-cW4"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="rjT-d7-HEt" id="WpV-ho-Ucl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yUm-RR-IFy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2760.8695652173915" y="3780.8035714285711"/>
+        </scene>
     </scenes>
 </document>
