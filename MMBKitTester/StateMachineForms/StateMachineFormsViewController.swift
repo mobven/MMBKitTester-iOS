@@ -14,6 +14,8 @@ class StateMachineFormsViewController: UIViewController {
 
     @IBOutlet weak var stateMachineForm: StateMachineForm!
     
+    var service = StateMachineFormsService(className: "Forms")
+    
     var pageIndex = 0
     var storedFormdata: [FormData] = []
     
@@ -30,11 +32,16 @@ class StateMachineFormsViewController: UIViewController {
         
         stateMachineForm.delegate = self
         stateMachineForm.itemInsets = UIEdgeInsets(top: 8, left: 32, bottom: 8, right: 32)
-        
-        if let form = formData?.forms?[pageIndex] {
-            self.stateMachineForm.feed(form)
+        self.getForms()
+    }
+    
+    func getForms() {
+        self.service.getFormsClass { [weak self] (form, error) in
+            guard let self = self else { return }
+            if error == nil, let form = form?[self.pageIndex] {
+                self.stateMachineForm.feed(form)
+            }
         }
-        
     }
     
     private var formData: Forms? {
