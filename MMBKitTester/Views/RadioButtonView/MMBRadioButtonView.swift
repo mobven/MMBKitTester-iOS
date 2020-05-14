@@ -62,6 +62,10 @@ class MMBRadioButtonView: UIView {
     }
     
     func reloadData() {
+        self.stackView.arrangedSubviews.forEach { (view) in
+            stackView.removeArrangedSubview(view)
+        }
+        
         if let dataSource = dataSource, dataSource.numberOfRadioButtons(self) > 1 {
             for index in (0..<dataSource.numberOfRadioButtons(self)) {
                 let radioItem = dataSource.radioButon(self, radioButonAt: index)
