@@ -19,7 +19,9 @@ class AccountsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Close", style: .plain, target: self, action: #selector(dismissController))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(
+            title: "Close", style: .plain, target: self, action: #selector(dismissController)
+        )
     }
     
     @objc func dismissController() {
@@ -33,12 +35,13 @@ extension AccountsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "AccountSelectionCell", for: indexPath) as! AccountSelectionCell
+        guard let cell = tableView.dequeueReusableCell(
+            withIdentifier: "AccountSelectionCell", for: indexPath
+            ) as? AccountSelectionCell else { fatalError("Cell could not be initialized.") }
         cell.accountView.isUserInteractionEnabled = false
         cell.configure(data: options?[indexPath.row])
         return cell
     }
-    
     
 }
 

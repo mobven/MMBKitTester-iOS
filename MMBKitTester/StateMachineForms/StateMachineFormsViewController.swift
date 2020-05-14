@@ -11,9 +11,9 @@ import UIComponents
 import StateMachineForms
 
 class StateMachineFormsViewController: UIViewController {
-
+    
     @IBOutlet weak var stateMachineForm: StateMachineForm!
-        
+    
     var service = StateMachineFormsService(className: "Forms")
     
     var pageIndex = 0
@@ -91,5 +91,18 @@ extension StateMachineFormsViewController: StateMachineFormDelegate {
         let navController = UINavigationController(rootViewController: viewController)
         navController.modalPresentationStyle = .fullScreen
         self.present(navController, animated: true, completion: nil)
+    }
+    
+    func stateMachineForm(_ stateMachineForm: StateMachineForm,
+                          bindersCouldNotBeValidated invalidBinders: [StateMachineForm.Binder]) {
+        let errorMessages: [String] = invalidBinders.map({ $0.errorMessage ?? "" })
+        let message = errorMessages.joined(separator: ",\n")
+        let alert = Alert(title: "Invalid inputs", message: "\(message)")
+        alert.addAction(.init(title: "Okay", type: .default))
+        alert.present(over: self)
+        for binder in invalidBinders {
+            print("Invalid binder: \(binder.identifier). Error message: \(binder.errorMessage ?? "")")
+        }
+        
     }
 }
