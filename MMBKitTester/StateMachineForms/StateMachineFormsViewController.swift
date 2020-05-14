@@ -60,7 +60,9 @@ class StateMachineFormsViewController: UIViewController {
 }
 
 extension StateMachineFormsViewController: StateMachineFormDelegate {
-    func stateMachineForm(_ stateMachineForm: StateMachineForm, takeAction actionType: Forms.Field.ActionType, data: [FormData]) {
+    func stateMachineForm(_ stateMachineForm: StateMachineForm,
+                          takeAction actionType: Forms.Field.ActionType,
+                          data: [FormData]) {
         switch actionType {
         case .back:
             self.navigationController?.popViewController(animated: true)
@@ -68,7 +70,9 @@ extension StateMachineFormsViewController: StateMachineFormDelegate {
             if formData?.forms?.count == (pageIndex + 1) {
                 break
             } else {
-                guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "StateMachineFormsViewController") as? StateMachineFormsViewController else { return }
+                guard let viewController = self.storyboard?.instantiateViewController(
+                    withIdentifier: "StateMachineFormsViewController"
+                    ) as? StateMachineFormsViewController else { return }
                 viewController.pageIndex = pageIndex + 1
                 viewController.storedFormdata = data
                 self.navigationController?.pushViewController(viewController, animated: true)
@@ -81,7 +85,9 @@ extension StateMachineFormsViewController: StateMachineFormDelegate {
     }
     
     func stateMachineForm(_ stateMachineForm: StateMachineForm, navigateBinder binder: StateMachineForm.Binder) {
-        guard let viewController = storyboard?.instantiateViewController(withIdentifier: "AccountsViewController") as? AccountsViewController else { return }
+        guard let viewController = storyboard?.instantiateViewController(
+            withIdentifier: "AccountsViewController"
+            ) as? AccountsViewController else { return }
         viewController.options = binder.options
         
         viewController.optionSelected = { option in

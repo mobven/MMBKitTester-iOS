@@ -9,14 +9,21 @@
 import UIKit
 
 extension UIView {
-    func addFullConstraint(_ subView: UIView, edges: UIEdgeInsets) {
+    
+    func addFullConstraint(_ subView: UIView,
+                           edges: UIEdgeInsets) {
         subView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            subView.topAnchor.constraint(equalTo: self.topAnchor, constant: edges.top),
-            subView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: edges.left),
-            subView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -edges.right),
-            subView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -edges.bottom),
+            subView.topAnchor.constraint(equalTo: self.topAnchor,
+                                         constant: edges.top),
+            subView.leadingAnchor.constraint(equalTo: self.leadingAnchor,
+                                             constant: edges.left),
+            subView.trailingAnchor.constraint(equalTo: self.trailingAnchor,
+                                              constant: -edges.right),
+            subView.bottomAnchor.constraint(equalTo: self.bottomAnchor,
+                                            constant: -edges.bottom)
         ])
     }
+    
 }
-
+ 

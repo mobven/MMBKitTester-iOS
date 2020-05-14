@@ -26,6 +26,10 @@ class MMBRadioButtonViewBinder: StateMachineForm.Binder {
         (view as? StateMachineViewType)?.delegate = self
         (view as? StateMachineViewType)?.reloadData()
     }
+    
+    override func isValidated() -> Bool {
+        return validate(value: (view as? StateMachineViewType)?.selectedRow)
+    }
 }
 
 extension MMBRadioButtonViewBinder: MMBRadioButtonViewDataSource {

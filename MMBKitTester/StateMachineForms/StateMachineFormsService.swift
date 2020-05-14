@@ -31,7 +31,7 @@ class StateMachineFormsService {
             "Accept": "application/json",
             "X-Parse-Application-Id": "cGzULzD6IY7PmVPJheOtbZTLtXnupEmA"
         ]
-        URLSession.shared.dataTask(with: request) { [ weak self ] (data, _, error) in
+        URLSession.shared.dataTask(with: request) { [ weak self ] (data, _, _) in
             DispatchQueue.main.async { [ weak self ] in
                 self?.formsResult(data, completion: completion)
             }
@@ -42,7 +42,8 @@ class StateMachineFormsService {
     func formsResult(_ data: Data?, completion: @escaping (([Form]?, Error?) -> Void)) {
         do {
             if let data = data {
-                if let jsonObject = try? JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed) as? [String: Any] {
+                if let jsonObject = try? JSONSerialization.jsonObject(with: data,
+                                                                      options: .fragmentsAllowed) as? [String: Any] {
                     if let results = jsonObject["results"] as? [[String: Any]] {
                         let sortedResults = results.sorted { (result1, result2) -> Bool in
                             if let index1 = result1["index"] as? Int,

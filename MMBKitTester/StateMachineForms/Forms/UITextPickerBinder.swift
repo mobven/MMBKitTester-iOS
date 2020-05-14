@@ -26,14 +26,22 @@ class UIPickerTextFieldBinder: StateMachineForm.Binder {
         (view as? StateMachineViewType)?.pickerDelegate = self
         (view as? StateMachineViewType)?.placeholder = placeholder
         (view as? StateMachineViewType)?.text = value
-        (view as? StateMachineViewType)?.setToolbar(title: label, button: "Close", target: self, action: #selector(closePicker))
+        (view as? StateMachineViewType)?.setToolbar(title: label,
+                                                    button: "Close",
+                                                    target: self,
+                                                    action: #selector(closePicker))
         setPickerUI()
         self.delegate?.formBinderValueChanged(binder: self, value: value)
     }
-
+    
+    override func isValidated() -> Bool {
+        return validate(value: (view as? StateMachineViewType)?.selectedRow)
+    }
+    
     @objc private func closePicker() {
         view.resignFirstResponder()
-        self.delegate?.formBinderValueChanged(binder: self, value: options?[(view as? StateMachineViewType)?.selectedRow ?? 0])
+        self.delegate?.formBinderValueChanged(binder: self,
+                                              value: options?[(view as? StateMachineViewType)?.selectedRow ?? 0])
     }
     
     func setPickerUI() {
@@ -57,4 +65,4 @@ extension UIPickerTextFieldBinder: UIPickerTextfieldDelegate {
         self.delegate?.formBinderValueChanged(binder: self, value: options?[row])
     }
 }
-
+ 

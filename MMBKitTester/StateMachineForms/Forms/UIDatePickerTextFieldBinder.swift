@@ -26,10 +26,17 @@ class UIDatePickerTextFieldBinder: StateMachineForm.Binder {
         (view as? StateMachineViewType)?.datePicker.maximumDate = Date()
         (view as? StateMachineViewType)?.placeholder = placeholder
         (view as? StateMachineViewType)?.text = value
-        (view as? StateMachineViewType)?.setToolbar(title: label, button: "Close", target: self, action: #selector(closePicker))
+        (view as? StateMachineViewType)?.setToolbar(title: label,
+                                                    button: "Close",
+                                                    target: self,
+                                                    action: #selector(closePicker))
         (view as? StateMachineViewType)?.dateFormat = rules?.dateFormat
         setPickerUI()
         self.delegate?.formBinderValueChanged(binder: self, value: value)
+    }
+    
+    override func isValidated() -> Bool {
+        return validate(text: (view as? StateMachineViewType)?.text)
     }
     
     @objc func closePicker() {
@@ -44,4 +51,4 @@ class UIDatePickerTextFieldBinder: StateMachineForm.Binder {
         (view as? StateMachineViewType)?.borderStyle = .roundedRect
     }
 }
-
+ 

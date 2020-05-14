@@ -30,6 +30,10 @@ class MMBTextFieldBinder: StateMachineForm.Binder {
         (view as? StateMachineViewType)?.text = value
         self.delegate?.formBinderValueChanged(binder: self, value: value)
     }
+    
+    override func isValidated() -> Bool {
+        return validate(text: (view as? StateMachineViewType)?.text)
+    }
 }
 
 extension MMBTextFieldBinder: UITextFieldDelegate {

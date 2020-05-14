@@ -26,7 +26,7 @@ class MMBCheckBoxBinder: StateMachineForm.Binder {
          (view as? StateMachineViewType)?.setTitle(label)
          self.delegate?.formBinderValueChanged(binder: self, value: value)
      }
-    
+
     var isSelected: Bool {
         return (view as? StateMachineViewType)?.isSelected ?? false
     }

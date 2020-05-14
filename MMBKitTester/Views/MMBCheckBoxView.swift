@@ -48,7 +48,8 @@ class MMBCheckBoxView: UIView {
         self.checkBoxContentView.translatesAutoresizingMaskIntoConstraints = false
         self.checkBoxContentView.heightAnchor.constraint(equalToConstant: 28).isActive = true
         self.checkBoxContentView.widthAnchor.constraint(equalToConstant: 28).isActive = true
-        self.checkBoxContentView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(checkBoxTapped)))
+        self.checkBoxContentView.addGestureRecognizer(UITapGestureRecognizer(target: self,
+                                                                             action: #selector(checkBoxTapped)))
         
         self.imageView.frame = checkBoxContentView.bounds
         self.imageView.autoresizingMask = [.flexibleHeight, .flexibleWidth]

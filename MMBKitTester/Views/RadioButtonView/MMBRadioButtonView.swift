@@ -17,7 +17,6 @@ protocol MMBRadioButtonViewDelegate: AnyObject {
     func radioButon(_ view: MMBRadioButtonView, didSelectAt row: Int)
 }
 
-
 class MMBRadioButtonView: UIView {
     
     var stackView: UIStackView!
@@ -29,6 +28,8 @@ class MMBRadioButtonView: UIView {
     }
     
     weak var delegate: MMBRadioButtonViewDelegate?
+    
+    var selectedRow: Int?
  
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -56,7 +57,7 @@ class MMBRadioButtonView: UIView {
             stackView.topAnchor.constraint(equalTo: self.topAnchor, constant: 0),
             stackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 0),
             stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 0),
-            stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0),
+            stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0)
         ])
         self.reloadData()
     }
@@ -71,7 +72,8 @@ class MMBRadioButtonView: UIView {
                 let radioItem = dataSource.radioButon(self, radioButonAt: index)
                 radioItem.translatesAutoresizingMaskIntoConstraints = false
                 radioItem.heightAnchor.constraint(equalToConstant: 30).isActive = true
-                radioItem.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(radioItemSelected(_:))))
+                radioItem.addGestureRecognizer(UITapGestureRecognizer(target: self,
+                                                                      action: #selector(radioItemSelected(_:))))
                 self.stackView.insertArrangedSubview(radioItem, at: index)
             }
         }
@@ -81,7 +83,7 @@ class MMBRadioButtonView: UIView {
     @objc func radioItemSelected(_ gesture: UITapGestureRecognizer) {
         guard let index = self.stackView.arrangedSubviews.firstIndex(where: {$0 == gesture.view}) else { return }
         self.delegate?.radioButon(self, didSelectAt: index)
-        
+        self.selectedRow = index
         self.stackView.arrangedSubviews.enumerated().forEach { (rowIndex, item) in
             if let item = item as? MMBRadioButtonItem {
                 item.isSelected = rowIndex == index
@@ -89,4 +91,4 @@ class MMBRadioButtonView: UIView {
         }
     }
 }
-
+ 

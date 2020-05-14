@@ -27,7 +27,6 @@ class AccountViewBinder: StateMachineForm.Binder {
         (view as? StateMachineViewType)?.setDescriptionLabel(value)
     }
     
-
     func configure(option: Forms.Field.Option?) {
         (view as? StateMachineViewType)?.configure(option: option)
         self.delegate?.formBinderValueChanged(binder: self, value: option)
