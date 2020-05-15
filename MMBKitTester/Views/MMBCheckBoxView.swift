@@ -65,9 +65,9 @@ class MMBCheckBoxView: UIView {
     
     func setupStackView() {
         self.stackView = UIStackView(arrangedSubviews: [checkBoxContentView, titleLabel])
-        self.stackView.spacing = 4
+        self.stackView.spacing = 8
         self.stackView.axis = .horizontal
-        self.stackView.alignment = .top
+        self.stackView.alignment = .center
         self.addSubview(stackView)
         self.addFullConstraint(stackView, edges: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))
     }

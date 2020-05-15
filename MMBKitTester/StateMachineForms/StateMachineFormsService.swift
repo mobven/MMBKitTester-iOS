@@ -31,11 +31,12 @@ class StateMachineFormsService {
             "Accept": "application/json",
             "X-Parse-Application-Id": "cGzULzD6IY7PmVPJheOtbZTLtXnupEmA"
         ]
-        URLSession.shared.dataTask(with: request) { [ weak self ] (data, _, _) in
-            DispatchQueue.main.async { [ weak self ] in
-                self?.formsResult(data, completion: completion)
-            }
-            
+        URLSession.shared.dataTask(with: request) { [ weak self ] (data, _, error) in
+            if error == nil {
+                DispatchQueue.main.async { [ weak self ] in
+                    self?.formsResult(data, completion: completion)
+                }
+            }            
         }.resume()
     }
     

@@ -13,11 +13,6 @@ class AccountSelectionCell: UITableViewCell {
 
     @IBOutlet weak var accountView: AccountView!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    
     func configure(data: Forms.Field.Option?) {
         self.accountView.configure(option: data)
     }

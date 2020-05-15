@@ -30,7 +30,7 @@ class StateMachineFormsViewController: UIViewController {
         stateMachineForm.register(builder: MMBButtonBinder.builder)
         stateMachineForm.register(builder: MMBRadioButtonViewBinder.builder)
         stateMachineForm.register(builder: AccountViewBinder.builder)
-        stateMachineForm.register(builder: UITextViewBinder.builder)
+        stateMachineForm.register(builder: MMBTextViewBinder.builder)
         
         stateMachineForm.delegate = self
         stateMachineForm.itemInsets = UIEdgeInsets(top: 8, left: 32, bottom: 8, right: 32)
@@ -42,7 +42,7 @@ class StateMachineFormsViewController: UIViewController {
         if onParse {
             self.service.getFormsClass { [weak self] (form, error) in
                 guard let self = self else { return }
-                if error == nil, let form = form?[self.pageIndex] {
+                if error == nil, (form?.count ?? 0) > self.pageIndex, let form = form?[self.pageIndex] {
                     self.stateMachineForm.feed(form)
                 }
             }
