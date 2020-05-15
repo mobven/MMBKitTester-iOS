@@ -30,6 +30,7 @@ class StateMachineFormsViewController: UIViewController {
         stateMachineForm.register(builder: MMBButtonBinder.builder)
         stateMachineForm.register(builder: MMBRadioButtonViewBinder.builder)
         stateMachineForm.register(builder: AccountViewBinder.builder)
+        stateMachineForm.register(builder: UITextViewBinder.builder)
         
         stateMachineForm.delegate = self
         stateMachineForm.itemInsets = UIEdgeInsets(top: 8, left: 32, bottom: 8, right: 32)

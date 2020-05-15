@@ -21,7 +21,19 @@
           "label": "Identity Number",
           "placeholder": "Identity Number",
           "type": "text",
-          "inputType": "text",
+          "inputType": "password",
+          "value": "",
+          "rules": {
+            "regex": "xyz",
+            "message": "xyz message"
+          }
+        },
+        {
+          "id": "textarea",
+          "label": "Identity Number",
+          "placeholder": "Identity Number",
+          "type": "textarea",
+          "inputType": "",
           "value": "",
           "rules": {
             "regex": "xyz",
@@ -83,7 +95,7 @@
         },
         {
           "id": "t&c",
-          "label": "Terms and conditions",
+          "label": "Terms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditionserms and conditions",
           "placeholder": "",
           "type": "checkbox",
           "value": "",
