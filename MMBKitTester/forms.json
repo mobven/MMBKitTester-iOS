@@ -1,180 +1,186 @@
 
 {
-  "forms": [
-    {
-      "title": "Personal Info",
-      "fields": [
+    "forms": [
         {
-          "id": "nameSurname",
-          "label": "Name Surname",
-          "placeholder": "Name Surname",
-          "type": "text",
-          "inputType": "text",
-          "value": "",
-          "rules": {
-            "regex": "([a-zA-Z',.-]+( [a-zA-Z',.-]+)*){2,30}",
-            "message": "Name and Surname is not valid!",
-            "isRequired": true
-          }
+            "title": "Personal Info",
+            "fields": [
+                {
+                    "id": "nameSurname",
+                    "label": "Name Surname",
+                    "placeholder": "Name Surname",
+                    "type": "text",
+                    "inputType": "text",
+                    "value": "",
+                    "rules": {
+                        "regex": "([a-zA-Z',.-]+( [a-zA-Z',.-]+)*){2,30}",
+                        "message": "Name and Surname is not valid!",
+                        "isRequired": true
+                    }
+                },
+                {
+                    "id": "tckn",
+                    "label": "Identity Number",
+                    "placeholder": "Identity Number",
+                    "type": "text",
+                    "inputType": "password",
+                    "value": "",
+                    "rules": {
+                        "regex": "[a-zA-Z0-9',.-]{5,20}",
+                        "message": "Password must contain 5 to 20 characters.",
+                        "isRequired": true
+                    }
+                },
+                {
+                    "id": "textarea",
+                    "label": "Personal Info",
+                    "placeholder": "Personal Info",
+                    "type": "textarea",
+                    "inputType": "",
+                    "value": "",
+                    "rules": {
+                        "isRequired": false
+                    }
+                },
+                {
+                    "id": "324651846t278",
+                    "label": "Birthdate",
+                    "placeholder": "Birtdate",
+                    "type": "select",
+                    "inputType": "datepicker",
+                    "value": "",
+                    "rules": {
+                        "message": "Please choose birthdate.",
+                        "dateFormat": "dd/MM/yyyy",
+                        "isRequired": true
+                    }
+                },
+                {
+                    "id": "city",
+                    "label": "Choose City",
+                    "placeholder": "Choose City",
+                    "type": "select",
+                    "value": "",
+                    "options": [
+                        {
+                            "id": "34",
+                            "name": "Istanbul"
+                        },
+                        {
+                            "id": "10",
+                            "name": "Baku"
+                        }
+                    ],
+                    "rules": {
+                        "message": "Please choose your city.",
+                        "isRequired": true
+                    }
+                },
+                {
+                    "id": "gender",
+                    "label": "Gender",
+                    "placeholder": "Gender",
+                    "type": "radio",
+                    "value": "",
+                    "options": [
+                        {
+                            "id": "0",
+                            "name": "Woman"
+                        },
+                        {
+                            "id": "1",
+                            "name": "Man"
+                        }
+                    ],
+                    "rules": {
+                        "message": "Please select your gender.",
+                        "isRequired": true
+                    }
+                },
+                {
+                    "id": "t&c",
+                    "label": "Terms and conditionserms",
+                    "placeholder": "",
+                    "type": "checkbox",
+                    "value": "",
+                    "status": false,
+                    "rules": {
+                        "message": "Please accept terms and conditions.",
+                        "isRequired": true
+                    }
+                },
+                {
+                    "id": "privacy",
+                    "label": "Privacy Policy",
+                    "placeholder": "",
+                    "type": "checkbox",
+                    "value": "",
+                    "status": false,
+                    "rules": {
+                        "message": "Please accept privacy policy.",
+                        "isRequired": true
+                    }
+                },
+                {
+                    "id": "submit",
+                    "type": "action",
+                    "value": "Next",
+                    "actionType": "next"
+                }
+            ]
         },
         {
-          "id": "tckn",
-          "label": "Identity Number",
-          "placeholder": "Identity Number",
-          "type": "text",
-          "inputType": "password",
-          "value": "",
-          "rules": {
-            "regex": "[a-zA-Z0-9',.-]{5,20}",
-            "message": "Password must contain 5 to 20 characters.",
-            "isRequired": true
-          }
-        },
-        {
-          "id": "textarea",
-          "label": "Personal Info",
-          "placeholder": "Personal Info",
-          "type": "textarea",
-          "inputType": "",
-          "value": "",
-          "rules": {
-              "isRequired": false
-          }
-        },
-        {
-          "id": "324651846t278",
-          "label": "Birthdate",
-          "placeholder": "Birtdate",
-          "type": "select",
-          "inputType": "datepicker",
-          "value": "",
-          "rules": {
-            "dateFormat": "dd/MM/yyyy",
-            "isRequired": true
-          }
-        },
-        {
-          "id": "city",
-          "label": "Choose City",
-          "placeholder": "Choose City",
-          "type": "select",
-          "value": "",
-          "options": [
-            {
-              "id": "34",
-              "name": "Istanbul"
-            },
-            {
-              "id": "10",
-              "name": "Baku"
-            }
-          ],
-          "rules": {
-              "isRequired": true
-          }
-        },
-        {
-          "id": "gender",
-          "label": "Gender",
-          "placeholder": "Gender",
-          "type": "radio",
-          "value": "",
-          "options": [
-            {
-              "id": "0",
-              "name": "Woman"
-            },
-            {
-              "id": "1",
-              "name": "Man"
-            }
-          ],
-          "rules": {
-              "isRequired": true
-          }
-        },
-        {
-          "id": "t&c",
-          "label": "Terms and conditionserms",
-          "placeholder": "",
-          "type": "checkbox",
-          "value": "",
-          "status": false,
-          "rules": {
-              "isRequired": true
-          }
-        },
-        {
-          "id": "privacy",
-          "label": "Privacy Policy",
-          "placeholder": "",
-          "type": "checkbox",
-          "value": "",
-          "status": false,
-          "rules": {
-              "isRequired": true
-          }
-        },
-        {
-          "id": "submit",
-          "type": "action",
-          "value": "Next",
-          "actionType": "next"
+            "title": "Account Info",
+            "fields": [
+                {
+                    "id": "nameSurname",
+                    "label": "Name Surname",
+                    "placeholder": "Name Surname",
+                    "type": "text",
+                    "inputType": "text",
+                    "value": "",
+                    "rules": {
+                        "regex": "([a-zA-Z',.-]+( [a-zA-Z',.-]+)*){2,30}",
+                        "message": "Name and Surname is not valid!",
+                        "isRequired": true
+                    }
+                },
+                {
+                    "id": "accountView",
+                    "label": "32314124124",
+                    "placeholder": "accountView",
+                    "type": "custom",
+                    "inputType": "account",
+                    "value": "459.23 TL",
+                    "options": [
+                        {
+                            "id": "32314124124",
+                            "name": "459.23 TL"
+                        },
+                        {
+                            "id": "54614124124",
+                            "name": "3587.67 TL"
+                        },
+                        {
+                            "id": "54876524124",
+                            "name": "2376.98 TL"
+                        },
+                        {
+                            "id": "27656524124",
+                            "name": "376.98 TL"
+                        }
+                    ],
+                    "rules": {
+                        "isRequired": true,
+                        "message": "Please select account"
+                    }
+                },
+                {
+                    "id": "submit",
+                    "type": "action",
+                    "value": "Submit",
+                    "actionType": "next"
+                }
+            ]
         }
-      ]
-    },
-    {
-      "title": "Account Info",
-      "fields": [
-        {
-          "id": "nameSurname",
-          "label": "Name Surname",
-          "placeholder": "Name Surname",
-          "type": "text",
-          "inputType": "text",
-          "value": "",
-          "rules": {
-            "regex": "xyz",
-            "message": "xyz message"
-          }
-        },
-        {
-          "id": "accountView",
-          "label": "32314124124",
-          "placeholder": "accountView",
-          "type": "custom",
-          "inputType": "account",
-          "value": "459.23 TL",
-          "options": [
-            {
-              "id": "32314124124",
-              "name": "459.23 TL"
-            },
-            {
-              "id": "54614124124",
-              "name": "3587.67 TL"
-            },
-            {
-              "id": "54876524124",
-              "name": "2376.98 TL"
-            },
-            {
-              "id": "27656524124",
-              "name": "376.98 TL"
-            }
-          ],
-          "rules": {
-            "regex": "xyz",
-            "message": "xyz message"
-          }
-        },
-        {
-          "id": "submit",
-          "type": "action",
-          "value": "Submit",
-          "actionType": "next"
-        }
-      ]
-    }
-  ]
+    ]
 }
