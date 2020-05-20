@@ -23,7 +23,7 @@ class MMBTextFieldBinder: StateMachineForm.Binder {
                          field: Forms.Field, delegate: FormBinderDelegate) {
         super.init(view: view, type: type, inputType: inputType, field: field, delegate: delegate)
         (view as? StateMachineViewType)?.delegate = self
-        if inputType == .password {
+        if self.inputType == .password {
             (view as? StateMachineViewType)?.isSecureTextEntry = true
         }
         (view as? StateMachineViewType)?.placeholder = placeholder
