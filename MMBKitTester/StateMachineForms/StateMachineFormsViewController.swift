@@ -35,7 +35,7 @@ class StateMachineFormsViewController: UIViewController {
         stateMachineForm.delegate = self
         stateMachineForm.itemInsets = UIEdgeInsets(top: 8, left: 32, bottom: 8, right: 32)
         
-        self.getForms(onParse: true)
+        self.getForms(onParse: false)
     }
     
     func getForms(onParse: Bool) {

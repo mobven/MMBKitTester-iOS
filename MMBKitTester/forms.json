@@ -12,8 +12,9 @@
           "inputType": "text",
           "value": "",
           "rules": {
-            "regex": "xyz",
-            "message": "xyz message"
+            "regex": "([a-zA-Z',.-]+( [a-zA-Z',.-]+)*){2,30}",
+            "message": "Name and Surname is not valid!",
+            "isRequired": true
           }
         },
         {
@@ -24,20 +25,20 @@
           "inputType": "password",
           "value": "",
           "rules": {
-            "regex": "xyz",
-            "message": "xyz message"
+            "regex": "[a-zA-Z0-9',.-]{5,20}",
+            "message": "Password must contain 5 to 20 characters.",
+            "isRequired": true
           }
         },
         {
           "id": "textarea",
-          "label": "Identity Number",
-          "placeholder": "Identity Number",
+          "label": "Personal Info",
+          "placeholder": "Personal Info",
           "type": "textarea",
           "inputType": "",
           "value": "",
           "rules": {
-            "regex": "xyz",
-            "message": "xyz message"
+              "isRequired": false
           }
         },
         {
@@ -48,7 +49,8 @@
           "inputType": "datepicker",
           "value": "",
           "rules": {
-            "dateFormat": "dd/MM/yyyy"
+            "dateFormat": "dd/MM/yyyy",
+            "isRequired": true
           }
         },
         {
@@ -68,8 +70,7 @@
             }
           ],
           "rules": {
-            "regex": "xyz",
-            "message": "xyz message"
+              "isRequired": true
           }
         },
         {
@@ -89,8 +90,7 @@
             }
           ],
           "rules": {
-            "regex": "xyz",
-            "message": "xyz message"
+              "isRequired": true
           }
         },
         {
@@ -101,8 +101,7 @@
           "value": "",
           "status": false,
           "rules": {
-            "regex": "xyz",
-            "message": "xyz message"
+              "isRequired": true
           }
         },
         {
@@ -113,8 +112,7 @@
           "value": "",
           "status": false,
           "rules": {
-            "regex": "xyz",
-            "message": "xyz message"
+              "isRequired": true
           }
         },
         {
