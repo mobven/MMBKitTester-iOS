@@ -45,14 +45,14 @@ class AccountView: UIView {
     func setupTitleLabel() {
         self.titleLabel.numberOfLines = 0
         self.titleLabel.textAlignment = .left
-        self.titleLabel.text = "Hesap No: "
+        self.titleLabel.text = "Account No: "
         self.titleLabel.font = UIFont.systemFont(ofSize: 16, weight: .regular)
     }
     
     func setupDescriptionLabel() {
         self.descriptionLabel.numberOfLines = 0
         self.descriptionLabel.textAlignment = .left
-        self.descriptionLabel.text = "Bakiye: "
+        self.descriptionLabel.text = "Balance: "
         self.descriptionLabel.font = UIFont.systemFont(ofSize: 16, weight: .regular)
     }
     
@@ -70,11 +70,11 @@ class AccountView: UIView {
     }
     
     func setTitleLabel(_ title: String?) {
-        self.titleLabel.text = "Hesap No: \(title ?? "")"
+        self.titleLabel.text = "Account No: \(title ?? "")"
     }
     
     func setDescriptionLabel(_ description: String?) {
-        self.descriptionLabel.text = "Bakiye: \(description ?? "")"
+        self.descriptionLabel.text = "Balance: \(description ?? "")"
     }
     
     func setupGesture() {

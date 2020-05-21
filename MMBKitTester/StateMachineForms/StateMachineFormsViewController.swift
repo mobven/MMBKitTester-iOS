@@ -31,11 +31,12 @@ class StateMachineFormsViewController: UIViewController {
         stateMachineForm.register(builder: MMBRadioButtonViewBinder.builder)
         stateMachineForm.register(builder: AccountViewBinder.builder)
         stateMachineForm.register(builder: MMBTextViewBinder.builder)
+        stateMachineForm.register(builder: AmountInputViewBinder.builder)
         
         stateMachineForm.delegate = self
         stateMachineForm.itemInsets = UIEdgeInsets(top: 8, left: 32, bottom: 8, right: 32)
         
-        self.getForms(onParse: true)
+        self.getForms(onParse: false)
     }
     
     func getForms(onParse: Bool) {
@@ -103,7 +104,7 @@ extension StateMachineFormsViewController: StateMachineFormDelegate {
     func stateMachineForm(_ stateMachineForm: StateMachineForm,
                           bindersCouldNotBeValidated invalidBinders: [StateMachineForm.Binder]) {
         let errorMessages: [String] = invalidBinders.map({ $0.errorMessage ?? "" })
-        let message = errorMessages.joined(separator: ",\n")
+        let message = errorMessages.joined(separator: "\n")
         let alert = Alert(title: "Invalid inputs", message: "\(message)")
         alert.addAction(.init(title: "Okay", type: .default))
         alert.present(over: self)
