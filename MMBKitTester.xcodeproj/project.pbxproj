@@ -54,6 +54,7 @@
 		6DFF0F8A245CBC640035C890 /* CustomAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DFF0F89245CBC640035C890 /* CustomAlert.xib */; };
 		6DFF0F8C245CBCEB0035C890 /* CustomKeyValueListAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF0F8B245CBCEB0035C890 /* CustomKeyValueListAlert.swift */; };
 		6DFF0F8E245CBCFE0035C890 /* CustomKeyValueListAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DFF0F8D245CBCFE0035C890 /* CustomKeyValueListAlert.xib */; };
+		6F1E5A7F247662870013B111 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1E5A7E247662870013B111 /* SpotifyiOS.framework */; };
 		6F521709246A848200F7E28E /* StateMachineFormsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F521708246A848200F7E28E /* StateMachineFormsViewController.swift */; };
 		6F52170F246A8BAF00F7E28E /* StateMachineForms in Frameworks */ = {isa = PBXBuildFile; productRef = 6F52170E246A8BAF00F7E28E /* StateMachineForms */; };
 		6F521711246A922C00F7E28E /* forms.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F521710246A922C00F7E28E /* forms.json */; };
@@ -154,6 +155,7 @@
 		6DFF0F89245CBC640035C890 /* CustomAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlert.xib; sourceTree = "<group>"; };
 		6DFF0F8B245CBCEB0035C890 /* CustomKeyValueListAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomKeyValueListAlert.swift; sourceTree = "<group>"; };
 		6DFF0F8D245CBCFE0035C890 /* CustomKeyValueListAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomKeyValueListAlert.xib; sourceTree = "<group>"; };
+		6F1E5A7E247662870013B111 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
 		6F521708246A848200F7E28E /* StateMachineFormsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateMachineFormsViewController.swift; sourceTree = "<group>"; };
 		6F521710246A922C00F7E28E /* forms.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = forms.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		6F521713246A9A3200F7E28E /* UIDatePickerTextFieldBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDatePickerTextFieldBinder.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				6F52170F246A8BAF00F7E28E /* StateMachineForms in Frameworks */,
 				6DC7ECC8246018C10023537C /* UIComponents in Frameworks */,
 				6DC7ECD1246019110023537C /* AccountSecurity in Frameworks */,
+				6F1E5A7F247662870013B111 /* SpotifyiOS.framework in Frameworks */,
 				6DFF0F66245ABD170035C890 /* Pods_MMBKitTester.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +419,7 @@
 		8BCFF828680210ED26EC0E12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6F1E5A7E247662870013B111 /* SpotifyiOS.framework */,
 				3D3227ECF86F65F265974F9C /* Pods_MMBKitTester.framework */,
 				922D4F6CC5A2F78F2E29C089 /* Pods_MMBKitTesterTests.framework */,
 			);
