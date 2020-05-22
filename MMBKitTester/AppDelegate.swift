@@ -13,6 +13,8 @@ import AccountSecurity
 import OneLink
 import UIComponents
 import Firebase
+import StateMachineForms
+import SecureNetwork
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,8 +27,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         MMBKit.setup(with: [
             AppSecurity.shared, AccountSecurity.shared,
-            OneLink.shared, UIComponents.shared
+            OneLink.shared, UIComponents.shared,
+            StateMachineForms.shared, SecureNetwork.shared
         ])
+        
+        SecureNetwork.shared.enableOAuth2(
+            accessTokenURL: URL(forceString: "https://accounts.spotify.com/api/token"),
+            authInfo: Authentication(grantType: .clientCredentials,
+                                     clientId: "45007d1680b9491680b50384349ad198",
+                                     clientSecret: "496354bb3fbb45498bab4180dc7fe1f3")
+        )
         
         FirebaseApp.configure()
         

@@ -47,6 +47,15 @@
         }
       },
       {
+        "package": "Networking",
+        "repositoryURL": "https://github.com/mobven/Networking.git",
+        "state": {
+          "branch": "develop",
+          "revision": "27f74c75d63d7958361dfc286aa8d6da9c34b65e",
+          "version": null
+        }
+      },
+      {
         "package": "OneLink",
         "repositoryURL": "https://github.com/mobven/OneLink.git",
         "state": {
@@ -56,11 +65,20 @@
         }
       },
       {
+        "package": "SecureNetwork",
+        "repositoryURL": "https://github.com/mobven/SecureNetwork.git",
+        "state": {
+          "branch": "develop",
+          "revision": "84eb6803578b7c7798a43ed455ad0c1072147b2f",
+          "version": null
+        }
+      },
+      {
         "package": "StateMachineForms",
         "repositoryURL": "https://github.com/mobven/StateMachineForms.git",
         "state": {
           "branch": "develop",
-          "revision": "88be05e1dfd6011d9a05752d6cb5a3258c98a37a",
+          "revision": "01f79254cf6465ef54e6aff2f4cc68cef6d903ce",
           "version": null
         }
       },
@@ -69,7 +87,7 @@
         "repositoryURL": "https://github.com/mobven/UIComponents.git",
         "state": {
           "branch": "develop",
-          "revision": "b9197d4846e7039c50fd5f6d7129bb33aff288a6",
+          "revision": "ec4f6cf8f352a665a19a47fa59f7452c8065b2e2",
           "version": null
         }
       }

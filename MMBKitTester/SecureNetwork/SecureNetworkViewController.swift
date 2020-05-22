@@ -1,34 +1,28 @@
 //
-//  ModulesViewController.swift
+//  SecureNetworkViewController.swift
 //  MMBKitTester
 //
-//  Created by Rasid Ramazanov on 30.03.2020.
+//  Created by Eren Bayrak on 21.05.2020.
 //  Copyright © 2020 Mobven. All rights reserved.
 //
 
 import UIKit
 
-class ModulesViewController: UITableViewController {
+class SecureNetworkViewController: UITableViewController {
     
     private let modules: [Module] = [
-        .init(name: "App Security", identifier: "AppSecurityViewController"),
-        .init(name: "Account Security", identifier: "AccountSecurityViewController"),
-        .init(name: "Secure Network", identifier: "SecureNetworkViewController"),
-        .init(name: "UI Components", identifier: "UIComponentsViewController"),
-        .init(name: "State Machine Forms", identifier: "StateMachineFormsViewController"),
-        .init(name: "Permission Manager", identifier: ""),
-        .init(name: "Pin Locator", identifier: ""),
-        .init(name: "One Link", identifier: "OneLinkViewController"),
-        .init(name: "Error Kit", identifier: "")
+        .init(name: "OAUTH", identifier: "OAUTHViewController"),
+        .init(name: "Cryptography", identifier: "")
     ]
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
-    
+
 }
 
-extension ModulesViewController {
+extension SecureNetworkViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return modules.count
