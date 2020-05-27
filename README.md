@@ -21,6 +21,5 @@ Sample application for demonstrating MMBKit. All Modules integrated with SPM.
 #### Secure Network
 
 ### Remaining Modules
-------
 #### Pin Locator
 #### Error Kit
