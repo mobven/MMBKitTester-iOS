@@ -1,0 +1,11 @@
+framework module StateMachineForms {
+  umbrella header "StateMachineForms.h"
+
+  export *
+  module * { export * }
+}
+
+module StateMachineForms.Swift {
+    header "StateMachineForms-Swift.h"
+    requires objc
+}

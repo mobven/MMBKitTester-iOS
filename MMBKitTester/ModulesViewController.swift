@@ -13,7 +13,7 @@ class ModulesViewController: UITableViewController {
     private let modules: [Module] = [
         .init(name: "App Security", identifier: "AppSecurityViewController"),
         .init(name: "Account Security", identifier: "AccountSecurityViewController"),
-        .init(name: "Secure Network", identifier: "SecureNetworkViewController"),
+        .init(name: "Secure Network", identifier: ""),
         .init(name: "UI Components", identifier: "UIComponentsViewController"),
         .init(name: "State Machine Forms", identifier: "StateMachineFormsViewController"),
         .init(name: "Permission Manager", identifier: ""),

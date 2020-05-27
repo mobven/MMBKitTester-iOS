@@ -1,0 +1,11 @@
+framework module OneLink {
+  umbrella header "OneLink.h"
+
+  export *
+  module * { export * }
+}
+
+module OneLink.Swift {
+    header "OneLink-Swift.h"
+    requires objc
+}
