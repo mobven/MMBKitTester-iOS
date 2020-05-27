@@ -2,7 +2,9 @@
 Sample application for demonstrating MMBKit. All Modules integrated with SPM.
 
 ### Developed Modules
-------
+- One Link
+- UI Components
+- State Machine Forms
 #### App Security
 - Prevent Snapshots
 - Jailbreak Detection
@@ -16,14 +18,9 @@ Sample application for demonstrating MMBKit. All Modules integrated with SPM.
 - Timed Cache
 
 ### Active Development
-------
-#### One Link
+- Secure Network
 
 ### Remaining Modules
 ------
-#### Secure Network
-#### UI Components
-#### State Machine Forms
-#### Permission Manager
 #### Pin Locator
 #### Error Kit
