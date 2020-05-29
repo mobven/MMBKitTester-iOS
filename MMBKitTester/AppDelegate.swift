@@ -30,13 +30,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             OneLink.shared, UIComponents.shared,
             StateMachineForms.shared, SecureNetwork.shared
         ])
-        
-        SecureNetwork.shared.enableOAuth2(
-            accessTokenURL: URL(forceString: "https://accounts.spotify.com/api/token"),
-            authInfo: Authentication(grantType: .clientCredentials,
-                                     clientId: "45007d1680b9491680b50384349ad198",
-                                     clientSecret: "496354bb3fbb45498bab4180dc7fe1f3")
-        )
+
+        SecureNetwork.shared.enableOAuth2(accessTokenURL: URL(forceString: "https://accounts.spotify.com/api/token"),
+                                          authInfo: .init(grantType: .clientCredentials,
+                                                          clientId: "45007d1680b9491680b50384349ad198",
+                                                          clientSecret: "496354bb3fbb45498bab4180dc7fe1f3")) {
+            
+        }
         
         FirebaseApp.configure()
         
