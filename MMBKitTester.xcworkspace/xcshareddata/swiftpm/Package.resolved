@@ -20,6 +20,15 @@
         }
       },
       {
+        "package": "Cryptography",
+        "repositoryURL": "https://github.com/mobven/Cryptography.git",
+        "state": {
+          "branch": "develop",
+          "revision": "625950ffb22fb634b8bcb0f2263a2afe355c759a",
+          "version": null
+        }
+      },
+      {
         "package": "CryptoSwift",
         "repositoryURL": "https://github.com/krzyzanowskim/CryptoSwift.git",
         "state": {
@@ -51,7 +60,7 @@
         "repositoryURL": "https://github.com/mobven/Networking.git",
         "state": {
           "branch": "develop",
-          "revision": "4ab97a7eff50605d278376e160e95dcdcd52d6ab",
+          "revision": "4890fb613a0d4f339ab622c30ad2cc95dd0385c6",
           "version": null
         }
       },
@@ -60,7 +69,7 @@
         "repositoryURL": "https://github.com/mobven/OneLink.git",
         "state": {
           "branch": "develop",
-          "revision": "3e70f0e5352ac97937cec2c8182d2a1af3168bc2",
+          "revision": "09e9936474fe172a7c2a2942fe67c58aab084bb4",
           "version": null
         }
       },
@@ -68,8 +77,8 @@
         "package": "SecureNetwork",
         "repositoryURL": "https://github.com/mobven/SecureNetwork.git",
         "state": {
-          "branch": "develop",
-          "revision": "af8262dddac62c76fc595721d4fd363d91d47fe1",
+          "branch": "feature/bkt-230-fixes",
+          "revision": "a68911420cd2010e9792e9b4eb2c3cb18ac44cb7",
           "version": null
         }
       },

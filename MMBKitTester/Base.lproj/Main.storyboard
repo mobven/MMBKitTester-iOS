@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pf0-ZN-Lfi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pf0-ZN-Lfi">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -1489,7 +1489,7 @@ It's secure 🎉</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ras-o1-nKn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1113" y="4598"/>
+            <point key="canvasLocation" x="1093" y="4847"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="usn-qY-Kao">
@@ -1533,7 +1533,117 @@ It's secure 🎉</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EAR-Td-p0b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1949" y="4599"/>
+            <point key="canvasLocation" x="1861" y="4531"/>
+        </scene>
+        <!--Cryptography View Controller-->
+        <scene sceneID="46C-36-9Wn">
+            <objects>
+                <viewController storyboardIdentifier="CryptographyViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MTP-KM-qmv" customClass="CryptographyViewController" customModule="MMBKitTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mjI-Ju-0hL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="TOd-Ma-gIj">
+                                <rect key="frame" x="32" y="76" width="350" height="308"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="hsF-Pb-dWJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="45"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Object: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gze-Dw-1KR">
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWK-MI-NtM" userLabel="-">
+                                                <rect key="frame" x="0.0" y="24.5" width="350" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yET-2R-f4O">
+                                        <rect key="frame" x="0.0" y="77" width="350" height="30"/>
+                                        <state key="normal" title="Enable Cryptography"/>
+                                        <connections>
+                                            <action selector="enableCryptography:" destination="MTP-KM-qmv" eventType="touchUpInside" id="LvI-we-AQd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRH-xf-vRe">
+                                        <rect key="frame" x="0.0" y="139" width="350" height="30"/>
+                                        <state key="normal" title="Handshake"/>
+                                        <connections>
+                                            <action selector="handshake:" destination="MTP-KM-qmv" eventType="touchUpInside" id="cbR-E5-jfT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0h-Q1-dpe">
+                                        <rect key="frame" x="0.0" y="201" width="350" height="30"/>
+                                        <state key="normal" title="Decryption"/>
+                                        <connections>
+                                            <action selector="decryption:" destination="MTP-KM-qmv" eventType="touchUpInside" id="1AZ-yU-4mQ"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="mDX-QU-B7O">
+                                        <rect key="frame" x="0.0" y="263" width="350" height="45"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Object: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n71-S1-dgS">
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3F6-P1-OlC">
+                                                <rect key="frame" x="0.0" y="24.5" width="350" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rNh-cB-fEN">
+                                <rect key="frame" x="188.5" y="448" width="37" height="37"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="gB1-0j-yAk">
+                                        <rect key="frame" x="0.0" y="0.0" width="37" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="37" id="Ra2-HB-3Da"/>
+                                            <constraint firstAttribute="height" constant="37" id="Wjp-1I-dNk"/>
+                                        </constraints>
+                                    </activityIndicatorView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waiting for handshake..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWa-AI-sUZ">
+                                        <rect key="frame" x="-73.5" y="0.0" width="184.5" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="TOd-Ma-gIj" firstAttribute="leading" secondItem="KWK-wE-ha9" secondAttribute="leading" constant="32" id="aTP-lo-4rO"/>
+                            <constraint firstItem="rNh-cB-fEN" firstAttribute="centerX" secondItem="mjI-Ju-0hL" secondAttribute="centerX" id="bZc-0J-FU5"/>
+                            <constraint firstItem="rNh-cB-fEN" firstAttribute="top" secondItem="TOd-Ma-gIj" secondAttribute="bottom" constant="64" id="fC4-gA-EXi"/>
+                            <constraint firstItem="KWK-wE-ha9" firstAttribute="trailing" secondItem="TOd-Ma-gIj" secondAttribute="trailing" constant="32" id="kUl-VX-ef8"/>
+                            <constraint firstItem="TOd-Ma-gIj" firstAttribute="top" secondItem="KWK-wE-ha9" secondAttribute="top" constant="32" id="pAF-jS-QOy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KWK-wE-ha9"/>
+                    </view>
+                    <connections>
+                        <outlet property="decodedObjectLabel" destination="3F6-P1-OlC" id="ycD-Jh-doh"/>
+                        <outlet property="decryptionButton" destination="D0h-Q1-dpe" id="nTt-Nk-yvi"/>
+                        <outlet property="handShakeButton" destination="YRH-xf-vRe" id="5Ip-q2-pvQ"/>
+                        <outlet property="indicatorView" destination="rNh-cB-fEN" id="K1X-5B-NDt"/>
+                        <outlet property="messageLabel" destination="wWa-AI-sUZ" id="Rtp-eW-Iyx"/>
+                        <outlet property="objectLabel" destination="KWK-MI-NtM" id="WVv-Vr-1Px"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kBD-pk-0Yk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1872" y="5210"/>
         </scene>
         <!--Accounts View Controller-->
         <scene sceneID="XCi-zc-LH1">

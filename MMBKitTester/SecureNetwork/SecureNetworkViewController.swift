@@ -12,7 +12,7 @@ class SecureNetworkViewController: UITableViewController {
     
     private let modules: [Module] = [
         .init(name: "OAUTH", identifier: "OAUTHViewController"),
-        .init(name: "Cryptography", identifier: "")
+        .init(name: "Cryptography", identifier: "CryptographyViewController")
     ]
 
     override func viewDidLoad() {
