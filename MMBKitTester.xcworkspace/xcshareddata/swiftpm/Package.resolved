@@ -77,8 +77,8 @@
         "package": "SecureNetwork",
         "repositoryURL": "https://github.com/mobven/SecureNetwork.git",
         "state": {
-          "branch": "feature/bkt-230-fixes",
-          "revision": "a68911420cd2010e9792e9b4eb2c3cb18ac44cb7",
+          "branch": "develop",
+          "revision": "362434a418665a970c9b686ce2f4cbebe83ec2a3",
           "version": null
         }
       },

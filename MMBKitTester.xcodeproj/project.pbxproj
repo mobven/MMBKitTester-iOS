@@ -1111,7 +1111,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mobven/SecureNetwork.git";
 			requirement = {
-				branch = "feature/bkt-230-fixes";
+				branch = develop;
 				kind = branch;
 			};
 		};
