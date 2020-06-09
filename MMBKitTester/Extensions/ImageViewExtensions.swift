@@ -13,7 +13,7 @@ extension UIImageView {
         guard let urlString = url else { return }
         guard let url = URL(string: urlString) else { return }
         
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
+        URLSession.shared.dataTask(with: url) { (data, _, error) in
             if error == nil {
                 guard let data = data else { return }
                 let image = UIImage(data: data)

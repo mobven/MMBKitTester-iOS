@@ -60,7 +60,7 @@
         "repositoryURL": "https://github.com/mobven/Networking.git",
         "state": {
           "branch": "develop",
-          "revision": "4890fb613a0d4f339ab622c30ad2cc95dd0385c6",
+          "revision": "cd299d9904ea9923bf3983c49cc7661c513d52e4",
           "version": null
         }
       },
@@ -78,7 +78,7 @@
         "repositoryURL": "https://github.com/mobven/SecureNetwork.git",
         "state": {
           "branch": "develop",
-          "revision": "362434a418665a970c9b686ce2f4cbebe83ec2a3",
+          "revision": "92d23f32dc36c0d38e39d9a98cb40acdb926fc12",
           "version": null
         }
       },

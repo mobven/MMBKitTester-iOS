@@ -12,9 +12,9 @@ import SecureNetwork
 class OAUTHViewController: UITableViewController {
     
     var tableHeader: OAUTHTableHeader!
-        
-    var items: [Item]?
-
+    
+    var items: [Track.Item]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableHeader = OAUTHTableHeader(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 200))
@@ -70,5 +70,5 @@ extension OAUTHViewController {
         cell.detailTextLabel?.text = items?[indexPath.row].artists?.first?.name
         return cell
     }
-
+    
 }
