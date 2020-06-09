@@ -43,6 +43,7 @@
 		6DAF982F243B2F6C00CF9AAA /* NotificationPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF982E243B2F6C00CF9AAA /* NotificationPayload.swift */; };
 		6DAF9831243B308400CF9AAA /* FCMCurl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF9830243B308400CF9AAA /* FCMCurl.swift */; };
 		6DAF9833243B33B900CF9AAA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF9832243B33B900CF9AAA /* User.swift */; };
+		6DBA5552248FAE4200751941 /* SpotifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBA5551248FAE4200751941 /* SpotifyModels.swift */; };
 		6DC7EC65245F0F7C0023537C /* AddOnFeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC7EC64245F0F7C0023537C /* AddOnFeaturesViewController.swift */; };
 		6DC7ECC8246018C10023537C /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 6DC7ECC7246018C10023537C /* UIComponents */; };
 		6DC7ECCB246018D10023537C /* OneLink in Frameworks */ = {isa = PBXBuildFile; productRef = 6DC7ECCA246018D10023537C /* OneLink */; };
@@ -159,6 +160,7 @@
 		6DAF982E243B2F6C00CF9AAA /* NotificationPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPayload.swift; sourceTree = "<group>"; };
 		6DAF9830243B308400CF9AAA /* FCMCurl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCMCurl.swift; sourceTree = "<group>"; };
 		6DAF9832243B33B900CF9AAA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6DBA5551248FAE4200751941 /* SpotifyModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyModels.swift; sourceTree = "<group>"; };
 		6DC7EC64245F0F7C0023537C /* AddOnFeaturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOnFeaturesViewController.swift; sourceTree = "<group>"; };
 		6DFF0F85245CBBB20035C890 /* CustomPopupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopupsViewController.swift; sourceTree = "<group>"; };
 		6DFF0F87245CBBF20035C890 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
@@ -375,6 +377,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		6DBA5550248FAE3000751941 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6DBA5551248FAE4200751941 /* SpotifyModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		6DFF0F84245CBB9C0035C890 /* CustomPopups */ = {
 			isa = PBXGroup;
 			children = (
@@ -400,6 +410,7 @@
 		6F1E5A882476A58C0013B111 /* OAUTH */ = {
 			isa = PBXGroup;
 			children = (
+				6DBA5550248FAE3000751941 /* Models */,
 				6F1E5A8F2476AC000013B111 /* TableHeader */,
 				6F1E5A8C2476A9290013B111 /* OAUTHViewController.swift */,
 				6F1E5A992476B6460013B111 /* OAUTHService.swift */,
@@ -757,6 +768,7 @@
 				6DAF9831243B308400CF9AAA /* FCMCurl.swift in Sources */,
 				6DFF0F86245CBBB20035C890 /* CustomPopupsViewController.swift in Sources */,
 				6F521714246A9A3200F7E28E /* UIDatePickerTextFieldBinder.swift in Sources */,
+				6DBA5552248FAE4200751941 /* SpotifyModels.swift in Sources */,
 				6F1E5A8B2476A5EF0013B111 /* SecureNetworkViewController.swift in Sources */,
 				6D932012243248AE004C8A3C /* PreventRecordingViewController.swift in Sources */,
 				6D93202D2432A30F004C8A3C /* SecureStoreType.swift in Sources */,
