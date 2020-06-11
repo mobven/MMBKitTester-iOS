@@ -55,8 +55,10 @@
 		6DFF0F8A245CBC640035C890 /* CustomAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DFF0F89245CBC640035C890 /* CustomAlert.xib */; };
 		6DFF0F8C245CBCEB0035C890 /* CustomKeyValueListAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF0F8B245CBCEB0035C890 /* CustomKeyValueListAlert.swift */; };
 		6DFF0F8E245CBCFE0035C890 /* CustomKeyValueListAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DFF0F8D245CBCFE0035C890 /* CustomKeyValueListAlert.xib */; };
-		6F1A93C4249228220073FB7E /* PinLocator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1A93C2249223B00073FB7E /* PinLocator.framework */; };
-		6F1A93C5249228220073FB7E /* PinLocator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1A93C2249223B00073FB7E /* PinLocator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6F1A93C8249229050073FB7E /* PinLocatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A93C7249229050073FB7E /* PinLocatorViewController.swift */; };
+		6F1A93CA249229AD0073FB7E /* PinsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A93C9249229AD0073FB7E /* PinsModel.swift */; };
+		6F1A93DC2492636F0073FB7E /* PinLocator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1A93DA2492636C0073FB7E /* PinLocator.framework */; };
+		6F1A93DD2492636F0073FB7E /* PinLocator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1A93DA2492636C0073FB7E /* PinLocator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6F1E5A8B2476A5EF0013B111 /* SecureNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1E5A8A2476A5EF0013B111 /* SecureNetworkViewController.swift */; };
 		6F1E5A8D2476A9290013B111 /* OAUTHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1E5A8C2476A9290013B111 /* OAUTHViewController.swift */; };
 		6F1E5A922476AC760013B111 /* OAUTHTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1E5A902476AC760013B111 /* OAUTHTableHeader.swift */; };
@@ -105,18 +107,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		6D8DC0CC2459746F005553BA /* Embed Frameworks */ = {
+		6F1A93CD24922A480073FB7E /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6F1A93C5249228220073FB7E /* PinLocator.framework in Embed Frameworks */,
+				6F1A93DD2492636F0073FB7E /* PinLocator.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		071305D7D8766BA6E6741BDD /* Pods-MMBKitTesterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBKitTesterTests.release.xcconfig"; path = "Target Support Files/Pods-MMBKitTesterTests/Pods-MMBKitTesterTests.release.xcconfig"; sourceTree = "<group>"; };
 		3D3227ECF86F65F265974F9C /* Pods_MMBKitTester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMBKitTester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,7 +172,9 @@
 		6DFF0F89245CBC640035C890 /* CustomAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlert.xib; sourceTree = "<group>"; };
 		6DFF0F8B245CBCEB0035C890 /* CustomKeyValueListAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomKeyValueListAlert.swift; sourceTree = "<group>"; };
 		6DFF0F8D245CBCFE0035C890 /* CustomKeyValueListAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomKeyValueListAlert.xib; sourceTree = "<group>"; };
-		6F1A93C2249223B00073FB7E /* PinLocator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PinLocator.framework; sourceTree = "<group>"; };
+		6F1A93C7249229050073FB7E /* PinLocatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinLocatorViewController.swift; sourceTree = "<group>"; };
+		6F1A93C9249229AD0073FB7E /* PinsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinsModel.swift; sourceTree = "<group>"; };
+		6F1A93DA2492636C0073FB7E /* PinLocator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PinLocator.framework; sourceTree = "<group>"; };
 		6F1E5A8A2476A5EF0013B111 /* SecureNetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureNetworkViewController.swift; sourceTree = "<group>"; };
 		6F1E5A8C2476A9290013B111 /* OAUTHViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAUTHViewController.swift; sourceTree = "<group>"; };
 		6F1E5A902476AC760013B111 /* OAUTHTableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAUTHTableHeader.swift; sourceTree = "<group>"; };
@@ -216,7 +221,7 @@
 				6DC7ECCE246018ED0023537C /* AppSecurity in Frameworks */,
 				6DC7ECCB246018D10023537C /* OneLink in Frameworks */,
 				6F52170F246A8BAF00F7E28E /* StateMachineForms in Frameworks */,
-				6F1A93C4249228220073FB7E /* PinLocator.framework in Frameworks */,
+				6F1A93DC2492636F0073FB7E /* PinLocator.framework in Frameworks */,
 				6DC7ECC8246018C10023537C /* UIComponents in Frameworks */,
 				6F2528012487845F00E5CAB0 /* SecureNetwork in Frameworks */,
 				6DC7ECD1246019110023537C /* AccountSecurity in Frameworks */,
@@ -291,6 +296,7 @@
 				6D5410D224474A2E000A8B1D /* UIComponents */,
 				6F521707246A844500F7E28E /* StateMachineForms */,
 				6F1E5A8724769CEC0013B111 /* SecureNetwork */,
+				6F1A93C6249228EA0073FB7E /* PinLocator */,
 				6D9320292432A2D6004C8A3C /* Models */,
 				6F521715246AA25300F7E28E /* Views */,
 				6D93202F2432A45C004C8A3C /* Extensions */,
@@ -401,6 +407,15 @@
 			path = CustomPopups;
 			sourceTree = "<group>";
 		};
+		6F1A93C6249228EA0073FB7E /* PinLocator */ = {
+			isa = PBXGroup;
+			children = (
+				6F1A93C7249229050073FB7E /* PinLocatorViewController.swift */,
+				6F1A93C9249229AD0073FB7E /* PinsModel.swift */,
+			);
+			path = PinLocator;
+			sourceTree = "<group>";
+		};
 		6F1E5A8724769CEC0013B111 /* SecureNetwork */ = {
 			isa = PBXGroup;
 			children = (
@@ -503,7 +518,7 @@
 		8BCFF828680210ED26EC0E12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6F1A93C2249223B00073FB7E /* PinLocator.framework */,
+				6F1A93DA2492636C0073FB7E /* PinLocator.framework */,
 				3D3227ECF86F65F265974F9C /* Pods_MMBKitTester.framework */,
 				922D4F6CC5A2F78F2E29C089 /* Pods_MMBKitTesterTests.framework */,
 			);
@@ -534,6 +549,7 @@
 				6D931FD7243228EF004C8A3C /* Frameworks */,
 				6D931FD8243228EF004C8A3C /* Resources */,
 				95E53F6E0D52333210561A3B /* [CP] Embed Pods Frameworks */,
+				6F1A93CD24922A480073FB7E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -751,6 +767,7 @@
 				6D93201424324A83004C8A3C /* JailbreakDetectionViewController.swift in Sources */,
 				6D93202224327225004C8A3C /* BaseTypeViewController.swift in Sources */,
 				6FA73082246EAA8C00CA1B9E /* MMBTextViewBinder.swift in Sources */,
+				6F1A93CA249229AD0073FB7E /* PinsModel.swift in Sources */,
 				6D93200C24322AE3004C8A3C /* AccountSecurityViewController.swift in Sources */,
 				6F521719246AA38A00F7E28E /* MMBTextFieldBinder.swift in Sources */,
 				6D93201024323162004C8A3C /* PreventSnapshotsViewController.swift in Sources */,
@@ -765,6 +782,7 @@
 				6D4E40132454DB3100B8CC67 /* KVListViewController.swift in Sources */,
 				6F521723246AEBFA00F7E28E /* UIColor.swift in Sources */,
 				6D931FDE243228EF004C8A3C /* AppDelegate.swift in Sources */,
+				6F1A93C8249229050073FB7E /* PinLocatorViewController.swift in Sources */,
 				6F1E5A972476AEDF0013B111 /* OAUTHCollectionViewCell.swift in Sources */,
 				6D93201E24325773004C8A3C /* SecureStoreWriteViewController.swift in Sources */,
 				6D93201824324F07004C8A3C /* PassCodeViewController.swift in Sources */,

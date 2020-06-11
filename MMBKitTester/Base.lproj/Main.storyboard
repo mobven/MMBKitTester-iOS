@@ -1535,6 +1535,49 @@ It's secure 🎉</string>
             </objects>
             <point key="canvasLocation" x="1861" y="4531"/>
         </scene>
+        <!--Pin Locator View Controller-->
+        <scene sceneID="8My-8i-uY9">
+            <objects>
+                <viewController storyboardIdentifier="PinLocatorViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="T4b-Lc-IP6" customClass="PinLocatorViewController" customModule="MMBKitTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TsM-7t-ZIZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cNH-Qd-eY0" customClass="PinLocatorView" customModule="PinLocator">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7hP-H6-6j8">
+                                <rect key="frame" x="32" y="799" width="350" height="32"/>
+                                <segments>
+                                    <segment title="Apple Maps"/>
+                                    <segment title="Google Maps"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedTapped:" destination="T4b-Lc-IP6" eventType="valueChanged" id="H2e-WS-9gf"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7hP-H6-6j8" firstAttribute="leading" secondItem="Wmt-3O-IK8" secondAttribute="leading" constant="32" id="1dD-Bp-baS"/>
+                            <constraint firstItem="cNH-Qd-eY0" firstAttribute="top" secondItem="Wmt-3O-IK8" secondAttribute="top" id="4eR-ci-KsK"/>
+                            <constraint firstItem="Wmt-3O-IK8" firstAttribute="bottom" secondItem="cNH-Qd-eY0" secondAttribute="bottom" id="9el-Vq-Igg"/>
+                            <constraint firstItem="cNH-Qd-eY0" firstAttribute="leading" secondItem="Wmt-3O-IK8" secondAttribute="leading" id="DPa-eX-hR7"/>
+                            <constraint firstItem="Wmt-3O-IK8" firstAttribute="trailing" secondItem="cNH-Qd-eY0" secondAttribute="trailing" id="Yjf-VU-Xhz"/>
+                            <constraint firstItem="Wmt-3O-IK8" firstAttribute="trailing" secondItem="7hP-H6-6j8" secondAttribute="trailing" constant="32" id="olB-r8-hwh"/>
+                            <constraint firstItem="Wmt-3O-IK8" firstAttribute="bottom" secondItem="7hP-H6-6j8" secondAttribute="bottom" constant="32" id="pwG-Ri-yf0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wmt-3O-IK8"/>
+                    </view>
+                    <connections>
+                        <outlet property="pinLocatorView" destination="cNH-Qd-eY0" id="BrH-CU-rAS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BaZ-XN-IqM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1172" y="5859"/>
+        </scene>
         <!--Cryptography View Controller-->
         <scene sceneID="46C-36-9Wn">
             <objects>

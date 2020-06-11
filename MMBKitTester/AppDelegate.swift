@@ -15,6 +15,7 @@ import UIComponents
 import Firebase
 import StateMachineForms
 import SecureNetwork
+import PinLocator
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -28,7 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         MMBKit.setup(with: [
             AppSecurity.shared, AccountSecurity.shared,
             OneLink.shared, UIComponents.shared,
-            StateMachineForms.shared, SecureNetwork.shared
+            StateMachineForms.shared, SecureNetwork.shared,
+            PinLocator.shared
         ])
         
         SecureNetwork.shared.enableOAuth2(

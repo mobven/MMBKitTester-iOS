@@ -678,27 +678,27 @@
 		</data>
 		<key>Modules/PinLocator.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		J2WmnM95fiiLuCJuUeFq9fRwku0=
+		gbZBmVUGxUdrgfeEpwSZfhINiFo=
 		</data>
 		<key>Modules/PinLocator.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		J2WmnM95fiiLuCJuUeFq9fRwku0=
+		gbZBmVUGxUdrgfeEpwSZfhINiFo=
 		</data>
 		<key>Modules/PinLocator.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		bEKqoYhumetgEXh8goSHAGFRM6s=
+		DaNu7axn/wxN4IwG4ravzO9tqxI=
 		</data>
 		<key>Modules/PinLocator.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		rnHx9MA9Yc2I1A9Y1r9DKH5iBeE=
+		N+8JSG3DEaA5jqWK2Jwt788FM3U=
 		</data>
 		<key>Modules/PinLocator.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		bEKqoYhumetgEXh8goSHAGFRM6s=
+		DaNu7axn/wxN4IwG4ravzO9tqxI=
 		</data>
 		<key>Modules/PinLocator.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		rnHx9MA9Yc2I1A9Y1r9DKH5iBeE=
+		N+8JSG3DEaA5jqWK2Jwt788FM3U=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -2031,66 +2031,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			J2WmnM95fiiLuCJuUeFq9fRwku0=
+			gbZBmVUGxUdrgfeEpwSZfhINiFo=
 			</data>
 			<key>hash2</key>
 			<data>
-			jMIWR+ajq9f4dBqF82fap5BAy4JergEEVFATnt9UDIM=
+			/MEEjsVXKS1HRtXSyNp3FIiyAIwbgI1GSsSsjjpv4oE=
 			</data>
 		</dict>
 		<key>Modules/PinLocator.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			J2WmnM95fiiLuCJuUeFq9fRwku0=
+			gbZBmVUGxUdrgfeEpwSZfhINiFo=
 			</data>
 			<key>hash2</key>
 			<data>
-			jMIWR+ajq9f4dBqF82fap5BAy4JergEEVFATnt9UDIM=
+			/MEEjsVXKS1HRtXSyNp3FIiyAIwbgI1GSsSsjjpv4oE=
 			</data>
 		</dict>
 		<key>Modules/PinLocator.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bEKqoYhumetgEXh8goSHAGFRM6s=
+			DaNu7axn/wxN4IwG4ravzO9tqxI=
 			</data>
 			<key>hash2</key>
 			<data>
-			2cZLLBfTlMOBBCQTiLohq/w0DOVcYpV23sEUquzPXrE=
+			z94CY6pLIhIOFiqJ8M7khzjwj1zIM1VkxP3bfFL7PAw=
 			</data>
 		</dict>
 		<key>Modules/PinLocator.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rnHx9MA9Yc2I1A9Y1r9DKH5iBeE=
+			N+8JSG3DEaA5jqWK2Jwt788FM3U=
 			</data>
 			<key>hash2</key>
 			<data>
-			9jAhqk46z5Jkw6oTdDQMmNrxEOHCmDAMJy9lA3NWyck=
+			fx0J1pbxnwtMZo098G325Tn6fjDvPn94+C/qoqe8bpE=
 			</data>
 		</dict>
 		<key>Modules/PinLocator.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bEKqoYhumetgEXh8goSHAGFRM6s=
+			DaNu7axn/wxN4IwG4ravzO9tqxI=
 			</data>
 			<key>hash2</key>
 			<data>
-			2cZLLBfTlMOBBCQTiLohq/w0DOVcYpV23sEUquzPXrE=
+			z94CY6pLIhIOFiqJ8M7khzjwj1zIM1VkxP3bfFL7PAw=
 			</data>
 		</dict>
 		<key>Modules/PinLocator.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rnHx9MA9Yc2I1A9Y1r9DKH5iBeE=
+			N+8JSG3DEaA5jqWK2Jwt788FM3U=
 			</data>
 			<key>hash2</key>
 			<data>
-			9jAhqk46z5Jkw6oTdDQMmNrxEOHCmDAMJy9lA3NWyck=
+			fx0J1pbxnwtMZo098G325Tn6fjDvPn94+C/qoqe8bpE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
