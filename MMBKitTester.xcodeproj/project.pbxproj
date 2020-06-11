@@ -117,7 +117,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		071305D7D8766BA6E6741BDD /* Pods-MMBKitTesterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBKitTesterTests.release.xcconfig"; path = "Target Support Files/Pods-MMBKitTesterTests/Pods-MMBKitTesterTests.release.xcconfig"; sourceTree = "<group>"; };
 		3D3227ECF86F65F265974F9C /* Pods_MMBKitTester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMBKitTester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -535,7 +534,6 @@
 				6D931FD7243228EF004C8A3C /* Frameworks */,
 				6D931FD8243228EF004C8A3C /* Resources */,
 				95E53F6E0D52333210561A3B /* [CP] Embed Pods Frameworks */,
-				6D8DC0CC2459746F005553BA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
