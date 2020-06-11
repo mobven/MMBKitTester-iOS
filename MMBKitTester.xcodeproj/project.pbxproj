@@ -55,6 +55,8 @@
 		6DFF0F8A245CBC640035C890 /* CustomAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DFF0F89245CBC640035C890 /* CustomAlert.xib */; };
 		6DFF0F8C245CBCEB0035C890 /* CustomKeyValueListAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF0F8B245CBCEB0035C890 /* CustomKeyValueListAlert.swift */; };
 		6DFF0F8E245CBCFE0035C890 /* CustomKeyValueListAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DFF0F8D245CBCFE0035C890 /* CustomKeyValueListAlert.xib */; };
+		6F1A93C4249228220073FB7E /* PinLocator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1A93C2249223B00073FB7E /* PinLocator.framework */; };
+		6F1A93C5249228220073FB7E /* PinLocator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1A93C2249223B00073FB7E /* PinLocator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6F1E5A8B2476A5EF0013B111 /* SecureNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1E5A8A2476A5EF0013B111 /* SecureNetworkViewController.swift */; };
 		6F1E5A8D2476A9290013B111 /* OAUTHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1E5A8C2476A9290013B111 /* OAUTHViewController.swift */; };
 		6F1E5A922476AC760013B111 /* OAUTHTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1E5A902476AC760013B111 /* OAUTHTableHeader.swift */; };
@@ -109,6 +111,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				6F1A93C5249228220073FB7E /* PinLocator.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,6 +170,7 @@
 		6DFF0F89245CBC640035C890 /* CustomAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlert.xib; sourceTree = "<group>"; };
 		6DFF0F8B245CBCEB0035C890 /* CustomKeyValueListAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomKeyValueListAlert.swift; sourceTree = "<group>"; };
 		6DFF0F8D245CBCFE0035C890 /* CustomKeyValueListAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomKeyValueListAlert.xib; sourceTree = "<group>"; };
+		6F1A93C2249223B00073FB7E /* PinLocator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PinLocator.framework; sourceTree = "<group>"; };
 		6F1E5A8A2476A5EF0013B111 /* SecureNetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureNetworkViewController.swift; sourceTree = "<group>"; };
 		6F1E5A8C2476A9290013B111 /* OAUTHViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAUTHViewController.swift; sourceTree = "<group>"; };
 		6F1E5A902476AC760013B111 /* OAUTHTableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAUTHTableHeader.swift; sourceTree = "<group>"; };
@@ -213,6 +217,7 @@
 				6DC7ECCE246018ED0023537C /* AppSecurity in Frameworks */,
 				6DC7ECCB246018D10023537C /* OneLink in Frameworks */,
 				6F52170F246A8BAF00F7E28E /* StateMachineForms in Frameworks */,
+				6F1A93C4249228220073FB7E /* PinLocator.framework in Frameworks */,
 				6DC7ECC8246018C10023537C /* UIComponents in Frameworks */,
 				6F2528012487845F00E5CAB0 /* SecureNetwork in Frameworks */,
 				6DC7ECD1246019110023537C /* AccountSecurity in Frameworks */,
@@ -499,6 +504,7 @@
 		8BCFF828680210ED26EC0E12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6F1A93C2249223B00073FB7E /* PinLocator.framework */,
 				3D3227ECF86F65F265974F9C /* Pods_MMBKitTester.framework */,
 				922D4F6CC5A2F78F2E29C089 /* Pods_MMBKitTesterTests.framework */,
 			);

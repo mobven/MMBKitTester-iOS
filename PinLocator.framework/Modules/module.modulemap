@@ -1,0 +1,11 @@
+framework module PinLocator {
+  umbrella header "PinLocator.h"
+
+  export *
+  module * { export * }
+}
+
+module PinLocator.Swift {
+    header "PinLocator-Swift.h"
+    requires objc
+}
