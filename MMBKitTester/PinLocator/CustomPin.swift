@@ -9,10 +9,15 @@
 import UIKit
 import PinLocator
 
-struct PinsModel: Pinnable {
-    
+struct CustomPin: Pinnable {
+
     var title: String
     var icon: UIImage?
+    var description: String
+    var buttonTitle: String
     var location: PinLocation
+    var binderBuilder: PinLocatorView.Binder.Builder {
+        DefaultPinViewBinder.builder
+    }
     
 }

@@ -187,6 +187,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreGraphics;
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -205,7 +206,31 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+
+/// View binder for form fields.
+SWIFT_CLASS("_TtCC10PinLocator14PinLocatorView6Binder")
+@interface Binder : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+
 @class NSCoder;
+
+SWIFT_CLASS("_TtC10PinLocator20CustomAnnotationView")
+@interface CustomAnnotationView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)layoutSubviews;
+@end
+
+
+/// Binder for default used PinView.
+SWIFT_CLASS("_TtC10PinLocator20DefaultPinViewBinder")
+@interface DefaultPinViewBinder : Binder
+@end
+
 
 /// Easy-to-integrate Map View with pins.
 SWIFT_CLASS("_TtC10PinLocator14PinLocatorView")
@@ -219,10 +244,12 @@ SWIFT_CLASS("_TtC10PinLocator14PinLocatorView")
 
 
 
-
-
 @interface PinLocatorView (SWIFT_EXTENSION(PinLocator))
 @end
+
+
+
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
