@@ -21,3 +21,14 @@ struct CustomPin: Pinnable {
     }
     
 }
+
+struct CustomLocationPin: Pinnable {
+    var title: String
+    var icon: UIImage?
+    var description: String
+    var routeButtonTitle: String
+    var location: PinLocation
+    var binderBuilder: PinLocatorView.Binder.Builder {
+        PinLocatorBinder.builder
+    }
+}

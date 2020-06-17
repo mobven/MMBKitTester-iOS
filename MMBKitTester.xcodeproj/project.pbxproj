@@ -16,6 +16,7 @@
 		6D818F57249A7B06008943A1 /* SecureNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = 6D818F56249A7B06008943A1 /* SecureNetwork */; };
 		6D818F5A249A7CA0008943A1 /* ErrorKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D818F59249A7CA0008943A1 /* ErrorKitViewController.swift */; };
 		6D818F5C249A7DB4008943A1 /* ErrorKitSampleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D818F5B249A7DB4008943A1 /* ErrorKitSampleAPI.swift */; };
+		6D818F16249A45E2008943A1 /* SecureNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = 6D818F15249A45E2008943A1 /* SecureNetwork */; };
 		6D8BA196243A44AD004493A9 /* OneLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BA195243A44AD004493A9 /* OneLinkViewController.swift */; };
 		6D8BA19B243A4869004493A9 /* AppLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BA19A243A4869004493A9 /* AppLink.swift */; };
 		6D8BA19D243A495B004493A9 /* AnnouncementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BA19C243A495B004493A9 /* AnnouncementsViewController.swift */; };
@@ -70,6 +71,10 @@
 		6F1E5A982476AEDF0013B111 /* OAUTHCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F1E5A962476AEDF0013B111 /* OAUTHCollectionViewCell.xib */; };
 		6F1E5A9A2476B6460013B111 /* OAUTHService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1E5A992476B6460013B111 /* OAUTHService.swift */; };
 		6F2528032487BBF200E5CAB0 /* CryptographyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2528022487BBF200E5CAB0 /* CryptographyService.swift */; };
+		6F3561E0249A682900ACF61D /* PinLocatorBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3561DF249A682900ACF61D /* PinLocatorBinder.swift */; };
+		6F3561E2249A6B9B00ACF61D /* CustomPinLocatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3561E1249A6B9B00ACF61D /* CustomPinLocatorView.swift */; };
+		6F3561E5249A6BD600ACF61D /* PinLocator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3561E3249A6BCD00ACF61D /* PinLocator.framework */; };
+		6F3561E6249A6BD600ACF61D /* PinLocator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3561E3249A6BCD00ACF61D /* PinLocator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6F521709246A848200F7E28E /* StateMachineFormsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F521708246A848200F7E28E /* StateMachineFormsViewController.swift */; };
 		6F52170F246A8BAF00F7E28E /* StateMachineForms in Frameworks */ = {isa = PBXBuildFile; productRef = 6F52170E246A8BAF00F7E28E /* StateMachineForms */; };
 		6F521711246A922C00F7E28E /* forms.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F521710246A922C00F7E28E /* forms.json */; };
@@ -115,7 +120,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6D818F3C249A603B008943A1 /* PinLocator.framework in Embed Frameworks */,
+				6F3561E6249A6BD600ACF61D /* PinLocator.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,6 +192,9 @@
 		6F1E5A962476AEDF0013B111 /* OAUTHCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OAUTHCollectionViewCell.xib; sourceTree = "<group>"; };
 		6F1E5A992476B6460013B111 /* OAUTHService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAUTHService.swift; sourceTree = "<group>"; };
 		6F2528022487BBF200E5CAB0 /* CryptographyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptographyService.swift; sourceTree = "<group>"; };
+		6F3561DF249A682900ACF61D /* PinLocatorBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinLocatorBinder.swift; sourceTree = "<group>"; };
+		6F3561E1249A6B9B00ACF61D /* CustomPinLocatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPinLocatorView.swift; sourceTree = "<group>"; };
+		6F3561E3249A6BCD00ACF61D /* PinLocator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PinLocator.framework; sourceTree = "<group>"; };
 		6F521708246A848200F7E28E /* StateMachineFormsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateMachineFormsViewController.swift; sourceTree = "<group>"; };
 		6F521710246A922C00F7E28E /* forms.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = forms.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		6F521713246A9A3200F7E28E /* UIDatePickerTextFieldBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDatePickerTextFieldBinder.swift; sourceTree = "<group>"; };
@@ -225,7 +233,7 @@
 				6DC7ECCE246018ED0023537C /* AppSecurity in Frameworks */,
 				6DC7ECCB246018D10023537C /* OneLink in Frameworks */,
 				6F52170F246A8BAF00F7E28E /* StateMachineForms in Frameworks */,
-				6D818F3B249A603B008943A1 /* PinLocator.framework in Frameworks */,
+				6F3561E5249A6BD600ACF61D /* PinLocator.framework in Frameworks */,
 				6DC7ECC8246018C10023537C /* UIComponents in Frameworks */,
 				6DC7ECD1246019110023537C /* AccountSecurity in Frameworks */,
 				6D818F57249A7B06008943A1 /* SecureNetwork in Frameworks */,
@@ -426,6 +434,7 @@
 			children = (
 				6F1A93C7249229050073FB7E /* PinLocatorViewController.swift */,
 				6F1A93C9249229AD0073FB7E /* CustomPin.swift */,
+				6F3561DF249A682900ACF61D /* PinLocatorBinder.swift */,
 			);
 			path = PinLocator;
 			sourceTree = "<group>";
@@ -507,6 +516,7 @@
 				6F521731246C11D800F7E28E /* AccountView.swift */,
 				6F521737246C1BED00F7E28E /* AccountSelectionCell.swift */,
 				6FA7307F246EA8FD00CA1B9E /* MMBTextView.swift */,
+				6F3561E1249A6B9B00ACF61D /* CustomPinLocatorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -532,7 +542,7 @@
 		8BCFF828680210ED26EC0E12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6D818F39249A6039008943A1 /* PinLocator.framework */,
+				6F3561E3249A6BCD00ACF61D /* PinLocator.framework */,
 				3D3227ECF86F65F265974F9C /* Pods_MMBKitTester.framework */,
 				922D4F6CC5A2F78F2E29C089 /* Pods_MMBKitTesterTests.framework */,
 			);
@@ -764,6 +774,7 @@
 				6D5754A124754CB100C23C48 /* AmountInputViewBinder.swift in Sources */,
 				6F7E8E4B2476DAB700CBB524 /* ImageViewExtensions.swift in Sources */,
 				6D932008243229C5004C8A3C /* ModulesViewController.swift in Sources */,
+				6F3561E2249A6B9B00ACF61D /* CustomPinLocatorView.swift in Sources */,
 				6F52171B246AA88F00F7E28E /* MMBCheckBoxView.swift in Sources */,
 				6DFF0F8C245CBCEB0035C890 /* CustomKeyValueListAlert.swift in Sources */,
 				6D93201C243251B8004C8A3C /* SecureStoreViewController.swift in Sources */,
@@ -805,6 +816,7 @@
 				6DAF9831243B308400CF9AAA /* FCMCurl.swift in Sources */,
 				6DFF0F86245CBBB20035C890 /* CustomPopupsViewController.swift in Sources */,
 				6F521714246A9A3200F7E28E /* UIDatePickerTextFieldBinder.swift in Sources */,
+				6F3561E0249A682900ACF61D /* PinLocatorBinder.swift in Sources */,
 				6DBA5552248FAE4200751941 /* SpotifyModels.swift in Sources */,
 				6F1E5A8B2476A5EF0013B111 /* SecureNetworkViewController.swift in Sources */,
 				6D932012243248AE004C8A3C /* PreventRecordingViewController.swift in Sources */,
@@ -996,6 +1008,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PinLocator.framework/Frameworks",
 				);
 				INFOPLIST_FILE = MMBKitTester/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

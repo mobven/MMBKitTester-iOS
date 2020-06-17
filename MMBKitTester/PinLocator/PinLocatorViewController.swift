@@ -15,6 +15,7 @@ class PinLocatorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        pinLocatorView.delegate = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -44,22 +45,26 @@ class PinLocatorViewController: UIViewController {
                       description: "Arnavutköy deneme description",
                       routeButtonTitle: "Yol Tarifi",
                       location: PinLocation(latitude: 41.1864, longitude: 28.7389)),
-            CustomPin(title: "Avcılar",
-                      icon: UIImage.init(named: "atm"),
-                      description: "Avcılar deneme description",
-                      routeButtonTitle: "Yol Tarifi",
-                      location: PinLocation(latitude: 40.9792, longitude: 28.7214))
+            CustomLocationPin(title: "Avcılar",
+                              icon: UIImage.init(named: "atm-2"),
+                              description: "Avcılar deneme description",
+                              routeButtonTitle: "Yol Tarifi",
+                              location: PinLocation(latitude: 40.9792, longitude: 28.7214))
         ]
         
         self.pinLocatorView.setPins(pins)
         self.pinLocatorView.setCamera(PinLocatorView.CameraPosition(zoom: 9, latitude: 40.9833, longitude: 29.1278),
                                       animated: true)
-        
-        //For custom detail view test
-//        let detailView = CustomDetailView(frame: CGRect(x: 0, y: 0, width: 200, height: 80))
-//        detailView.routeDidTap = { pin in
-//            print(pin?.description)
-//        }
-//        self.pinLocatorView.setDetailView(detailView)
+    }
+}
+
+extension PinLocatorViewController: PinLocatorViewDelegate {
+    func pinLocatorView(_ pinLocatorView: PinLocatorView, routeTo pin: Pinnable) -> PinLocatorRouter? {
+        return PinLocatorRouter(title: "Choose Application",
+                                message: nil,
+                                appleMapsTitle: "Maps",
+                                googleMapsTitle: "Google Maps",
+                                yandexMapsTitle: "Yandex Navigation",
+                                cancelButton: "Cancel")
     }
 }
