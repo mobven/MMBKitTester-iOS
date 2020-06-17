@@ -17,7 +17,7 @@ enum CryptoAPI: CryptoNetworkable {
         switch self {
         case .getNumbers(let request):
             return getRequest(
-                url: URL(forceString: "http://www.cigkofteciahmet.com/crypt/aes/getNumbers.php"),
+                url: URL(forceString: "https://capture.mobven.com/crypt/aes/getNumbers.php"),
                 encodable: request
             )
         }

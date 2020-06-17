@@ -33,7 +33,7 @@ class CryptographyViewController: UIViewController {
          
          SecureNetwork.shared.enableCryptography(
              handShakeEndpoint: URL(
-                 forceString: "http://www.cigkofteciahmet.com/crypt/rsa/validData.php"
+                 forceString: "https://capture.mobven.com/crypt/rsa/validData.php"
              ),
              rsaPublicKey: rsaPublicKey
          )

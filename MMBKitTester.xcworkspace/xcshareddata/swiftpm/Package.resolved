@@ -86,8 +86,8 @@
         "package": "SecureNetwork",
         "repositoryURL": "https://github.com/mobven/SecureNetwork.git",
         "state": {
-          "branch": "feture/BKT-244",
-          "revision": "c13fe86f8aa8d3f1d7a28c459e6ed9c3888849bc",
+          "branch": "develop",
+          "revision": "8229a20800ae525400d716f18dd3c94fc13f275d",
           "version": null
         }
       },

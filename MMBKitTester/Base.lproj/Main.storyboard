@@ -1578,6 +1578,55 @@ It's secure 🎉</string>
             </objects>
             <point key="canvasLocation" x="1172" y="5859"/>
         </scene>
+        <!--Error Kit View Controller-->
+        <scene sceneID="JMn-Kr-Xuq">
+            <objects>
+                <viewController storyboardIdentifier="ErrorKitViewController" id="72y-5W-B8T" customClass="ErrorKitViewController" customModule="MMBKitTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="34u-zY-5t7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Qh-cz-prV">
+                                <rect key="frame" x="20" y="69" width="374" height="30"/>
+                                <state key="normal" title="Catch Networking Error"/>
+                                <connections>
+                                    <action selector="caughtNetworkingError" destination="72y-5W-B8T" eventType="touchUpInside" id="wrw-RK-4lz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glh-9h-Rfb">
+                                <rect key="frame" x="20" y="124" width="374" height="30"/>
+                                <state key="normal" title="Catch Serialization Error"/>
+                                <connections>
+                                    <action selector="caughtSerializationError" destination="72y-5W-B8T" eventType="touchUpInside" id="Xnt-sM-EFq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLQ-On-Ej0">
+                                <rect key="frame" x="20" y="179" width="374" height="30"/>
+                                <state key="normal" title="Catch Cryptography Error"/>
+                                <connections>
+                                    <action selector="caughtCryptographyError" destination="72y-5W-B8T" eventType="touchUpInside" id="3IY-HF-Ekw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yLQ-On-Ej0" firstAttribute="top" secondItem="glh-9h-Rfb" secondAttribute="bottom" constant="25" id="NXY-sV-Tcb"/>
+                            <constraint firstItem="glh-9h-Rfb" firstAttribute="top" secondItem="9Qh-cz-prV" secondAttribute="bottom" constant="25" id="S9Y-xV-znL"/>
+                            <constraint firstItem="glh-9h-Rfb" firstAttribute="leading" secondItem="W8m-GU-naS" secondAttribute="leading" constant="20" id="SJx-bh-1J3"/>
+                            <constraint firstItem="yLQ-On-Ej0" firstAttribute="leading" secondItem="W8m-GU-naS" secondAttribute="leading" constant="20" id="Y51-Na-8YE"/>
+                            <constraint firstItem="W8m-GU-naS" firstAttribute="trailing" secondItem="glh-9h-Rfb" secondAttribute="trailing" constant="20" id="bc4-6b-2so"/>
+                            <constraint firstItem="W8m-GU-naS" firstAttribute="trailing" secondItem="yLQ-On-Ej0" secondAttribute="trailing" constant="20" id="oEb-HV-Pa5"/>
+                            <constraint firstItem="9Qh-cz-prV" firstAttribute="top" secondItem="W8m-GU-naS" secondAttribute="top" constant="25" id="p5Z-L2-PRi"/>
+                            <constraint firstItem="W8m-GU-naS" firstAttribute="trailing" secondItem="9Qh-cz-prV" secondAttribute="trailing" constant="20" id="rju-Ce-bSS"/>
+                            <constraint firstItem="9Qh-cz-prV" firstAttribute="leading" secondItem="W8m-GU-naS" secondAttribute="leading" constant="20" id="ugc-oK-f96"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="W8m-GU-naS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1NF-0k-LMi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2790" y="5859"/>
+        </scene>
         <!--Cryptography View Controller-->
         <scene sceneID="46C-36-9Wn">
             <objects>

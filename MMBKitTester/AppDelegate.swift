@@ -16,6 +16,7 @@ import Firebase
 import StateMachineForms
 import SecureNetwork
 import PinLocator
+import ErrorKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -30,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             AppSecurity.shared, AccountSecurity.shared,
             OneLink.shared, UIComponents.shared,
             StateMachineForms.shared, SecureNetwork.shared,
-            PinLocator.shared
+            PinLocator.shared, ErrorKit.shared
         ])
         
         SecureNetwork.shared.enableOAuth2(
@@ -40,6 +41,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                             clientSecret: "496354bb3fbb45498bab4180dc7fe1f3"), accessTokenFailure: {
                                 // tokenization failed.
         })
+        
+        ErrorKit.shared.delegate = self
         
         FirebaseApp.configure()
         
@@ -126,6 +129,22 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
             OneLink.shared.present(oneLink: link, ignoreLinkState: User.shared.isLoggedIn)
         }
         completionHandler()
+    }
+    
+}
+
+extension AppDelegate: ErrorKitDelegate {
+    
+    func errorKitDidCatch(networkingError: Error) {
+        print(networkingError.localizedDescription)
+    }
+    
+    func errorKitDidCatch(serializationError: Error) {
+        print(serializationError.localizedDescription)
+    }
+    
+    func errorKitDidCatch(cryptographyError: Error) {
+        print(cryptographyError.localizedDescription)
     }
     
 }
