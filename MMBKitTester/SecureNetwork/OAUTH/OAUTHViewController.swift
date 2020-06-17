@@ -35,7 +35,7 @@ class OAUTHViewController: UITableViewController {
     }
     
     func getTracks() {
-        OAUTHService.tracks.fetchResult(type: AlbumsRoot.self) { (result) in
+        OAUTHService.tracks.fetch(AlbumsRoot.self) { (result) in
             switch result {
             case .success(let response):
                 self.tableHeader.items = [response.album!]
@@ -46,7 +46,7 @@ class OAUTHViewController: UITableViewController {
     }
     
     func getAlbum() {
-        OAUTHService.albums.fetchResult(type: TracksRoot.self) { (result) in
+        OAUTHService.albums.fetch(TracksRoot.self) { (result) in
             switch result {
             case .success(let response):
                 self.items = response.tracks?.items

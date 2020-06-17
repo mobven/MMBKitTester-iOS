@@ -72,7 +72,7 @@ class CryptographyViewController: UIViewController {
     func getNumbers() {
         CryptoAPI.getNumbers(
             request: TestNumbersCodable(count: 2)
-        ).fetchResult(type: TestNumbersResponse.self) { (result) in
+        ).fetch(TestNumbersResponse.self) { (result) in
             switch result {
             case .success(let response):
                 print(response.numbers ?? [])
