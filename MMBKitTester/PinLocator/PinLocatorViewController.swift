@@ -37,17 +37,17 @@ class PinLocatorViewController: UIViewController {
             CustomPin(title: "Adalar",
                       icon: UIImage.init(named: "atm"),
                       description: "Adalar deneme description",
-                      buttonTitle: "Yol Tarifi",
+                      routeButtonTitle: "Yol Tarifi",
                       location: PinLocation(latitude: 40.8747, longitude: 29.1294)),
             CustomPin(title: "Arnavutköy",
                       icon: UIImage.init(named: "atm"),
                       description: "Arnavutköy deneme description",
-                      buttonTitle: "Yol Tarifi",
+                      routeButtonTitle: "Yol Tarifi",
                       location: PinLocation(latitude: 41.1864, longitude: 28.7389)),
             CustomPin(title: "Avcılar",
                       icon: UIImage.init(named: "atm"),
                       description: "Avcılar deneme description",
-                      buttonTitle: "Yol Tarifi",
+                      routeButtonTitle: "Yol Tarifi",
                       location: PinLocation(latitude: 40.9792, longitude: 28.7214))
         ]
         

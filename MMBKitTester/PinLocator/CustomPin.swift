@@ -14,7 +14,7 @@ struct CustomPin: Pinnable {
     var title: String
     var icon: UIImage?
     var description: String
-    var buttonTitle: String
+    var routeButtonTitle: String
     var location: PinLocation
     var binderBuilder: PinLocatorView.Binder.Builder {
         DefaultPinViewBinder.builder
