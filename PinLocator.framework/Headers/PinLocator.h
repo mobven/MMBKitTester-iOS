@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "GoogleMaps/GoogleMaps.h"
 
 //! Project version number for PinLocator.
 FOUNDATION_EXPORT double PinLocatorVersionNumber;

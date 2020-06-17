@@ -686,7 +686,7 @@
 		</data>
 		<key>Frameworks/GoogleMaps.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		LrowmohEXmaweMF+PkhiqEltCzU=
+		Juc8miKl3W4E8b8w9kIKEWRh4Hw=
 		</data>
 		<key>Frameworks/GoogleMapsBase.framework/GoogleMapsBase</key>
 		<data>
@@ -710,7 +710,7 @@
 		</data>
 		<key>Frameworks/GoogleMapsBase.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		jL+6vn6IUuhvwoHNAI/qav6wob8=
+		RqpB/8p1O9xKUU+veteikDacVM4=
 		</data>
 		<key>Frameworks/GoogleMapsCore.framework/GoogleMapsCore</key>
 		<data>
@@ -734,7 +734,7 @@
 		</data>
 		<key>Frameworks/GoogleMapsCore.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		TJKJigTQz8tVAXhZcmaYVPCB5t0=
+		lDzdFcAEDMbPfvwvaNJBjcs10qA=
 		</data>
 		<key>GoogleMaps.bundle/GMSCacheStorage.momd/Storage.mom</key>
 		<data>
@@ -1402,7 +1402,7 @@
 		</data>
 		<key>Headers/PinLocator.h</key>
 		<data>
-		Mh1XWu7rpPJsLuNJ+91v6w/hq+Y=
+		FydcSdHw8eyjwdugq5e4tVxxno0=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -2832,11 +2832,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LrowmohEXmaweMF+PkhiqEltCzU=
+			Juc8miKl3W4E8b8w9kIKEWRh4Hw=
 			</data>
 			<key>hash2</key>
 			<data>
-			9m2q7urbK/ljkkVe1lKfv+tNvIUm5QLxabgg1hXvKbk=
+			C5Lba9XoTa+jsSfElTGvciQK0NTMo3KnuiYcxrMKXUY=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleMapsBase.framework/GoogleMapsBase</key>
@@ -2898,11 +2898,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jL+6vn6IUuhvwoHNAI/qav6wob8=
+			RqpB/8p1O9xKUU+veteikDacVM4=
 			</data>
 			<key>hash2</key>
 			<data>
-			V2TuAhrYocXQyRutuBQ7PSw9Rh/N948Z3JXWBafoup8=
+			QWovLc1a1WDsJYwsNjamGzU6ulnuzFNN4HonVBuKdVY=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleMapsCore.framework/GoogleMapsCore</key>
@@ -2964,11 +2964,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TJKJigTQz8tVAXhZcmaYVPCB5t0=
+			lDzdFcAEDMbPfvwvaNJBjcs10qA=
 			</data>
 			<key>hash2</key>
 			<data>
-			JDLUF8ozhMsYgQK1oFxK0Q5lm6/MlevNWyin6NaqLX0=
+			/GnRI1IuUI7yqfKinlYaTkQbqDRwV7QlHSR49kNEVZU=
 			</data>
 		</dict>
 		<key>GoogleMaps.bundle/GMSCacheStorage.momd/Storage.mom</key>
@@ -4284,11 +4284,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Mh1XWu7rpPJsLuNJ+91v6w/hq+Y=
+			FydcSdHw8eyjwdugq5e4tVxxno0=
 			</data>
 			<key>hash2</key>
 			<data>
-			eTUaTRAbIekF9CC5dULN5sCwc8TMr7erXsbf+85SdbI=
+			tDEyYH/JWcHj/cB65gk5C1j95Qa1Hrbz74nm0d7z9Is=
 			</data>
 		</dict>
 		<key>Modules/PinLocator.swiftmodule/Project/arm.swiftsourceinfo</key>
