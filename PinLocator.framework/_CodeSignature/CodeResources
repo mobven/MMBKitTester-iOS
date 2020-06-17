@@ -6,7 +6,7 @@
 	<dict>
 		<key>Frameworks/GoogleMaps.framework/GoogleMaps</key>
 		<data>
-		9rqnyyZ42fKYwgWB4MK53LQXlio=
+		DZkOFu8W0epJ1hi75Nspu4ZsFGo=
 		</data>
 		<key>Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCacheStorage.momd/Storage.mom</key>
 		<data>
@@ -670,15 +670,15 @@
 		</data>
 		<key>Frameworks/GoogleMaps.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		cbsdj0cWPjnMf4NXlefb5Cx/QMY=
+		3TpYg9KuVs28B/LiUfiozI8hwOg=
 		</data>
 		<key>Frameworks/GoogleMaps.framework/_CodeSignature/CodeRequirements</key>
 		<data>
-		8VnfWyiY3PfS3UbxyBK2G8gMd0A=
+		OnX22wWFKRSOFN1+obRynMCeyXM=
 		</data>
 		<key>Frameworks/GoogleMaps.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		lu1L+TaMKnByUuXMGu0qnp6+GhA=
+		EqFagqofTqn+Mv3YgfhmyMwHoCQ=
 		</data>
 		<key>Frameworks/GoogleMaps.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -686,23 +686,23 @@
 		</data>
 		<key>Frameworks/GoogleMaps.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		Juc8miKl3W4E8b8w9kIKEWRh4Hw=
+		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
 		</data>
 		<key>Frameworks/GoogleMapsBase.framework/GoogleMapsBase</key>
 		<data>
-		cwE/x50zFgnPpgeF5v3H5NGFsx0=
+		Wbje5BoT2CZ2Vjeskb1KLbeir0s=
 		</data>
 		<key>Frameworks/GoogleMapsBase.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		mpgwxWw/0uP6nCrAxEA+EJpPr7o=
+		XPl91FdqUpNUX3vhl1F4+fiJn50=
 		</data>
 		<key>Frameworks/GoogleMapsBase.framework/_CodeSignature/CodeRequirements</key>
 		<data>
-		a8qVvrlvTb4JsyBiqCcJVmt07/8=
+		OnX22wWFKRSOFN1+obRynMCeyXM=
 		</data>
 		<key>Frameworks/GoogleMapsBase.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		ZU+VlIHS01wwRmyYJ+DDqMeW/Gs=
+		hU9J82iPrb5W7AUsbzrx04CA3Og=
 		</data>
 		<key>Frameworks/GoogleMapsBase.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -710,23 +710,23 @@
 		</data>
 		<key>Frameworks/GoogleMapsBase.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		RqpB/8p1O9xKUU+veteikDacVM4=
+		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
 		</data>
 		<key>Frameworks/GoogleMapsCore.framework/GoogleMapsCore</key>
 		<data>
-		hUFpPlBzwJvp7aNd1Nzvy0whUo0=
+		iWrtLktyWYumpDXQs5WoNA0WZL0=
 		</data>
 		<key>Frameworks/GoogleMapsCore.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		R1sqxah5nahKhhGeanSNg+iwV9I=
+		OhqkwYOs/G6K7wz2hIOxHeyCVkM=
 		</data>
 		<key>Frameworks/GoogleMapsCore.framework/_CodeSignature/CodeRequirements</key>
 		<data>
-		qRRsf1vlgdpcRdzyDYLcBJingRc=
+		OnX22wWFKRSOFN1+obRynMCeyXM=
 		</data>
 		<key>Frameworks/GoogleMapsCore.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		QIXmexrOfzs9NrXR7hD+ggxd+UQ=
+		5OwMPTxTQhn5Aeg6qXyOrFKrTzs=
 		</data>
 		<key>Frameworks/GoogleMapsCore.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -734,7 +734,7 @@
 		</data>
 		<key>Frameworks/GoogleMapsCore.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		lDzdFcAEDMbPfvwvaNJBjcs10qA=
+		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
 		</data>
 		<key>GoogleMaps.bundle/GMSCacheStorage.momd/Storage.mom</key>
 		<data>
@@ -1398,7 +1398,7 @@
 		</data>
 		<key>Headers/PinLocator-Swift.h</key>
 		<data>
-		orPaoGl3OoGJFszm+ZhHMM593fw=
+		C4HWz0ZXuR7/x/uJ7GfjPFNishU=
 		</data>
 		<key>Headers/PinLocator.h</key>
 		<data>
@@ -1406,67 +1406,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		xNNFP2Tdxq3UL3pmqR3AHRrBgkY=
+		ckkVSm4eL0LJagpqFXdy8qycCII=
 		</data>
-		<key>Modules/PinLocator.swiftmodule/Project/arm.swiftsourceinfo</key>
+		<key>Modules/PinLocator.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		nzRIGUJh3PLjAF86Z4fuXgI80nk=
+		MfBZnbEXa38Z3hdo8qY7a42GI1w=
 		</data>
-		<key>Modules/PinLocator.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
+		<key>Modules/PinLocator.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		o+SspmdFRSLiMdoDTxU/j8EEURs=
+		MfBZnbEXa38Z3hdo8qY7a42GI1w=
 		</data>
-		<key>Modules/PinLocator.swiftmodule/Project/arm64.swiftsourceinfo</key>
+		<key>Modules/PinLocator.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		o+SspmdFRSLiMdoDTxU/j8EEURs=
+		vwRUfFPXNU4Hj1eoFQbqMlu0njg=
 		</data>
-		<key>Modules/PinLocator.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo</key>
+		<key>Modules/PinLocator.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		nzRIGUJh3PLjAF86Z4fuXgI80nk=
+		mhCeU4+JNPQ6V9+kHif9ON4hFr8=
 		</data>
-		<key>Modules/PinLocator.swiftmodule/Project/armv7.swiftsourceinfo</key>
+		<key>Modules/PinLocator.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		nzRIGUJh3PLjAF86Z4fuXgI80nk=
+		vwRUfFPXNU4Hj1eoFQbqMlu0njg=
 		</data>
-		<key>Modules/PinLocator.swiftmodule/arm.swiftdoc</key>
+		<key>Modules/PinLocator.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		CRde7Al12LiRbP968pJNL5U8ixg=
-		</data>
-		<key>Modules/PinLocator.swiftmodule/arm.swiftmodule</key>
-		<data>
-		9NFjt7nG2O07VvEPpdwGO9IK/X8=
-		</data>
-		<key>Modules/PinLocator.swiftmodule/arm64-apple-ios.swiftdoc</key>
-		<data>
-		NZ1TlV2kxVhCMA9ovZYb9rMY2p0=
-		</data>
-		<key>Modules/PinLocator.swiftmodule/arm64-apple-ios.swiftmodule</key>
-		<data>
-		soR/+6o9aWq4ovBAxPqLZKyuEAU=
-		</data>
-		<key>Modules/PinLocator.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		NZ1TlV2kxVhCMA9ovZYb9rMY2p0=
-		</data>
-		<key>Modules/PinLocator.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		soR/+6o9aWq4ovBAxPqLZKyuEAU=
-		</data>
-		<key>Modules/PinLocator.swiftmodule/armv7-apple-ios.swiftdoc</key>
-		<data>
-		CRde7Al12LiRbP968pJNL5U8ixg=
-		</data>
-		<key>Modules/PinLocator.swiftmodule/armv7-apple-ios.swiftmodule</key>
-		<data>
-		9NFjt7nG2O07VvEPpdwGO9IK/X8=
-		</data>
-		<key>Modules/PinLocator.swiftmodule/armv7.swiftdoc</key>
-		<data>
-		CRde7Al12LiRbP968pJNL5U8ixg=
-		</data>
-		<key>Modules/PinLocator.swiftmodule/armv7.swiftmodule</key>
-		<data>
-		9NFjt7nG2O07VvEPpdwGO9IK/X8=
+		mhCeU4+JNPQ6V9+kHif9ON4hFr8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1479,11 +1443,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9rqnyyZ42fKYwgWB4MK53LQXlio=
+			DZkOFu8W0epJ1hi75Nspu4ZsFGo=
 			</data>
 			<key>hash2</key>
 			<data>
-			t2MkncN5nrlU8gyNOcrODHLMqcrqkCgHyBc8bcRiJzA=
+			U9UTXrqW0kHsNIYD6PxZGOvO9wVgdzdtzxEG0n0429I=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle/GMSCacheStorage.momd/Storage.mom</key>
@@ -2788,33 +2752,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cbsdj0cWPjnMf4NXlefb5Cx/QMY=
+			3TpYg9KuVs28B/LiUfiozI8hwOg=
 			</data>
 			<key>hash2</key>
 			<data>
-			6L6YAsT5yxN+Wj4po1T2Tx4hYhi4XEttO6QmzUzGMAE=
+			51DoSt1FX+LD1dFt0D4E559k4z36BBphTE3H3OLWWsE=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleMaps.framework/_CodeSignature/CodeRequirements</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8VnfWyiY3PfS3UbxyBK2G8gMd0A=
+			OnX22wWFKRSOFN1+obRynMCeyXM=
 			</data>
 			<key>hash2</key>
 			<data>
-			KqgPTOovTCTSVC8PxZSL72q0hnjhSaEHKQZL8B7Z0uY=
+			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleMaps.framework/_CodeSignature/CodeRequirements-1</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lu1L+TaMKnByUuXMGu0qnp6+GhA=
+			EqFagqofTqn+Mv3YgfhmyMwHoCQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			IIag0bEe7UAr5esHhLbNQ/A0tKcEZOsx88C+vujOFQM=
+			ATCIJpRqsTG2peHlXM4o4yyltF1WmzKBHcUtCiW410I=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleMaps.framework/_CodeSignature/CodeResources</key>
@@ -2832,55 +2796,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Juc8miKl3W4E8b8w9kIKEWRh4Hw=
+			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
 			</data>
 			<key>hash2</key>
 			<data>
-			C5Lba9XoTa+jsSfElTGvciQK0NTMo3KnuiYcxrMKXUY=
+			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleMapsBase.framework/GoogleMapsBase</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cwE/x50zFgnPpgeF5v3H5NGFsx0=
+			Wbje5BoT2CZ2Vjeskb1KLbeir0s=
 			</data>
 			<key>hash2</key>
 			<data>
-			wiwTEKz4j/NlUoik7WHudgvTdSjeA1qqnUlqlbZGOLE=
+			Ll3Jl3QGzczPIzGUKdET/RSq4RCvv/3SCKVbIsoq0kA=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleMapsBase.framework/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mpgwxWw/0uP6nCrAxEA+EJpPr7o=
+			XPl91FdqUpNUX3vhl1F4+fiJn50=
 			</data>
 			<key>hash2</key>
 			<data>
-			cANsCZbJd3d8uK+y6QIWyOZv6Cv+3/fb6M6QkboG2Fc=
+			7woNX0djmqhHMBmsNEXmpQ+NpPptoUbfpjC/iryYvtM=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleMapsBase.framework/_CodeSignature/CodeRequirements</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			a8qVvrlvTb4JsyBiqCcJVmt07/8=
+			OnX22wWFKRSOFN1+obRynMCeyXM=
 			</data>
 			<key>hash2</key>
 			<data>
-			OCJbq8bhqciZGXhXfkFpNXqxi3U94ntMGLzCYBX0Tb8=
+			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleMapsBase.framework/_CodeSignature/CodeRequirements-1</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZU+VlIHS01wwRmyYJ+DDqMeW/Gs=
+			hU9J82iPrb5W7AUsbzrx04CA3Og=
 			</data>
 			<key>hash2</key>
 			<data>
-			dwCXzF3j8f8P9Kb8Id46Y0k3rLCEmvddmpzDu5TZZeA=
+			s7OiC8UFaezq1N1SXjElypbazcgXkY2flzqCfzb5IHQ=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleMapsBase.framework/_CodeSignature/CodeResources</key>
@@ -2898,55 +2862,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RqpB/8p1O9xKUU+veteikDacVM4=
+			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
 			</data>
 			<key>hash2</key>
 			<data>
-			QWovLc1a1WDsJYwsNjamGzU6ulnuzFNN4HonVBuKdVY=
+			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleMapsCore.framework/GoogleMapsCore</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hUFpPlBzwJvp7aNd1Nzvy0whUo0=
+			iWrtLktyWYumpDXQs5WoNA0WZL0=
 			</data>
 			<key>hash2</key>
 			<data>
-			bjiIY1DczS2rEjsNKycfaTKhahyqyLpQoILhOcSeKh0=
+			bYBLYbo+vaBscZV2DmsFMKRaYhTT5jnHEVzzT8qNPMc=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleMapsCore.framework/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			R1sqxah5nahKhhGeanSNg+iwV9I=
+			OhqkwYOs/G6K7wz2hIOxHeyCVkM=
 			</data>
 			<key>hash2</key>
 			<data>
-			WD/1oaVe35NXJmiv7g2zk6ZGIxXI7gCF96E6LdkojAY=
+			4ZS1OrGt/q1c5gMwFG/TD7WWJOgIoCKOV6K03uDrwac=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleMapsCore.framework/_CodeSignature/CodeRequirements</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qRRsf1vlgdpcRdzyDYLcBJingRc=
+			OnX22wWFKRSOFN1+obRynMCeyXM=
 			</data>
 			<key>hash2</key>
 			<data>
-			e6Y9T0NEAz8DJcDtpywhEF6Z8aAX3Ha6m6aZgYQiWJo=
+			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleMapsCore.framework/_CodeSignature/CodeRequirements-1</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QIXmexrOfzs9NrXR7hD+ggxd+UQ=
+			5OwMPTxTQhn5Aeg6qXyOrFKrTzs=
 			</data>
 			<key>hash2</key>
 			<data>
-			C/MdLoHnwi2fTic7izlIg8zj397+d8RtNl6xjLEtFtw=
+			Jmh2TkAEbHJfOKzq78Ohv+Oq5clK+qol3VckhP2qKA0=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleMapsCore.framework/_CodeSignature/CodeResources</key>
@@ -2964,11 +2928,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lDzdFcAEDMbPfvwvaNJBjcs10qA=
+			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
 			</data>
 			<key>hash2</key>
 			<data>
-			/GnRI1IuUI7yqfKinlYaTkQbqDRwV7QlHSR49kNEVZU=
+			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
 			</data>
 		</dict>
 		<key>GoogleMaps.bundle/GMSCacheStorage.momd/Storage.mom</key>
@@ -4273,11 +4237,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			orPaoGl3OoGJFszm+ZhHMM593fw=
+			C4HWz0ZXuR7/x/uJ7GfjPFNishU=
 			</data>
 			<key>hash2</key>
 			<data>
-			HckXuxOGUDYU7G5MjtSwIrwtBapVfWFXdJE9TfP2mkw=
+			S5nnn2NvGfAfDDoYqF1jNQneQgbLOl7BMgd4kb9gBuE=
 			</data>
 		</dict>
 		<key>Headers/PinLocator.h</key>
@@ -4291,169 +4255,70 @@
 			tDEyYH/JWcHj/cB65gk5C1j95Qa1Hrbz74nm0d7z9Is=
 			</data>
 		</dict>
-		<key>Modules/PinLocator.swiftmodule/Project/arm.swiftsourceinfo</key>
+		<key>Modules/PinLocator.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nzRIGUJh3PLjAF86Z4fuXgI80nk=
+			MfBZnbEXa38Z3hdo8qY7a42GI1w=
 			</data>
 			<key>hash2</key>
 			<data>
-			QXIJd+0xboHsibHH5HSOxeZMEZXq7lAl1/IddVSypR4=
+			LMpZrp46kpq8GCMF7QyGH9NLBY4K3uNVC/4aqX2IAbU=
 			</data>
 		</dict>
-		<key>Modules/PinLocator.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
+		<key>Modules/PinLocator.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			o+SspmdFRSLiMdoDTxU/j8EEURs=
+			MfBZnbEXa38Z3hdo8qY7a42GI1w=
 			</data>
 			<key>hash2</key>
 			<data>
-			DPDxsZBRhePBP3gjfkPb6u8v4p/d6uRURjLcMRl6OA8=
+			LMpZrp46kpq8GCMF7QyGH9NLBY4K3uNVC/4aqX2IAbU=
 			</data>
 		</dict>
-		<key>Modules/PinLocator.swiftmodule/Project/arm64.swiftsourceinfo</key>
+		<key>Modules/PinLocator.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			o+SspmdFRSLiMdoDTxU/j8EEURs=
+			vwRUfFPXNU4Hj1eoFQbqMlu0njg=
 			</data>
 			<key>hash2</key>
 			<data>
-			DPDxsZBRhePBP3gjfkPb6u8v4p/d6uRURjLcMRl6OA8=
+			UEcdi1SjS0dUvvvT591MuR8n5aXpuRqZMXHjvUyFYAE=
 			</data>
 		</dict>
-		<key>Modules/PinLocator.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo</key>
+		<key>Modules/PinLocator.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nzRIGUJh3PLjAF86Z4fuXgI80nk=
+			mhCeU4+JNPQ6V9+kHif9ON4hFr8=
 			</data>
 			<key>hash2</key>
 			<data>
-			QXIJd+0xboHsibHH5HSOxeZMEZXq7lAl1/IddVSypR4=
+			RrenmSSNlOyJy6tQqJLc+eV7UdUrbBFaAXtRVnPD76c=
 			</data>
 		</dict>
-		<key>Modules/PinLocator.swiftmodule/Project/armv7.swiftsourceinfo</key>
+		<key>Modules/PinLocator.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nzRIGUJh3PLjAF86Z4fuXgI80nk=
+			vwRUfFPXNU4Hj1eoFQbqMlu0njg=
 			</data>
 			<key>hash2</key>
 			<data>
-			QXIJd+0xboHsibHH5HSOxeZMEZXq7lAl1/IddVSypR4=
+			UEcdi1SjS0dUvvvT591MuR8n5aXpuRqZMXHjvUyFYAE=
 			</data>
 		</dict>
-		<key>Modules/PinLocator.swiftmodule/arm.swiftdoc</key>
+		<key>Modules/PinLocator.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CRde7Al12LiRbP968pJNL5U8ixg=
+			mhCeU4+JNPQ6V9+kHif9ON4hFr8=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZdNr/Rv+R0iizhgWJc9ljVA6CbWeal4tncdNjIQnVfY=
-			</data>
-		</dict>
-		<key>Modules/PinLocator.swiftmodule/arm.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9NFjt7nG2O07VvEPpdwGO9IK/X8=
-			</data>
-			<key>hash2</key>
-			<data>
-			reKutCJfNEKAbNP9NEfaNVN6hbq4uLDOJw8YKrLdEzQ=
-			</data>
-		</dict>
-		<key>Modules/PinLocator.swiftmodule/arm64-apple-ios.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			NZ1TlV2kxVhCMA9ovZYb9rMY2p0=
-			</data>
-			<key>hash2</key>
-			<data>
-			dY9UVmNjG/13Ft0eI9OdB08qL0G9xQDiP1d/Bxi4MKw=
-			</data>
-		</dict>
-		<key>Modules/PinLocator.swiftmodule/arm64-apple-ios.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			soR/+6o9aWq4ovBAxPqLZKyuEAU=
-			</data>
-			<key>hash2</key>
-			<data>
-			pD7QvQFhuuQCNofvRbPa9QyeqsoWlCZZ1I3lyFlu4Ic=
-			</data>
-		</dict>
-		<key>Modules/PinLocator.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			NZ1TlV2kxVhCMA9ovZYb9rMY2p0=
-			</data>
-			<key>hash2</key>
-			<data>
-			dY9UVmNjG/13Ft0eI9OdB08qL0G9xQDiP1d/Bxi4MKw=
-			</data>
-		</dict>
-		<key>Modules/PinLocator.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			soR/+6o9aWq4ovBAxPqLZKyuEAU=
-			</data>
-			<key>hash2</key>
-			<data>
-			pD7QvQFhuuQCNofvRbPa9QyeqsoWlCZZ1I3lyFlu4Ic=
-			</data>
-		</dict>
-		<key>Modules/PinLocator.swiftmodule/armv7-apple-ios.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			CRde7Al12LiRbP968pJNL5U8ixg=
-			</data>
-			<key>hash2</key>
-			<data>
-			ZdNr/Rv+R0iizhgWJc9ljVA6CbWeal4tncdNjIQnVfY=
-			</data>
-		</dict>
-		<key>Modules/PinLocator.swiftmodule/armv7-apple-ios.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9NFjt7nG2O07VvEPpdwGO9IK/X8=
-			</data>
-			<key>hash2</key>
-			<data>
-			reKutCJfNEKAbNP9NEfaNVN6hbq4uLDOJw8YKrLdEzQ=
-			</data>
-		</dict>
-		<key>Modules/PinLocator.swiftmodule/armv7.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			CRde7Al12LiRbP968pJNL5U8ixg=
-			</data>
-			<key>hash2</key>
-			<data>
-			ZdNr/Rv+R0iizhgWJc9ljVA6CbWeal4tncdNjIQnVfY=
-			</data>
-		</dict>
-		<key>Modules/PinLocator.swiftmodule/armv7.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9NFjt7nG2O07VvEPpdwGO9IK/X8=
-			</data>
-			<key>hash2</key>
-			<data>
-			reKutCJfNEKAbNP9NEfaNVN6hbq4uLDOJw8YKrLdEzQ=
+			RrenmSSNlOyJy6tQqJLc+eV7UdUrbBFaAXtRVnPD76c=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
