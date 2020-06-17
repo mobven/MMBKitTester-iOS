@@ -666,7 +666,7 @@
 		</data>
 		<key>Headers/PinLocator-Swift.h</key>
 		<data>
-		FsZXnF+j/oyLD8ebyjMpUw+cdwo=
+		orPaoGl3OoGJFszm+ZhHMM593fw=
 		</data>
 		<key>Headers/PinLocator.h</key>
 		<data>
@@ -674,31 +674,67 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ckkVSm4eL0LJagpqFXdy8qycCII=
+		xNNFP2Tdxq3UL3pmqR3AHRrBgkY=
 		</data>
-		<key>Modules/PinLocator.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/PinLocator.swiftmodule/Project/arm.swiftsourceinfo</key>
 		<data>
-		0o7kQuzERkOCnS456KP591qRfaU=
+		nzRIGUJh3PLjAF86Z4fuXgI80nk=
 		</data>
-		<key>Modules/PinLocator.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/PinLocator.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		0o7kQuzERkOCnS456KP591qRfaU=
+		o+SspmdFRSLiMdoDTxU/j8EEURs=
 		</data>
-		<key>Modules/PinLocator.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/PinLocator.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		vwRUfFPXNU4Hj1eoFQbqMlu0njg=
+		o+SspmdFRSLiMdoDTxU/j8EEURs=
 		</data>
-		<key>Modules/PinLocator.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/PinLocator.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo</key>
 		<data>
-		I/nOGiMpo0byj2VHD+JWXO/5oRs=
+		nzRIGUJh3PLjAF86Z4fuXgI80nk=
 		</data>
-		<key>Modules/PinLocator.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/PinLocator.swiftmodule/Project/armv7.swiftsourceinfo</key>
 		<data>
-		vwRUfFPXNU4Hj1eoFQbqMlu0njg=
+		nzRIGUJh3PLjAF86Z4fuXgI80nk=
 		</data>
-		<key>Modules/PinLocator.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/PinLocator.swiftmodule/arm.swiftdoc</key>
 		<data>
-		I/nOGiMpo0byj2VHD+JWXO/5oRs=
+		CRde7Al12LiRbP968pJNL5U8ixg=
+		</data>
+		<key>Modules/PinLocator.swiftmodule/arm.swiftmodule</key>
+		<data>
+		MBAprsSVxIP4p0YL/qd7OKgXNpQ=
+		</data>
+		<key>Modules/PinLocator.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<data>
+		NZ1TlV2kxVhCMA9ovZYb9rMY2p0=
+		</data>
+		<key>Modules/PinLocator.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<data>
+		gW9NnqM2rbLhIeXy21LOWex7yOs=
+		</data>
+		<key>Modules/PinLocator.swiftmodule/arm64.swiftdoc</key>
+		<data>
+		NZ1TlV2kxVhCMA9ovZYb9rMY2p0=
+		</data>
+		<key>Modules/PinLocator.swiftmodule/arm64.swiftmodule</key>
+		<data>
+		gW9NnqM2rbLhIeXy21LOWex7yOs=
+		</data>
+		<key>Modules/PinLocator.swiftmodule/armv7-apple-ios.swiftdoc</key>
+		<data>
+		CRde7Al12LiRbP968pJNL5U8ixg=
+		</data>
+		<key>Modules/PinLocator.swiftmodule/armv7-apple-ios.swiftmodule</key>
+		<data>
+		MBAprsSVxIP4p0YL/qd7OKgXNpQ=
+		</data>
+		<key>Modules/PinLocator.swiftmodule/armv7.swiftdoc</key>
+		<data>
+		CRde7Al12LiRbP968pJNL5U8ixg=
+		</data>
+		<key>Modules/PinLocator.swiftmodule/armv7.swiftmodule</key>
+		<data>
+		MBAprsSVxIP4p0YL/qd7OKgXNpQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -2009,11 +2045,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FsZXnF+j/oyLD8ebyjMpUw+cdwo=
+			orPaoGl3OoGJFszm+ZhHMM593fw=
 			</data>
 			<key>hash2</key>
 			<data>
-			Fy22i1W/V7Xn2zrMVlFjeDQyWud40I3NRxZ319lD4Zc=
+			HckXuxOGUDYU7G5MjtSwIrwtBapVfWFXdJE9TfP2mkw=
 			</data>
 		</dict>
 		<key>Headers/PinLocator.h</key>
@@ -2027,70 +2063,169 @@
 			tDEyYH/JWcHj/cB65gk5C1j95Qa1Hrbz74nm0d7z9Is=
 			</data>
 		</dict>
-		<key>Modules/PinLocator.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/PinLocator.swiftmodule/Project/arm.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0o7kQuzERkOCnS456KP591qRfaU=
+			nzRIGUJh3PLjAF86Z4fuXgI80nk=
 			</data>
 			<key>hash2</key>
 			<data>
-			+7w12xrPvw3wywnvwSvn/by8OvI5twxelnYPNFsuMCY=
+			QXIJd+0xboHsibHH5HSOxeZMEZXq7lAl1/IddVSypR4=
 			</data>
 		</dict>
-		<key>Modules/PinLocator.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/PinLocator.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0o7kQuzERkOCnS456KP591qRfaU=
+			o+SspmdFRSLiMdoDTxU/j8EEURs=
 			</data>
 			<key>hash2</key>
 			<data>
-			+7w12xrPvw3wywnvwSvn/by8OvI5twxelnYPNFsuMCY=
+			DPDxsZBRhePBP3gjfkPb6u8v4p/d6uRURjLcMRl6OA8=
 			</data>
 		</dict>
-		<key>Modules/PinLocator.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/PinLocator.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vwRUfFPXNU4Hj1eoFQbqMlu0njg=
+			o+SspmdFRSLiMdoDTxU/j8EEURs=
 			</data>
 			<key>hash2</key>
 			<data>
-			UEcdi1SjS0dUvvvT591MuR8n5aXpuRqZMXHjvUyFYAE=
+			DPDxsZBRhePBP3gjfkPb6u8v4p/d6uRURjLcMRl6OA8=
 			</data>
 		</dict>
-		<key>Modules/PinLocator.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/PinLocator.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			I/nOGiMpo0byj2VHD+JWXO/5oRs=
+			nzRIGUJh3PLjAF86Z4fuXgI80nk=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZCH1SYOP1bF2gPn+s94C2uDA5NdRUov1LNzKqVe4IUg=
+			QXIJd+0xboHsibHH5HSOxeZMEZXq7lAl1/IddVSypR4=
 			</data>
 		</dict>
-		<key>Modules/PinLocator.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/PinLocator.swiftmodule/Project/armv7.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vwRUfFPXNU4Hj1eoFQbqMlu0njg=
+			nzRIGUJh3PLjAF86Z4fuXgI80nk=
 			</data>
 			<key>hash2</key>
 			<data>
-			UEcdi1SjS0dUvvvT591MuR8n5aXpuRqZMXHjvUyFYAE=
+			QXIJd+0xboHsibHH5HSOxeZMEZXq7lAl1/IddVSypR4=
 			</data>
 		</dict>
-		<key>Modules/PinLocator.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/PinLocator.swiftmodule/arm.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			I/nOGiMpo0byj2VHD+JWXO/5oRs=
+			CRde7Al12LiRbP968pJNL5U8ixg=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZCH1SYOP1bF2gPn+s94C2uDA5NdRUov1LNzKqVe4IUg=
+			ZdNr/Rv+R0iizhgWJc9ljVA6CbWeal4tncdNjIQnVfY=
+			</data>
+		</dict>
+		<key>Modules/PinLocator.swiftmodule/arm.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MBAprsSVxIP4p0YL/qd7OKgXNpQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			qoi+lhap6xCVIu0bBs/LxzIuPvSYnRUHSiYNTNONCNc=
+			</data>
+		</dict>
+		<key>Modules/PinLocator.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NZ1TlV2kxVhCMA9ovZYb9rMY2p0=
+			</data>
+			<key>hash2</key>
+			<data>
+			dY9UVmNjG/13Ft0eI9OdB08qL0G9xQDiP1d/Bxi4MKw=
+			</data>
+		</dict>
+		<key>Modules/PinLocator.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gW9NnqM2rbLhIeXy21LOWex7yOs=
+			</data>
+			<key>hash2</key>
+			<data>
+			jaRGZ3ECqoxDoNi9Ef9cYGHiBowy+ecSv8Li45agk9w=
+			</data>
+		</dict>
+		<key>Modules/PinLocator.swiftmodule/arm64.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NZ1TlV2kxVhCMA9ovZYb9rMY2p0=
+			</data>
+			<key>hash2</key>
+			<data>
+			dY9UVmNjG/13Ft0eI9OdB08qL0G9xQDiP1d/Bxi4MKw=
+			</data>
+		</dict>
+		<key>Modules/PinLocator.swiftmodule/arm64.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gW9NnqM2rbLhIeXy21LOWex7yOs=
+			</data>
+			<key>hash2</key>
+			<data>
+			jaRGZ3ECqoxDoNi9Ef9cYGHiBowy+ecSv8Li45agk9w=
+			</data>
+		</dict>
+		<key>Modules/PinLocator.swiftmodule/armv7-apple-ios.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CRde7Al12LiRbP968pJNL5U8ixg=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZdNr/Rv+R0iizhgWJc9ljVA6CbWeal4tncdNjIQnVfY=
+			</data>
+		</dict>
+		<key>Modules/PinLocator.swiftmodule/armv7-apple-ios.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MBAprsSVxIP4p0YL/qd7OKgXNpQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			qoi+lhap6xCVIu0bBs/LxzIuPvSYnRUHSiYNTNONCNc=
+			</data>
+		</dict>
+		<key>Modules/PinLocator.swiftmodule/armv7.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CRde7Al12LiRbP968pJNL5U8ixg=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZdNr/Rv+R0iizhgWJc9ljVA6CbWeal4tncdNjIQnVfY=
+			</data>
+		</dict>
+		<key>Modules/PinLocator.swiftmodule/armv7.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MBAprsSVxIP4p0YL/qd7OKgXNpQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			qoi+lhap6xCVIu0bBs/LxzIuPvSYnRUHSiYNTNONCNc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

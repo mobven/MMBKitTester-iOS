@@ -33,7 +33,7 @@
         "repositoryURL": "https://github.com/krzyzanowskim/CryptoSwift.git",
         "state": {
           "branch": "master",
-          "revision": "938d7973b022735f1e9ec9ee6cf44a6ccc43c641",
+          "revision": "e793a595747c8f9b97b8de4ebde7b2a440f2d594",
           "version": null
         }
       },
@@ -78,7 +78,7 @@
         "repositoryURL": "https://github.com/mobven/SecureNetwork.git",
         "state": {
           "branch": "develop",
-          "revision": "92d23f32dc36c0d38e39d9a98cb40acdb926fc12",
+          "revision": "b77839cc1435fecb3125cf18b247627e83beb7d0",
           "version": null
         }
       },
