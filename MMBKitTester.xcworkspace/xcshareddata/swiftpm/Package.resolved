@@ -42,7 +42,7 @@
         "repositoryURL": "https://github.com/mobven/ErrorKit.git",
         "state": {
           "branch": "develop",
-          "revision": "4fb0d1a9c29ca63e93ec22d0e4d5dc4bed2ecc9a",
+          "revision": "5bee38028ba5ed6875c364f0e97a4b0efc0b9ac7",
           "version": null
         }
       },
@@ -87,7 +87,7 @@
         "repositoryURL": "https://github.com/mobven/PinLocator.git",
         "state": {
           "branch": "develop",
-          "revision": "35216a2ff7494855f885092a1c0a681e9a36ea1c",
+          "revision": "b136807bc6dd0c904abbd1700bf4f8667a3ec79c",
           "version": null
         }
       },
@@ -96,7 +96,7 @@
         "repositoryURL": "https://github.com/mobven/SecureNetwork.git",
         "state": {
           "branch": "develop",
-          "revision": "8229a20800ae525400d716f18dd3c94fc13f275d",
+          "revision": "80ddeb7c813946cb17af8ae733c1c99f5ef41550",
           "version": null
         }
       },

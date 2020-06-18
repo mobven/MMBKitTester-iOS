@@ -135,11 +135,11 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
 
 extension AppDelegate: ErrorKitDelegate {
     
-    func errorKitDidCatch(networkingError: Error) {
+    func errorKitDidCatch(networkingError: NetworkingError) {
         print(networkingError.localizedDescription)
     }
     
-    func errorKitDidCatch(serializationError: Error) {
+    func errorKitDidCatch(serializationError: NetworkingError) {
         print(serializationError.localizedDescription)
     }
     
