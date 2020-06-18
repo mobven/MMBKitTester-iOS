@@ -1,0 +1,115 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name PinLocator
+import Foundation
+import GoogleMaps
+import MMBKit
+import MapKit
+@_exported import PinLocator
+import Swift
+import UIKit
+public protocol PinViewConformance : AnyObject {
+  func setPin(_ pin: PinLocator.Pinnable)
+}
+extension PinLocatorView {
+  @_hasMissingDesignatedInitializers public class MapRouter {
+    public static var shared: PinLocator.PinLocatorView.MapRouter
+    public func route(_ forPin: PinLocator.Pinnable, router: PinLocator.PinLocatorRouter)
+    @objc deinit
+  }
+}
+public protocol Mappable {
+  func setPins(_ pins: [PinLocator.Pinnable])
+  func setCamera(_ position: PinLocator.PinLocatorView.CameraPosition, animated: Swift.Bool)
+}
+public struct PinLocatorRouter {
+  public init(title: Swift.String, message: Swift.String?, appleMapsTitle: Swift.String, googleMapsTitle: Swift.String, yandexMapsTitle: Swift.String, cancelButton: Swift.String)
+}
+public protocol PinLocatorViewDelegate : AnyObject {
+  func pinLocatorView(_ pinLocatorView: PinLocator.PinLocatorView, routeTo pin: PinLocator.Pinnable) -> PinLocator.PinLocatorRouter?
+}
+public protocol PinLocatorViewRoutingDelegate : AnyObject {
+  func pinLocatorView(_ pinLocatorView: PinLocator.Mappable, didTapAction forPin: PinLocator.Pinnable)
+}
+public protocol PinBinderDelegate : AnyObject {
+  func pinBinderAction(binder: PinLocator.PinLocatorView.Binder, pin: PinLocator.Pinnable)
+}
+extension PinLocatorView {
+  @objc open class Binder : ObjectiveC.NSObject {
+    public typealias PinViewType = UIKit.UIView
+    public var view: PinLocator.PinLocatorView.Binder.PinViewType
+    weak public var delegate: PinLocator.PinBinderDelegate?
+    required public init(view: UIKit.UIView, pin: PinLocator.Pinnable, delegate: PinLocator.PinBinderDelegate)
+    @objc deinit
+    @objc override dynamic public init()
+  }
+}
+extension PinLocatorView.Binder {
+  public struct Builder {
+    public init(binder: PinLocator.PinLocatorView.Binder.Type, viewType: UIKit.UIView.Type)
+  }
+}
+public struct PinLocation : Swift.Hashable {
+  public var latitude: Swift.Double
+  public var longitude: Swift.Double
+  public init(latitude: Swift.Double, longitude: Swift.Double)
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+  public static func == (a: PinLocator.PinLocation, b: PinLocator.PinLocation) -> Swift.Bool
+}
+extension PinLocator : MMBKit.MBComponent {
+  public func setup()
+}
+@_hasMissingDesignatedInitializers public class PinLocator {
+  public static var shared: PinLocator.PinLocator
+  @objc deinit
+}
+extension PinLocatorView {
+  public struct CameraPosition {
+    public var latitude: Swift.Double
+    public var longitude: Swift.Double
+    public init(zoom: Swift.Float, latitude: Swift.Double, longitude: Swift.Double)
+  }
+}
+@objc @_inheritsConvenienceInitializers public class DefaultPinViewBinder : PinLocator.PinLocatorView.Binder {
+  public typealias PinViewType = PinLocator.CustomAnnotationView
+  public class var builder: PinLocator.PinLocatorView.Binder.Builder {
+    get
+  }
+  required public init(view: UIKit.UIView, pin: PinLocator.Pinnable, delegate: PinLocator.PinBinderDelegate)
+  @objc deinit
+}
+public protocol Pinnable {
+  var title: Swift.String { get }
+  var description: Swift.String { get }
+  var routeButtonTitle: Swift.String { get }
+  var icon: UIKit.UIImage? { get }
+  var location: PinLocator.PinLocation { get }
+  var binderBuilder: PinLocator.PinLocatorView.Binder.Builder { get }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class PinLocatorView : UIKit.UIView {
+  public var mapType: PinLocator.PinLocatorView.MapType {
+    get
+    set(value)
+  }
+  weak public var delegate: PinLocator.PinLocatorViewDelegate?
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  public convenience init(mapType: PinLocator.PinLocatorView.MapType)
+  public func setPins(_ pins: [PinLocator.Pinnable])
+  public func setCamera(_ position: PinLocator.PinLocatorView.CameraPosition, animated: Swift.Bool = true)
+  @objc deinit
+}
+extension PinLocatorView : PinLocator.PinLocatorViewRoutingDelegate {
+  public func pinLocatorView(_ pinLocatorView: PinLocator.Mappable, didTapAction forPin: PinLocator.Pinnable)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class CustomAnnotationView : UIKit.UIView {
+  @objc deinit
+}
+extension PinLocatorView {
+  public enum MapType {
+    case apple
+    case google(apiKey: Swift.String)
+  }
+}
