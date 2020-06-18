@@ -11,6 +11,7 @@ target 'MMBKitTester' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Performance'
   pod 'Firebase/DynamicLinks'
+  pod 'GoogleMaps'
   
   target 'MMBKitTesterTests' do
     inherit! :search_paths

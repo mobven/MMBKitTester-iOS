@@ -83,6 +83,15 @@
         }
       },
       {
+        "package": "PinLocator",
+        "repositoryURL": "https://github.com/mobven/PinLocator.git",
+        "state": {
+          "branch": "develop",
+          "revision": "35216a2ff7494855f885092a1c0a681e9a36ea1c",
+          "version": null
+        }
+      },
+      {
         "package": "SecureNetwork",
         "repositoryURL": "https://github.com/mobven/SecureNetwork.git",
         "state": {

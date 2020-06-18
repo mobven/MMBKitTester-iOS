@@ -92,6 +92,11 @@ PODS:
   - GoogleDataTransportCCTSupport (3.1.0):
     - GoogleDataTransport (~> 6.1)
     - nanopb (~> 1.30905.0)
+  - GoogleMaps (3.9.0):
+    - GoogleMaps/Maps (= 3.9.0)
+  - GoogleMaps/Base (3.9.0)
+  - GoogleMaps/Maps (3.9.0):
+    - GoogleMaps/Base
   - GoogleToolboxForMac/Defines (2.2.2)
   - GoogleToolboxForMac/Logger (2.2.2):
     - GoogleToolboxForMac/Defines (= 2.2.2)
@@ -131,6 +136,7 @@ DEPENDENCIES:
   - Firebase/DynamicLinks
   - Firebase/Messaging
   - Firebase/Performance
+  - GoogleMaps
 
 SPEC REPOS:
   trunk:
@@ -150,6 +156,7 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleDataTransportCCTSupport
+    - GoogleMaps
     - GoogleToolboxForMac
     - GoogleUtilities
     - GTMSessionFetcher
@@ -174,6 +181,7 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: 137afe68bfa406c3f4221b9395253d9e5d4654cf
   GoogleDataTransport: ad884314b81cdb808fb1d23787b367ff8da4e28a
   GoogleDataTransportCCTSupport: d70a561f7d236af529fee598835caad5e25f6d3d
+  GoogleMaps: 4b5346bddfe6911bb89155d43c903020170523ac
   GoogleToolboxForMac: 800648f8b3127618c1b59c7f97684427630c5ea3
   GoogleUtilities: 39530bc0ad980530298e9c4af8549e991fd033b1
   GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
@@ -181,6 +189,6 @@ SPEC CHECKSUMS:
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   Protobuf: 2793fcd0622a00b546c60e7cbbcc493e043e9bb9
 
-PODFILE CHECKSUM: 9f4a5a9a7c3efb31ccdd7685a952e18c73518767
+PODFILE CHECKSUM: 631df313ab82b4582c74c322820b03465c16571e
 
 COCOAPODS: 1.9.3
