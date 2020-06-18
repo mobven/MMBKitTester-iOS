@@ -11,10 +11,10 @@
 		6D5410D524474A50000A8B1D /* KVLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5410D424474A50000A8B1D /* KVLabelViewController.swift */; };
 		6D5410DA24477ADE000A8B1D /* UIComponentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5410D924477ADE000A8B1D /* UIComponentsViewController.swift */; };
 		6D5754A124754CB100C23C48 /* AmountInputViewBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5754A024754CB100C23C48 /* AmountInputViewBinder.swift */; };
-		6D818F57249A7B06008943A1 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 6D818F56249A7B06008943A1 /* SwiftPackageProductDependency */; };
+		6D5BB1BB249B9657006F8038 /* PinLocator in Frameworks */ = {isa = PBXBuildFile; productRef = 6D5BB1BA249B9657006F8038 /* PinLocator */; };
+		6D818F57249A7B06008943A1 /* SecureNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = 6D818F56249A7B06008943A1 /* SecureNetwork */; };
 		6D818F5A249A7CA0008943A1 /* ErrorKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D818F59249A7CA0008943A1 /* ErrorKitViewController.swift */; };
 		6D818F5C249A7DB4008943A1 /* ErrorKitSampleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D818F5B249A7DB4008943A1 /* ErrorKitSampleAPI.swift */; };
-		6D818F70249B655E008943A1 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 6D818F6F249B655E008943A1 /* SwiftPackageProductDependency */; };
 		6D8BA196243A44AD004493A9 /* OneLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BA195243A44AD004493A9 /* OneLinkViewController.swift */; };
 		6D8BA19B243A4869004493A9 /* AppLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BA19A243A4869004493A9 /* AppLink.swift */; };
 		6D8BA19D243A495B004493A9 /* AnnouncementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BA19C243A495B004493A9 /* AnnouncementsViewController.swift */; };
@@ -49,10 +49,10 @@
 		6DAF9833243B33B900CF9AAA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF9832243B33B900CF9AAA /* User.swift */; };
 		6DBA5552248FAE4200751941 /* SpotifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBA5551248FAE4200751941 /* SpotifyModels.swift */; };
 		6DC7EC65245F0F7C0023537C /* AddOnFeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC7EC64245F0F7C0023537C /* AddOnFeaturesViewController.swift */; };
-		6DC7ECC8246018C10023537C /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 6DC7ECC7246018C10023537C /* SwiftPackageProductDependency */; };
-		6DC7ECCB246018D10023537C /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 6DC7ECCA246018D10023537C /* SwiftPackageProductDependency */; };
-		6DC7ECCE246018ED0023537C /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 6DC7ECCD246018ED0023537C /* SwiftPackageProductDependency */; };
-		6DC7ECD1246019110023537C /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 6DC7ECD0246019110023537C /* SwiftPackageProductDependency */; };
+		6DC7ECC8246018C10023537C /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 6DC7ECC7246018C10023537C /* UIComponents */; };
+		6DC7ECCB246018D10023537C /* OneLink in Frameworks */ = {isa = PBXBuildFile; productRef = 6DC7ECCA246018D10023537C /* OneLink */; };
+		6DC7ECCE246018ED0023537C /* AppSecurity in Frameworks */ = {isa = PBXBuildFile; productRef = 6DC7ECCD246018ED0023537C /* AppSecurity */; };
+		6DC7ECD1246019110023537C /* AccountSecurity in Frameworks */ = {isa = PBXBuildFile; productRef = 6DC7ECD0246019110023537C /* AccountSecurity */; };
 		6DFF0F66245ABD170035C890 /* Pods_MMBKitTester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3227ECF86F65F265974F9C /* Pods_MMBKitTester.framework */; };
 		6DFF0F86245CBBB20035C890 /* CustomPopupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF0F85245CBBB20035C890 /* CustomPopupsViewController.swift */; };
 		6DFF0F88245CBBF20035C890 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF0F87245CBBF20035C890 /* CustomAlert.swift */; };
@@ -72,7 +72,7 @@
 		6F3561E0249A682900ACF61D /* PinLocatorBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3561DF249A682900ACF61D /* PinLocatorBinder.swift */; };
 		6F3561E2249A6B9B00ACF61D /* CustomPinLocatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3561E1249A6B9B00ACF61D /* CustomPinLocatorView.swift */; };
 		6F521709246A848200F7E28E /* StateMachineFormsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F521708246A848200F7E28E /* StateMachineFormsViewController.swift */; };
-		6F52170F246A8BAF00F7E28E /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 6F52170E246A8BAF00F7E28E /* SwiftPackageProductDependency */; };
+		6F52170F246A8BAF00F7E28E /* StateMachineForms in Frameworks */ = {isa = PBXBuildFile; productRef = 6F52170E246A8BAF00F7E28E /* StateMachineForms */; };
 		6F521711246A922C00F7E28E /* forms.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F521710246A922C00F7E28E /* forms.json */; };
 		6F521714246A9A3200F7E28E /* UIDatePickerTextFieldBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F521713246A9A3200F7E28E /* UIDatePickerTextFieldBinder.swift */; };
 		6F521717246AA28100F7E28E /* MMBTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F521716246AA28100F7E28E /* MMBTextField.swift */; };
@@ -223,13 +223,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DC7ECCE246018ED0023537C /* BuildFile in Frameworks */,
-				6DC7ECCB246018D10023537C /* BuildFile in Frameworks */,
-				6F52170F246A8BAF00F7E28E /* BuildFile in Frameworks */,
-				6DC7ECC8246018C10023537C /* BuildFile in Frameworks */,
-				6DC7ECD1246019110023537C /* BuildFile in Frameworks */,
-				6D818F70249B655E008943A1 /* BuildFile in Frameworks */,
-				6D818F57249A7B06008943A1 /* BuildFile in Frameworks */,
+				6DC7ECCE246018ED0023537C /* AppSecurity in Frameworks */,
+				6DC7ECCB246018D10023537C /* OneLink in Frameworks */,
+				6F52170F246A8BAF00F7E28E /* StateMachineForms in Frameworks */,
+				6DC7ECC8246018C10023537C /* UIComponents in Frameworks */,
+				6DC7ECD1246019110023537C /* AccountSecurity in Frameworks */,
+				6D5BB1BB249B9657006F8038 /* PinLocator in Frameworks */,
+				6D818F57249A7B06008943A1 /* SecureNetwork in Frameworks */,
 				6DFF0F66245ABD170035C890 /* Pods_MMBKitTester.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,7 +566,7 @@
 				6D931FD8243228EF004C8A3C /* Resources */,
 				95E53F6E0D52333210561A3B /* [CP] Embed Pods Frameworks */,
 				6F1A93E02493732B0073FB7E /* Embed Frameworks */,
-				EF29FCBA69503EC6AA029BC4 /* [CP] Copy Pods Resources */,
+				626799B7EA98751E4B12DCA6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -574,13 +574,13 @@
 			);
 			name = MMBKitTester;
 			packageProductDependencies = (
-				6DC7ECC7246018C10023537C /* SwiftPackageProductDependency */,
-				6DC7ECCA246018D10023537C /* SwiftPackageProductDependency */,
-				6DC7ECCD246018ED0023537C /* SwiftPackageProductDependency */,
-				6DC7ECD0246019110023537C /* SwiftPackageProductDependency */,
-				6F52170E246A8BAF00F7E28E /* SwiftPackageProductDependency */,
-				6D818F56249A7B06008943A1 /* SwiftPackageProductDependency */,
-				6D818F6F249B655E008943A1 /* SwiftPackageProductDependency */,
+				6DC7ECC7246018C10023537C /* UIComponents */,
+				6DC7ECCA246018D10023537C /* OneLink */,
+				6DC7ECCD246018ED0023537C /* AppSecurity */,
+				6DC7ECD0246019110023537C /* AccountSecurity */,
+				6F52170E246A8BAF00F7E28E /* StateMachineForms */,
+				6D818F56249A7B06008943A1 /* SecureNetwork */,
+				6D5BB1BA249B9657006F8038 /* PinLocator */,
 			);
 			productName = MMBKitTester;
 			productReference = 6D931FDA243228EF004C8A3C /* MMBKitTester.app */;
@@ -634,13 +634,13 @@
 			);
 			mainGroup = 6D931FD1243228EF004C8A3C;
 			packageReferences = (
-				6DC7ECC6246018C10023537C /* RemoteSwiftPackageReference */,
-				6DC7ECC9246018D10023537C /* RemoteSwiftPackageReference */,
-				6DC7ECCC246018ED0023537C /* RemoteSwiftPackageReference */,
-				6DC7ECCF246019110023537C /* RemoteSwiftPackageReference */,
-				6F52170D246A8BAF00F7E28E /* RemoteSwiftPackageReference */,
-				6D818F55249A7B06008943A1 /* RemoteSwiftPackageReference */,
-				6D818F6E249B655E008943A1 /* RemoteSwiftPackageReference */,
+				6DC7ECC6246018C10023537C /* XCRemoteSwiftPackageReference "UIComponents" */,
+				6DC7ECC9246018D10023537C /* XCRemoteSwiftPackageReference "OneLink" */,
+				6DC7ECCC246018ED0023537C /* XCRemoteSwiftPackageReference "AppSecurity" */,
+				6DC7ECCF246019110023537C /* XCRemoteSwiftPackageReference "AccountSecurity" */,
+				6F52170D246A8BAF00F7E28E /* XCRemoteSwiftPackageReference "StateMachineForms" */,
+				6D818F55249A7B06008943A1 /* XCRemoteSwiftPackageReference "SecureNetwork" */,
+				6D5BB1B9249B9657006F8038 /* XCRemoteSwiftPackageReference "PinLocator" */,
 			);
 			productRefGroup = 6D931FDB243228EF004C8A3C /* Products */;
 			projectDirPath = "";
@@ -701,6 +701,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		626799B7EA98751E4B12DCA6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6D93202E2432A385004C8A3C /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -756,23 +773,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EF29FCBA69503EC6AA029BC4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1150,15 +1150,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6D818F55249A7B06008943A1 /* RemoteSwiftPackageReference */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mobven/SecureNetwork.git";
-			requirement = {
-				branch = develop;
-				kind = branch;
-			};
-		};
-		6D818F6E249B655E008943A1 /* RemoteSwiftPackageReference */ = {
+		6D5BB1B9249B9657006F8038 /* XCRemoteSwiftPackageReference "PinLocator" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mobven/PinLocator.git";
 			requirement = {
@@ -1166,7 +1158,15 @@
 				kind = branch;
 			};
 		};
-		6DC7ECC6246018C10023537C /* RemoteSwiftPackageReference */ = {
+		6D818F55249A7B06008943A1 /* XCRemoteSwiftPackageReference "SecureNetwork" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mobven/SecureNetwork.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		6DC7ECC6246018C10023537C /* XCRemoteSwiftPackageReference "UIComponents" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mobven/UIComponents.git";
 			requirement = {
@@ -1174,7 +1174,7 @@
 				kind = branch;
 			};
 		};
-		6DC7ECC9246018D10023537C /* RemoteSwiftPackageReference */ = {
+		6DC7ECC9246018D10023537C /* XCRemoteSwiftPackageReference "OneLink" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mobven/OneLink.git";
 			requirement = {
@@ -1182,7 +1182,7 @@
 				kind = branch;
 			};
 		};
-		6DC7ECCC246018ED0023537C /* RemoteSwiftPackageReference */ = {
+		6DC7ECCC246018ED0023537C /* XCRemoteSwiftPackageReference "AppSecurity" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mobven/AppSecurity.git";
 			requirement = {
@@ -1190,7 +1190,7 @@
 				kind = branch;
 			};
 		};
-		6DC7ECCF246019110023537C /* RemoteSwiftPackageReference */ = {
+		6DC7ECCF246019110023537C /* XCRemoteSwiftPackageReference "AccountSecurity" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mobven/AccountSecurity.git";
 			requirement = {
@@ -1198,7 +1198,7 @@
 				kind = branch;
 			};
 		};
-		6F52170D246A8BAF00F7E28E /* RemoteSwiftPackageReference */ = {
+		6F52170D246A8BAF00F7E28E /* XCRemoteSwiftPackageReference "StateMachineForms" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mobven/StateMachineForms.git";
 			requirement = {
@@ -1209,39 +1209,39 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6D818F56249A7B06008943A1 /* SwiftPackageProductDependency */ = {
+		6D5BB1BA249B9657006F8038 /* PinLocator */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6D818F55249A7B06008943A1 /* RemoteSwiftPackageReference */;
-			productName = SecureNetwork;
-		};
-		6D818F6F249B655E008943A1 /* SwiftPackageProductDependency */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6D818F6E249B655E008943A1 /* RemoteSwiftPackageReference */;
+			package = 6D5BB1B9249B9657006F8038 /* XCRemoteSwiftPackageReference "PinLocator" */;
 			productName = PinLocator;
 		};
-		6DC7ECC7246018C10023537C /* SwiftPackageProductDependency */ = {
+		6D818F56249A7B06008943A1 /* SecureNetwork */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6DC7ECC6246018C10023537C /* RemoteSwiftPackageReference */;
+			package = 6D818F55249A7B06008943A1 /* XCRemoteSwiftPackageReference "SecureNetwork" */;
+			productName = SecureNetwork;
+		};
+		6DC7ECC7246018C10023537C /* UIComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DC7ECC6246018C10023537C /* XCRemoteSwiftPackageReference "UIComponents" */;
 			productName = UIComponents;
 		};
-		6DC7ECCA246018D10023537C /* SwiftPackageProductDependency */ = {
+		6DC7ECCA246018D10023537C /* OneLink */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6DC7ECC9246018D10023537C /* RemoteSwiftPackageReference */;
+			package = 6DC7ECC9246018D10023537C /* XCRemoteSwiftPackageReference "OneLink" */;
 			productName = OneLink;
 		};
-		6DC7ECCD246018ED0023537C /* SwiftPackageProductDependency */ = {
+		6DC7ECCD246018ED0023537C /* AppSecurity */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6DC7ECCC246018ED0023537C /* RemoteSwiftPackageReference */;
+			package = 6DC7ECCC246018ED0023537C /* XCRemoteSwiftPackageReference "AppSecurity" */;
 			productName = AppSecurity;
 		};
-		6DC7ECD0246019110023537C /* SwiftPackageProductDependency */ = {
+		6DC7ECD0246019110023537C /* AccountSecurity */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6DC7ECCF246019110023537C /* RemoteSwiftPackageReference */;
+			package = 6DC7ECCF246019110023537C /* XCRemoteSwiftPackageReference "AccountSecurity" */;
 			productName = AccountSecurity;
 		};
-		6F52170E246A8BAF00F7E28E /* SwiftPackageProductDependency */ = {
+		6F52170E246A8BAF00F7E28E /* StateMachineForms */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6F52170D246A8BAF00F7E28E /* RemoteSwiftPackageReference */;
+			package = 6F52170D246A8BAF00F7E28E /* XCRemoteSwiftPackageReference "StateMachineForms" */;
 			productName = StateMachineForms;
 		};
 /* End XCSwiftPackageProductDependency section */
