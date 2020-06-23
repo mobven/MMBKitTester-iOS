@@ -22,7 +22,7 @@ class OneLinkViewController: UIViewController {
         OneLink.shared().delegate = self
         
         urlTextfield.text = "https://bkt.com/cards/?id=1533"
-        loginStatusSwitch.isOn = User.shared().isLoggedIn
+        loginStatusSwitch.isOn = User.shared.isLoggedIn
         
         InstanceID.instanceID().instanceID { (result, error) in
             if let error = error {
