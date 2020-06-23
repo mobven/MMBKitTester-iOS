@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import MoBKit
+import MobKit
 import AppSecurity
 import AccountSecurity
 import OneLink
