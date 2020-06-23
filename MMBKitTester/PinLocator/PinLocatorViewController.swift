@@ -34,27 +34,25 @@ class PinLocatorViewController: UIViewController {
     }
     
     func setPins() {
-        let pins: [Pinnable] = [
-            CustomPin(title: "Adalar",
-                      icon: UIImage.init(named: "atm"),
-                      description: "Adalar deneme description",
-                      routeButtonTitle: "Yol Tarifi",
+        pinLocatorView.setPins([
+            CustomPin(icon: UIImage(named: "atm"),
+                      title: "Adalar",
+                      description: "Adalar Municipality",
+                      routeButtonTitle: "Route",
                       location: PinLocation(latitude: 40.8747, longitude: 29.1294)),
-            CustomPin(title: "Arnavutköy",
-                      icon: UIImage.init(named: "atm"),
-                      description: "Arnavutköy deneme description",
-                      routeButtonTitle: "Yol Tarifi",
+            CustomPin(icon: UIImage(named: "atm"),
+                      title: "Arnavutköy",
+                      description: "Arnavutköy Sports Club",
+                      routeButtonTitle: "Route",
                       location: PinLocation(latitude: 41.1864, longitude: 28.7389)),
-            CustomLocationPin(title: "Avcılar",
-                              icon: UIImage.init(named: "atm-2"),
-                              description: "Avcılar deneme description",
-                              routeButtonTitle: "Yol Tarifi",
-                              location: PinLocation(latitude: 40.9792, longitude: 28.7214))
-        ]
-        
-        self.pinLocatorView.setPins(pins)
-        self.pinLocatorView.setCamera(PinLocatorView.CameraPosition(zoom: 9, latitude: 40.9833, longitude: 29.1278),
-                                      animated: true)
+            CustomPin(icon: UIImage(named: "atm-2"),
+                      title: "Avcılar",
+                      description: "Avcılar Municipality Main Entrance",
+                      routeButtonTitle: "Route",
+                      location: PinLocation(latitude: 40.9792, longitude: 28.7214))
+        ])
+        pinLocatorView.setCamera(PinLocatorView.CameraPosition(zoom: 9, latitude: 40.9833, longitude: 29.1278),
+                                 animated: true)
     }
 }
 

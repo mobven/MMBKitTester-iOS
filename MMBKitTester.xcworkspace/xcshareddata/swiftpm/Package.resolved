@@ -56,7 +56,7 @@
         }
       },
       {
-        "package": "MMBKit",
+        "package": "MobKit",
         "repositoryURL": "https://github.com/mobven/MMBKit.git",
         "state": {
           "branch": "develop",

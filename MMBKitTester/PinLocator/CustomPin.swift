@@ -10,21 +10,19 @@ import UIKit
 import PinLocator
 
 struct CustomPin: Pinnable {
-
-    var title: String
     var icon: UIImage?
+    var title: String
     var description: String
     var routeButtonTitle: String
     var location: PinLocation
     var binderBuilder: PinLocatorView.Binder.Builder {
         DefaultPinViewBinder.builder
     }
-    
 }
 
 struct CustomLocationPin: Pinnable {
-    var title: String
     var icon: UIImage?
+    var title: String
     var description: String
     var routeButtonTitle: String
     var location: PinLocation
