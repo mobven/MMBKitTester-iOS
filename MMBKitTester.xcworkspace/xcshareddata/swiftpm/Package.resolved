@@ -42,7 +42,7 @@
         "repositoryURL": "https://github.com/mobven/ErrorKit.git",
         "state": {
           "branch": "develop",
-          "revision": "5bee38028ba5ed6875c364f0e97a4b0efc0b9ac7",
+          "revision": "9640770e22771ff02b4b18d784c3292321141053",
           "version": null
         }
       },
@@ -78,7 +78,7 @@
         "repositoryURL": "https://github.com/mobven/Networking.git",
         "state": {
           "branch": "develop",
-          "revision": "4586a99d823c411e473fb93c19eb2c070b3bdc32",
+          "revision": "e0ae82e4fa28c752fc91e11484d0c367ec60ae39",
           "version": null
         }
       },
@@ -87,7 +87,7 @@
         "repositoryURL": "https://github.com/mobven/OneLink.git",
         "state": {
           "branch": "develop",
-          "revision": "09e9936474fe172a7c2a2942fe67c58aab084bb4",
+          "revision": "0f472b15d75ec78250a900fa31ab98c79356323b",
           "version": null
         }
       },
@@ -96,7 +96,7 @@
         "repositoryURL": "https://github.com/mobven/PinLocator.git",
         "state": {
           "branch": "develop",
-          "revision": "c531f2b0936bc75de1efaa3ecba8a5a5fa33bc85",
+          "revision": "5473018509f688503359d97ec06c177a812adf11",
           "version": null
         }
       },
@@ -105,7 +105,7 @@
         "repositoryURL": "https://github.com/mobven/SecureNetwork.git",
         "state": {
           "branch": "develop",
-          "revision": "80ddeb7c813946cb17af8ae733c1c99f5ef41550",
+          "revision": "a4d92f86d373eef4041cfe4bd4808ffd13d934df",
           "version": null
         }
       },
@@ -114,7 +114,7 @@
         "repositoryURL": "https://github.com/mobven/StateMachineForms.git",
         "state": {
           "branch": "develop",
-          "revision": "0d4b4498b0d31c82cfb162ec63c484a1698b4b07",
+          "revision": "6646c781346e777b3c0b49ca03a750964252f028",
           "version": null
         }
       },
@@ -122,8 +122,8 @@
         "package": "UIComponents",
         "repositoryURL": "https://github.com/mobven/UIComponents.git",
         "state": {
-          "branch": "develop",
-          "revision": "6f5cfbd421c88b52c0de5ee1d16cc099bb60ebd0",
+          "branch": "master",
+          "revision": "2d7d9b0ec93a0e8b9826540a1715d8578e651ff1",
           "version": null
         }
       }

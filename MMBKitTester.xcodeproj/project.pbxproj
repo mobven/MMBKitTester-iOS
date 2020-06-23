@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		6D1F27AF24A1FA8D00ECA5E6 /* CustomXibPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1F27AE24A1FA8D00ECA5E6 /* CustomXibPinView.swift */; };
 		6D1F27B124A1FBE500ECA5E6 /* CustomXibPinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1F27B024A1FBE500ECA5E6 /* CustomXibPinView.xib */; };
+		6D1F27B424A2197D00ECA5E6 /* AppSecurity in Frameworks */ = {isa = PBXBuildFile; productRef = 6D1F27B324A2197D00ECA5E6 /* AppSecurity */; };
+		6D1F27B724A219A500ECA5E6 /* AccountSecurity in Frameworks */ = {isa = PBXBuildFile; productRef = 6D1F27B624A219A500ECA5E6 /* AccountSecurity */; };
+		6D1F27BA24A219BD00ECA5E6 /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 6D1F27B924A219BD00ECA5E6 /* UIComponents */; };
+		6D1F27BD24A219DA00ECA5E6 /* StateMachineForms in Frameworks */ = {isa = PBXBuildFile; productRef = 6D1F27BC24A219DA00ECA5E6 /* StateMachineForms */; };
+		6D1F27C024A219F300ECA5E6 /* OneLink in Frameworks */ = {isa = PBXBuildFile; productRef = 6D1F27BF24A219F300ECA5E6 /* OneLink */; };
+		6D1F27C324A21A4000ECA5E6 /* PinLocator in Frameworks */ = {isa = PBXBuildFile; productRef = 6D1F27C224A21A4000ECA5E6 /* PinLocator */; };
+		6D1F27C624A21A6600ECA5E6 /* ErrorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6D1F27C524A21A6600ECA5E6 /* ErrorKit */; };
+		6D1F27C924A21A8C00ECA5E6 /* SecureNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = 6D1F27C824A21A8C00ECA5E6 /* SecureNetwork */; };
 		6D4E40132454DB3100B8CC67 /* KVListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4E40122454DB3100B8CC67 /* KVListViewController.swift */; };
 		6D5410D524474A50000A8B1D /* KVLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5410D424474A50000A8B1D /* KVLabelViewController.swift */; };
 		6D5410DA24477ADE000A8B1D /* UIComponentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5410D924477ADE000A8B1D /* UIComponentsViewController.swift */; };
 		6D5754A124754CB100C23C48 /* AmountInputViewBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5754A024754CB100C23C48 /* AmountInputViewBinder.swift */; };
-		6D5BB1BB249B9657006F8038 /* PinLocator in Frameworks */ = {isa = PBXBuildFile; productRef = 6D5BB1BA249B9657006F8038 /* PinLocator */; };
-		6D818F57249A7B06008943A1 /* SecureNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = 6D818F56249A7B06008943A1 /* SecureNetwork */; };
 		6D818F5A249A7CA0008943A1 /* ErrorKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D818F59249A7CA0008943A1 /* ErrorKitViewController.swift */; };
 		6D818F5C249A7DB4008943A1 /* ErrorKitSampleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D818F5B249A7DB4008943A1 /* ErrorKitSampleAPI.swift */; };
 		6D8BA196243A44AD004493A9 /* OneLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BA195243A44AD004493A9 /* OneLinkViewController.swift */; };
@@ -51,10 +57,6 @@
 		6DAF9833243B33B900CF9AAA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF9832243B33B900CF9AAA /* User.swift */; };
 		6DBA5552248FAE4200751941 /* SpotifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBA5551248FAE4200751941 /* SpotifyModels.swift */; };
 		6DC7EC65245F0F7C0023537C /* AddOnFeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC7EC64245F0F7C0023537C /* AddOnFeaturesViewController.swift */; };
-		6DC7ECC8246018C10023537C /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 6DC7ECC7246018C10023537C /* UIComponents */; };
-		6DC7ECCB246018D10023537C /* OneLink in Frameworks */ = {isa = PBXBuildFile; productRef = 6DC7ECCA246018D10023537C /* OneLink */; };
-		6DC7ECCE246018ED0023537C /* AppSecurity in Frameworks */ = {isa = PBXBuildFile; productRef = 6DC7ECCD246018ED0023537C /* AppSecurity */; };
-		6DC7ECD1246019110023537C /* AccountSecurity in Frameworks */ = {isa = PBXBuildFile; productRef = 6DC7ECD0246019110023537C /* AccountSecurity */; };
 		6DFF0F66245ABD170035C890 /* Pods_MMBKitTester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3227ECF86F65F265974F9C /* Pods_MMBKitTester.framework */; };
 		6DFF0F86245CBBB20035C890 /* CustomPopupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF0F85245CBBB20035C890 /* CustomPopupsViewController.swift */; };
 		6DFF0F88245CBBF20035C890 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF0F87245CBBF20035C890 /* CustomAlert.swift */; };
@@ -74,7 +76,6 @@
 		6F3561E0249A682900ACF61D /* PinLocatorBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3561DF249A682900ACF61D /* PinLocatorBinder.swift */; };
 		6F3561E2249A6B9B00ACF61D /* CustomPinLocatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3561E1249A6B9B00ACF61D /* CustomPinLocatorView.swift */; };
 		6F521709246A848200F7E28E /* StateMachineFormsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F521708246A848200F7E28E /* StateMachineFormsViewController.swift */; };
-		6F52170F246A8BAF00F7E28E /* StateMachineForms in Frameworks */ = {isa = PBXBuildFile; productRef = 6F52170E246A8BAF00F7E28E /* StateMachineForms */; };
 		6F521711246A922C00F7E28E /* forms.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F521710246A922C00F7E28E /* forms.json */; };
 		6F521714246A9A3200F7E28E /* UIDatePickerTextFieldBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F521713246A9A3200F7E28E /* UIDatePickerTextFieldBinder.swift */; };
 		6F521717246AA28100F7E28E /* MMBTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F521716246AA28100F7E28E /* MMBTextField.swift */; };
@@ -227,14 +228,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DC7ECCE246018ED0023537C /* AppSecurity in Frameworks */,
-				6DC7ECCB246018D10023537C /* OneLink in Frameworks */,
-				6F52170F246A8BAF00F7E28E /* StateMachineForms in Frameworks */,
-				6DC7ECC8246018C10023537C /* UIComponents in Frameworks */,
-				6DC7ECD1246019110023537C /* AccountSecurity in Frameworks */,
-				6D5BB1BB249B9657006F8038 /* PinLocator in Frameworks */,
-				6D818F57249A7B06008943A1 /* SecureNetwork in Frameworks */,
+				6D1F27BA24A219BD00ECA5E6 /* UIComponents in Frameworks */,
+				6D1F27B724A219A500ECA5E6 /* AccountSecurity in Frameworks */,
+				6D1F27C624A21A6600ECA5E6 /* ErrorKit in Frameworks */,
+				6D1F27C924A21A8C00ECA5E6 /* SecureNetwork in Frameworks */,
+				6D1F27B424A2197D00ECA5E6 /* AppSecurity in Frameworks */,
+				6D1F27C024A219F300ECA5E6 /* OneLink in Frameworks */,
 				6DFF0F66245ABD170035C890 /* Pods_MMBKitTester.framework in Frameworks */,
+				6D1F27C324A21A4000ECA5E6 /* PinLocator in Frameworks */,
+				6D1F27BD24A219DA00ECA5E6 /* StateMachineForms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,13 +582,14 @@
 			);
 			name = MMBKitTester;
 			packageProductDependencies = (
-				6DC7ECC7246018C10023537C /* UIComponents */,
-				6DC7ECCA246018D10023537C /* OneLink */,
-				6DC7ECCD246018ED0023537C /* AppSecurity */,
-				6DC7ECD0246019110023537C /* AccountSecurity */,
-				6F52170E246A8BAF00F7E28E /* StateMachineForms */,
-				6D818F56249A7B06008943A1 /* SecureNetwork */,
-				6D5BB1BA249B9657006F8038 /* PinLocator */,
+				6D1F27B324A2197D00ECA5E6 /* AppSecurity */,
+				6D1F27B624A219A500ECA5E6 /* AccountSecurity */,
+				6D1F27B924A219BD00ECA5E6 /* UIComponents */,
+				6D1F27BC24A219DA00ECA5E6 /* StateMachineForms */,
+				6D1F27BF24A219F300ECA5E6 /* OneLink */,
+				6D1F27C224A21A4000ECA5E6 /* PinLocator */,
+				6D1F27C524A21A6600ECA5E6 /* ErrorKit */,
+				6D1F27C824A21A8C00ECA5E6 /* SecureNetwork */,
 			);
 			productName = MMBKitTester;
 			productReference = 6D931FDA243228EF004C8A3C /* MMBKitTester.app */;
@@ -640,13 +643,14 @@
 			);
 			mainGroup = 6D931FD1243228EF004C8A3C;
 			packageReferences = (
-				6DC7ECC6246018C10023537C /* XCRemoteSwiftPackageReference "UIComponents" */,
-				6DC7ECC9246018D10023537C /* XCRemoteSwiftPackageReference "OneLink" */,
-				6DC7ECCC246018ED0023537C /* XCRemoteSwiftPackageReference "AppSecurity" */,
-				6DC7ECCF246019110023537C /* XCRemoteSwiftPackageReference "AccountSecurity" */,
-				6F52170D246A8BAF00F7E28E /* XCRemoteSwiftPackageReference "StateMachineForms" */,
-				6D818F55249A7B06008943A1 /* XCRemoteSwiftPackageReference "SecureNetwork" */,
-				6D5BB1B9249B9657006F8038 /* XCRemoteSwiftPackageReference "PinLocator" */,
+				6D1F27B224A2197D00ECA5E6 /* XCRemoteSwiftPackageReference "AppSecurity" */,
+				6D1F27B524A219A500ECA5E6 /* XCRemoteSwiftPackageReference "AccountSecurity" */,
+				6D1F27B824A219BD00ECA5E6 /* XCRemoteSwiftPackageReference "UIComponents" */,
+				6D1F27BB24A219DA00ECA5E6 /* XCRemoteSwiftPackageReference "StateMachineForms" */,
+				6D1F27BE24A219F300ECA5E6 /* XCRemoteSwiftPackageReference "OneLink" */,
+				6D1F27C124A21A4000ECA5E6 /* XCRemoteSwiftPackageReference "PinLocator" */,
+				6D1F27C424A21A6600ECA5E6 /* XCRemoteSwiftPackageReference "ErrorKit" */,
+				6D1F27C724A21A8C00ECA5E6 /* XCRemoteSwiftPackageReference "SecureNetwork" */,
 			);
 			productRefGroup = 6D931FDB243228EF004C8A3C /* Products */;
 			projectDirPath = "";
@@ -1158,39 +1162,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6D5BB1B9249B9657006F8038 /* XCRemoteSwiftPackageReference "PinLocator" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mobven/PinLocator.git";
-			requirement = {
-				branch = develop;
-				kind = branch;
-			};
-		};
-		6D818F55249A7B06008943A1 /* XCRemoteSwiftPackageReference "SecureNetwork" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mobven/SecureNetwork.git";
-			requirement = {
-				branch = develop;
-				kind = branch;
-			};
-		};
-		6DC7ECC6246018C10023537C /* XCRemoteSwiftPackageReference "UIComponents" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mobven/UIComponents.git";
-			requirement = {
-				branch = develop;
-				kind = branch;
-			};
-		};
-		6DC7ECC9246018D10023537C /* XCRemoteSwiftPackageReference "OneLink" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mobven/OneLink.git";
-			requirement = {
-				branch = develop;
-				kind = branch;
-			};
-		};
-		6DC7ECCC246018ED0023537C /* XCRemoteSwiftPackageReference "AppSecurity" */ = {
+		6D1F27B224A2197D00ECA5E6 /* XCRemoteSwiftPackageReference "AppSecurity" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mobven/AppSecurity.git";
 			requirement = {
@@ -1198,7 +1170,7 @@
 				kind = branch;
 			};
 		};
-		6DC7ECCF246019110023537C /* XCRemoteSwiftPackageReference "AccountSecurity" */ = {
+		6D1F27B524A219A500ECA5E6 /* XCRemoteSwiftPackageReference "AccountSecurity" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mobven/AccountSecurity.git";
 			requirement = {
@@ -1206,9 +1178,49 @@
 				kind = branch;
 			};
 		};
-		6F52170D246A8BAF00F7E28E /* XCRemoteSwiftPackageReference "StateMachineForms" */ = {
+		6D1F27B824A219BD00ECA5E6 /* XCRemoteSwiftPackageReference "UIComponents" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mobven/UIComponents.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		6D1F27BB24A219DA00ECA5E6 /* XCRemoteSwiftPackageReference "StateMachineForms" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mobven/StateMachineForms.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		6D1F27BE24A219F300ECA5E6 /* XCRemoteSwiftPackageReference "OneLink" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mobven/OneLink.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		6D1F27C124A21A4000ECA5E6 /* XCRemoteSwiftPackageReference "PinLocator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mobven/PinLocator.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		6D1F27C424A21A6600ECA5E6 /* XCRemoteSwiftPackageReference "ErrorKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mobven/ErrorKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		6D1F27C724A21A8C00ECA5E6 /* XCRemoteSwiftPackageReference "SecureNetwork" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mobven/SecureNetwork.git";
 			requirement = {
 				branch = develop;
 				kind = branch;
@@ -1217,40 +1229,45 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6D5BB1BA249B9657006F8038 /* PinLocator */ = {
+		6D1F27B324A2197D00ECA5E6 /* AppSecurity */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6D5BB1B9249B9657006F8038 /* XCRemoteSwiftPackageReference "PinLocator" */;
-			productName = PinLocator;
-		};
-		6D818F56249A7B06008943A1 /* SecureNetwork */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6D818F55249A7B06008943A1 /* XCRemoteSwiftPackageReference "SecureNetwork" */;
-			productName = SecureNetwork;
-		};
-		6DC7ECC7246018C10023537C /* UIComponents */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6DC7ECC6246018C10023537C /* XCRemoteSwiftPackageReference "UIComponents" */;
-			productName = UIComponents;
-		};
-		6DC7ECCA246018D10023537C /* OneLink */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6DC7ECC9246018D10023537C /* XCRemoteSwiftPackageReference "OneLink" */;
-			productName = OneLink;
-		};
-		6DC7ECCD246018ED0023537C /* AppSecurity */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6DC7ECCC246018ED0023537C /* XCRemoteSwiftPackageReference "AppSecurity" */;
+			package = 6D1F27B224A2197D00ECA5E6 /* XCRemoteSwiftPackageReference "AppSecurity" */;
 			productName = AppSecurity;
 		};
-		6DC7ECD0246019110023537C /* AccountSecurity */ = {
+		6D1F27B624A219A500ECA5E6 /* AccountSecurity */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6DC7ECCF246019110023537C /* XCRemoteSwiftPackageReference "AccountSecurity" */;
+			package = 6D1F27B524A219A500ECA5E6 /* XCRemoteSwiftPackageReference "AccountSecurity" */;
 			productName = AccountSecurity;
 		};
-		6F52170E246A8BAF00F7E28E /* StateMachineForms */ = {
+		6D1F27B924A219BD00ECA5E6 /* UIComponents */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6F52170D246A8BAF00F7E28E /* XCRemoteSwiftPackageReference "StateMachineForms" */;
+			package = 6D1F27B824A219BD00ECA5E6 /* XCRemoteSwiftPackageReference "UIComponents" */;
+			productName = UIComponents;
+		};
+		6D1F27BC24A219DA00ECA5E6 /* StateMachineForms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D1F27BB24A219DA00ECA5E6 /* XCRemoteSwiftPackageReference "StateMachineForms" */;
 			productName = StateMachineForms;
+		};
+		6D1F27BF24A219F300ECA5E6 /* OneLink */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D1F27BE24A219F300ECA5E6 /* XCRemoteSwiftPackageReference "OneLink" */;
+			productName = OneLink;
+		};
+		6D1F27C224A21A4000ECA5E6 /* PinLocator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D1F27C124A21A4000ECA5E6 /* XCRemoteSwiftPackageReference "PinLocator" */;
+			productName = PinLocator;
+		};
+		6D1F27C524A21A6600ECA5E6 /* ErrorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D1F27C424A21A6600ECA5E6 /* XCRemoteSwiftPackageReference "ErrorKit" */;
+			productName = ErrorKit;
+		};
+		6D1F27C824A21A8C00ECA5E6 /* SecureNetwork */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D1F27C724A21A8C00ECA5E6 /* XCRemoteSwiftPackageReference "SecureNetwork" */;
+			productName = SecureNetwork;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
