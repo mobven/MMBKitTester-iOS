@@ -21,7 +21,7 @@ class PreventRecordingViewController: UIViewController {
     }
     
     private func showPlaceholderIfNeeded() {
-        if let placeholder = AppSecurity.shared.mirroringPlaceholderView {
+        if let placeholder = AppSecurity.shared().mirroringPlaceholderView {
             placeholder.frame = placeholderView.bounds
             placeholderView.addSubview(placeholder)
         }
@@ -54,7 +54,7 @@ extension PreventRecordingViewController: UIImagePickerControllerDelegate, UINav
         let imageView = UIImageView(frame: placeholderView.frame)
         imageView.image = image
         imageView.contentMode = .scaleAspectFill
-        AppSecurity.shared.mirroringPlaceholderView = imageView
+        AppSecurity.shared().mirroringPlaceholderView = imageView
         showPlaceholderIfNeeded()
     }
     

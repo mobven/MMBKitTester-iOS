@@ -19,7 +19,7 @@ class ForceUpdateViewController: UIViewController {
     }
     
     private func checkForForceUpdate() {
-        AppSecurity.shared.checkForceUpdate(showAlertIfNeeded: true) { [ weak self ] (response, error) in
+        AppSecurity.shared().checkForceUpdate(showAlertIfNeeded: true) { [ weak self ] (response, error) in
             if response == nil && error == nil {
                 // application is up-to-date
                 self?.infoLabel.isHidden = false

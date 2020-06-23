@@ -23,9 +23,9 @@ class OAUTHViewController: UITableViewController {
     }
     
     func tokenize() {
-        SecureNetwork.shared.tokenize { (result, error) in
+        SecureNetwork.shared().tokenize { (result, error) in
             if result {
-                print("Tokenization successful: \(SecureNetwork.shared.accessToken ?? "")")
+                print("Tokenization successful: \(SecureNetwork.shared().accessToken ?? "")")
                 self.getTracks()
                 self.getAlbum()
             } else {

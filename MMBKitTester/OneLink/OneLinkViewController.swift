@@ -19,10 +19,10 @@ class OneLinkViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        OneLink.shared.delegate = self
+        OneLink.shared().delegate = self
         
         urlTextfield.text = "https://bkt.com/cards/?id=1533"
-        loginStatusSwitch.isOn = User.shared.isLoggedIn
+        loginStatusSwitch.isOn = User.shared().isLoggedIn
         
         InstanceID.instanceID().instanceID { (result, error) in
             if let error = error {
@@ -35,7 +35,7 @@ class OneLinkViewController: UIViewController {
     
     @IBAction func presentPendingLinks() {
         self.view.endEditing(false)
-        OneLink.shared.presentPendingLinks()
+        OneLink.shared().presentPendingLinks()
     }
     
     @IBAction func sendDirectPushNotification() {

@@ -29,13 +29,13 @@ class ErrorKitViewController: UIViewController {
         let rsaPublicKey: String = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCyLNbf8jtBlVTGjJZmiRzRhO1ybGKlZpvaL5VbBFTJCKypyc7kpTtOuXRgCY+jYbZ4+OKHicvy9pE8qSqSzFOxXmGK00gziT+8lc0fpk8SLFeE/H1RF+qjh1k4zmqmSRe576bcLGRAJW0NtSWS+/+VwQFyyUjRM67OjCh4huRaGwIDAQAB"
          // swiftlint:enable line_length
          
-         SecureNetwork.shared.enableCryptography(
+         SecureNetwork.shared().enableCryptography(
              handShakeEndpoint: URL(
                  forceString: "https://capture.mobven.com/crypt/rsa/validData.php"
              ),
              rsaPublicKey: rsaPublicKey
          )
-        SecureNetwork.shared.handshake { (result, _) in
+        SecureNetwork.shared().handshake { (result, _) in
             if result {
                 self.getNumbers()
             }

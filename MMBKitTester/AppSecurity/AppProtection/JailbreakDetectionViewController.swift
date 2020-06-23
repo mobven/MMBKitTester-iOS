@@ -16,8 +16,8 @@ class JailbreakDetectionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        terminationSwitch.setOn(AppSecurity.shared.terminateAppForJailBrokenDevices, animated: false)
-        if AppSecurity.shared.isDeviceJailBroken {
+        terminationSwitch.setOn(AppSecurity.shared().terminateAppForJailBrokenDevices, animated: false)
+        if AppSecurity.shared().isDeviceJailBroken {
             jailbreakStateLabel.text = """
             Your device can access private system folders.
             
@@ -33,7 +33,7 @@ class JailbreakDetectionViewController: UIViewController {
     }
     
     @IBAction private func terminateAppForJailBrokenDevices(_ sender: UISwitch) {
-        AppSecurity.shared.terminateAppForJailBrokenDevices = sender.isOn
+        AppSecurity.shared().terminateAppForJailBrokenDevices = sender.isOn
     }
     
 }

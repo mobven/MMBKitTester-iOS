@@ -20,7 +20,7 @@ class PreventSnapshotsViewController: UIViewController {
     }
     
     private func showPlaceholderIfNeeded() {
-        if let placeholder = AppSecurity.shared.appSwitcherPlaceholderView {
+        if let placeholder = AppSecurity.shared().appSwitcherPlaceholderView {
             placeholder.frame = placeholderView.bounds
             placeholderView.addSubview(placeholder)
         }
@@ -52,7 +52,7 @@ extension PreventSnapshotsViewController: UIImagePickerControllerDelegate, UINav
         let imageView = UIImageView(frame: placeholderView.frame)
         imageView.image = image
         imageView.contentMode = .scaleAspectFill
-        AppSecurity.shared.appSwitcherPlaceholderView = imageView
+        AppSecurity.shared().appSwitcherPlaceholderView = imageView
         showPlaceholderIfNeeded()
     }
     

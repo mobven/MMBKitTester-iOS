@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import MMBKit
+import MoBKit
 import AppSecurity
 import AccountSecurity
 import OneLink
@@ -27,14 +27,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        MMBKit.setup(with: [
-            AppSecurity.shared, AccountSecurity.shared,
-            OneLink.shared, UIComponents.shared,
-            StateMachineForms.shared, SecureNetwork.shared,
-            PinLocator.shared, ErrorKit.shared
+        MobKit.setup(with: [
+            AppSecurity.self, AccountSecurity.self,
+            OneLink.self, UIComponents.self,
+            StateMachineForms.self, SecureNetwork.self,
+            PinLocator.self, ErrorKit.self
         ])
         
-        SecureNetwork.shared.enableOAuth2(
+        SecureNetwork.shared().enableOAuth2(
             accessTokenURL: URL(forceString: "https://accounts.spotify.com/api/token"),
             authInfo: .init(grantType: .clientCredentials,
                             clientId: "45007d1680b9491680b50384349ad198",
@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                 // tokenization failed.
         })
         
-        ErrorKit.shared.delegate = self
+        ErrorKit.shared().delegate = self
         
         FirebaseApp.configure()
         
@@ -100,7 +100,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ app: UIApplication, open url: URL,
                      options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
         if let link = AppLink(url: url) {
-            OneLink.shared.present(oneLink: link, ignoreLinkState: User.shared.isLoggedIn)
+            OneLink.shared().present(oneLink: link, ignoreLinkState: User.shared.isLoggedIn)
             return true
         }
         // Continue for your app's normal flow.
@@ -126,7 +126,7 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
         /// Pass url parameter from the payload to `OneLink` instance.
         if let url = response.notification.request.content.userInfo["gcm.notification.data"] as? String,
             let link = AppLink(url: url) {
-            OneLink.shared.present(oneLink: link, ignoreLinkState: User.shared.isLoggedIn)
+            OneLink.shared().present(oneLink: link, ignoreLinkState: User.shared.isLoggedIn)
         }
         completionHandler()
     }

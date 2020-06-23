@@ -21,7 +21,7 @@ class SecureStoreViewController: UIViewController {
         writeViewController = children.first as? SecureStoreWriteViewController
         let key = "dS84G18VdHRgVrlKcucD910OYumPqjM7"
         let initialVector = "f1ede36fa3645589"
-        AppSecurity.shared.secureKeyValueOptions = (key: key, iv: initialVector)
+        AppSecurity.shared().secureKeyValueOptions = (key: key, iv: initialVector)
     }
     
     @IBAction private func changeContent(_ sender: UISegmentedControl) {

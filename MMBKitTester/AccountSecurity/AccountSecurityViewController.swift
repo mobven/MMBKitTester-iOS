@@ -15,7 +15,7 @@ class AccountSecurityViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if AccountSecurity.shared.canAuthWithBiometrics {
+        if AccountSecurity.shared().canAuthWithBiometrics {
             functions.append(.init(name: "Login With Biometrics", identifier: "BiometricsViewController"))
         }
         functions.append(.init(name: "Timed Cache", identifier: "TimedCacheViewController"))

@@ -21,7 +21,7 @@ class BiometricsViewController: UIViewController {
     }
     
     private func authenticate() {
-        AccountSecurity.shared.authWithBiometrics(
+        AccountSecurity.shared().authWithBiometrics(
             forAccount: "myAccountId",
             reason: "Authenticate to log in easily.") { [ weak self ] (secretKey, _) in
                 DispatchQueue.main.async {
@@ -37,7 +37,7 @@ class BiometricsViewController: UIViewController {
     }
     
     @IBAction private func clearKey() {
-        AccountSecurity.shared.clearBiometricsSecretKey()
+        AccountSecurity.shared().clearBiometricsSecretKey()
         secretKeyLabel.text = ""
         clearKeyButton.isHidden = true
     }

@@ -26,7 +26,7 @@ class PassCodeViewController: UIViewController {
     }
     
     @objc private func setDeviceOwnerAuthenticationStatus() {
-        if AppSecurity.shared.hasDeviceOwnerAuthentication() {
+        if AppSecurity.shared().hasDeviceOwnerAuthentication() {
             passcodeStateLabel.text = """
             Your device has owner authentication enabled.
             

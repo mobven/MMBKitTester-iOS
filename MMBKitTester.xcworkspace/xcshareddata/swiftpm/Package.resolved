@@ -15,7 +15,7 @@
         "repositoryURL": "https://github.com/mobven/AppSecurity.git",
         "state": {
           "branch": "develop",
-          "revision": "9bb174ab4d72130c1598300e638cddf8bcc391ec",
+          "revision": "d22c5461d0e7bb31a0e41290c0f3e2ae1b7025b7",
           "version": null
         }
       },
@@ -61,6 +61,15 @@
         "state": {
           "branch": "develop",
           "revision": "7ac0c1904a2e6f1acacf84fa79ffb497925d57ae",
+          "version": null
+        }
+      },
+      {
+        "package": "MobKit",
+        "repositoryURL": "https://github.com/mobven/MobKit.git",
+        "state": {
+          "branch": "develop",
+          "revision": "b81f6dae0c58cb358e52e0ede13e2ee023ecf262",
           "version": null
         }
       },
