@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import StateMachineForms
+import MBStateMachineForms
 
 class MMBCheckBoxBinder: StateMachineForm.Binder {
     

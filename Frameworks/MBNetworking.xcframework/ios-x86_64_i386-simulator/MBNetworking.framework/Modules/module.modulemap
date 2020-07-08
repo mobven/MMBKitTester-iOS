@@ -1,0 +1,4 @@
+framework module MBNetworking {
+  header "MBNetworking-Swift.h"
+  requires objc
+}

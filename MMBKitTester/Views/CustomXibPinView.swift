@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import PinLocator
+import MBPinLocator
 
 // PinLocatorView currently does not support PinViews from XIB files.
 // This is planned in the feature releases.

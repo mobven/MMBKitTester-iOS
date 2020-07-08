@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import SecureNetwork
+import MBSecureNetwork
 
 enum OAUTHService: OAuthNetworkable {
     

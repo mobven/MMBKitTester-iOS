@@ -1,0 +1,58 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MBAccountSecurity
+import CryptoSwift
+import Foundation
+import KeychainAccess
+import LocalAuthentication
+import MobKitCore
+import Swift
+import UIKit
+public enum Expiration {
+  case `in`(seconds: Foundation.TimeInterval)
+  case on(date: Foundation.Date)
+  case never
+}
+extension NSNotification.Name {
+  public static let cachedItemWillExpire: Foundation.Notification.Name
+  public static let cachedItemDidExpire: Foundation.Notification.Name
+  public static let cacheWillEvictObject: Foundation.Notification.Name
+}
+open class TimedCache<KeyType, ObjectType> where KeyType : Swift.Hashable {
+  open var name: Swift.String {
+    get
+    set
+  }
+  open var countLimit: Swift.Int {
+    get
+    set
+  }
+  open var totalCostLimit: Swift.Int {
+    get
+    set
+  }
+  public init()
+  open func setObject(_ obj: ObjectType, forKey key: KeyType)
+  open func setObject(_ obj: ObjectType, forKey key: KeyType, cost: Swift.Int)
+  open func setObject(_ obj: ObjectType, forKey key: KeyType, expiration: MBAccountSecurity.Expiration)
+  open func setObject(_ obj: ObjectType, forKey key: KeyType, expiration: MBAccountSecurity.Expiration, cost: Swift.Int)
+  open func object(forKey key: KeyType) -> ObjectType?
+  open func removeObject(forKey key: KeyType)
+  open func removeAllObjects()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class AccountSecurity : MobKitCore.MobKitComponent {
+  override final public class func shared() -> Self
+  override final public func setup()
+  final public func authWithBiometrics(forAccount account: Swift.String, reason localizedReason: Swift.String, reply: @escaping (Swift.String?, Swift.Error?) -> Swift.Void)
+  final public var canAuthWithBiometrics: Swift.Bool {
+    get
+  }
+  final public func clearBiometricsSecretKey()
+  @objc deinit
+}
+extension AccountSecurity {
+  final public func putItemToCache(_ obj: Any, forKey key: Swift.String, expiration: MBAccountSecurity.Expiration = .never)
+  final public func getItemFromCache<T>(forKey key: Swift.String) -> T?
+  final public func removeItemFromCache(forKey key: Swift.String)
+}

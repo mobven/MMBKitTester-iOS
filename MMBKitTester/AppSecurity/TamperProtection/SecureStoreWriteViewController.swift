@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AppSecurity
+import MBAppSecurity
 
 class SecureStoreWriteViewController: BaseTypeViewController {
     

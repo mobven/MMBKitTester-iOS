@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import StateMachineForms
+import MBStateMachineForms
 
 class StateMachineFormsService {
     

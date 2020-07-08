@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import StateMachineForms
+import MBStateMachineForms
 
 protocol AccountViewDelegate: AnyObject {
     func accountViewDidTap()

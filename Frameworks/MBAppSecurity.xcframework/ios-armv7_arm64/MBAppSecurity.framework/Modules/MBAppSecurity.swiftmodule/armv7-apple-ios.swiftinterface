@@ -1,0 +1,90 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
+// swift-module-flags: -target armv7-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MBAppSecurity
+import CryptoSwift
+import Foundation
+import LocalAuthentication
+@_exported import MBAppSecurity
+import MobKitCore
+import Swift
+import UIKit
+extension UserDefaults {
+  public func setSecureValue(_ value: Foundation.URL?, forKey defaultName: Swift.String)
+  public func setSecureValue(_ value: Swift.Bool, forKey defaultName: Swift.String)
+  public func setSecureValue(_ value: Swift.Int, forKey defaultName: Swift.String)
+  public func setSecureValue(_ value: Swift.Double, forKey defaultName: Swift.String)
+  public func setSecureValue(_ value: Swift.Float, forKey defaultName: Swift.String)
+  public func setSecureValue(_ value: Swift.String, forKey defaultName: Swift.String)
+  public func setSecureValue(_ value: Any?, forKey defaultName: Swift.String)
+  public func removeSecureObject(forKey defaultName: Swift.String)
+}
+extension UserDefaults {
+  public func secureURL(forKey defaultName: Swift.String) -> Foundation.URL?
+  public func secureBool(forKey defaultName: Swift.String) -> Swift.Bool
+  public func secureInteger(forKey defaultName: Swift.String) -> Swift.Int
+  public func secureDouble(forKey defaultName: Swift.String) -> Swift.Double
+  public func secureFloat(forKey defaultName: Swift.String) -> Swift.Float
+  public func secureString(forKey defaultName: Swift.String) -> Swift.String?
+  public func secureArray(forKey defaultName: Swift.String) -> [Any]?
+  public func secureStringArray(forKey defaultName: Swift.String) -> [Swift.String]?
+}
+public struct ForceUpdate {
+  public let isForceUpdate: Swift.Bool
+  public var updateTitle: Swift.String
+  public var updateMessage: Swift.String
+  public var updateButton: Swift.String
+  public var cancelButton: Swift.String
+  public var storeUrl: Foundation.URL
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class AppSecurity : MobKitCore.MobKitComponent {
+  override final public class func shared() -> Self
+  override final public func setup()
+  final public var terminateAppForJailBrokenDevices: Swift.Bool {
+    get
+    set
+  }
+  final public var isDeviceJailBroken: Swift.Bool {
+    get
+  }
+  final public var secureKeyValueOptions: (key: Swift.String, iv: Swift.String)?
+  final public var appSwitcherPlaceholderView: UIKit.UIView? {
+    get
+    set
+  }
+  @available(*, unavailable, renamed: "mirroringPlaceholderView", message: "Please use mirroringPlaceholderView, instead.")
+  final public var placeholderView: UIKit.UIView?
+  @available(iOS 11.0, *)
+  final public var mirroringPlaceholderView: UIKit.UIView? {
+    get
+    set
+  }
+  final public func hasDeviceOwnerAuthentication() -> Swift.Bool
+  @objc deinit
+}
+extension AppSecurity {
+  final public func checkForceUpdate(showAlertIfNeeded: Swift.Bool = false, _ completion: @escaping ((MBAppSecurity.ForceUpdate?, MBAppSecurity.ForceUpdateError?) -> Swift.Void))
+}
+extension UITextField {
+  @objc @IBInspectable dynamic public var isSecure: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic open func canPerformAction(_ action: ObjectiveC.Selector, withSender sender: Any?) -> Swift.Bool
+}
+extension UITextView {
+  @objc @IBInspectable dynamic public var isSecure: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic open func canPerformAction(_ action: ObjectiveC.Selector, withSender sender: Any?) -> Swift.Bool
+}
+public enum ForceUpdateError : Foundation.LocalizedError {
+  case invalidURL
+  case invalidJSON
+  case invalidStoreURL(Swift.String)
+  case decodingError(Swift.Error)
+  case dataTaskError(Swift.Error?)
+  public var localizedDescription: Swift.String {
+    get
+  }
+}

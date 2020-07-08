@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import UIComponents
-import StateMachineForms
+import MBUIComponents
+import MBStateMachineForms
 
 class UIPickerTextFieldBinder: StateMachineForm.Binder {
     public typealias StateMachineViewType = UIPickerTextfield

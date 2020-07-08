@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import PinLocator
+import MBPinLocator
 
 struct CustomPin: Pinnable {
     var icon: UIImage?

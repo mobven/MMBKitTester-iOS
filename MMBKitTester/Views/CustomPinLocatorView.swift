@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import PinLocator
+import MBPinLocator
 
 protocol CustomPinLocatorViewDelegate: AnyObject {
     func routeTapped(_ forPin: Pinnable?)

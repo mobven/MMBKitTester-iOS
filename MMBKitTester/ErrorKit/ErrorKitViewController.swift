@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import SecureNetwork
+import MBSecureNetwork
 
 class ErrorKitViewController: UIViewController {
     

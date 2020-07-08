@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AccountSecurity
+import MBAccountSecurity
 
 class AccountSecurityViewController: UITableViewController {
     

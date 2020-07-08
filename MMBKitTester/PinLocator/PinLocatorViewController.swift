@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import PinLocator
+import MBPinLocator
 
 class PinLocatorViewController: UIViewController {
     

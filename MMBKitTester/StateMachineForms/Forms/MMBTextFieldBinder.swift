@@ -7,12 +7,12 @@
 //
 
 import UIKit
-import StateMachineForms
+import MBStateMachineForms
 
 class MMBTextFieldBinder: StateMachineForm.Binder {
     
     typealias StateMachineViewType = MMBTextField
-
+    
     public class var builder: StateMachineForm.Binder.Builder {
         return Builder(binder: Self.self, viewType: StateMachineViewType.self,
                        type: .text, minimumHeight: 50)
@@ -37,9 +37,9 @@ class MMBTextFieldBinder: StateMachineForm.Binder {
 }
 
 extension MMBTextFieldBinder: UITextFieldDelegate {
-    public func textField(_ textField: UITextField,
-                          shouldChangeCharactersIn range: NSRange,
-                          replacementString string: String) -> Bool {
+    @nonobjc public func textField(_ textField: UITextField,
+                                   shouldChangeCharactersIn range: NSRange,
+                                   replacementString string: String) -> Bool {
         let text = (textField.text as NSString?)?.replacingCharacters(in: range, with: string)
         delegate?.formBinderValueChanged(binder: self, value: text)
         return true

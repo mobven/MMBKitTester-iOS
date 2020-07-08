@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import PinLocator
+import MBPinLocator
 
 public class PinLocatorBinder: PinLocatorView.Binder {
     

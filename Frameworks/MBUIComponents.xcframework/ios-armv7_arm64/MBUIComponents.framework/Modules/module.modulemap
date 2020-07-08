@@ -1,0 +1,11 @@
+framework module MBUIComponents {
+  umbrella header "MBUIComponents.h"
+
+  export *
+  module * { export * }
+}
+
+module MBUIComponents.Swift {
+    header "MBUIComponents-Swift.h"
+    requires objc
+}

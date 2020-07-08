@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import OneLink
+import MBOneLink
 
 enum AppLink: OneLinkable {
     

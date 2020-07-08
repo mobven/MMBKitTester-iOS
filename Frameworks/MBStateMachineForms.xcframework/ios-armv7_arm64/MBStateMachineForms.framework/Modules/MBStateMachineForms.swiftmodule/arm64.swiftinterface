@@ -1,0 +1,196 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MBStateMachineForms
+import Foundation
+import MobKitCore
+import Swift
+import UIKit
+extension UITextField {
+  public func addEditingChangeAction(_ action: @escaping () -> Swift.Void)
+}
+extension StateMachineForm.Binder {
+  public struct Builder {
+    public init(binder: MBStateMachineForms.StateMachineForm.Binder.Type, viewType: UIKit.UIView.Type, type: MBStateMachineForms.Forms.Field.ViewType, inputType: MBStateMachineForms.Forms.Field.InputType? = nil, minimumHeight: CoreGraphics.CGFloat = 50)
+  }
+}
+public typealias FormData = [Swift.String : Any]
+public protocol StateMachineFormDelegate : AnyObject {
+  func stateMachineForm(_ stateMachineForm: MBStateMachineForms.StateMachineForm, takeAction actionType: MBStateMachineForms.Forms.Field.ActionType, data: [MBStateMachineForms.FormData])
+  func stateMachineForm(_ stateMachineForm: MBStateMachineForms.StateMachineForm, navigateBinder binder: MBStateMachineForms.StateMachineForm.Binder)
+  func stateMachineForm(_ stateMachineForm: MBStateMachineForms.StateMachineForm, bindersCouldNotBeValidated invalidBinders: [MBStateMachineForms.StateMachineForm.Binder])
+}
+@objc @_inheritsConvenienceInitializers public class UITextFieldBinder : MBStateMachineForms.StateMachineForm.Binder {
+  public typealias StateMachineViewType = UIKit.UITextField
+  public class var builder: MBStateMachineForms.StateMachineForm.Binder.Builder {
+    get
+  }
+  required public init(view: UIKit.UIView, type: MBStateMachineForms.Forms.Field.ViewType, inputType: MBStateMachineForms.Forms.Field.InputType? = nil, field: MBStateMachineForms.Forms.Field, delegate: MBStateMachineForms.FormBinderDelegate)
+  override public func isValidated() -> Swift.Bool
+  @objc deinit
+}
+extension UITextFieldBinder : UIKit.UITextFieldDelegate {
+  @objc dynamic public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+}
+public struct Forms : Swift.Decodable {
+  public var forms: [MBStateMachineForms.Form]?
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Form : Swift.Decodable {
+  public var index: Swift.Int?
+  public init(from decoder: Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class StateMachineForms : MobKitCore.MobKitComponent {
+  override public class func shared() -> Self
+  override public func setup()
+  @objc deinit
+}
+extension Forms.Field {
+  public enum ViewType : Swift.String {
+    case text
+    case select
+    case radio
+    case checkbox
+    case textarea
+    case action
+    case custom
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+extension UIControl {
+  public func addAction(for controlEvents: UIKit.UIControl.Event, _ action: @escaping () -> Swift.Void)
+}
+extension Forms.Field {
+  public enum ActionType : Swift.String {
+    case back
+    case next
+    case request
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+@objc @_inheritsConvenienceInitializers public class UITextViewBinder : MBStateMachineForms.StateMachineForm.Binder {
+  public typealias StateMachineViewType = UIKit.UITextView
+  public class var builder: MBStateMachineForms.StateMachineForm.Binder.Builder {
+    get
+  }
+  required public init(view: UIKit.UIView, type: MBStateMachineForms.Forms.Field.ViewType, inputType: MBStateMachineForms.Forms.Field.InputType? = nil, field: MBStateMachineForms.Forms.Field, delegate: MBStateMachineForms.FormBinderDelegate)
+  override public func isValidated() -> Swift.Bool
+  @objc deinit
+}
+extension UITextViewBinder : UIKit.UITextViewDelegate {
+  @objc dynamic public func textViewDidChange(_ textView: UIKit.UITextView)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class StateMachineForm : UIKit.UIView {
+  public var itemInsets: UIKit.UIEdgeInsets {
+    get
+    set
+  }
+  weak public var delegate: MBStateMachineForms.StateMachineFormDelegate! {
+    get
+    set
+  }
+  public var allData: [MBStateMachineForms.FormData] {
+    get
+  }
+  public var currentData: MBStateMachineForms.FormData {
+    get
+  }
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  public func register(builder: MBStateMachineForms.StateMachineForm.Binder.Builder)
+  public func register(builders: [MBStateMachineForms.StateMachineForm.Binder.Builder])
+  public func feed(_ form: MBStateMachineForms.Form)
+  public func setInitialData(_ data: [MBStateMachineForms.FormData])
+  @objc deinit
+}
+extension StateMachineForm : MBStateMachineForms.FormBinderDelegate {
+  public func formBinderValueChanged(binder: MBStateMachineForms.StateMachineForm.Binder, value: Any?)
+  public func formBinderAction(_ action: MBStateMachineForms.Forms.Field.ActionType)
+  public func formBinderNavigate(binder: MBStateMachineForms.StateMachineForm.Binder)
+}
+extension Forms.Field {
+  public struct Rules : Swift.Decodable {
+    public var dateFormat: Swift.String?
+    public var isRequired: Swift.Bool?
+    public init(from decoder: Swift.Decoder) throws
+  }
+}
+extension Forms.Field {
+  public struct Option : Swift.Decodable {
+    public var id: Swift.String?
+    public var name: Swift.String?
+    public init(from decoder: Swift.Decoder) throws
+  }
+}
+@objc @_inheritsConvenienceInitializers public class UIButtonBinder : MBStateMachineForms.StateMachineForm.Binder {
+  public typealias StateMachineViewType = UIKit.UIButton
+  public class var builder: MBStateMachineForms.StateMachineForm.Binder.Builder {
+    get
+  }
+  required public init(view: UIKit.UIView, type: MBStateMachineForms.Forms.Field.ViewType, inputType: MBStateMachineForms.Forms.Field.InputType? = nil, field: MBStateMachineForms.Forms.Field, delegate: MBStateMachineForms.FormBinderDelegate)
+  @objc deinit
+}
+extension Forms {
+  public struct Field : Swift.Decodable {
+    public var index: Swift.Int?
+    public init(from decoder: Swift.Decoder) throws
+  }
+}
+extension Forms.Field {
+  public enum InputType : Swift.Equatable {
+    case text
+    case password
+    case email
+    case date
+    case other(Swift.String)
+    public static func == (a: MBStateMachineForms.Forms.Field.InputType, b: MBStateMachineForms.Forms.Field.InputType) -> Swift.Bool
+  }
+}
+public protocol FormBinderDelegate : AnyObject {
+  func formBinderValueChanged(binder: MBStateMachineForms.StateMachineForm.Binder, value: Any?)
+  func formBinderAction(_ action: MBStateMachineForms.Forms.Field.ActionType)
+  func formBinderNavigate(binder: MBStateMachineForms.StateMachineForm.Binder)
+}
+extension StateMachineForm {
+  @objc open class Binder : ObjectiveC.NSObject {
+    public typealias StateMachineViewType = UIKit.UIView
+    public var view: MBStateMachineForms.StateMachineForm.Binder.StateMachineViewType
+    public var type: MBStateMachineForms.Forms.Field.ViewType
+    public var inputType: MBStateMachineForms.Forms.Field.InputType?
+    required public init(view: UIKit.UIView, type: MBStateMachineForms.Forms.Field.ViewType, inputType: MBStateMachineForms.Forms.Field.InputType? = nil, field: MBStateMachineForms.Forms.Field, delegate: MBStateMachineForms.FormBinderDelegate)
+    public var identifier: Swift.String {
+      get
+      set
+    }
+    public var minimumHeight: CoreGraphics.CGFloat
+    public var value: Swift.String?
+    public var status: Swift.Bool?
+    public var placeholder: Swift.String?
+    public var label: Swift.String?
+    public var options: [MBStateMachineForms.Forms.Field.Option]?
+    public var rules: MBStateMachineForms.Forms.Field.Rules?
+    public var actionType: MBStateMachineForms.Forms.Field.ActionType?
+    weak public var delegate: MBStateMachineForms.FormBinderDelegate?
+    public var errorMessage: Swift.String? {
+      get
+    }
+    open func isValidated() -> Swift.Bool
+    public func validate(text: Swift.String?) -> Swift.Bool
+    public func validate(bool: Swift.Bool?) -> Swift.Bool
+    public func validate(value: Any?) -> Swift.Bool
+    @objc override dynamic public init()
+    @objc deinit
+  }
+}
+extension MBStateMachineForms.Forms.Field.ViewType : Swift.Equatable {}
+extension MBStateMachineForms.Forms.Field.ViewType : Swift.Hashable {}
+extension MBStateMachineForms.Forms.Field.ViewType : Swift.RawRepresentable {}
+extension MBStateMachineForms.Forms.Field.ActionType : Swift.Equatable {}
+extension MBStateMachineForms.Forms.Field.ActionType : Swift.Hashable {}
+extension MBStateMachineForms.Forms.Field.ActionType : Swift.RawRepresentable {}

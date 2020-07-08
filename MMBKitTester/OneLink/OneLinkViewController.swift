@@ -8,7 +8,7 @@
 
 import UIKit
 import FirebaseInstanceID
-import OneLink
+import MBOneLink
 
 class OneLinkViewController: UIViewController {
     

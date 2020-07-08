@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import SecureNetwork
-import Networking
+import MBSecureNetwork
+import MBNetworking
 
 enum CryptoAPI: CryptoNetworkable {
     case getNumbers(request: TestNumbersCodable)

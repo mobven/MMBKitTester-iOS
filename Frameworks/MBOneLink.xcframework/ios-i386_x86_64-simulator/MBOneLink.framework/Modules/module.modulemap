@@ -1,0 +1,4 @@
+framework module MBOneLink {
+  header "MBOneLink-Swift.h"
+  requires objc
+}

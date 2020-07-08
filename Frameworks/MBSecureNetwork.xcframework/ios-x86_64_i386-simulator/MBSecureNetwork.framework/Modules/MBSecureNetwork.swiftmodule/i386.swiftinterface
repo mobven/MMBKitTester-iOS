@@ -1,0 +1,87 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
+// swift-module-flags: -target i386-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MBSecureNetwork
+import CryptoSwift
+import Cryptography
+import Foundation
+import MBErrorKit
+import MBNetworking
+@_exported import MBSecureNetwork
+import MobKitCore
+import Swift
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SecureNetwork : MobKitCore.MobKitComponent {
+  override public class func shared() -> Self
+  override public func setup()
+  public var accessToken: Swift.String? {
+    get
+  }
+  public typealias AccessTokenFailure = () -> Swift.Void
+  public func enableOAuth2(accessTokenURL: Foundation.URL, authInfo: MBSecureNetwork.Authentication, accessTokenFailure: MBSecureNetwork.SecureNetwork.AccessTokenFailure?)
+  public func tokenize(_ completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  public func enableCryptography(handShakeEndpoint: Foundation.URL, rsaPublicKey: Swift.String)
+  public func handshake(_ completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc deinit
+}
+public enum SecureNetworkError : Swift.Error {
+  case tokenizationError
+  case handshakeError
+  public static func == (a: MBSecureNetwork.SecureNetworkError, b: MBSecureNetwork.SecureNetworkError) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+extension SecureNetworkError {
+  public var errorDescription: Swift.String {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers open class RSAHelper : ObjectiveC.NSObject {
+  @objc deinit
+  @objc override dynamic public init()
+}
+public protocol CryptoNetworkable : MBNetworking.Networkable {
+}
+extension CryptoNetworkable {
+  public func getRequest(url: Foundation.URL, queryItems: [Swift.String : Swift.String] = [:], headers: [Swift.String : Swift.String] = [:]) -> Foundation.URLRequest
+  public func getRequest<T>(url: Foundation.URL, encodable data: T, headers: [Swift.String : Swift.String] = [:]) -> Foundation.URLRequest where T : Swift.Encodable
+  public func getRequest(url: Foundation.URL, formItems: [Swift.String : Swift.String] = [:], headers: [Swift.String : Swift.String] = [:]) -> Foundation.URLRequest
+  public func fetch<V>(_ type: V.Type, completion: @escaping ((Swift.Result<V, MBErrorKit.NetworkingError>) -> Swift.Void)) where V : Swift.Decodable
+}
+extension Authentication {
+  public enum GrantType {
+    case clientCredentials
+    case passwordCredentials(username: Swift.String, password: Swift.String)
+  }
+}
+public struct Authentication {
+  public init(grantType: MBSecureNetwork.Authentication.GrantType, clientId: Swift.String, clientSecret: Swift.String)
+}
+public protocol OAuthNetworkable : MBNetworking.Networkable {
+}
+extension OAuthNetworkable {
+  public func getRequest(url: Foundation.URL, queryItems: [Swift.String : Swift.String] = [:], headers: [Swift.String : Swift.String] = [:]) -> Foundation.URLRequest
+  public func getRequest<T>(url: Foundation.URL, encodable data: T, headers: [Swift.String : Swift.String] = [:]) -> Foundation.URLRequest where T : Swift.Encodable
+  public func getRequest(url: Foundation.URL, formItems: [Swift.String : Swift.String] = [:], headers: [Swift.String : Swift.String] = [:]) -> Foundation.URLRequest
+  public func fetch<V>(_ type: V.Type, completion: @escaping ((Swift.Result<V, MBErrorKit.NetworkingError>) -> Swift.Void)) where V : Swift.Decodable
+}
+public protocol SecureNetworkable : MBSecureNetwork.CryptoNetworkable, MBSecureNetwork.OAuthNetworkable {
+}
+extension SecureNetworkable {
+  public func getRequest(url: Foundation.URL, queryItems: [Swift.String : Swift.String] = [:], headers: [Swift.String : Swift.String] = [:]) -> Foundation.URLRequest
+  public func getRequest<T>(url: Foundation.URL, encodable data: T, headers: [Swift.String : Swift.String] = [:]) -> Foundation.URLRequest where T : Swift.Encodable
+  public func getRequest(url: Foundation.URL, formItems: [Swift.String : Swift.String] = [:], headers: [Swift.String : Swift.String] = [:]) -> Foundation.URLRequest
+  public func fetch<V>(_ type: V.Type, completion: @escaping ((Swift.Result<V, MBErrorKit.NetworkingError>) -> Swift.Void)) where V : Swift.Decodable
+}
+public enum CryptoNetworkingError : Swift.Error {
+  case couldNotDecrypt
+  public static func == (a: MBSecureNetwork.CryptoNetworkingError, b: MBSecureNetwork.CryptoNetworkingError) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+extension MBSecureNetwork.SecureNetworkError : Swift.Equatable {}
+extension MBSecureNetwork.SecureNetworkError : Swift.Hashable {}
+extension MBSecureNetwork.CryptoNetworkingError : Swift.Equatable {}
+extension MBSecureNetwork.CryptoNetworkingError : Swift.Hashable {}

@@ -17,7 +17,5 @@ Sample application for demonstrating MMBKit. All Modules integrated with SPM.
 #### UI Components
 #### State Machine Forms
 #### Secure Network
-
-### Active Development
 #### Pin Locator
 #### Error Kit

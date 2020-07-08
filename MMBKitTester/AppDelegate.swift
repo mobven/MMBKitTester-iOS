@@ -7,16 +7,16 @@
 //
 
 import UIKit
-import MobKit
-import AppSecurity
-import AccountSecurity
-import OneLink
-import UIComponents
 import Firebase
-import StateMachineForms
-import SecureNetwork
-import PinLocator
-import ErrorKit
+import MobKitCore
+import MBAppSecurity
+import MBAccountSecurity
+import MBOneLink
+import MBUIComponents
+import MBStateMachineForms
+import MBSecureNetwork
+import MBPinLocator
+import MBErrorKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                 // tokenization failed.
         })
         
-        ErrorKit.shared().delegate = self
+//        ErrorKit.shared().delegate = self
         
         FirebaseApp.configure()
         

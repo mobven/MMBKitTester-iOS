@@ -1,0 +1,383 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MBUIComponents
+import Foundation
+@_exported import MBUIComponents
+import MobKitCore
+import Swift
+import UIKit
+extension UIColor {
+  public class var systemBlack: UIKit.UIColor {
+    get
+  }
+  public class var systemWhite: UIKit.UIColor {
+    get
+  }
+}
+extension AmountInputView {
+  public struct AmountInput {
+    public let amount: Swift.Double?
+    public let currency: Swift.String
+  }
+}
+extension UITextField {
+  @objc @IBInspectable dynamic public var placeholderColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class KeyValueListFooter : UIKit.UITableViewHeaderFooterView {
+  public var separatorColor: UIKit.UIColor {
+    get
+    set
+  }
+  @objc deinit
+}
+@objc public protocol AmountInputViewDelegate : AnyObject {
+  @objc func amountInputView(_ inputView: MBUIComponents.AmountInputView, didSelectCurrencyAt index: Swift.Int)
+  @objc optional func amountInputViewShouldBeginEditing(_ inputView: MBUIComponents.AmountInputView) -> Swift.Bool
+  @objc optional func amountInputViewDidBeginEditing(_ inputView: MBUIComponents.AmountInputView)
+  @objc optional func amountInputViewShouldEndEditing(_ inputView: MBUIComponents.AmountInputView) -> Swift.Bool
+  @objc optional func amountInputViewDidEndEditing(_ inputView: MBUIComponents.AmountInputView)
+  @objc optional func amountInputViewDidEndEditing(_ inputView: MBUIComponents.AmountInputView, reason: UIKit.UITextField.DidEndEditingReason)
+  @objc optional func amountInputViewDidChangeSelection(_ inputView: MBUIComponents.AmountInputView)
+  @objc optional func amountInputViewShouldClear(_ inputView: MBUIComponents.AmountInputView) -> Swift.Bool
+  @objc optional func amountInputViewShouldReturn(_ inputView: MBUIComponents.AmountInputView) -> Swift.Bool
+}
+extension UIPickerTextfield {
+  public static var appearance: MBUIComponents.UIPickerTextfield.Appearance
+  public struct Appearance {
+    public var pickerBackgroundColor: UIKit.UIColor
+  }
+}
+extension UITextField {
+  public func setToolbar(title: Swift.String? = nil, button text: Swift.String, target: Any?, action: ObjectiveC.Selector?)
+}
+extension KeyValueLabel {
+  public enum UIMultilineOption : Swift.Int {
+    case equal
+    case singleLineKey
+    case singleLineValue
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @IBDesignable public class KeyValueLabel : UIKit.UIView {
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc override dynamic public func sizeThatFits(_ size: CoreGraphics.CGSize) -> CoreGraphics.CGSize
+  @objc override dynamic public var intrinsicContentSize: CoreGraphics.CGSize {
+    @objc get
+  }
+  public var preferredMaxLayoutWidth: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  public var insets: UIKit.UIEdgeInsets {
+    get
+    set
+  }
+  public var verticalAlignment: MBUIComponents.KeyValueLabel.UIVerticalAlignment {
+    get
+    set
+  }
+  public var multilineOption: MBUIComponents.KeyValueLabel.UIMultilineOption {
+    get
+    set
+  }
+  @objc @IBInspectable public var margin: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  public var orientation: MBUIComponents.UIOrientation {
+    get
+    set
+  }
+  @objc @IBInspectable public var keyText: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var valueText: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var keyTextColor: UIKit.UIColor! {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var valueTextColor: UIKit.UIColor! {
+    @objc get
+    @objc set
+  }
+  public var keyAttributedText: Foundation.NSAttributedString? {
+    get
+    set
+  }
+  public var valueAttributedText: Foundation.NSAttributedString? {
+    get
+    set
+  }
+  public var keyFont: UIKit.UIFont! {
+    get
+    set
+  }
+  public var valueFont: UIKit.UIFont! {
+    get
+    set
+  }
+  public var keyAlignment: UIKit.NSTextAlignment {
+    get
+    set
+  }
+  public var valueAlignment: UIKit.NSTextAlignment {
+    get
+    set
+  }
+  public var keyLineBreakMode: UIKit.NSLineBreakMode {
+    get
+    set
+  }
+  public var valueLineBreakMode: UIKit.NSLineBreakMode {
+    get
+    set
+  }
+  @objc @IBInspectable public var keyAdjustsFontSizeToFitWidth: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var valueAdjustsFontSizeToFitWidth: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var keyMinimumScaleFactor: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var valueMinimumScaleFactor: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class UIComponents : MobKitCore.MobKitComponent {
+  override public class func shared() -> Self
+  override public func setup()
+  @objc deinit
+}
+public class Alert {
+  public struct Button {
+    public var title: Swift.String
+    public var type: MBUIComponents.Alert.Button.ActionType
+    public var action: MBUIComponents.Alert.Button.AlertAction?
+    public var font: UIKit.UIFont
+    public var textColor: UIKit.UIColor
+    public var backgroundColor: UIKit.UIColor
+    public init(title: Swift.String, type: MBUIComponents.Alert.Button.ActionType, action: MBUIComponents.Alert.Button.AlertAction? = nil)
+    public enum ActionType {
+      case `default`
+      case destructive
+      public static func == (a: MBUIComponents.Alert.Button.ActionType, b: MBUIComponents.Alert.Button.ActionType) -> Swift.Bool
+      public var hashValue: Swift.Int {
+        get
+      }
+      public func hash(into hasher: inout Swift.Hasher)
+    }
+    public typealias AlertAction = ((MBUIComponents.Alert.Button) -> Swift.Void)
+  }
+  public var contentInsets: UIKit.UIEdgeInsets
+  public init(title: Swift.String, message: Swift.String)
+  public init(attributedTitle title: Foundation.NSAttributedString, message: Foundation.NSAttributedString)
+  public init(contentView: UIKit.UIView)
+  public func addAction(_ button: MBUIComponents.Alert.Button)
+  public func present(over viewController: UIKit.UIViewController)
+  public static var appearance: MBUIComponents.Alert.Appearance
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class KeyValueListTitleLabel : UIKit.UILabel {
+  public var insets: UIKit.UIEdgeInsets {
+    get
+    set
+  }
+  @objc override dynamic public func drawText(in rect: CoreGraphics.CGRect)
+  @objc override dynamic public var intrinsicContentSize: CoreGraphics.CGSize {
+    @objc get
+  }
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc public protocol KeyValueListDelegate : AnyObject {
+  @objc optional func numberOfSections(in keyValueList: MBUIComponents.KeyValueList) -> Swift.Int
+  @objc func keyValueList(_ keyValueList: MBUIComponents.KeyValueList, numberOfLabelsInSection section: Swift.Int) -> Swift.Int
+  @objc func keyValueList(_ keyValueList: MBUIComponents.KeyValueList, labelFor indexPath: Foundation.IndexPath) -> MBUIComponents.KeyValueLabel
+  @objc optional func keyValueList(_ keyValueList: MBUIComponents.KeyValueList, didTapLabelAt indexPath: Foundation.IndexPath)
+  @objc optional func keyValueList(_ keyValueList: MBUIComponents.KeyValueList, titleForHeaderInSection section: Swift.Int) -> MBUIComponents.KeyValueListTitleLabel?
+  @objc optional func keyValueList(_ keyValueList: MBUIComponents.KeyValueList, separatorColorForFooterInSection section: Swift.Int) -> UIKit.UIColor?
+  @objc optional func keyValueList(_ keyValueList: MBUIComponents.KeyValueList, separatorInsetForFooterInSection section: Swift.Int) -> UIKit.UIEdgeInsets
+  @objc optional func keyValueList(_ keyValueList: MBUIComponents.KeyValueList, separatorInsetFor indexPath: Foundation.IndexPath) -> UIKit.UIEdgeInsets
+}
+public protocol UIPickerTextfieldDelegate : AnyObject {
+  func pickerTextfieldNumberOfRows(_ pickerTextfield: MBUIComponents.UIPickerTextfield) -> Swift.Int
+  func pickerTextfield(_ pickerTextfield: MBUIComponents.UIPickerTextfield, titleForRow row: Swift.Int) -> Swift.String?
+  func pickerTextfield(_ pickerTextfield: MBUIComponents.UIPickerTextfield, didSelectRow row: Swift.Int)
+}
+@objc @_inheritsConvenienceInitializers public class UIPickerTextfield : UIKit.UITextField {
+  weak public var pickerDelegate: MBUIComponents.UIPickerTextfieldDelegate? {
+    get
+    set
+  }
+  public var selectedRow: Swift.Int? {
+    get
+    set
+  }
+  @objc override dynamic public func resignFirstResponder() -> Swift.Bool
+  public func reloadPickerData()
+  @objc override dynamic public func reloadInputViews()
+  @objc override dynamic public func caretRect(for position: UIKit.UITextPosition) -> CoreGraphics.CGRect
+  @objc override dynamic public func selectionRects(for range: UIKit.UITextRange) -> [UIKit.UITextSelectionRect]
+  @objc override dynamic public func canPerformAction(_ action: ObjectiveC.Selector, withSender sender: Any?) -> Swift.Bool
+  @objc deinit
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class KeyValueList : UIKit.UIView {
+  weak public var delegate: MBUIComponents.KeyValueListDelegate! {
+    get
+    set
+  }
+  public var separatorColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @objc override dynamic public var backgroundColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  public var separatorInset: UIKit.UIEdgeInsets? {
+    get
+    set
+  }
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  public func dequeueReusableLabel(for indexPath: Foundation.IndexPath) -> MBUIComponents.KeyValueLabel
+  public func dequeueReusableHeaderLabel() -> MBUIComponents.KeyValueListTitleLabel
+  public func reloadData()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class UIDatePickerTextfield : UIKit.UITextField {
+  public var date: Foundation.Date! {
+    get
+    set
+  }
+  public var dateFormat: Swift.String?
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  public var datePicker: UIKit.UIDatePicker! {
+    get
+    set
+  }
+  public var locale: Foundation.Locale? {
+    get
+    set
+  }
+  @objc override dynamic public func resignFirstResponder() -> Swift.Bool
+  @objc override dynamic public func reloadInputViews()
+  @objc override dynamic public func caretRect(for position: UIKit.UITextPosition) -> CoreGraphics.CGRect
+  @objc override dynamic public func selectionRects(for range: UIKit.UITextRange) -> [UIKit.UITextSelectionRect]
+  @objc override dynamic public func canPerformAction(_ action: ObjectiveC.Selector, withSender sender: Any?) -> Swift.Bool
+  @objc deinit
+}
+extension Alert {
+  public struct Appearance {
+    public var titleColor: UIKit.UIColor
+    public var titleFont: UIKit.UIFont
+    public var messageColor: UIKit.UIColor
+    public var messageFont: UIKit.UIFont
+    public var defaultButtonTextColor: UIKit.UIColor
+    public var defaultButtonBackgroundColor: UIKit.UIColor
+    public var defaultButtonFont: UIKit.UIFont
+    public var destructiveButtonTextColor: UIKit.UIColor
+    public var destructiveButtonBackgroundColor: UIKit.UIColor
+    public var destructiveButtonFont: UIKit.UIFont
+    public var customViewContentInsets: UIKit.UIEdgeInsets
+  }
+}
+public enum UIOrientation : Swift.Int {
+  case horizontal, vertical
+  public init(value: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension UIToolbar {
+  public struct Appearance {
+    public var barTintColor: UIKit.UIColor
+    public var tintColor: UIKit.UIColor
+    public var layerBorderColor: UIKit.UIColor
+    public var layerBorderWidth: CoreGraphics.CGFloat
+    public var buttonFont: UIKit.UIFont
+    public var buttonTextColor: UIKit.UIColor
+    public var titleFont: UIKit.UIFont
+    public var titleTextColor: UIKit.UIColor
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @IBDesignable public class AmountInputView : UIKit.UIView {
+  public var textfield: UIKit.UITextField! {
+    get
+  }
+  public var currencies: [Swift.String] {
+    get
+    set
+  }
+  public var currencyItemFont: UIKit.UIFont {
+    get
+    set
+  }
+  @objc @IBInspectable public var inactiveColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var groupingSeparator: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var decimalSeparator: Swift.String {
+    @objc get
+    @objc set
+  }
+  public var amount: MBUIComponents.AmountInputView.AmountInput {
+    get
+  }
+  weak public var delegate: MBUIComponents.AmountInputViewDelegate! {
+    get
+    set
+  }
+  @objc override dynamic public var intrinsicContentSize: CoreGraphics.CGSize {
+    @objc get
+  }
+  @objc deinit
+}
+extension KeyValueLabel {
+  public enum UIVerticalAlignment : Swift.Int {
+    case top, center, bottom
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
+extension MBUIComponents.KeyValueLabel.UIMultilineOption : Swift.Equatable {}
+extension MBUIComponents.KeyValueLabel.UIMultilineOption : Swift.Hashable {}
+extension MBUIComponents.KeyValueLabel.UIMultilineOption : Swift.RawRepresentable {}
+extension MBUIComponents.Alert.Button.ActionType : Swift.Equatable {}
+extension MBUIComponents.Alert.Button.ActionType : Swift.Hashable {}
+extension MBUIComponents.UIOrientation : Swift.Equatable {}
+extension MBUIComponents.UIOrientation : Swift.Hashable {}
+extension MBUIComponents.UIOrientation : Swift.RawRepresentable {}
+extension MBUIComponents.KeyValueLabel.UIVerticalAlignment : Swift.Equatable {}
+extension MBUIComponents.KeyValueLabel.UIVerticalAlignment : Swift.Hashable {}
+extension MBUIComponents.KeyValueLabel.UIVerticalAlignment : Swift.RawRepresentable {}

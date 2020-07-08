@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SecureNetwork
+import MBSecureNetwork
 
 class OAUTHViewController: UITableViewController {
     

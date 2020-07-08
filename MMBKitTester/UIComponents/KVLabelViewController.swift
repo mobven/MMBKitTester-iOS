@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import UIComponents
+import MBUIComponents
 
 class KVLabelViewController: UIViewController {
     

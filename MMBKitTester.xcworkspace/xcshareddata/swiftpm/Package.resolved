@@ -2,120 +2,21 @@
   "object": {
     "pins": [
       {
-        "package": "AccountSecurity",
-        "repositoryURL": "https://github.com/mobven/AccountSecurity.git",
-        "state": {
-          "branch": "develop",
-          "revision": "b569d9957f0da21c4667a9efc90f5ec973ffad7c",
-          "version": null
-        }
-      },
-      {
-        "package": "AppSecurity",
-        "repositoryURL": "https://github.com/mobven/AppSecurity.git",
-        "state": {
-          "branch": "develop",
-          "revision": "d22c5461d0e7bb31a0e41290c0f3e2ae1b7025b7",
-          "version": null
-        }
-      },
-      {
-        "package": "Cryptography",
-        "repositoryURL": "https://github.com/mobven/Cryptography.git",
-        "state": {
-          "branch": "develop",
-          "revision": "625950ffb22fb634b8bcb0f2263a2afe355c759a",
-          "version": null
-        }
-      },
-      {
         "package": "CryptoSwift",
-        "repositoryURL": "https://github.com/krzyzanowskim/CryptoSwift.git",
+        "repositoryURL": "https://github.com/krzyzanowskim/CryptoSwift",
         "state": {
-          "branch": "master",
-          "revision": "e793a595747c8f9b97b8de4ebde7b2a440f2d594",
-          "version": null
-        }
-      },
-      {
-        "package": "ErrorKit",
-        "repositoryURL": "https://github.com/mobven/ErrorKit.git",
-        "state": {
-          "branch": "develop",
-          "revision": "9640770e22771ff02b4b18d784c3292321141053",
-          "version": null
+          "branch": null,
+          "revision": "39f08ac5269361a50c08ce1e2f41989bfc4b1ec8",
+          "version": "1.3.1"
         }
       },
       {
         "package": "KeychainAccess",
         "repositoryURL": "https://github.com/kishikawakatsumi/KeychainAccess",
         "state": {
-          "branch": "master",
-          "revision": "b00f91d92ccb20f67196837db19aaf1a1b9e2ed7",
-          "version": null
-        }
-      },
-      {
-        "package": "MobKit",
-        "repositoryURL": "https://github.com/mobven/MobKit.git",
-        "state": {
-          "branch": "develop",
-          "revision": "b81f6dae0c58cb358e52e0ede13e2ee023ecf262",
-          "version": null
-        }
-      },
-      {
-        "package": "Networking",
-        "repositoryURL": "https://github.com/mobven/Networking.git",
-        "state": {
-          "branch": "develop",
-          "revision": "e0ae82e4fa28c752fc91e11484d0c367ec60ae39",
-          "version": null
-        }
-      },
-      {
-        "package": "OneLink",
-        "repositoryURL": "https://github.com/mobven/OneLink.git",
-        "state": {
-          "branch": "develop",
-          "revision": "0f472b15d75ec78250a900fa31ab98c79356323b",
-          "version": null
-        }
-      },
-      {
-        "package": "PinLocator",
-        "repositoryURL": "https://github.com/mobven/PinLocator.git",
-        "state": {
-          "branch": "develop",
-          "revision": "5473018509f688503359d97ec06c177a812adf11",
-          "version": null
-        }
-      },
-      {
-        "package": "SecureNetwork",
-        "repositoryURL": "https://github.com/mobven/SecureNetwork.git",
-        "state": {
-          "branch": "develop",
-          "revision": "a4d92f86d373eef4041cfe4bd4808ffd13d934df",
-          "version": null
-        }
-      },
-      {
-        "package": "StateMachineForms",
-        "repositoryURL": "https://github.com/mobven/StateMachineForms.git",
-        "state": {
-          "branch": "develop",
-          "revision": "6646c781346e777b3c0b49ca03a750964252f028",
-          "version": null
-        }
-      },
-      {
-        "package": "UIComponents",
-        "repositoryURL": "https://github.com/mobven/UIComponents.git",
-        "state": {
-          "branch": "develop",
-          "revision": "152b4f20fefa6c61b157b807a863ce1360c08cfd",
-          "version": null
+          "branch": null,
+          "revision": "3d0ea2c0806791abcc5d7f0d9f62f1cfd4a7264d",
+          "version": "4.2.0"
         }
       }
     ]

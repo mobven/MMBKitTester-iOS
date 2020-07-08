@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AppSecurity
+import MBAppSecurity
 
 @available(iOS 11.0, *)
 class PreventRecordingViewController: UIViewController {

@@ -1,0 +1,4 @@
+framework module MBStateMachineForms {
+  header "MBStateMachineForms-Swift.h"
+  requires objc
+}

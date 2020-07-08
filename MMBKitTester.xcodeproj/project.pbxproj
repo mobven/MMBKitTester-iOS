@@ -7,14 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D13691A24A21FB900A24849 /* AppSecurity in Frameworks */ = {isa = PBXBuildFile; productRef = 6D13691924A21FB900A24849 /* AppSecurity */; };
-		6D13691D24A2203F00A24849 /* AccountSecurity in Frameworks */ = {isa = PBXBuildFile; productRef = 6D13691C24A2203F00A24849 /* AccountSecurity */; };
-		6D13692024A2207800A24849 /* ErrorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6D13691F24A2207800A24849 /* ErrorKit */; };
-		6D13692324A2208400A24849 /* PinLocator in Frameworks */ = {isa = PBXBuildFile; productRef = 6D13692224A2208400A24849 /* PinLocator */; };
-		6D13692624A2209100A24849 /* StateMachineForms in Frameworks */ = {isa = PBXBuildFile; productRef = 6D13692524A2209100A24849 /* StateMachineForms */; };
-		6D13692924A220B700A24849 /* SecureNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = 6D13692824A220B700A24849 /* SecureNetwork */; };
-		6D13692C24A220F500A24849 /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 6D13692B24A220F500A24849 /* UIComponents */; };
-		6D13692F24A2212C00A24849 /* OneLink in Frameworks */ = {isa = PBXBuildFile; productRef = 6D13692E24A2212C00A24849 /* OneLink */; };
+		6D193C7124B5F64C001A8F44 /* MBPinLocator.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D193C7024B5F64C001A8F44 /* MBPinLocator.xcframework */; };
 		6D1F27AF24A1FA8D00ECA5E6 /* CustomXibPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1F27AE24A1FA8D00ECA5E6 /* CustomXibPinView.swift */; };
 		6D1F27B124A1FBE500ECA5E6 /* CustomXibPinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1F27B024A1FBE500ECA5E6 /* CustomXibPinView.xib */; };
 		6D4E40132454DB3100B8CC67 /* KVListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4E40122454DB3100B8CC67 /* KVListViewController.swift */; };
@@ -57,6 +50,18 @@
 		6DAF9833243B33B900CF9AAA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF9832243B33B900CF9AAA /* User.swift */; };
 		6DBA5552248FAE4200751941 /* SpotifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBA5551248FAE4200751941 /* SpotifyModels.swift */; };
 		6DC7EC65245F0F7C0023537C /* AddOnFeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC7EC64245F0F7C0023537C /* AddOnFeaturesViewController.swift */; };
+		6DCCBC9724B324090007177D /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6DCCBC9624B324090007177D /* CryptoSwift */; };
+		6DCCBC9A24B3242D0007177D /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 6DCCBC9924B3242D0007177D /* KeychainAccess */; };
+		6DCCBCEA24B35D4E0007177D /* MBErrorKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCDF24B35D4D0007177D /* MBErrorKit.xcframework */; };
+		6DCCBCEB24B35D4E0007177D /* MBNetworking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE024B35D4D0007177D /* MBNetworking.xcframework */; };
+		6DCCBCEC24B35D4E0007177D /* MobKitCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE124B35D4D0007177D /* MobKitCore.xcframework */; };
+		6DCCBCED24B35D4E0007177D /* MBSecureNetwork.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE224B35D4D0007177D /* MBSecureNetwork.xcframework */; };
+		6DCCBCEE24B35D4E0007177D /* MBStateMachineForms.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE324B35D4D0007177D /* MBStateMachineForms.xcframework */; };
+		6DCCBCEF24B35D4E0007177D /* MBOneLink.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE424B35D4D0007177D /* MBOneLink.xcframework */; };
+		6DCCBCF024B35D4E0007177D /* MBAccountSecurity.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE524B35D4D0007177D /* MBAccountSecurity.xcframework */; };
+		6DCCBCF124B35D4E0007177D /* Cryptography.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE624B35D4D0007177D /* Cryptography.xcframework */; };
+		6DCCBCF324B35D4E0007177D /* MBAppSecurity.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE824B35D4E0007177D /* MBAppSecurity.xcframework */; };
+		6DCCBCF424B35D4E0007177D /* MBUIComponents.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE924B35D4E0007177D /* MBUIComponents.xcframework */; };
 		6DFF0F66245ABD170035C890 /* Pods_MMBKitTester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3227ECF86F65F265974F9C /* Pods_MMBKitTester.framework */; };
 		6DFF0F86245CBBB20035C890 /* CustomPopupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF0F85245CBBB20035C890 /* CustomPopupsViewController.swift */; };
 		6DFF0F88245CBBF20035C890 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF0F87245CBBF20035C890 /* CustomAlert.swift */; };
@@ -128,6 +133,7 @@
 /* Begin PBXFileReference section */
 		071305D7D8766BA6E6741BDD /* Pods-MMBKitTesterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBKitTesterTests.release.xcconfig"; path = "Target Support Files/Pods-MMBKitTesterTests/Pods-MMBKitTesterTests.release.xcconfig"; sourceTree = "<group>"; };
 		3D3227ECF86F65F265974F9C /* Pods_MMBKitTester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMBKitTester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D193C7024B5F64C001A8F44 /* MBPinLocator.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBPinLocator.xcframework; path = Frameworks/MBPinLocator.xcframework; sourceTree = "<group>"; };
 		6D1F27AE24A1FA8D00ECA5E6 /* CustomXibPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomXibPinView.swift; sourceTree = "<group>"; };
 		6D1F27B024A1FBE500ECA5E6 /* CustomXibPinView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomXibPinView.xib; sourceTree = "<group>"; };
 		6D4E40122454DB3100B8CC67 /* KVListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVListViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +182,16 @@
 		6DAF9832243B33B900CF9AAA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6DBA5551248FAE4200751941 /* SpotifyModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyModels.swift; sourceTree = "<group>"; };
 		6DC7EC64245F0F7C0023537C /* AddOnFeaturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOnFeaturesViewController.swift; sourceTree = "<group>"; };
+		6DCCBCDF24B35D4D0007177D /* MBErrorKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBErrorKit.xcframework; path = Frameworks/MBErrorKit.xcframework; sourceTree = "<group>"; };
+		6DCCBCE024B35D4D0007177D /* MBNetworking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBNetworking.xcframework; path = Frameworks/MBNetworking.xcframework; sourceTree = "<group>"; };
+		6DCCBCE124B35D4D0007177D /* MobKitCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MobKitCore.xcframework; path = Frameworks/MobKitCore.xcframework; sourceTree = "<group>"; };
+		6DCCBCE224B35D4D0007177D /* MBSecureNetwork.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBSecureNetwork.xcframework; path = Frameworks/MBSecureNetwork.xcframework; sourceTree = "<group>"; };
+		6DCCBCE324B35D4D0007177D /* MBStateMachineForms.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBStateMachineForms.xcframework; path = Frameworks/MBStateMachineForms.xcframework; sourceTree = "<group>"; };
+		6DCCBCE424B35D4D0007177D /* MBOneLink.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBOneLink.xcframework; path = Frameworks/MBOneLink.xcframework; sourceTree = "<group>"; };
+		6DCCBCE524B35D4D0007177D /* MBAccountSecurity.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBAccountSecurity.xcframework; path = Frameworks/MBAccountSecurity.xcframework; sourceTree = "<group>"; };
+		6DCCBCE624B35D4D0007177D /* Cryptography.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Cryptography.xcframework; path = Frameworks/Cryptography.xcframework; sourceTree = "<group>"; };
+		6DCCBCE824B35D4E0007177D /* MBAppSecurity.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBAppSecurity.xcframework; path = Frameworks/MBAppSecurity.xcframework; sourceTree = "<group>"; };
+		6DCCBCE924B35D4E0007177D /* MBUIComponents.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBUIComponents.xcframework; path = Frameworks/MBUIComponents.xcframework; sourceTree = "<group>"; };
 		6DFF0F85245CBBB20035C890 /* CustomPopupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopupsViewController.swift; sourceTree = "<group>"; };
 		6DFF0F87245CBBF20035C890 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		6DFF0F89245CBC640035C890 /* CustomAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlert.xib; sourceTree = "<group>"; };
@@ -228,15 +244,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D13692F24A2212C00A24849 /* OneLink in Frameworks */,
-				6D13692C24A220F500A24849 /* UIComponents in Frameworks */,
-				6D13691D24A2203F00A24849 /* AccountSecurity in Frameworks */,
-				6D13691A24A21FB900A24849 /* AppSecurity in Frameworks */,
-				6D13692624A2209100A24849 /* StateMachineForms in Frameworks */,
-				6D13692024A2207800A24849 /* ErrorKit in Frameworks */,
-				6D13692924A220B700A24849 /* SecureNetwork in Frameworks */,
-				6D13692324A2208400A24849 /* PinLocator in Frameworks */,
+				6DCCBC9724B324090007177D /* CryptoSwift in Frameworks */,
+				6DCCBC9A24B3242D0007177D /* KeychainAccess in Frameworks */,
+				6DCCBCEE24B35D4E0007177D /* MBStateMachineForms.xcframework in Frameworks */,
+				6DCCBCEC24B35D4E0007177D /* MobKitCore.xcframework in Frameworks */,
+				6DCCBCEB24B35D4E0007177D /* MBNetworking.xcframework in Frameworks */,
+				6DCCBCEA24B35D4E0007177D /* MBErrorKit.xcframework in Frameworks */,
+				6DCCBCF024B35D4E0007177D /* MBAccountSecurity.xcframework in Frameworks */,
+				6DCCBCF424B35D4E0007177D /* MBUIComponents.xcframework in Frameworks */,
+				6DCCBCF124B35D4E0007177D /* Cryptography.xcframework in Frameworks */,
+				6DCCBCEF24B35D4E0007177D /* MBOneLink.xcframework in Frameworks */,
+				6DCCBCED24B35D4E0007177D /* MBSecureNetwork.xcframework in Frameworks */,
+				6DCCBCF324B35D4E0007177D /* MBAppSecurity.xcframework in Frameworks */,
 				6DFF0F66245ABD170035C890 /* Pods_MMBKitTester.framework in Frameworks */,
+				6D193C7124B5F64C001A8F44 /* MBPinLocator.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,6 +564,17 @@
 		8BCFF828680210ED26EC0E12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6DCCBCE624B35D4D0007177D /* Cryptography.xcframework */,
+				6DCCBCE524B35D4D0007177D /* MBAccountSecurity.xcframework */,
+				6DCCBCE824B35D4E0007177D /* MBAppSecurity.xcframework */,
+				6DCCBCDF24B35D4D0007177D /* MBErrorKit.xcframework */,
+				6DCCBCE024B35D4D0007177D /* MBNetworking.xcframework */,
+				6DCCBCE424B35D4D0007177D /* MBOneLink.xcframework */,
+				6DCCBCE224B35D4D0007177D /* MBSecureNetwork.xcframework */,
+				6DCCBCE324B35D4D0007177D /* MBStateMachineForms.xcframework */,
+				6DCCBCE924B35D4E0007177D /* MBUIComponents.xcframework */,
+				6D193C7024B5F64C001A8F44 /* MBPinLocator.xcframework */,
+				6DCCBCE124B35D4D0007177D /* MobKitCore.xcframework */,
 				3D3227ECF86F65F265974F9C /* Pods_MMBKitTester.framework */,
 				922D4F6CC5A2F78F2E29C089 /* Pods_MMBKitTesterTests.framework */,
 			);
@@ -574,7 +606,7 @@
 				6D931FD8243228EF004C8A3C /* Resources */,
 				95E53F6E0D52333210561A3B /* [CP] Embed Pods Frameworks */,
 				6F1A93E02493732B0073FB7E /* Embed Frameworks */,
-				626799B7EA98751E4B12DCA6 /* [CP] Copy Pods Resources */,
+				8D6C56AAE788F7C48A782F92 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -582,14 +614,8 @@
 			);
 			name = MMBKitTester;
 			packageProductDependencies = (
-				6D13691924A21FB900A24849 /* AppSecurity */,
-				6D13691C24A2203F00A24849 /* AccountSecurity */,
-				6D13691F24A2207800A24849 /* ErrorKit */,
-				6D13692224A2208400A24849 /* PinLocator */,
-				6D13692524A2209100A24849 /* StateMachineForms */,
-				6D13692824A220B700A24849 /* SecureNetwork */,
-				6D13692B24A220F500A24849 /* UIComponents */,
-				6D13692E24A2212C00A24849 /* OneLink */,
+				6DCCBC9624B324090007177D /* CryptoSwift */,
+				6DCCBC9924B3242D0007177D /* KeychainAccess */,
 			);
 			productName = MMBKitTester;
 			productReference = 6D931FDA243228EF004C8A3C /* MMBKitTester.app */;
@@ -643,14 +669,8 @@
 			);
 			mainGroup = 6D931FD1243228EF004C8A3C;
 			packageReferences = (
-				6D13691824A21FB900A24849 /* XCRemoteSwiftPackageReference "AppSecurity" */,
-				6D13691B24A2203F00A24849 /* XCRemoteSwiftPackageReference "AccountSecurity" */,
-				6D13691E24A2207800A24849 /* XCRemoteSwiftPackageReference "ErrorKit" */,
-				6D13692124A2208400A24849 /* XCRemoteSwiftPackageReference "PinLocator" */,
-				6D13692424A2209100A24849 /* XCRemoteSwiftPackageReference "StateMachineForms" */,
-				6D13692724A220B700A24849 /* XCRemoteSwiftPackageReference "SecureNetwork" */,
-				6D13692A24A220F500A24849 /* XCRemoteSwiftPackageReference "UIComponents" */,
-				6D13692D24A2212C00A24849 /* XCRemoteSwiftPackageReference "OneLink" */,
+				6DCCBC9524B324090007177D /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+				6DCCBC9824B3242D0007177D /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			productRefGroup = 6D931FDB243228EF004C8A3C /* Products */;
 			projectDirPath = "";
@@ -712,23 +732,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		626799B7EA98751E4B12DCA6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6D93202E2432A385004C8A3C /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -746,6 +749,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		8D6C56AAE788F7C48A782F92 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		95E53F6E0D52333210561A3B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1162,112 +1182,34 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6D13691824A21FB900A24849 /* XCRemoteSwiftPackageReference "AppSecurity" */ = {
+		6DCCBC9524B324090007177D /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mobven/AppSecurity.git";
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift";
 			requirement = {
-				branch = develop;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.1;
 			};
 		};
-		6D13691B24A2203F00A24849 /* XCRemoteSwiftPackageReference "AccountSecurity" */ = {
+		6DCCBC9824B3242D0007177D /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mobven/AccountSecurity.git";
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
 			requirement = {
-				branch = develop;
-				kind = branch;
-			};
-		};
-		6D13691E24A2207800A24849 /* XCRemoteSwiftPackageReference "ErrorKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mobven/ErrorKit.git";
-			requirement = {
-				branch = develop;
-				kind = branch;
-			};
-		};
-		6D13692124A2208400A24849 /* XCRemoteSwiftPackageReference "PinLocator" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mobven/PinLocator.git";
-			requirement = {
-				branch = develop;
-				kind = branch;
-			};
-		};
-		6D13692424A2209100A24849 /* XCRemoteSwiftPackageReference "StateMachineForms" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mobven/StateMachineForms.git";
-			requirement = {
-				branch = develop;
-				kind = branch;
-			};
-		};
-		6D13692724A220B700A24849 /* XCRemoteSwiftPackageReference "SecureNetwork" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mobven/SecureNetwork.git";
-			requirement = {
-				branch = develop;
-				kind = branch;
-			};
-		};
-		6D13692A24A220F500A24849 /* XCRemoteSwiftPackageReference "UIComponents" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mobven/UIComponents.git";
-			requirement = {
-				branch = develop;
-				kind = branch;
-			};
-		};
-		6D13692D24A2212C00A24849 /* XCRemoteSwiftPackageReference "OneLink" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mobven/OneLink.git";
-			requirement = {
-				branch = develop;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6D13691924A21FB900A24849 /* AppSecurity */ = {
+		6DCCBC9624B324090007177D /* CryptoSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6D13691824A21FB900A24849 /* XCRemoteSwiftPackageReference "AppSecurity" */;
-			productName = AppSecurity;
+			package = 6DCCBC9524B324090007177D /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
 		};
-		6D13691C24A2203F00A24849 /* AccountSecurity */ = {
+		6DCCBC9924B3242D0007177D /* KeychainAccess */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6D13691B24A2203F00A24849 /* XCRemoteSwiftPackageReference "AccountSecurity" */;
-			productName = AccountSecurity;
-		};
-		6D13691F24A2207800A24849 /* ErrorKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6D13691E24A2207800A24849 /* XCRemoteSwiftPackageReference "ErrorKit" */;
-			productName = ErrorKit;
-		};
-		6D13692224A2208400A24849 /* PinLocator */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6D13692124A2208400A24849 /* XCRemoteSwiftPackageReference "PinLocator" */;
-			productName = PinLocator;
-		};
-		6D13692524A2209100A24849 /* StateMachineForms */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6D13692424A2209100A24849 /* XCRemoteSwiftPackageReference "StateMachineForms" */;
-			productName = StateMachineForms;
-		};
-		6D13692824A220B700A24849 /* SecureNetwork */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6D13692724A220B700A24849 /* XCRemoteSwiftPackageReference "SecureNetwork" */;
-			productName = SecureNetwork;
-		};
-		6D13692B24A220F500A24849 /* UIComponents */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6D13692A24A220F500A24849 /* XCRemoteSwiftPackageReference "UIComponents" */;
-			productName = UIComponents;
-		};
-		6D13692E24A2212C00A24849 /* OneLink */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6D13692D24A2212C00A24849 /* XCRemoteSwiftPackageReference "OneLink" */;
-			productName = OneLink;
+			package = 6DCCBC9824B3242D0007177D /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

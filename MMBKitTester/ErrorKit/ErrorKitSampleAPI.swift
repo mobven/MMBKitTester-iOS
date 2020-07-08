@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Networking
+import MBNetworking
 
 enum ErrorKitSampleAPI: Networkable {
     

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import StateMachineForms
+import MBStateMachineForms
 
 public class MMBTextViewBinder: StateMachineForm.Binder {
     
@@ -39,7 +39,7 @@ public class MMBTextViewBinder: StateMachineForm.Binder {
 
 extension MMBTextViewBinder: UITextViewDelegate {
     
-    public func textViewDidChange(_ textView: UITextView) {
+    @nonobjc public func textViewDidChange(_ textView: UITextView) {
         delegate?.formBinderValueChanged(binder: self, value: textView.text)
     }
     
