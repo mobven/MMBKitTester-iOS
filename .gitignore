@@ -80,3 +80,5 @@ fastlane/test_output
 fastlane/README.md
 reports/
 firebase-debug.log
+
+Frameworks/

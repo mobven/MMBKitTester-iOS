@@ -1,4 +1,0 @@
-framework module MBAccountSecurity {
-  header "MBAccountSecurity-Swift.h"
-  requires objc
-}
