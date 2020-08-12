@@ -8,7 +8,7 @@ Sample application for demonstrating MMBKit. All Modules integrated with SPM.
  - After that you need the install pods then run the project...:)
 
 ### Warning:
-If Xcode crashes because of cryptoswift framework, you need the delete framework from Projects -> Swift Packages and then add the framework again.
+If Xcode crashes when downloading cryptoswift library at first launch, you need to delete the framework from Projects -> Swift Packages and then add the framework again.
 
 ### Developed Modules
 #### App Security
