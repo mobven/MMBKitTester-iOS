@@ -18,6 +18,24 @@
           "revision": "3d0ea2c0806791abcc5d7f0d9f62f1cfd4a7264d",
           "version": "4.2.0"
         }
+      },
+      {
+        "package": "MobKitCore",
+        "repositoryURL": "https://github.com/mobven/MobKitCore.git",
+        "state": {
+          "branch": "develop",
+          "revision": "168705f06536779470cbedfbaf45c6eb10c0b829",
+          "version": null
+        }
+      },
+      {
+        "package": "PermissionManager",
+        "repositoryURL": "https://github.com/mobven/PermissionManager.git",
+        "state": {
+          "branch": "develop",
+          "revision": "7a51ea120c76c897d0d0a26dbaab49084b771b1b",
+          "version": null
+        }
       }
     ]
   },
