@@ -1805,13 +1805,50 @@ It's secure 🎉</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="VYA-pW-bca">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PMTableViewCell" rowHeight="91" id="VYA-pW-bca" customClass="PMTableViewCell" customModule="MMBKitTester" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="91"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VYA-pW-bca" id="f9E-mR-IJV">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="91"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEb-c2-Wwe">
+                                            <rect key="frame" x="20" y="20" width="295" height="21"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" horizontalCompressionResistancePriority="752" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIA-xS-LHX">
+                                            <rect key="frame" x="20" y="51" width="295" height="20"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" horizontalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfo-aQ-Xzm">
+                                            <rect key="frame" x="335" y="31" width="39" height="29"/>
+                                            <state key="normal" title="Grant"/>
+                                            <connections>
+                                                <action selector="grant" destination="VYA-pW-bca" eventType="touchUpInside" id="oud-ev-pdz"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="qfo-aQ-Xzm" secondAttribute="bottom" constant="20" id="01D-M1-cHf"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="qfo-aQ-Xzm" secondAttribute="trailing" constant="20" id="1Ir-1H-ZU4"/>
+                                        <constraint firstAttribute="bottom" secondItem="uIA-xS-LHX" secondAttribute="bottom" constant="20" id="I8l-Df-wJp"/>
+                                        <constraint firstItem="qfo-aQ-Xzm" firstAttribute="leading" secondItem="jEb-c2-Wwe" secondAttribute="trailing" constant="20" id="OQb-y4-4qe"/>
+                                        <constraint firstItem="uIA-xS-LHX" firstAttribute="top" secondItem="jEb-c2-Wwe" secondAttribute="bottom" constant="10" id="Pck-Sd-vOk"/>
+                                        <constraint firstItem="jEb-c2-Wwe" firstAttribute="leading" secondItem="f9E-mR-IJV" secondAttribute="leading" constant="20" id="RtD-y9-C6W"/>
+                                        <constraint firstItem="uIA-xS-LHX" firstAttribute="leading" secondItem="f9E-mR-IJV" secondAttribute="leading" constant="20" id="XRV-5q-m5a"/>
+                                        <constraint firstItem="qfo-aQ-Xzm" firstAttribute="top" secondItem="f9E-mR-IJV" secondAttribute="topMargin" constant="20" id="bNW-V5-r64"/>
+                                        <constraint firstItem="qfo-aQ-Xzm" firstAttribute="leading" secondItem="uIA-xS-LHX" secondAttribute="trailing" constant="20" id="lnr-8w-Ej8"/>
+                                        <constraint firstItem="jEb-c2-Wwe" firstAttribute="top" secondItem="f9E-mR-IJV" secondAttribute="top" constant="20" id="uNv-Jx-2lR"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="permissionName" destination="jEb-c2-Wwe" id="uSF-sf-1jm"/>
+                                    <outlet property="permissionStatus" destination="uIA-xS-LHX" id="jPC-2F-dwb"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1822,7 +1859,7 @@ It's secure 🎉</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sDk-bi-TQU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3596" y="3781"/>
+            <point key="canvasLocation" x="3595.652173913044" y="3780.8035714285711"/>
         </scene>
     </scenes>
 </document>
