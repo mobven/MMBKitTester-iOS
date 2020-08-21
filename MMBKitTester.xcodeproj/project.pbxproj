@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		656C83BC24EFDDD000767B11 /* PermissionManager in Frameworks */ = {isa = PBXBuildFile; productRef = 656C83BB24EFDDD000767B11 /* PermissionManager */; };
 		6D193C7124B5F64C001A8F44 /* MBPinLocator.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D193C7024B5F64C001A8F44 /* MBPinLocator.xcframework */; };
 		6D1F27AF24A1FA8D00ECA5E6 /* CustomXibPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1F27AE24A1FA8D00ECA5E6 /* CustomXibPinView.swift */; };
 		6D1F27B124A1FBE500ECA5E6 /* CustomXibPinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1F27B024A1FBE500ECA5E6 /* CustomXibPinView.xib */; };
@@ -20,7 +21,6 @@
 		6D8BA19B243A4869004493A9 /* AppLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BA19A243A4869004493A9 /* AppLink.swift */; };
 		6D8BA19D243A495B004493A9 /* AnnouncementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BA19C243A495B004493A9 /* AnnouncementsViewController.swift */; };
 		6D8BA19F243A4977004493A9 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BA19E243A4977004493A9 /* CardDetailViewController.swift */; };
-		6D8CD53424ED4252008F9F37 /* PermissionManager in Frameworks */ = {isa = PBXBuildFile; productRef = 6D8CD53324ED4252008F9F37 /* PermissionManager */; };
 		6D8CD53724ED42F9008F9F37 /* PermissionManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8CD53624ED42F9008F9F37 /* PermissionManagerViewController.swift */; };
 		6D8CD53924ED4649008F9F37 /* PMTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8CD53824ED4649008F9F37 /* PMTableViewCell.swift */; };
 		6D8DC0BF24596761005553BA /* AmountInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8DC0BE24596761005553BA /* AmountInputViewController.swift */; };
@@ -65,7 +65,6 @@
 		6DCCBCF124B35D4E0007177D /* Cryptography.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE624B35D4D0007177D /* Cryptography.xcframework */; };
 		6DCCBCF324B35D4E0007177D /* MBAppSecurity.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE824B35D4E0007177D /* MBAppSecurity.xcframework */; };
 		6DCCBCF424B35D4E0007177D /* MBUIComponents.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE924B35D4E0007177D /* MBUIComponents.xcframework */; };
-		6DFF0F66245ABD170035C890 /* Pods_MMBKitTester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3227ECF86F65F265974F9C /* Pods_MMBKitTester.framework */; };
 		6DFF0F86245CBBB20035C890 /* CustomPopupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF0F85245CBBB20035C890 /* CustomPopupsViewController.swift */; };
 		6DFF0F88245CBBF20035C890 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF0F87245CBBF20035C890 /* CustomAlert.swift */; };
 		6DFF0F8A245CBC640035C890 /* CustomAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DFF0F89245CBC640035C890 /* CustomAlert.xib */; };
@@ -107,7 +106,8 @@
 		6F96B69E2484EE5E00505B5E /* CryptographyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F96B69D2484EE5E00505B5E /* CryptographyViewController.swift */; };
 		6FA73080246EA8FD00CA1B9E /* MMBTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA7307F246EA8FD00CA1B9E /* MMBTextView.swift */; };
 		6FA73082246EAA8C00CA1B9E /* MMBTextViewBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA73081246EAA8C00CA1B9E /* MMBTextViewBinder.swift */; };
-		864D50E772FB2F9A38CEC034 /* Pods_MMBKitTesterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 922D4F6CC5A2F78F2E29C089 /* Pods_MMBKitTesterTests.framework */; };
+		79D34649A167A8C669B14260 /* Pods_MMBKitTesterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D095387D2F646E1CC850F603 /* Pods_MMBKitTesterTests.framework */; };
+		D886C61370196295B4DBC4C8 /* Pods_MMBKitTester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BF171A3156D2F1A176E725 /* Pods_MMBKitTester.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,8 +134,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		071305D7D8766BA6E6741BDD /* Pods-MMBKitTesterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBKitTesterTests.release.xcconfig"; path = "Target Support Files/Pods-MMBKitTesterTests/Pods-MMBKitTesterTests.release.xcconfig"; sourceTree = "<group>"; };
-		3D3227ECF86F65F265974F9C /* Pods_MMBKitTester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMBKitTester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13BF171A3156D2F1A176E725 /* Pods_MMBKitTester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMBKitTester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36D0A9B3522716A4DD97B6D1 /* Pods-MMBKitTester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBKitTester.debug.xcconfig"; path = "Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester.debug.xcconfig"; sourceTree = "<group>"; };
+		3A971D1175BF6057D29D5787 /* Pods-MMBKitTesterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBKitTesterTests.debug.xcconfig"; path = "Target Support Files/Pods-MMBKitTesterTests/Pods-MMBKitTesterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6D193C7024B5F64C001A8F44 /* MBPinLocator.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBPinLocator.xcframework; path = Frameworks/MBPinLocator.xcframework; sourceTree = "<group>"; };
 		6D1F27AE24A1FA8D00ECA5E6 /* CustomXibPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomXibPinView.swift; sourceTree = "<group>"; };
 		6D1F27B024A1FBE500ECA5E6 /* CustomXibPinView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomXibPinView.xib; sourceTree = "<group>"; };
@@ -238,10 +239,9 @@
 		6F96B69D2484EE5E00505B5E /* CryptographyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptographyViewController.swift; sourceTree = "<group>"; };
 		6FA7307F246EA8FD00CA1B9E /* MMBTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMBTextView.swift; sourceTree = "<group>"; };
 		6FA73081246EAA8C00CA1B9E /* MMBTextViewBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMBTextViewBinder.swift; sourceTree = "<group>"; };
-		7C55600B130C3D48F52FA44F /* Pods-MMBKitTester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBKitTester.debug.xcconfig"; path = "Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester.debug.xcconfig"; sourceTree = "<group>"; };
-		922D4F6CC5A2F78F2E29C089 /* Pods_MMBKitTesterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMBKitTesterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A63A91710C4207F027CA8DC1 /* Pods-MMBKitTesterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBKitTesterTests.debug.xcconfig"; path = "Target Support Files/Pods-MMBKitTesterTests/Pods-MMBKitTesterTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F07C7571CF87FD087315D3F1 /* Pods-MMBKitTester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBKitTester.release.xcconfig"; path = "Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester.release.xcconfig"; sourceTree = "<group>"; };
+		D095387D2F646E1CC850F603 /* Pods_MMBKitTesterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMBKitTesterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D316226B70A4EDF378571E0B /* Pods-MMBKitTesterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBKitTesterTests.release.xcconfig"; path = "Target Support Files/Pods-MMBKitTesterTests/Pods-MMBKitTesterTests.release.xcconfig"; sourceTree = "<group>"; };
+		E7552F7D70EDE80ECDD48827 /* Pods-MMBKitTester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBKitTester.release.xcconfig"; path = "Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,7 +251,7 @@
 			files = (
 				6DCCBC9724B324090007177D /* CryptoSwift in Frameworks */,
 				6DCCBC9A24B3242D0007177D /* KeychainAccess in Frameworks */,
-				6D8CD53424ED4252008F9F37 /* PermissionManager in Frameworks */,
+				656C83BC24EFDDD000767B11 /* PermissionManager in Frameworks */,
 				6DCCBCEE24B35D4E0007177D /* MBStateMachineForms.xcframework in Frameworks */,
 				6DCCBCEC24B35D4E0007177D /* MobKitCore.xcframework in Frameworks */,
 				6DCCBCEB24B35D4E0007177D /* MBNetworking.xcframework in Frameworks */,
@@ -262,8 +262,8 @@
 				6DCCBCEF24B35D4E0007177D /* MBOneLink.xcframework in Frameworks */,
 				6DCCBCED24B35D4E0007177D /* MBSecureNetwork.xcframework in Frameworks */,
 				6DCCBCF324B35D4E0007177D /* MBAppSecurity.xcframework in Frameworks */,
-				6DFF0F66245ABD170035C890 /* Pods_MMBKitTester.framework in Frameworks */,
 				6D193C7124B5F64C001A8F44 /* MBPinLocator.xcframework in Frameworks */,
+				D886C61370196295B4DBC4C8 /* Pods_MMBKitTester.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +271,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				864D50E772FB2F9A38CEC034 /* Pods_MMBKitTesterTests.framework in Frameworks */,
+				79D34649A167A8C669B14260 /* Pods_MMBKitTesterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,8 +591,8 @@
 				6DCCBCE924B35D4E0007177D /* MBUIComponents.xcframework */,
 				6D193C7024B5F64C001A8F44 /* MBPinLocator.xcframework */,
 				6DCCBCE124B35D4D0007177D /* MobKitCore.xcframework */,
-				3D3227ECF86F65F265974F9C /* Pods_MMBKitTester.framework */,
-				922D4F6CC5A2F78F2E29C089 /* Pods_MMBKitTesterTests.framework */,
+				13BF171A3156D2F1A176E725 /* Pods_MMBKitTester.framework */,
+				D095387D2F646E1CC850F603 /* Pods_MMBKitTesterTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -600,10 +600,10 @@
 		E8441672F0B96ADF0DF09585 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7C55600B130C3D48F52FA44F /* Pods-MMBKitTester.debug.xcconfig */,
-				F07C7571CF87FD087315D3F1 /* Pods-MMBKitTester.release.xcconfig */,
-				A63A91710C4207F027CA8DC1 /* Pods-MMBKitTesterTests.debug.xcconfig */,
-				071305D7D8766BA6E6741BDD /* Pods-MMBKitTesterTests.release.xcconfig */,
+				36D0A9B3522716A4DD97B6D1 /* Pods-MMBKitTester.debug.xcconfig */,
+				E7552F7D70EDE80ECDD48827 /* Pods-MMBKitTester.release.xcconfig */,
+				3A971D1175BF6057D29D5787 /* Pods-MMBKitTesterTests.debug.xcconfig */,
+				D316226B70A4EDF378571E0B /* Pods-MMBKitTesterTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -615,14 +615,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D931FF9243228F1004C8A3C /* Build configuration list for PBXNativeTarget "MMBKitTester" */;
 			buildPhases = (
-				EABD452E9D24B189DB260C4A /* [CP] Check Pods Manifest.lock */,
+				EA377E6DB884AB48DAE11658 /* [CP] Check Pods Manifest.lock */,
 				6D93202E2432A385004C8A3C /* SwiftLint */,
 				6D931FD6243228EF004C8A3C /* Sources */,
 				6D931FD7243228EF004C8A3C /* Frameworks */,
 				6D931FD8243228EF004C8A3C /* Resources */,
-				95E53F6E0D52333210561A3B /* [CP] Embed Pods Frameworks */,
 				6F1A93E02493732B0073FB7E /* Embed Frameworks */,
-				8D6C56AAE788F7C48A782F92 /* [CP] Copy Pods Resources */,
+				2D29342CD9EBB14CC9874F98 /* [CP] Embed Pods Frameworks */,
+				47263B046FF3B5E7F7433DC3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -632,7 +632,7 @@
 			packageProductDependencies = (
 				6DCCBC9624B324090007177D /* CryptoSwift */,
 				6DCCBC9924B3242D0007177D /* KeychainAccess */,
-				6D8CD53324ED4252008F9F37 /* PermissionManager */,
+				656C83BB24EFDDD000767B11 /* PermissionManager */,
 			);
 			productName = MMBKitTester;
 			productReference = 6D931FDA243228EF004C8A3C /* MMBKitTester.app */;
@@ -642,7 +642,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D931FFC243228F1004C8A3C /* Build configuration list for PBXNativeTarget "MMBKitTesterTests" */;
 			buildPhases = (
-				0FE9EA5913D0EC4F4E7CC24F /* [CP] Check Pods Manifest.lock */,
+				DF37810C866BFA6D6D3BAAA8 /* [CP] Check Pods Manifest.lock */,
 				6D931FEC243228F1004C8A3C /* Sources */,
 				6D931FED243228F1004C8A3C /* Frameworks */,
 				6D931FEE243228F1004C8A3C /* Resources */,
@@ -688,7 +688,7 @@
 			packageReferences = (
 				6DCCBC9524B324090007177D /* XCRemoteSwiftPackageReference "CryptoSwift" */,
 				6DCCBC9824B3242D0007177D /* XCRemoteSwiftPackageReference "KeychainAccess" */,
-				6D8CD53224ED4252008F9F37 /* XCRemoteSwiftPackageReference "PermissionManager" */,
+				656C83BA24EFDDD000767B11 /* XCRemoteSwiftPackageReference "PermissionManager" */,
 			);
 			productRefGroup = 6D931FDB243228EF004C8A3C /* Products */;
 			projectDirPath = "";
@@ -728,7 +728,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0FE9EA5913D0EC4F4E7CC24F /* [CP] Check Pods Manifest.lock */ = {
+		2D29342CD9EBB14CC9874F98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47263B046FF3B5E7F7433DC3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D93202E2432A385004C8A3C /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		DF37810C866BFA6D6D3BAAA8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -750,59 +802,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6D93202E2432A385004C8A3C /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		8D6C56AAE788F7C48A782F92 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		95E53F6E0D52333210561A3B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EABD452E9D24B189DB260C4A /* [CP] Check Pods Manifest.lock */ = {
+		EA377E6DB884AB48DAE11658 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1062,7 +1062,7 @@
 		};
 		6D931FFA243228F1004C8A3C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C55600B130C3D48F52FA44F /* Pods-MMBKitTester.debug.xcconfig */;
+			baseConfigurationReference = 36D0A9B3522716A4DD97B6D1 /* Pods-MMBKitTester.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MMBKitTester/MMBKitTester.entitlements;
@@ -1094,7 +1094,7 @@
 		};
 		6D931FFB243228F1004C8A3C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F07C7571CF87FD087315D3F1 /* Pods-MMBKitTester.release.xcconfig */;
+			baseConfigurationReference = E7552F7D70EDE80ECDD48827 /* Pods-MMBKitTester.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MMBKitTester/MMBKitTester.entitlements;
@@ -1125,7 +1125,7 @@
 		};
 		6D931FFD243228F1004C8A3C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A63A91710C4207F027CA8DC1 /* Pods-MMBKitTesterTests.debug.xcconfig */;
+			baseConfigurationReference = 3A971D1175BF6057D29D5787 /* Pods-MMBKitTesterTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1148,7 +1148,7 @@
 		};
 		6D931FFE243228F1004C8A3C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 071305D7D8766BA6E6741BDD /* Pods-MMBKitTesterTests.release.xcconfig */;
+			baseConfigurationReference = D316226B70A4EDF378571E0B /* Pods-MMBKitTesterTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1202,7 +1202,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6D8CD53224ED4252008F9F37 /* XCRemoteSwiftPackageReference "PermissionManager" */ = {
+		656C83BA24EFDDD000767B11 /* XCRemoteSwiftPackageReference "PermissionManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mobven/PermissionManager.git";
 			requirement = {
@@ -1229,9 +1229,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6D8CD53324ED4252008F9F37 /* PermissionManager */ = {
+		656C83BB24EFDDD000767B11 /* PermissionManager */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6D8CD53224ED4252008F9F37 /* XCRemoteSwiftPackageReference "PermissionManager" */;
+			package = 656C83BA24EFDDD000767B11 /* XCRemoteSwiftPackageReference "PermissionManager" */;
 			productName = PermissionManager;
 		};
 		6DCCBC9624B324090007177D /* CryptoSwift */ = {

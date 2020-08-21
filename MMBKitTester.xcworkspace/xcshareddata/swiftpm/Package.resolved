@@ -24,7 +24,7 @@
         "repositoryURL": "https://github.com/mobven/MobKitCore.git",
         "state": {
           "branch": "develop",
-          "revision": "168705f06536779470cbedfbaf45c6eb10c0b829",
+          "revision": "7ce4455aff10c616d2081e67ceb879750636aade",
           "version": null
         }
       },
@@ -33,7 +33,7 @@
         "repositoryURL": "https://github.com/mobven/PermissionManager.git",
         "state": {
           "branch": "develop",
-          "revision": "7a51ea120c76c897d0d0a26dbaab49084b771b1b",
+          "revision": "cb78a70ebeff7a067c17f851509934e8c795d03d",
           "version": null
         }
       }

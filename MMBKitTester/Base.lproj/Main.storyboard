@@ -1846,6 +1846,7 @@ It's secure 🎉</string>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="grantBttn" destination="qfo-aQ-Xzm" id="Gz2-EW-U4E"/>
                                     <outlet property="permissionName" destination="jEb-c2-Wwe" id="uSF-sf-1jm"/>
                                     <outlet property="permissionStatus" destination="uIA-xS-LHX" id="jPC-2F-dwb"/>
                                 </connections>
