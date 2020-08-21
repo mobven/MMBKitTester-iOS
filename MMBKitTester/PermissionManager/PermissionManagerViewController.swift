@@ -12,17 +12,6 @@ import PermissionManager
 
 class PermissionManagerViewController: UITableViewController {
     
-    var permissionTypeArray: [String] = [
-        "bluetooth",
-        "camera",
-        "photos",
-        "notification",
-        "location",
-        "calendar",
-        "contacts",
-        "microphone"
-    ]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -46,7 +35,7 @@ extension PermissionManagerViewController {
         return cell
     }
 }
-    // swiftlint:disable all
+// swiftlint:disable all
 extension PermissionManagerViewController: PMTableViewCellDelegate {
     func permissionUpdated() {
         DispatchQueue.main.async {
@@ -57,20 +46,20 @@ extension PermissionManagerViewController: PMTableViewCellDelegate {
     func userDidDenied() {
         let alert = UIAlertController(title: "Location access required to get your current location",
                                       message: "Please allow location access", preferredStyle: .alert)
-          let settingsAction = UIAlertAction(title: "Settings", style: .default, handler: { action in
-
-              // open the app permission in Settings app
-              UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
-          })
-
-          let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
-
-          alert.addAction(settingsAction)
-          alert.addAction(cancelAction)
+        let settingsAction = UIAlertAction(title: "Settings", style: .default, handler: { action in
+            
+            // open the app permission in Settings app
+            UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
+        })
         
-          alert.preferredAction = settingsAction
-
-          self.present(alert, animated: true, completion: nil)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
+        
+        alert.addAction(settingsAction)
+        alert.addAction(cancelAction)
+        
+        alert.preferredAction = settingsAction
+        
+        self.present(alert, animated: true, completion: nil)
     }
 }
-    // swiftlint:enable all
+// swiftlint:enable all

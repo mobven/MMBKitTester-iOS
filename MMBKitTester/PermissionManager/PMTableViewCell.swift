@@ -128,19 +128,38 @@ class PMTableViewCell: UITableViewCell {
                     self.permissionStatus.text = "N/A"
                 }
             }
-        case .location(_):
-            PermissionManager.shared().status { (result: PermissionResult<LocationAlwaysManager.Result>) in
-                switch result {
-                case .allowed:
-                    self.permissionStatus.text = "Allowed"
-                case .notAllowed:
-                    self.permissionStatus.text = "Not Allowed"
-                case .restricted:
-                    self.permissionStatus.text = "Restricted"
-                case .unknown:
-                    self.permissionStatus.text = "Unknown"
-                case .notDetermined:
-                    self.permissionStatus.text = "N/A"
+            
+        case .location(let locationType):
+            switch locationType {
+            case .requestAlways:
+                PermissionManager.shared().status { (result: PermissionResult<LocationAlwaysManager.Result>) in
+                    switch result {
+                    case .allowed:
+                        self.permissionStatus.text = "Allowed"
+                    case .notAllowed:
+                        self.permissionStatus.text = "Not Allowed"
+                    case .restricted:
+                        self.permissionStatus.text = "Restricted"
+                    case .unknown:
+                        self.permissionStatus.text = "Unknown"
+                    case .notDetermined:
+                        self.permissionStatus.text = "N/A"
+                    }
+                }
+            case .requestWhenInUse:
+                PermissionManager.shared().status { (result: PermissionResult<LocationWhenInUseManager.Result>) in
+                    switch result {
+                    case .allowed:
+                        self.permissionStatus.text = "Allowed"
+                    case .notAllowed:
+                        self.permissionStatus.text = "Not Allowed"
+                    case .restricted:
+                        self.permissionStatus.text = "Restricted"
+                    case .unknown:
+                        self.permissionStatus.text = "Unknown"
+                    case .notDetermined:
+                        self.permissionStatus.text = "N/A"
+                    }
                 }
             }
         }
@@ -198,22 +217,42 @@ class PMTableViewCell: UITableViewCell {
                 }
                 self.permissionDelagate.permissionUpdated()
             }
-        case .location:
-            PermissionManager.shared().request { (result : PermissionResult<LocationWhenInUseManager.Result>) in
-                switch result {
-                case .allowed:
-                    break
-                case .notAllowed:
-                    self.permissionDelagate.userDidDenied()
-                case .restricted:
-                    break
-                case .unknown:
-                    break
-                case .notDetermined:
-                    break
+        case .location(let locationType):
+            switch locationType {
+            case .requestAlways:
+                PermissionManager.shared().request { (result : PermissionResult<LocationAlwaysManager.Result>) in
+                    switch result {
+                    case .allowed:
+                        break
+                    case .notAllowed:
+                        self.permissionDelagate.userDidDenied()
+                    case .restricted:
+                        break
+                    case .unknown:
+                        break
+                    case .notDetermined:
+                        break
+                    }
+                    self.permissionDelagate.permissionUpdated()
                 }
-                self.permissionDelagate.permissionUpdated()
+            case .requestWhenInUse:
+                PermissionManager.shared().request { (result : PermissionResult<LocationWhenInUseManager.Result>) in
+                    switch result {
+                    case .allowed:
+                        break
+                    case .notAllowed:
+                        self.permissionDelagate.userDidDenied()
+                    case .restricted:
+                        break
+                    case .unknown:
+                        break
+                    case .notDetermined:
+                        break
+                    }
+                    self.permissionDelagate.permissionUpdated()
+                }
             }
+            
         case .calendar:
             PermissionManager.shared().request { (result : PermissionResult<LocationAlwaysManager.Result>) in
                 switch result {
@@ -278,8 +317,14 @@ extension Permission {
             return "Photos"
         case .notification:
             return "Notification"
-        case .location:
-            return "Location When In Use"
+        case .location(let locationType):
+            switch locationType {
+            case .requestAlways:
+                return "Request Always"
+            case .requestWhenInUse:
+                return "Location When In Use"
+            }
+            
         case .calendar:
             return "Calendar"
         case .contacts:
