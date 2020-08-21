@@ -9,21 +9,17 @@
 import UIKit
 import MBStateMachineForms
 
-class MMBButtonBinder: StateMachineForm.Binder {
+class MMBButtonBinder: StateMachineForm.Binder<MMBButton> {
     
-    typealias StateMachineViewType = MMBButton
-    
-    public class var builder: StateMachineForm.Binder.Builder {
-        return Builder(binder: Self.self, viewType: StateMachineViewType.self,
-                       type: .action, minimumHeight: 45)
+    public class var builder: Builder {
+        return Builder(binder: Self.self, type: .action, minimumHeight: 45)
     }
     
-    required public init(view: UIView,
-                         type: Forms.Field.ViewType, inputType: Forms.Field.InputType? = nil,
-                         field: Forms.Field, delegate: FormBinderDelegate) {
-        super.init(view: view, type: type, inputType: inputType, field: field, delegate: delegate)
-        (view as? StateMachineViewType)?.setTitle(value, for: .normal)
-        (view as? StateMachineViewType)?.addTarget(self, action: #selector(actionClicked), for: .touchUpInside)
+    override func binderDidLoad() {
+        super.binderDidLoad()
+        
+        view.setTitle(value, for: .normal)
+        view.addTarget(self, action: #selector(actionClicked), for: .touchUpInside)
     }
     
     @objc func actionClicked() {

@@ -9,26 +9,22 @@
 import UIKit
 import MBStateMachineForms
 
-class MMBRadioButtonViewBinder: StateMachineForm.Binder {
+class MMBRadioButtonViewBinder: StateMachineForm.Binder<MMBRadioButtonView> {
     
-    typealias StateMachineViewType = MMBRadioButtonView
-    
-    public class var builder: StateMachineForm.Binder.Builder {
-        return Builder(binder: Self.self, viewType: StateMachineViewType.self,
-                       type: .radio, minimumHeight: 50)
+    public class var builder: Builder {
+        return Builder(binder: Self.self, type: .radio, minimumHeight: 50)
     }
     
-    required public init(view: UIView,
-                         type: Forms.Field.ViewType, inputType: Forms.Field.InputType? = nil,
-                         field: Forms.Field, delegate: FormBinderDelegate) {
-        super.init(view: view, type: type, inputType: inputType, field: field, delegate: delegate)
-        (view as? StateMachineViewType)?.dataSource = self
-        (view as? StateMachineViewType)?.delegate = self
-        (view as? StateMachineViewType)?.reloadData()
+    override func binderDidLoad() {
+        super.binderDidLoad()
+        
+        view.dataSource = self
+        view.delegate = self
+        view.reloadData()
     }
     
     override func isValidated() -> Bool {
-        return validate(value: (view as? StateMachineViewType)?.selectedRow)
+        return validate(value: view.selectedRow)
     }
 }
 

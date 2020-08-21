@@ -86,7 +86,7 @@ extension StateMachineFormsViewController: StateMachineFormDelegate {
         print(data)
     }
     
-    func stateMachineForm(_ stateMachineForm: StateMachineForm, navigateBinder binder: StateMachineForm.Binder) {
+    func stateMachineForm(_ stateMachineForm: StateMachineForm, navigateBinder binder: Binding) {
         guard let viewController = storyboard?.instantiateViewController(
             withIdentifier: "AccountsViewController"
             ) as? AccountsViewController else { return }
@@ -102,7 +102,7 @@ extension StateMachineFormsViewController: StateMachineFormDelegate {
     }
     
     func stateMachineForm(_ stateMachineForm: StateMachineForm,
-                          bindersCouldNotBeValidated invalidBinders: [StateMachineForm.Binder]) {
+                          bindersCouldNotBeValidated invalidBinders: [Binding]) {
         let errorMessages: [String] = invalidBinders.map({ $0.errorMessage ?? "" })
         let message = errorMessages.joined(separator: "\n")
         let alert = Alert(title: "Invalid inputs", message: "\(message)")

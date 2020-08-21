@@ -9,30 +9,23 @@
 import UIKit
 import MBStateMachineForms
 
-public class MMBTextViewBinder: StateMachineForm.Binder {
+class MMBTextViewBinder: StateMachineForm.Binder<MMBTextView> {
     
-    typealias StateMachineViewType = MMBTextView
-    
-    class var builder: StateMachineForm.Binder.Builder {
-        return Builder(binder: Self.self, viewType: StateMachineViewType.self,
-                       type: .textarea, inputType: .text, minimumHeight: 120)
+    class var builder: Builder {
+        return Builder(binder: Self.self, type: .textarea, inputType: .text, minimumHeight: 120)
     }
     
-    required public init(view: UIView,
-                         type: Forms.Field.ViewType,
-                         inputType: Forms.Field.InputType? = nil,
-                         field: Forms.Field,
-                         delegate: FormBinderDelegate) {
-        super.init(view: view, type: type, inputType: inputType, field: field, delegate: delegate)
+    override func binderDidLoad() {
+        super.binderDidLoad()
         
-        (view as? StateMachineViewType)?.delegate = self
+        view.delegate = self
         
-        (view as? StateMachineViewType)?.text = value
+        view.text = value
         self.delegate?.formBinderValueChanged(binder: self, value: value)
     }
     
     public override func isValidated() -> Bool {
-        return validate(text: (view as? StateMachineViewType)?.text)
+        return validate(text: view.text)
     }
     
 }

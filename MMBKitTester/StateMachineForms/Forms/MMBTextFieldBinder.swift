@@ -9,30 +9,26 @@
 import UIKit
 import MBStateMachineForms
 
-class MMBTextFieldBinder: StateMachineForm.Binder {
+class MMBTextFieldBinder: StateMachineForm.Binder<MMBTextField> {
     
-    typealias StateMachineViewType = MMBTextField
-    
-    public class var builder: StateMachineForm.Binder.Builder {
-        return Builder(binder: Self.self, viewType: StateMachineViewType.self,
-                       type: .text, minimumHeight: 50)
+    public class var builder: Builder {
+        return Builder(binder: Self.self, type: .text, minimumHeight: 50)
     }
     
-    required public init(view: UIView,
-                         type: Forms.Field.ViewType, inputType: Forms.Field.InputType? = nil,
-                         field: Forms.Field, delegate: FormBinderDelegate) {
-        super.init(view: view, type: type, inputType: inputType, field: field, delegate: delegate)
-        (view as? StateMachineViewType)?.delegate = self
+    override func binderDidLoad() {
+        super.binderDidLoad()
+        
+        view.delegate = self
         if self.inputType == .password {
-            (view as? StateMachineViewType)?.isSecureTextEntry = true
+            view.isSecureTextEntry = true
         }
-        (view as? StateMachineViewType)?.placeholder = placeholder
-        (view as? StateMachineViewType)?.text = value
+        view.placeholder = placeholder
+        view.text = value
         self.delegate?.formBinderValueChanged(binder: self, value: value)
     }
     
     override func isValidated() -> Bool {
-        return validate(text: (view as? StateMachineViewType)?.text)
+        return validate(text: view.text)
     }
 }
 

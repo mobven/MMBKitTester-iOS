@@ -27,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        MobKit.isDeveloperModeOn = true
         MobKit.setup(with: [
             AppSecurity.self, AccountSecurity.self,
             OneLink.self, UIComponents.self,

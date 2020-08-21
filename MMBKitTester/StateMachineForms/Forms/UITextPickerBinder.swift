@@ -10,45 +10,42 @@ import UIKit
 import MBUIComponents
 import MBStateMachineForms
 
-class UIPickerTextFieldBinder: StateMachineForm.Binder {
-    public typealias StateMachineViewType = UIPickerTextfield
+class UIPickerTextFieldBinder: StateMachineForm.Binder<UIPickerTextfield> {
     
     /// Initializes binder with `UITextField` as input field.
-    public class var builder: StateMachineForm.Binder.Builder {
-        return Builder(binder: Self.self, viewType: StateMachineViewType.self,
-                       type: .select, minimumHeight: 50)
+    public class var builder: Builder {
+        return Builder(binder: Self.self, type: .select, minimumHeight: 50)
     }
     
-    required public init(view: UIView,
-                         type: Forms.Field.ViewType, inputType: Forms.Field.InputType? = nil,
-                         field: Forms.Field, delegate: FormBinderDelegate) {
-        super.init(view: view, type: type, inputType: inputType, field: field, delegate: delegate)
-        (view as? StateMachineViewType)?.pickerDelegate = self
-        (view as? StateMachineViewType)?.placeholder = placeholder
-        (view as? StateMachineViewType)?.text = value
-        (view as? StateMachineViewType)?.setToolbar(title: label,
-                                                    button: "Close",
-                                                    target: self,
-                                                    action: #selector(closePicker))
+    override func binderDidLoad() {
+        super.binderDidLoad()
+        
+        view.pickerDelegate = self
+        view.placeholder = placeholder
+        view.text = value
+        view.setToolbar(title: label,
+                        button: "Close",
+                        target: self,
+                        action: #selector(closePicker))
         setPickerUI()
         self.delegate?.formBinderValueChanged(binder: self, value: value)
     }
     
     override func isValidated() -> Bool {
-        return validate(value: (view as? StateMachineViewType)?.selectedRow)
+        return validate(value: view.selectedRow)
     }
     
     @objc private func closePicker() {
         view.resignFirstResponder()
         self.delegate?.formBinderValueChanged(binder: self,
-                                              value: options?[(view as? StateMachineViewType)?.selectedRow ?? 0])
+                                              value: options?[view.selectedRow ?? 0])
     }
     
     func setPickerUI() {
         view.layer.borderWidth = 2
         view.layer.borderColor = UIColor.mmbBlue.cgColor
         view.layer.cornerRadius = 4
-        (view as? StateMachineViewType)?.borderStyle = .roundedRect
+        view.borderStyle = .roundedRect
     }
 }
 
@@ -65,4 +62,4 @@ extension UIPickerTextFieldBinder: UIPickerTextfieldDelegate {
         self.delegate?.formBinderValueChanged(binder: self, value: options?[row])
     }
 }
- 
+

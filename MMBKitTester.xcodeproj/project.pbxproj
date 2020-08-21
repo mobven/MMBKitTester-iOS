@@ -11,6 +11,7 @@
 		6D193C7124B5F64C001A8F44 /* MBPinLocator.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D193C7024B5F64C001A8F44 /* MBPinLocator.xcframework */; };
 		6D1F27AF24A1FA8D00ECA5E6 /* CustomXibPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1F27AE24A1FA8D00ECA5E6 /* CustomXibPinView.swift */; };
 		6D1F27B124A1FBE500ECA5E6 /* CustomXibPinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1F27B024A1FBE500ECA5E6 /* CustomXibPinView.xib */; };
+		6D240E0124EFE00700081BC7 /* PermissionManager in Frameworks */ = {isa = PBXBuildFile; productRef = 6D240E0024EFE00700081BC7 /* PermissionManager */; };
 		6D4E40132454DB3100B8CC67 /* KVListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4E40122454DB3100B8CC67 /* KVListViewController.swift */; };
 		6D5410D524474A50000A8B1D /* KVLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5410D424474A50000A8B1D /* KVLabelViewController.swift */; };
 		6D5410DA24477ADE000A8B1D /* UIComponentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5410D924477ADE000A8B1D /* UIComponentsViewController.swift */; };
