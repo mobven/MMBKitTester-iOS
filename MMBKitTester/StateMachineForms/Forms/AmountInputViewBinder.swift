@@ -10,27 +10,24 @@ import UIKit
 import MBUIComponents
 import MBStateMachineForms
 
-class AmountInputViewBinder: StateMachineForm.Binder {
+class AmountInputViewBinder: StateMachineForm.Binder<AmountInputView> {
     
-    typealias StateMachineViewType = AmountInputView
-    
-    public class var builder: StateMachineForm.Binder.Builder {
-        return Builder(binder: Self.self, viewType: StateMachineViewType.self,
-                       type: .text, inputType: .other("amount"), minimumHeight: 50)
+    public class var builder: Builder {
+        return Builder(binder: Self.self, type: .text,
+                       inputType: .other("amount"), minimumHeight: 50)
     }
     
-    required public init(view: UIView,
-                         type: Forms.Field.ViewType, inputType: Forms.Field.InputType? = nil,
-                         field: Forms.Field, delegate: FormBinderDelegate) {
-        super.init(view: view, type: type, inputType: inputType, field: field, delegate: delegate)
-        (view as? StateMachineViewType)?.currencies = ["USD", "EUR"]
-        (view as? StateMachineViewType)?.textfield.placeholder = placeholder
-        (view as? StateMachineViewType)?.textfield.text = value
+    override func binderDidLoad() {
+        super.binderDidLoad()
+        
+        view.currencies = ["USD", "EUR"]
+        view.textfield.placeholder = placeholder
+        view.textfield.text = value
         self.delegate?.formBinderValueChanged(binder: self, value: value)
     }
     
     override func isValidated() -> Bool {
-        return validate(text: (view as? StateMachineViewType)?.textfield.text)
+        return validate(text: view.textfield.text)
     }
     
 }

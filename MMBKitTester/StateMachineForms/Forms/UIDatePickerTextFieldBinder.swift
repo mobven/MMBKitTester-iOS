@@ -10,45 +10,40 @@ import UIKit
 import MBUIComponents
 import MBStateMachineForms
 
-class UIDatePickerTextFieldBinder: StateMachineForm.Binder {
+class UIDatePickerTextFieldBinder: StateMachineForm.Binder<UIDatePickerTextfield> {
     
-    typealias StateMachineViewType = UIDatePickerTextfield
-    
-    public class var builder: StateMachineForm.Binder.Builder {
-        return Builder(binder: Self.self, viewType: StateMachineViewType.self,
-                       type: .select, inputType: .date, minimumHeight: 50)
+    public class var builder: Builder {
+        return Builder(binder: Self.self, type: .select, inputType: .date, minimumHeight: 50)
     }
     
-    required public init(view: UIView,
-                         type: Forms.Field.ViewType, inputType: Forms.Field.InputType? = nil,
-                         field: Forms.Field, delegate: FormBinderDelegate) {
-        super.init(view: view, type: type, inputType: inputType, field: field, delegate: delegate)
-        (view as? StateMachineViewType)?.datePicker.maximumDate = Date()
-        (view as? StateMachineViewType)?.placeholder = placeholder
-        (view as? StateMachineViewType)?.text = value
-        (view as? StateMachineViewType)?.setToolbar(title: label,
-                                                    button: "Close",
-                                                    target: self,
-                                                    action: #selector(closePicker))
-        (view as? StateMachineViewType)?.dateFormat = rules?.dateFormat
+    override func binderDidLoad() {
+        super.binderDidLoad()
+        
+        view.datePicker.maximumDate = Date()
+        view.placeholder = placeholder
+        view.text = value
+        view.setToolbar(title: label,
+                        button: "Close",
+                        target: self,
+                        action: #selector(closePicker))
+        view.dateFormat = rules?.dateFormat
         setPickerUI()
         self.delegate?.formBinderValueChanged(binder: self, value: value)
     }
     
     override func isValidated() -> Bool {
-        return validate(text: (view as? StateMachineViewType)?.text)
+        return validate(text: view.text)
     }
     
     @objc func closePicker() {
         view.resignFirstResponder()
-        delegate?.formBinderValueChanged(binder: self, value: (view as? StateMachineViewType)?.date)
+        delegate?.formBinderValueChanged(binder: self, value: view.date)
     }
     
     func setPickerUI() {
         view.layer.borderWidth = 2
         view.layer.borderColor = UIColor.mmbBlue.cgColor
         view.layer.cornerRadius = 4
-        (view as? StateMachineViewType)?.borderStyle = .roundedRect
+        view.borderStyle = .roundedRect
     }
 }
- 

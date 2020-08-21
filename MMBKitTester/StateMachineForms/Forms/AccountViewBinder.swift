@@ -9,26 +9,23 @@
 import UIKit
 import MBStateMachineForms
 
-class AccountViewBinder: StateMachineForm.Binder {
+class AccountViewBinder: StateMachineForm.Binder<AccountView> {
     
-    typealias StateMachineViewType = AccountView
-        
-    public class var builder: StateMachineForm.Binder.Builder {
-        return Builder(binder: Self.self, viewType: StateMachineViewType.self,
-                       type: .custom, inputType: .other("account"), minimumHeight: 50)
+    public class var builder: Builder {
+        return Builder(binder: Self.self, type: .custom,
+                       inputType: .other("account"), minimumHeight: 50)
     }
     
-    required public init(view: UIView,
-                         type: Forms.Field.ViewType, inputType: Forms.Field.InputType? = nil,
-                         field: Forms.Field, delegate: FormBinderDelegate) {
-        super.init(view: view, type: type, inputType: inputType, field: field, delegate: delegate)
-        (view as? StateMachineViewType)?.delegate = self
-        (view as? StateMachineViewType)?.setTitleLabel(label)
-        (view as? StateMachineViewType)?.setDescriptionLabel(value)
+    override func binderDidLoad() {
+        super.binderDidLoad()
+        
+        view.delegate = self
+        view.setTitleLabel(label)
+        view.setDescriptionLabel(value)
     }
     
     func configure(option: Forms.Field.Option?) {
-        (view as? StateMachineViewType)?.configure(option: option)
+        view.configure(option: option)
         self.delegate?.formBinderValueChanged(binder: self, value: option)
     }
 }

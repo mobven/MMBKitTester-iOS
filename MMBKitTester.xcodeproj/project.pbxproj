@@ -10,6 +10,7 @@
 		6D193C7124B5F64C001A8F44 /* MBPinLocator.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D193C7024B5F64C001A8F44 /* MBPinLocator.xcframework */; };
 		6D1F27AF24A1FA8D00ECA5E6 /* CustomXibPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1F27AE24A1FA8D00ECA5E6 /* CustomXibPinView.swift */; };
 		6D1F27B124A1FBE500ECA5E6 /* CustomXibPinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1F27B024A1FBE500ECA5E6 /* CustomXibPinView.xib */; };
+		6D240E0124EFE00700081BC7 /* PermissionManager in Frameworks */ = {isa = PBXBuildFile; productRef = 6D240E0024EFE00700081BC7 /* PermissionManager */; };
 		6D4E40132454DB3100B8CC67 /* KVListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4E40122454DB3100B8CC67 /* KVListViewController.swift */; };
 		6D5410D524474A50000A8B1D /* KVLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5410D424474A50000A8B1D /* KVLabelViewController.swift */; };
 		6D5410DA24477ADE000A8B1D /* UIComponentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5410D924477ADE000A8B1D /* UIComponentsViewController.swift */; };
@@ -20,7 +21,6 @@
 		6D8BA19B243A4869004493A9 /* AppLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BA19A243A4869004493A9 /* AppLink.swift */; };
 		6D8BA19D243A495B004493A9 /* AnnouncementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BA19C243A495B004493A9 /* AnnouncementsViewController.swift */; };
 		6D8BA19F243A4977004493A9 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BA19E243A4977004493A9 /* CardDetailViewController.swift */; };
-		6D8CD53424ED4252008F9F37 /* PermissionManager in Frameworks */ = {isa = PBXBuildFile; productRef = 6D8CD53324ED4252008F9F37 /* PermissionManager */; };
 		6D8CD53724ED42F9008F9F37 /* PermissionManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8CD53624ED42F9008F9F37 /* PermissionManagerViewController.swift */; };
 		6D8CD53924ED4649008F9F37 /* PMTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8CD53824ED4649008F9F37 /* PMTableViewCell.swift */; };
 		6D8DC0BF24596761005553BA /* AmountInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8DC0BE24596761005553BA /* AmountInputViewController.swift */; };
@@ -251,7 +251,7 @@
 			files = (
 				6DCCBC9724B324090007177D /* CryptoSwift in Frameworks */,
 				6DCCBC9A24B3242D0007177D /* KeychainAccess in Frameworks */,
-				6D8CD53424ED4252008F9F37 /* PermissionManager in Frameworks */,
+				6D240E0124EFE00700081BC7 /* PermissionManager in Frameworks */,
 				6DCCBCEE24B35D4E0007177D /* MBStateMachineForms.xcframework in Frameworks */,
 				6DCCBCEC24B35D4E0007177D /* MobKitCore.xcframework in Frameworks */,
 				6DCCBCEB24B35D4E0007177D /* MBNetworking.xcframework in Frameworks */,
@@ -632,7 +632,7 @@
 			packageProductDependencies = (
 				6DCCBC9624B324090007177D /* CryptoSwift */,
 				6DCCBC9924B3242D0007177D /* KeychainAccess */,
-				6D8CD53324ED4252008F9F37 /* PermissionManager */,
+				6D240E0024EFE00700081BC7 /* PermissionManager */,
 			);
 			productName = MMBKitTester;
 			productReference = 6D931FDA243228EF004C8A3C /* MMBKitTester.app */;
@@ -688,7 +688,7 @@
 			packageReferences = (
 				6DCCBC9524B324090007177D /* XCRemoteSwiftPackageReference "CryptoSwift" */,
 				6DCCBC9824B3242D0007177D /* XCRemoteSwiftPackageReference "KeychainAccess" */,
-				6D8CD53224ED4252008F9F37 /* XCRemoteSwiftPackageReference "PermissionManager" */,
+				6D240DFF24EFE00700081BC7 /* XCRemoteSwiftPackageReference "PermissionManager" */,
 			);
 			productRefGroup = 6D931FDB243228EF004C8A3C /* Products */;
 			projectDirPath = "";
@@ -1202,7 +1202,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6D8CD53224ED4252008F9F37 /* XCRemoteSwiftPackageReference "PermissionManager" */ = {
+		6D240DFF24EFE00700081BC7 /* XCRemoteSwiftPackageReference "PermissionManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mobven/PermissionManager.git";
 			requirement = {
@@ -1229,9 +1229,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6D8CD53324ED4252008F9F37 /* PermissionManager */ = {
+		6D240E0024EFE00700081BC7 /* PermissionManager */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6D8CD53224ED4252008F9F37 /* XCRemoteSwiftPackageReference "PermissionManager" */;
+			package = 6D240DFF24EFE00700081BC7 /* XCRemoteSwiftPackageReference "PermissionManager" */;
 			productName = PermissionManager;
 		};
 		6DCCBC9624B324090007177D /* CryptoSwift */ = {

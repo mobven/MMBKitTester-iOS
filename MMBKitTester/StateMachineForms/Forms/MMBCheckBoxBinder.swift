@@ -9,31 +9,24 @@
 import UIKit
 import MBStateMachineForms
 
-class MMBCheckBoxBinder: StateMachineForm.Binder {
+class MMBCheckBoxBinder: StateMachineForm.Binder<MMBCheckBoxView> {
     
-    typealias StateMachineViewType = MMBCheckBoxView
-    
-    public class var builder: StateMachineForm.Binder.Builder {
-        return Builder(binder: Self.self, viewType: StateMachineViewType.self,
-                       type: .checkbox, minimumHeight: 28)
+    public class var builder: Builder {
+        return Builder(binder: Self.self, type: .checkbox, minimumHeight: 28)
     }
     
-    required public init(view: UIView,
-                         type: Forms.Field.ViewType, inputType: Forms.Field.InputType? = nil,
-                         field: Forms.Field, delegate: FormBinderDelegate) {
-        super.init(view: view, type: type, inputType: inputType, field: field, delegate: delegate)
-        (view as? StateMachineViewType)?.delegate = self
-        (view as? StateMachineViewType)?.setTitle(label)
+    override func binderDidLoad() {
+        super.binderDidLoad()
+        
+        view.delegate = self
+        view.setTitle(label)
         self.delegate?.formBinderValueChanged(binder: self, value: value)
     }
     
     override func isValidated() -> Bool {
-        return validate(bool: isSelected)
+        return validate(bool: view.isSelected)
     }
-
-    var isSelected: Bool {
-        return (view as? StateMachineViewType)?.isSelected ?? false
-    }
+    
 }
 
 extension MMBCheckBoxBinder: MMBCheckBoxViewDelegate {
