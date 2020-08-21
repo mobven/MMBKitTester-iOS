@@ -17,6 +17,7 @@ import MBStateMachineForms
 import MBSecureNetwork
 import MBPinLocator
 import MBErrorKit
+import PermissionManager
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -49,12 +50,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Register for push notifications
         UNUserNotificationCenter.current().delegate = self
-        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
-        UNUserNotificationCenter.current().requestAuthorization(
-            options: authOptions,
-            completionHandler: {_, _ in }
-        )
-        application.registerForRemoteNotifications()
+//        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+//        UNUserNotificationCenter.current().requestAuthorization(
+//            options: authOptions,
+//            completionHandler: {_, _ in }
+//        )
+        
+        PermissionManager.shared().request { (result: PermissionResult<NotificationManager.Result>) in
+          print(result)
+        }
+        
+      //  application.registerForRemoteNotifications()
         
         // Handle universal links if application started with one
         if let url = launchOptions?[.url] as? URL {

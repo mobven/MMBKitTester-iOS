@@ -17,6 +17,7 @@ class PMTableViewCell: UITableViewCell {
     @IBOutlet private weak var permissionStatus: UILabel!
     @IBOutlet weak var grantBttn: UIButton!
     
+    
     var permission: Permission!
     weak var permissionDelagate: PMTableViewCellDelegate!
     
@@ -32,8 +33,7 @@ class PMTableViewCell: UITableViewCell {
     private func checkStatus(permission: Permission) {
         switch permission {
         case .bluetooth:
-            break
-            
+            self.permissionStatus.text = "Not Yet :("
         case .camera:
             PermissionManager.shared().status { (result: PermissionResult<CameraManager.Result>) in
                 switch result {
@@ -42,11 +42,11 @@ class PMTableViewCell: UITableViewCell {
                 case .notAllowed:
                     self.permissionStatus.text = "Not Allowed"
                 case .restricted:
-                    break
+                    self.permissionStatus.text = "Restricted"
                 case .unknown:
-                    break
+                    self.permissionStatus.text = "Unknown"
                 case .notDetermined:
-                    break
+                    self.permissionStatus.text = "N/A"
                 }
             }
         case .photos:
@@ -57,11 +57,11 @@ class PMTableViewCell: UITableViewCell {
                 case .notAllowed:
                     self.permissionStatus.text = "Not Allowed"
                 case .restricted:
-                    break
+                    self.permissionStatus.text = "Restricted"
                 case .unknown:
-                    break
+                    self.permissionStatus.text = "Unknown"
                 case .notDetermined:
-                    break
+                    self.permissionStatus.text = "N/A"
                 }
             }
         case .notification:
@@ -76,11 +76,11 @@ class PMTableViewCell: UITableViewCell {
                         self.permissionStatus.text = "Not Allowed"
                     }
                 case .restricted:
-                    break
+                    self.permissionStatus.text = "Restricted"
                 case .unknown:
-                    break
+                    self.permissionStatus.text = "Unknown"
                 case .notDetermined:
-                    break
+                    self.permissionStatus.text = "N/A"
                 }
             }
         case .calendar:
@@ -91,11 +91,11 @@ class PMTableViewCell: UITableViewCell {
                 case .notAllowed:
                     self.permissionStatus.text = "Not Allowed"
                 case .restricted:
-                    break
+                    self.permissionStatus.text = "Restricted"
                 case .unknown:
-                    break
+                    self.permissionStatus.text = "Unknown"
                 case .notDetermined:
-                    break
+                    self.permissionStatus.text = "N/A"
                 }
             }
         case .contacts:
@@ -106,11 +106,11 @@ class PMTableViewCell: UITableViewCell {
                 case .notAllowed:
                     self.permissionStatus.text = "Not Allowed"
                 case .restricted:
-                    break
+                    self.permissionStatus.text = "Restricted"
                 case .unknown:
-                    break
+                    self.permissionStatus.text = "Unknown"
                 case .notDetermined:
-                    break
+                    self.permissionStatus.text = "N/A"
                 }
             }
         case .microphone:
@@ -121,11 +121,11 @@ class PMTableViewCell: UITableViewCell {
                 case .notAllowed:
                     self.permissionStatus.text = "Not Allowed"
                 case .restricted:
-                    break
+                    self.permissionStatus.text = "Restricted"
                 case .unknown:
-                    break
+                    self.permissionStatus.text = "Unknown"
                 case .notDetermined:
-                    break
+                    self.permissionStatus.text = "N/A"
                 }
             }
         case .location(_):
@@ -136,11 +136,11 @@ class PMTableViewCell: UITableViewCell {
                 case .notAllowed:
                     self.permissionStatus.text = "Not Allowed"
                 case .restricted:
-                    self.permissionStatus.text = "rRestricted"
+                    self.permissionStatus.text = "Restricted"
                 case .unknown:
-                    break
+                    self.permissionStatus.text = "Unknown"
                 case .notDetermined:
-                    break
+                    self.permissionStatus.text = "N/A"
                 }
             }
         }
@@ -154,15 +154,15 @@ class PMTableViewCell: UITableViewCell {
             PermissionManager.shared().request { (result : PermissionResult<CameraManager.Result>) in
                 switch result {
                 case .allowed:
-                    print("1")
+                    break
                 case .notAllowed:
                     self.permissionDelagate.userDidDenied()
                 case .restricted:
-                    print("4")
+                    break
                 case .unknown:
-                    print("5")
+                    break
                 case .notDetermined:
-                    print("5")
+                    break
                 }
                 self.permissionDelagate.permissionUpdated()
             }
@@ -170,7 +170,7 @@ class PMTableViewCell: UITableViewCell {
             PermissionManager.shared().request { (result : PermissionResult<PhotosManager.Result>) in
                 switch result {
                 case .allowed:
-                    print("asd")
+                    break
                 case .notAllowed:
                     self.permissionDelagate.userDidDenied()
                 case .restricted:
@@ -178,7 +178,7 @@ class PMTableViewCell: UITableViewCell {
                 case .unknown:
                     break
                 case .notDetermined:
-                    print("5")
+                    break
                 }
                 self.permissionDelagate.permissionUpdated()
             }
@@ -186,7 +186,7 @@ class PMTableViewCell: UITableViewCell {
             PermissionManager.shared().request { (result : PermissionResult<NotificationManager.Result>) in
                 switch result {
                 case .allowed:
-                    print("asd")
+                    break
                 case .notAllowed:
                     self.permissionDelagate.userDidDenied()
                 case .restricted:
@@ -194,7 +194,7 @@ class PMTableViewCell: UITableViewCell {
                 case .unknown:
                     break
                 case .notDetermined:
-                    print("5")
+                    break
                 }
                 self.permissionDelagate.permissionUpdated()
             }
@@ -202,7 +202,7 @@ class PMTableViewCell: UITableViewCell {
             PermissionManager.shared().request { (result : PermissionResult<LocationWhenInUseManager.Result>) in
                 switch result {
                 case .allowed:
-                    print("asd")
+                    break
                 case .notAllowed:
                     self.permissionDelagate.userDidDenied()
                 case .restricted:
@@ -210,7 +210,7 @@ class PMTableViewCell: UITableViewCell {
                 case .unknown:
                     break
                 case .notDetermined:
-                    print("5")
+                    break
                 }
                 self.permissionDelagate.permissionUpdated()
             }
@@ -218,15 +218,15 @@ class PMTableViewCell: UITableViewCell {
             PermissionManager.shared().request { (result : PermissionResult<LocationAlwaysManager.Result>) in
                 switch result {
                 case .allowed:
-                    print("1")
+                    break
                 case .notAllowed:
                     self.permissionDelagate.userDidDenied()
                 case .restricted:
-                    print("4")
+                    break
                 case .unknown:
-                    print("5")
+                    break
                 case .notDetermined:
-                    print("5")
+                    break
                 }
                 self.permissionDelagate.permissionUpdated()
             }
@@ -234,15 +234,15 @@ class PMTableViewCell: UITableViewCell {
             PermissionManager.shared().request { (result : PermissionResult<ContactsManager.Result>) in
                 switch result {
                 case .allowed:
-                    print("1")
+                    break
                 case .notAllowed:
                     self.permissionDelagate.userDidDenied()
                 case .restricted:
-                    print("4")
+                    break
                 case .unknown:
-                    print("5")
+                    break
                 case .notDetermined:
-                    print("5")
+                    break
                 }
                 self.permissionDelagate.permissionUpdated()
             }
@@ -250,16 +250,15 @@ class PMTableViewCell: UITableViewCell {
             PermissionManager.shared().request { (result : PermissionResult<MicrophoneManager.Result>) in
                 switch result {
                 case .allowed:
-                    print("1")
+                    break
                 case .notAllowed:
                     self.permissionDelagate.userDidDenied()
-                    print("3")
                 case .restricted:
-                    print("4")
+                    break
                 case .unknown:
-                    print("5")
+                    break
                 case .notDetermined:
-                    print("5")
+                    break
                 }
                 self.permissionDelagate.permissionUpdated()
             }
@@ -274,19 +273,19 @@ extension Permission {
         case .bluetooth:
             return "Bluetooth"
         case .camera:
-            return "camera"
+            return "Camera"
         case .photos:
-            return "photos"
+            return "Photos"
         case .notification:
-            return "notification"
+            return "Notification"
         case .location:
-            return "location"
+            return "Location When In Use"
         case .calendar:
-            return "calendar"
+            return "Calendar"
         case .contacts:
-            return "contacts"
+            return "Contacts"
         case .microphone:
-            return "microphone"
+            return "Microphone"
         }
     }
 }
