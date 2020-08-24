@@ -175,7 +175,9 @@ class PMTableViewCell: UITableViewCell {
                 case .allowed:
                     break
                 case .notAllowed:
-                    self.permissionDelagate.userDidDenied()
+                    DispatchQueue.main.async {
+                        self.permissionDelagate.userDidDenied()
+                    }
                 case .restricted:
                     break
                 case .unknown:
@@ -191,7 +193,9 @@ class PMTableViewCell: UITableViewCell {
                 case .allowed:
                     break
                 case .notAllowed:
-                    self.permissionDelagate.userDidDenied()
+                    DispatchQueue.main.async {
+                        self.permissionDelagate.userDidDenied()
+                    }
                 case .restricted:
                     break
                 case .unknown:
@@ -207,7 +211,9 @@ class PMTableViewCell: UITableViewCell {
                 case .allowed:
                     break
                 case .notAllowed:
-                    self.permissionDelagate.userDidDenied()
+                    DispatchQueue.main.async {
+                        self.permissionDelagate.userDidDenied()
+                    }
                 case .restricted:
                     break
                 case .unknown:
@@ -225,7 +231,9 @@ class PMTableViewCell: UITableViewCell {
                     case .allowed:
                         break
                     case .notAllowed:
-                        self.permissionDelagate.userDidDenied()
+                        DispatchQueue.main.async {
+                            self.permissionDelagate.userDidDenied()
+                        }
                     case .restricted:
                         break
                     case .unknown:
@@ -241,7 +249,9 @@ class PMTableViewCell: UITableViewCell {
                     case .allowed:
                         break
                     case .notAllowed:
-                        self.permissionDelagate.userDidDenied()
+                        DispatchQueue.main.async {
+                            self.permissionDelagate.userDidDenied()
+                        }
                     case .restricted:
                         break
                     case .unknown:
@@ -259,7 +269,7 @@ class PMTableViewCell: UITableViewCell {
                 case .allowed:
                     break
                 case .notAllowed:
-                    self.permissionDelagate.userDidDenied()
+                    break
                 case .restricted:
                     break
                 case .unknown:
@@ -275,7 +285,9 @@ class PMTableViewCell: UITableViewCell {
                 case .allowed:
                     break
                 case .notAllowed:
-                    self.permissionDelagate.userDidDenied()
+                    DispatchQueue.main.async {
+                        self.permissionDelagate.userDidDenied()
+                    }
                 case .restricted:
                     break
                 case .unknown:
@@ -291,7 +303,9 @@ class PMTableViewCell: UITableViewCell {
                 case .allowed:
                     break
                 case .notAllowed:
-                    self.permissionDelagate.userDidDenied()
+                    DispatchQueue.main.async {
+                        self.permissionDelagate.userDidDenied()
+                    }
                 case .restricted:
                     break
                 case .unknown:
