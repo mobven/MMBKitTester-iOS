@@ -254,7 +254,7 @@ class PMTableViewCell: UITableViewCell {
             }
             
         case .calendar:
-            PermissionManager.shared().request { (result : PermissionResult<LocationAlwaysManager.Result>) in
+            PermissionManager.shared().request { (result : PermissionResult<CalendarManager.Result>) in
                 switch result {
                 case .allowed:
                     break
