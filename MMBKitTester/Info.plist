@@ -21,7 +21,7 @@
 	<key>NSCameraUsageDescription</key>
 	<string></string>
 	<key>UIUserInterfaceStyle</key>
-	<string>LightContent</string>
+	<string>Light</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

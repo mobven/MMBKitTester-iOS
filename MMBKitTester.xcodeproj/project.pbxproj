@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		656C83D224F51C4400767B11 /* PermissionManager in Frameworks */ = {isa = PBXBuildFile; productRef = 656C83D124F51C4400767B11 /* PermissionManager */; };
-		6D193C7124B5F64C001A8F44 /* MBPinLocator.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D193C7024B5F64C001A8F44 /* MBPinLocator.xcframework */; };
+		656C83D224F51C4400767B11 /* PermissionManager in Frameworks */ = {isa = PBXBuildFile; productRef = 656C83D124F51C4400767B11 /* PermissionManager */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6D1F27AF24A1FA8D00ECA5E6 /* CustomXibPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1F27AE24A1FA8D00ECA5E6 /* CustomXibPinView.swift */; };
 		6D1F27B124A1FBE500ECA5E6 /* CustomXibPinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1F27B024A1FBE500ECA5E6 /* CustomXibPinView.xib */; };
 		6D4E40132454DB3100B8CC67 /* KVListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4E40122454DB3100B8CC67 /* KVListViewController.swift */; };
@@ -52,19 +51,31 @@
 		6DAF9831243B308400CF9AAA /* FCMCurl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF9830243B308400CF9AAA /* FCMCurl.swift */; };
 		6DAF9833243B33B900CF9AAA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF9832243B33B900CF9AAA /* User.swift */; };
 		6DBA5552248FAE4200751941 /* SpotifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBA5551248FAE4200751941 /* SpotifyModels.swift */; };
+		6DBD918324F55F2900AE8FAE /* MBAccountSecurity.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE524B35D4D0007177D /* MBAccountSecurity.xcframework */; };
+		6DBD918424F55F2900AE8FAE /* MBAccountSecurity.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE524B35D4D0007177D /* MBAccountSecurity.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		6DBD918524F55F2900AE8FAE /* MBAppSecurity.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE824B35D4E0007177D /* MBAppSecurity.xcframework */; };
+		6DBD918624F55F2900AE8FAE /* MBAppSecurity.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE824B35D4E0007177D /* MBAppSecurity.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		6DBD918724F55F2900AE8FAE /* MBErrorKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCDF24B35D4D0007177D /* MBErrorKit.xcframework */; };
+		6DBD918824F55F2900AE8FAE /* MBErrorKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCDF24B35D4D0007177D /* MBErrorKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		6DBD918924F55F2900AE8FAE /* MBNetworking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE024B35D4D0007177D /* MBNetworking.xcframework */; };
+		6DBD918A24F55F2900AE8FAE /* MBNetworking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE024B35D4D0007177D /* MBNetworking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		6DBD918B24F55F2900AE8FAE /* MBOneLink.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE424B35D4D0007177D /* MBOneLink.xcframework */; };
+		6DBD918C24F55F2900AE8FAE /* MBOneLink.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE424B35D4D0007177D /* MBOneLink.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		6DBD918D24F55F2900AE8FAE /* MBPinLocator.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D193C7024B5F64C001A8F44 /* MBPinLocator.xcframework */; };
+		6DBD918E24F55F2900AE8FAE /* MBPinLocator.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D193C7024B5F64C001A8F44 /* MBPinLocator.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		6DBD918F24F55F2900AE8FAE /* MBSecureNetwork.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE224B35D4D0007177D /* MBSecureNetwork.xcframework */; };
+		6DBD919024F55F2900AE8FAE /* MBSecureNetwork.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE224B35D4D0007177D /* MBSecureNetwork.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		6DBD919124F55F2900AE8FAE /* MBStateMachineForms.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE324B35D4D0007177D /* MBStateMachineForms.xcframework */; };
+		6DBD919224F55F2900AE8FAE /* MBStateMachineForms.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE324B35D4D0007177D /* MBStateMachineForms.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		6DBD919324F55F2900AE8FAE /* MBUIComponents.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE924B35D4E0007177D /* MBUIComponents.xcframework */; };
+		6DBD919424F55F2900AE8FAE /* MBUIComponents.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE924B35D4E0007177D /* MBUIComponents.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		6DBD919524F55F2900AE8FAE /* MobKitCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE124B35D4D0007177D /* MobKitCore.xcframework */; };
+		6DBD919624F55F2900AE8FAE /* MobKitCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE124B35D4D0007177D /* MobKitCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		6DBD919724F55F2D00AE8FAE /* Cryptography.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE624B35D4D0007177D /* Cryptography.xcframework */; };
+		6DBD919824F55F2D00AE8FAE /* Cryptography.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE624B35D4D0007177D /* Cryptography.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		6DC7EC65245F0F7C0023537C /* AddOnFeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC7EC64245F0F7C0023537C /* AddOnFeaturesViewController.swift */; };
 		6DCCBC9724B324090007177D /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6DCCBC9624B324090007177D /* CryptoSwift */; };
 		6DCCBC9A24B3242D0007177D /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 6DCCBC9924B3242D0007177D /* KeychainAccess */; };
-		6DCCBCEA24B35D4E0007177D /* MBErrorKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCDF24B35D4D0007177D /* MBErrorKit.xcframework */; };
-		6DCCBCEB24B35D4E0007177D /* MBNetworking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE024B35D4D0007177D /* MBNetworking.xcframework */; };
-		6DCCBCEC24B35D4E0007177D /* MobKitCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE124B35D4D0007177D /* MobKitCore.xcframework */; };
-		6DCCBCED24B35D4E0007177D /* MBSecureNetwork.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE224B35D4D0007177D /* MBSecureNetwork.xcframework */; };
-		6DCCBCEE24B35D4E0007177D /* MBStateMachineForms.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE324B35D4D0007177D /* MBStateMachineForms.xcframework */; };
-		6DCCBCEF24B35D4E0007177D /* MBOneLink.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE424B35D4D0007177D /* MBOneLink.xcframework */; };
-		6DCCBCF024B35D4E0007177D /* MBAccountSecurity.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE524B35D4D0007177D /* MBAccountSecurity.xcframework */; };
-		6DCCBCF124B35D4E0007177D /* Cryptography.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE624B35D4D0007177D /* Cryptography.xcframework */; };
-		6DCCBCF324B35D4E0007177D /* MBAppSecurity.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE824B35D4E0007177D /* MBAppSecurity.xcframework */; };
-		6DCCBCF424B35D4E0007177D /* MBUIComponents.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE924B35D4E0007177D /* MBUIComponents.xcframework */; };
 		6DFF0F86245CBBB20035C890 /* CustomPopupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF0F85245CBBB20035C890 /* CustomPopupsViewController.swift */; };
 		6DFF0F88245CBBF20035C890 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF0F87245CBBF20035C890 /* CustomAlert.swift */; };
 		6DFF0F8A245CBC640035C890 /* CustomAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DFF0F89245CBC640035C890 /* CustomAlert.xib */; };
@@ -127,6 +138,17 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				6DBD919624F55F2900AE8FAE /* MobKitCore.xcframework in Embed Frameworks */,
+				6DBD918824F55F2900AE8FAE /* MBErrorKit.xcframework in Embed Frameworks */,
+				6DBD918E24F55F2900AE8FAE /* MBPinLocator.xcframework in Embed Frameworks */,
+				6DBD919224F55F2900AE8FAE /* MBStateMachineForms.xcframework in Embed Frameworks */,
+				6DBD919424F55F2900AE8FAE /* MBUIComponents.xcframework in Embed Frameworks */,
+				6DBD918624F55F2900AE8FAE /* MBAppSecurity.xcframework in Embed Frameworks */,
+				6DBD918A24F55F2900AE8FAE /* MBNetworking.xcframework in Embed Frameworks */,
+				6DBD919824F55F2D00AE8FAE /* Cryptography.xcframework in Embed Frameworks */,
+				6DBD918C24F55F2900AE8FAE /* MBOneLink.xcframework in Embed Frameworks */,
+				6DBD919024F55F2900AE8FAE /* MBSecureNetwork.xcframework in Embed Frameworks */,
+				6DBD918424F55F2900AE8FAE /* MBAccountSecurity.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,19 +272,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DCCBC9724B324090007177D /* CryptoSwift in Frameworks */,
+				6DBD918D24F55F2900AE8FAE /* MBPinLocator.xcframework in Frameworks */,
 				6DCCBC9A24B3242D0007177D /* KeychainAccess in Frameworks */,
+				6DBD919324F55F2900AE8FAE /* MBUIComponents.xcframework in Frameworks */,
 				656C83D224F51C4400767B11 /* PermissionManager in Frameworks */,
-				6DCCBCEE24B35D4E0007177D /* MBStateMachineForms.xcframework in Frameworks */,
-				6DCCBCEC24B35D4E0007177D /* MobKitCore.xcframework in Frameworks */,
-				6DCCBCEB24B35D4E0007177D /* MBNetworking.xcframework in Frameworks */,
-				6DCCBCEA24B35D4E0007177D /* MBErrorKit.xcframework in Frameworks */,
-				6DCCBCF024B35D4E0007177D /* MBAccountSecurity.xcframework in Frameworks */,
-				6DCCBCF424B35D4E0007177D /* MBUIComponents.xcframework in Frameworks */,
-				6DCCBCF124B35D4E0007177D /* Cryptography.xcframework in Frameworks */,
-				6DCCBCEF24B35D4E0007177D /* MBOneLink.xcframework in Frameworks */,
-				6DCCBCED24B35D4E0007177D /* MBSecureNetwork.xcframework in Frameworks */,
-				6DCCBCF324B35D4E0007177D /* MBAppSecurity.xcframework in Frameworks */,
-				6D193C7124B5F64C001A8F44 /* MBPinLocator.xcframework in Frameworks */,
+				6DBD919524F55F2900AE8FAE /* MobKitCore.xcframework in Frameworks */,
+				6DBD918B24F55F2900AE8FAE /* MBOneLink.xcframework in Frameworks */,
+				6DBD919724F55F2D00AE8FAE /* Cryptography.xcframework in Frameworks */,
+				6DBD919124F55F2900AE8FAE /* MBStateMachineForms.xcframework in Frameworks */,
+				6DBD918F24F55F2900AE8FAE /* MBSecureNetwork.xcframework in Frameworks */,
+				6DBD918324F55F2900AE8FAE /* MBAccountSecurity.xcframework in Frameworks */,
+				6DBD918924F55F2900AE8FAE /* MBNetworking.xcframework in Frameworks */,
+				6DBD918724F55F2900AE8FAE /* MBErrorKit.xcframework in Frameworks */,
+				6DBD918524F55F2900AE8FAE /* MBAppSecurity.xcframework in Frameworks */,
 				D886C61370196295B4DBC4C8 /* Pods_MMBKitTester.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
