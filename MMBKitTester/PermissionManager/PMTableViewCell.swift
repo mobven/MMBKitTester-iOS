@@ -33,7 +33,23 @@ class PMTableViewCell: UITableViewCell {
     private func checkStatus(permission: Permission) {
         switch permission {
         case .bluetooth:
-            self.permissionStatus.text = "Not Yet :("
+            PermissionManager.shared().status { (result: PermissionResult<BluetoothManager.Result>) in
+                switch result {
+                case .allowed(let bluetooth):
+                    switch bluetooth {
+                    case .authorized:
+                        self.permissionStatus.text = "Allowed"
+                    }
+                case .notAllowed:
+                    self.permissionStatus.text = "Not Allowed"
+                case .restricted:
+                    self.permissionStatus.text = "Restricted"
+                case .unknown:
+                    self.permissionStatus.text = "Unknown"
+                case .notDetermined:
+                    self.permissionStatus.text = "N/A"
+                }
+            }
         case .camera:
             PermissionManager.shared().status { (result: PermissionResult<CameraManager.Result>) in
                 switch result {
@@ -132,7 +148,7 @@ class PMTableViewCell: UITableViewCell {
         case .location(let locationType):
             switch locationType {
             case .requestAlways:
-                PermissionManager.shared().status { (result: PermissionResult<LocationAlwaysManager.Result>) in
+                PermissionManager.shared().status { (result: PermissionResult<LocationManager.AlwaysResult>) in
                     switch result {
                     case .allowed:
                         self.permissionStatus.text = "Allowed"
@@ -147,7 +163,7 @@ class PMTableViewCell: UITableViewCell {
                     }
                 }
             case .requestWhenInUse:
-                PermissionManager.shared().status { (result: PermissionResult<LocationWhenInUseManager.Result>) in
+                PermissionManager.shared().status { (result: PermissionResult<LocationManager.WhenInUseResult>) in
                     switch result {
                     case .allowed:
                         self.permissionStatus.text = "Allowed"
@@ -168,7 +184,27 @@ class PMTableViewCell: UITableViewCell {
     @IBAction private func grant() {
         switch permission! {
         case .bluetooth:
-            break
+            PermissionManager.shared().request { (result: PermissionResult<BluetoothManager.Result>) in
+                switch result {
+                case .allowed(let bluetooth):
+                    switch bluetooth {
+                    case .authorized:
+                        break
+                    }
+                case .notAllowed:
+                    DispatchQueue.main.async {
+                        self.permissionDelagate.userDidDenied()
+                    }
+                case .restricted:
+                    break
+                case .unknown:
+                    break
+                case .notDetermined:
+                    break
+                }
+                self.permissionDelagate.permissionUpdated()
+            }
+            
         case .camera:
             PermissionManager.shared().request { (result : PermissionResult<CameraManager.Result>) in
                 switch result {
@@ -226,7 +262,7 @@ class PMTableViewCell: UITableViewCell {
         case .location(let locationType):
             switch locationType {
             case .requestAlways:
-                PermissionManager.shared().request { (result : PermissionResult<LocationAlwaysManager.Result>) in
+                PermissionManager.shared().request { (result : PermissionResult<LocationManager.AlwaysResult>) in
                     switch result {
                     case .allowed:
                         break
@@ -244,7 +280,7 @@ class PMTableViewCell: UITableViewCell {
                     self.permissionDelagate.permissionUpdated()
                 }
             case .requestWhenInUse:
-                PermissionManager.shared().request { (result : PermissionResult<LocationWhenInUseManager.Result>) in
+                PermissionManager.shared().request { (result : PermissionResult<LocationManager.WhenInUseResult>) in
                     switch result {
                     case .allowed:
                         break
