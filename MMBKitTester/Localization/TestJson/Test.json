@@ -22,14 +22,14 @@
         "tr"  : "Arayüz Bileşenleri"
     },
     {
-        "key" : "state_machine_forms",
-        "en"  : "State Machine Forms",
-        "tr"  : "Otomat Formları"
+        "key" : "Language",
+        "en"  : "Language",
+        "tr"  : "Dil"
     },
     {
-        "key" : "permission_manager",
-        "en"  : "Permission Manager",
-        "tr"  : "İzin Yöneticisi"
+        "key" : "please_select_an_language",
+        "en"  : "Please Select an Language",
+        "tr"  : "Lütfen Dil Seçiniz"
     },
     {
         "key" : "pin_locator",

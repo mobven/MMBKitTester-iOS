@@ -18,7 +18,7 @@ class LocalizationViewController: UIViewController, UIActionSheetDelegate {
     
     @IBAction func selectLanguageBttn(_ sender: Any) {
         
-        let alert = UIAlertController(title: "Language" , message: "Please Select an Language", preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "Language".localized , message: "please_select_an_language".localized, preferredStyle: .actionSheet)
         
         alert.addAction(UIAlertAction(title: "Türkçe", style: .default , handler:{ (UIAlertAction)in
             if #available(iOS 13, *) {
