@@ -1862,5 +1862,70 @@ It's secure 🎉</string>
             </objects>
             <point key="canvasLocation" x="3595.652173913044" y="3780.8035714285711"/>
         </scene>
+        <!--Localization View Controller-->
+        <scene sceneID="ePH-kn-Nkv">
+            <objects>
+                <viewController storyboardIdentifier="LocalizationViewController" id="jF4-Md-QIJ" customClass="LocalizationViewController" customModule="MMBKitTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ibc-Iy-N30">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gid-dh-Lvh">
+                                <rect key="frame" x="20" y="170" width="374" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="UVC-GT-c6N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQf-au-BDl">
+                                <rect key="frame" x="20" y="229" width="374" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="D7n-WT-hRg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBL-Am-PbM">
+                                <rect key="frame" x="70" y="763" width="274" height="53"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="JsY-nU-Lpy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Language">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectLanguageBttn:" destination="jF4-Md-QIJ" eventType="touchUpInside" id="U8l-hL-wVD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QQc-l5-uKR" firstAttribute="trailing" secondItem="PBL-Am-PbM" secondAttribute="trailing" constant="70" id="EGs-JI-bLu"/>
+                            <constraint firstItem="rQf-au-BDl" firstAttribute="top" secondItem="gid-dh-Lvh" secondAttribute="bottom" constant="20" id="FcJ-3C-EJv"/>
+                            <constraint firstItem="rQf-au-BDl" firstAttribute="leading" secondItem="QQc-l5-uKR" secondAttribute="leading" constant="20" id="M4T-xk-T8r"/>
+                            <constraint firstItem="gid-dh-Lvh" firstAttribute="top" secondItem="QQc-l5-uKR" secondAttribute="top" constant="126" id="Me9-78-wa3"/>
+                            <constraint firstItem="QQc-l5-uKR" firstAttribute="trailing" secondItem="gid-dh-Lvh" secondAttribute="trailing" constant="20" id="Oxo-uK-MCO"/>
+                            <constraint firstItem="gid-dh-Lvh" firstAttribute="leading" secondItem="QQc-l5-uKR" secondAttribute="leading" constant="20" id="YoA-KW-72a"/>
+                            <constraint firstItem="QQc-l5-uKR" firstAttribute="bottom" secondItem="PBL-Am-PbM" secondAttribute="bottom" constant="46" id="cKq-RM-ZIu"/>
+                            <constraint firstItem="QQc-l5-uKR" firstAttribute="trailing" secondItem="rQf-au-BDl" secondAttribute="trailing" constant="20" id="pn6-qD-bor"/>
+                            <constraint firstItem="PBL-Am-PbM" firstAttribute="leading" secondItem="QQc-l5-uKR" secondAttribute="leading" constant="70" id="xVM-tP-nsD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QQc-l5-uKR"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstLabel" destination="gid-dh-Lvh" id="lio-pi-hKy"/>
+                        <outlet property="secondLabel" destination="rQf-au-BDl" id="qQo-du-OPa"/>
+                        <outlet property="selectLanguageBttn" destination="PBL-Am-PbM" id="RuB-pA-ZaL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IbL-Wi-ZoL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3640.579710144928" y="4530.8035714285716"/>
+        </scene>
     </scenes>
 </document>

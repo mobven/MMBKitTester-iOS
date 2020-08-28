@@ -20,7 +20,8 @@ class ModulesViewController: UITableViewController {
         .init(name: "Pin Locator", identifier: "PinLocatorViewController"),
         .init(name: "One Link", identifier: "OneLinkViewController"),
         .init(name: "Error Kit", identifier: "ErrorKitViewController"),
-        .init(name: "Permission Manager", identifier: "PermissionManagerViewController")
+        .init(name: "Permission Manager", identifier: "PermissionManagerViewController"),
+        .init(name: "Localization", identifier: "LocalizationViewController")
     ]
     
     override func viewDidLoad() {

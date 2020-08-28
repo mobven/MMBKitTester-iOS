@@ -1,0 +1,59 @@
+
+{
+    "texts":[
+    {
+        "key" : "app_security",
+        "en"  : "App Security",
+        "tr"  : "Uygulama Güvenliği"
+    },
+    {
+        "key" : "account_security",
+        "en"  : "Account Security",
+        "tr"  : "Hesap Güvenliği"
+    },
+    {
+        "key" : "secure_network",
+        "en"  : "Secure Network",
+        "tr"  : "Güvenli Ağ"
+    },
+    {
+        "key" : "ui_components",
+        "en"  : "UI Components",
+        "tr"  : "Arayüz Bileşenleri"
+    },
+    {
+        "key" : "state_machine_forms",
+        "en"  : "State Machine Forms",
+        "tr"  : "Otomat Formları"
+    },
+    {
+        "key" : "permission_manager",
+        "en"  : "Permission Manager",
+        "tr"  : "İzin Yöneticisi"
+    },
+    {
+        "key" : "pin_locator",
+        "en"  : "Pin Locator",
+        "tr"  : "İğne Belirleyici"
+    },
+    {
+        "key" : "one_link",
+        "en"  : "One Link",
+        "tr"  : "Tek Bağlantı"
+    },
+    {
+        "key" : "error_kit",
+        "en"  : "Error Kit",
+        "tr"  : "Hata Kiti"
+    },
+    {
+        "key" : "localize_it",
+        "en"  : "Localize It",
+        "tr"  : "Yerelleştir Onu"
+    }
+    ]
+    
+}
+
+
+

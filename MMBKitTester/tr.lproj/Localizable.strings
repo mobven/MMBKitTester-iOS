@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  MMBKitTester
+
+  Created by Burak Yılmaz on 28.08.2020.
+  Copyright © 2020 Mobven. All rights reserved.
+*/
+
+"app_security" = "Uygulama Güvenliği";
+"account_security" = "Hesap Güvenliği";
+"secure_network" = "Güvenli Ağ";
+"ui_components" = "Arayüz Bileşenleri";
