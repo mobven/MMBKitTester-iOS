@@ -18,36 +18,35 @@ class LocalizationViewController: UIViewController, UIActionSheetDelegate {
     
     @IBAction func selectLanguageBttn(_ sender: Any) {
         
-        let alert = UIAlertController(title: "Language".localized , message: "please_select_an_language".localized, preferredStyle: .actionSheet)
-        
-        alert.addAction(UIAlertAction(title: "Türkçe", style: .default , handler:{ (UIAlertAction)in
-            if #available(iOS 13, *) {
+        if #available(iOS 13, *) {
+            let alert = UIAlertController(title: "Warning!", message: "You are redirected to settings. Are you sure?", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "Yes", style: .default, handler:{ (UIAlertAction)in
                 UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
-            }
-            else {
-                if LocalizeIt.shared().currentLanguage() != "tr" {
-                    if LocalizeIt.shared().setAppLocalization("en") == true {
-                        self.languageChangeAlert()
-                    }
+            }))
+            alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+            
+            self.present(alert, animated: true)
+        }
+        else {
+            let alert = UIAlertController(title: "Language".localized , message: "please_select_an_language".localized, preferredStyle: .actionSheet)
+            
+            alert.addAction(UIAlertAction(title: "Türkçe", style: .default , handler:{ (UIAlertAction)in
+                if LocalizeIt.shared().setAppLocalization("tr") == true {
+                    self.languageChangeAlert()
                 }
-            }
-        }))
-        
-        alert.addAction(UIAlertAction(title: "English", style: .default , handler:{ (UIAlertAction)in
-            if #available(iOS 13, *) {
-                UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
-            }
-            else {
-                if LocalizeIt.shared().currentLanguage() != "en" {
-                    if LocalizeIt.shared().setAppLocalization("tr") == true {
-                        self.languageChangeAlert()
-                    }
+            }))
+            
+            alert.addAction(UIAlertAction(title: "English", style: .default , handler:{ (UIAlertAction)in
+                if LocalizeIt.shared().setAppLocalization("en") == true {
+                    self.languageChangeAlert()
                 }
-            }
-        }))
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+            }))
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+            
+            self.present(alert, animated: true)
+        }
         
-        self.present(alert, animated: true)
     }
     
     override func viewDidLoad() {
