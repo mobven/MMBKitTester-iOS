@@ -28,7 +28,6 @@ class LocalizationViewController: UIViewController, UIActionSheetDelegate {
                 if LocalizeIt.shared().currentLanguage() != "tr" {
                     if LocalizeIt.shared().setAppLocalization("en") == true {
                         self.languageChangeAlert()
-                        exit(0)
                     }
                 }
             }
@@ -42,7 +41,6 @@ class LocalizationViewController: UIViewController, UIActionSheetDelegate {
                 if LocalizeIt.shared().currentLanguage() != "en" {
                     if LocalizeIt.shared().setAppLocalization("tr") == true {
                         self.languageChangeAlert()
-                        exit(0)
                     }
                 }
             }
