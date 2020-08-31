@@ -18,33 +18,6 @@
           "revision": "3d0ea2c0806791abcc5d7f0d9f62f1cfd4a7264d",
           "version": "4.2.0"
         }
-      },
-      {
-        "package": "LocalizeIt",
-        "repositoryURL": "https://github.com/mobven/LocalizeIt",
-        "state": {
-          "branch": "develop",
-          "revision": "98980537dce5695ae9620a9517ee0a8e8e45b48e",
-          "version": null
-        }
-      },
-      {
-        "package": "MobKitCore",
-        "repositoryURL": "https://github.com/mobven/MobKitCore.git",
-        "state": {
-          "branch": "develop",
-          "revision": "f4c1121135d85080e8463ac5dcfd0322948ba6db",
-          "version": null
-        }
-      },
-      {
-        "package": "PermissionManager",
-        "repositoryURL": "https://github.com/mobven/PermissionManager.git",
-        "state": {
-          "branch": "develop",
-          "revision": "4dc58c5979e7eb727b113a76354e53ceeef9f385",
-          "version": null
-        }
       }
     ]
   },

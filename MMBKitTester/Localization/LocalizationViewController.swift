@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import LocalizeIt
+import MBLocalizeIt
 
 // swiftlint:disable all
 class LocalizationViewController: UIViewController, UIActionSheetDelegate {

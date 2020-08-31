@@ -62,4 +62,3 @@ extension UIPickerTextFieldBinder: UIPickerTextfieldDelegate {
         self.delegate?.formBinderValueChanged(binder: self, value: options?[row])
     }
 }
-

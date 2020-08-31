@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import PermissionManager
+import MBPermissionManager
 
 class PermissionManagerViewController: UITableViewController {
     

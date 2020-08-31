@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import PermissionManager
+import MBPermissionManager
 import NotificationCenter
 
 // swiftlint:disable all

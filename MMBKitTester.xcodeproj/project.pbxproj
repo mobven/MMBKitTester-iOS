@@ -8,16 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		651CDC5224F7E5AE0073F4EC /* LocalizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651CDC5124F7E5AE0073F4EC /* LocalizationViewController.swift */; };
-		651CDC5524F8DA7E0073F4EC /* PermissionManager in Frameworks */ = {isa = PBXBuildFile; productRef = 651CDC5424F8DA7E0073F4EC /* PermissionManager */; };
-		651CDC5B24F8E6640073F4EC /* LocalizeIt in Frameworks */ = {isa = PBXBuildFile; productRef = 651CDC5A24F8E6640073F4EC /* LocalizeIt */; };
 		651CDC6724F8F5BF0073F4EC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 651CDC6924F8F5BF0073F4EC /* Localizable.strings */; };
 		651CDC6C24F8FB5D0073F4EC /* Test.json in Resources */ = {isa = PBXBuildFile; fileRef = 651CDC6B24F8FB5D0073F4EC /* Test.json */; };
 		6D1F27AF24A1FA8D00ECA5E6 /* CustomXibPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1F27AE24A1FA8D00ECA5E6 /* CustomXibPinView.swift */; };
 		6D1F27B124A1FBE500ECA5E6 /* CustomXibPinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1F27B024A1FBE500ECA5E6 /* CustomXibPinView.xib */; };
+		6D368F4024F9382900E31012 /* MBPermissionManager.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D368F3E24F935CB00E31012 /* MBPermissionManager.xcframework */; };
+		6D368F4124F9382900E31012 /* MBPermissionManager.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D368F3E24F935CB00E31012 /* MBPermissionManager.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		6D4E40132454DB3100B8CC67 /* KVListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4E40122454DB3100B8CC67 /* KVListViewController.swift */; };
 		6D5410D524474A50000A8B1D /* KVLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5410D424474A50000A8B1D /* KVLabelViewController.swift */; };
 		6D5410DA24477ADE000A8B1D /* UIComponentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5410D924477ADE000A8B1D /* UIComponentsViewController.swift */; };
 		6D5754A124754CB100C23C48 /* AmountInputViewBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5754A024754CB100C23C48 /* AmountInputViewBinder.swift */; };
+		6D5AAABE24FD1BF50073A047 /* MBLocalizeIt.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D5AAABD24FD1BF50073A047 /* MBLocalizeIt.xcframework */; };
 		6D818F5A249A7CA0008943A1 /* ErrorKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D818F59249A7CA0008943A1 /* ErrorKitViewController.swift */; };
 		6D818F5C249A7DB4008943A1 /* ErrorKitSampleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D818F5B249A7DB4008943A1 /* ErrorKitSampleAPI.swift */; };
 		6D8BA196243A44AD004493A9 /* OneLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BA195243A44AD004493A9 /* OneLinkViewController.swift */; };
@@ -147,6 +148,7 @@
 				6DBD918E24F55F2900AE8FAE /* MBPinLocator.xcframework in Embed Frameworks */,
 				6DBD919224F55F2900AE8FAE /* MBStateMachineForms.xcframework in Embed Frameworks */,
 				6DBD919424F55F2900AE8FAE /* MBUIComponents.xcframework in Embed Frameworks */,
+				6D368F4124F9382900E31012 /* MBPermissionManager.xcframework in Embed Frameworks */,
 				6DBD918624F55F2900AE8FAE /* MBAppSecurity.xcframework in Embed Frameworks */,
 				6DBD918A24F55F2900AE8FAE /* MBNetworking.xcframework in Embed Frameworks */,
 				6DBD919824F55F2D00AE8FAE /* Cryptography.xcframework in Embed Frameworks */,
@@ -170,10 +172,12 @@
 		6D193C7024B5F64C001A8F44 /* MBPinLocator.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBPinLocator.xcframework; path = Frameworks/MBPinLocator.xcframework; sourceTree = "<group>"; };
 		6D1F27AE24A1FA8D00ECA5E6 /* CustomXibPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomXibPinView.swift; sourceTree = "<group>"; };
 		6D1F27B024A1FBE500ECA5E6 /* CustomXibPinView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomXibPinView.xib; sourceTree = "<group>"; };
+		6D368F3E24F935CB00E31012 /* MBPermissionManager.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBPermissionManager.xcframework; path = Frameworks/MBPermissionManager.xcframework; sourceTree = "<group>"; };
 		6D4E40122454DB3100B8CC67 /* KVListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVListViewController.swift; sourceTree = "<group>"; };
 		6D5410D424474A50000A8B1D /* KVLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVLabelViewController.swift; sourceTree = "<group>"; };
 		6D5410D924477ADE000A8B1D /* UIComponentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponentsViewController.swift; sourceTree = "<group>"; };
 		6D5754A024754CB100C23C48 /* AmountInputViewBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountInputViewBinder.swift; sourceTree = "<group>"; };
+		6D5AAABD24FD1BF50073A047 /* MBLocalizeIt.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBLocalizeIt.xcframework; path = Frameworks/MBLocalizeIt.xcframework; sourceTree = "<group>"; };
 		6D818F59249A7CA0008943A1 /* ErrorKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorKitViewController.swift; sourceTree = "<group>"; };
 		6D818F5B249A7DB4008943A1 /* ErrorKitSampleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorKitSampleAPI.swift; sourceTree = "<group>"; };
 		6D8BA195243A44AD004493A9 /* OneLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLinkViewController.swift; sourceTree = "<group>"; };
@@ -281,7 +285,6 @@
 			files = (
 				6DCCBC9724B324090007177D /* CryptoSwift in Frameworks */,
 				6DBD918D24F55F2900AE8FAE /* MBPinLocator.xcframework in Frameworks */,
-				651CDC5524F8DA7E0073F4EC /* PermissionManager in Frameworks */,
 				6DCCBC9A24B3242D0007177D /* KeychainAccess in Frameworks */,
 				6DBD919324F55F2900AE8FAE /* MBUIComponents.xcframework in Frameworks */,
 				6DBD919524F55F2900AE8FAE /* MobKitCore.xcframework in Frameworks */,
@@ -289,7 +292,8 @@
 				6DBD919724F55F2D00AE8FAE /* Cryptography.xcframework in Frameworks */,
 				6DBD919124F55F2900AE8FAE /* MBStateMachineForms.xcframework in Frameworks */,
 				6DBD918F24F55F2900AE8FAE /* MBSecureNetwork.xcframework in Frameworks */,
-				651CDC5B24F8E6640073F4EC /* LocalizeIt in Frameworks */,
+				6D368F4024F9382900E31012 /* MBPermissionManager.xcframework in Frameworks */,
+				6D5AAABE24FD1BF50073A047 /* MBLocalizeIt.xcframework in Frameworks */,
 				6DBD918324F55F2900AE8FAE /* MBAccountSecurity.xcframework in Frameworks */,
 				6DBD918924F55F2900AE8FAE /* MBNetworking.xcframework in Frameworks */,
 				6DBD918724F55F2900AE8FAE /* MBErrorKit.xcframework in Frameworks */,
@@ -630,6 +634,7 @@
 		8BCFF828680210ED26EC0E12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6D368F3E24F935CB00E31012 /* MBPermissionManager.xcframework */,
 				6DCCBCE624B35D4D0007177D /* Cryptography.xcframework */,
 				6DCCBCE524B35D4D0007177D /* MBAccountSecurity.xcframework */,
 				6DCCBCE824B35D4E0007177D /* MBAppSecurity.xcframework */,
@@ -640,6 +645,7 @@
 				6DCCBCE324B35D4D0007177D /* MBStateMachineForms.xcframework */,
 				6DCCBCE924B35D4E0007177D /* MBUIComponents.xcframework */,
 				6D193C7024B5F64C001A8F44 /* MBPinLocator.xcframework */,
+				6D5AAABD24FD1BF50073A047 /* MBLocalizeIt.xcframework */,
 				6DCCBCE124B35D4D0007177D /* MobKitCore.xcframework */,
 				13BF171A3156D2F1A176E725 /* Pods_MMBKitTester.framework */,
 				D095387D2F646E1CC850F603 /* Pods_MMBKitTesterTests.framework */,
@@ -682,8 +688,6 @@
 			packageProductDependencies = (
 				6DCCBC9624B324090007177D /* CryptoSwift */,
 				6DCCBC9924B3242D0007177D /* KeychainAccess */,
-				651CDC5424F8DA7E0073F4EC /* PermissionManager */,
-				651CDC5A24F8E6640073F4EC /* LocalizeIt */,
 			);
 			productName = MMBKitTester;
 			productReference = 6D931FDA243228EF004C8A3C /* MMBKitTester.app */;
@@ -740,8 +744,6 @@
 			packageReferences = (
 				6DCCBC9524B324090007177D /* XCRemoteSwiftPackageReference "CryptoSwift" */,
 				6DCCBC9824B3242D0007177D /* XCRemoteSwiftPackageReference "KeychainAccess" */,
-				651CDC5324F8DA7E0073F4EC /* XCRemoteSwiftPackageReference "PermissionManager" */,
-				651CDC5924F8E6640073F4EC /* XCRemoteSwiftPackageReference "LocalizeIt" */,
 			);
 			productRefGroup = 6D931FDB243228EF004C8A3C /* Products */;
 			projectDirPath = "";
@@ -1269,22 +1271,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		651CDC5324F8DA7E0073F4EC /* XCRemoteSwiftPackageReference "PermissionManager" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mobven/PermissionManager.git";
-			requirement = {
-				branch = develop;
-				kind = branch;
-			};
-		};
-		651CDC5924F8E6640073F4EC /* XCRemoteSwiftPackageReference "LocalizeIt" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mobven/LocalizeIt";
-			requirement = {
-				branch = develop;
-				kind = branch;
-			};
-		};
 		6DCCBC9524B324090007177D /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift";
@@ -1304,16 +1290,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		651CDC5424F8DA7E0073F4EC /* PermissionManager */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 651CDC5324F8DA7E0073F4EC /* XCRemoteSwiftPackageReference "PermissionManager" */;
-			productName = PermissionManager;
-		};
-		651CDC5A24F8E6640073F4EC /* LocalizeIt */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 651CDC5924F8E6640073F4EC /* XCRemoteSwiftPackageReference "LocalizeIt" */;
-			productName = LocalizeIt;
-		};
 		6DCCBC9624B324090007177D /* CryptoSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6DCCBC9524B324090007177D /* XCRemoteSwiftPackageReference "CryptoSwift" */;

@@ -17,7 +17,8 @@ import MBStateMachineForms
 import MBSecureNetwork
 import MBPinLocator
 import MBErrorKit
-import PermissionManager
+import MBPermissionManager
+import MBLocalizeIt
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -33,7 +34,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             AppSecurity.self, AccountSecurity.self,
             OneLink.self, UIComponents.self,
             StateMachineForms.self, SecureNetwork.self,
-            PinLocator.self, ErrorKit.self
+            PinLocator.self, ErrorKit.self,
+            PermissionManager.self, LocalizeIt.self
         ])
         
         SecureNetwork.shared().enableOAuth2(
