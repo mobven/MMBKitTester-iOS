@@ -11,17 +11,17 @@ import UIKit
 class ModulesViewController: UITableViewController {
     
     private let modules: [Module] = [
-        .init(name: "App Security", identifier: "AppSecurityViewController"),
-        .init(name: "Account Security", identifier: "AccountSecurityViewController"),
-        .init(name: "Secure Network", identifier: "SecureNetworkViewController"),
-        .init(name: "UI Components", identifier: "UIComponentsViewController"),
-        .init(name: "State Machine Forms", identifier: "StateMachineFormsViewController"),
-        .init(name: "Permission Manager", identifier: ""),
-        .init(name: "Pin Locator", identifier: "PinLocatorViewController"),
-        .init(name: "One Link", identifier: "OneLinkViewController"),
-        .init(name: "Error Kit", identifier: "ErrorKitViewController"),
-        .init(name: "Permission Manager", identifier: "PermissionManagerViewController"),
-        .init(name: "Localization", identifier: "LocalizationViewController")
+        .init(name: "app_security".localized, identifier: "AppSecurityViewController"),
+        .init(name: "account_security".localized, identifier: "AccountSecurityViewController"),
+        .init(name: "secure_network".localized, identifier: "SecureNetworkViewController"),
+        .init(name: "ui_components".localized, identifier: "UIComponentsViewController"),
+        .init(name: "state_machine_forms".localized, identifier: "StateMachineFormsViewController"),
+        .init(name: "permission_manager".localized, identifier: ""),
+        .init(name: "pin_locator".localized, identifier: "PinLocatorViewController"),
+        .init(name: "one_link".localized, identifier: "OneLinkViewController"),
+        .init(name: "error_kit".localized, identifier: "ErrorKitViewController"),
+        .init(name: "permission_manager".localized, identifier: "PermissionManagerViewController"),
+        .init(name: "localize_it".localized, identifier: "LocalizationViewController")
     ]
     
     override func viewDidLoad() {

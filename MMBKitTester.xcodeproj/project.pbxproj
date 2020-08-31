@@ -12,6 +12,7 @@
 		651CDC5B24F8E6640073F4EC /* LocalizeIt in Frameworks */ = {isa = PBXBuildFile; productRef = 651CDC5A24F8E6640073F4EC /* LocalizeIt */; };
 		651CDC6724F8F5BF0073F4EC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 651CDC6924F8F5BF0073F4EC /* Localizable.strings */; };
 		651CDC6C24F8FB5D0073F4EC /* Test.json in Resources */ = {isa = PBXBuildFile; fileRef = 651CDC6B24F8FB5D0073F4EC /* Test.json */; };
+		651CDC6E24FCCCAB0073F4EC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651CDC6D24FCCCAB0073F4EC /* TableViewCell.swift */; };
 		6D1F27AF24A1FA8D00ECA5E6 /* CustomXibPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1F27AE24A1FA8D00ECA5E6 /* CustomXibPinView.swift */; };
 		6D1F27B124A1FBE500ECA5E6 /* CustomXibPinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1F27B024A1FBE500ECA5E6 /* CustomXibPinView.xib */; };
 		6D4E40132454DB3100B8CC67 /* KVListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4E40122454DB3100B8CC67 /* KVListViewController.swift */; };
@@ -167,6 +168,7 @@
 		651CDC6824F8F5BF0073F4EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		651CDC6A24F8F5CC0073F4EC /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		651CDC6B24F8FB5D0073F4EC /* Test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Test.json; sourceTree = "<group>"; };
+		651CDC6D24FCCCAB0073F4EC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		6D193C7024B5F64C001A8F44 /* MBPinLocator.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBPinLocator.xcframework; path = Frameworks/MBPinLocator.xcframework; sourceTree = "<group>"; };
 		6D1F27AE24A1FA8D00ECA5E6 /* CustomXibPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomXibPinView.swift; sourceTree = "<group>"; };
 		6D1F27B024A1FBE500ECA5E6 /* CustomXibPinView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomXibPinView.xib; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 			children = (
 				651CDC6224F8ECA00073F4EC /* TestJson */,
 				651CDC5124F7E5AE0073F4EC /* LocalizationViewController.swift */,
+				651CDC6D24FCCCAB0073F4EC /* TableViewCell.swift */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -947,6 +950,7 @@
 				6F52171D246AAB3500F7E28E /* MMBCheckBoxBinder.swift in Sources */,
 				6F52172E246BCFEB00F7E28E /* StateMachineFormsService.swift in Sources */,
 				6F1E5A922476AC760013B111 /* OAUTHTableHeader.swift in Sources */,
+				651CDC6E24FCCCAB0073F4EC /* TableViewCell.swift in Sources */,
 				6D8CD53924ED4649008F9F37 /* PMTableViewCell.swift in Sources */,
 				6F521730246C10F900F7E28E /* AccountsViewController.swift in Sources */,
 				6F521738246C1BED00F7E28E /* AccountSelectionCell.swift in Sources */,
