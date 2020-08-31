@@ -12,8 +12,7 @@ import MBLocalizeIt
 // swiftlint:disable all
 class LocalizationViewController: UIViewController, UIActionSheetDelegate {
     
-    @IBOutlet weak var firstLabel: UILabel!
-    @IBOutlet weak var secondLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var selectLanguageBttn: UIButton!
     
     @IBAction func selectLanguageBttn(_ sender: Any) {
@@ -48,13 +47,11 @@ class LocalizationViewController: UIViewController, UIActionSheetDelegate {
         }
         
     }
-    
+    let array = ["birinci","ikinci","ucuncu","dorduncu","besinci","altinci"]
     override func viewDidLoad() {
         super.viewDidLoad()
         readDictionaryData()
-        
-        firstLabel.text = "app_security".localized
-        secondLabel.text = "account_security".localized
+        tableView.tableFooterView = UIView()
     }
     
     func languageChangeAlert() {
@@ -87,5 +84,22 @@ class LocalizationViewController: UIViewController, UIActionSheetDelegate {
         }
     }
     
+}
+extension LocalizationViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        array.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(
+            withIdentifier: "cell", for: indexPath
+            ) as? TableViewCell
+            else {
+                fatalError("Could not dequeue cell with id")
+        }
+        cell.languageLabel.text = array[indexPath.row].localized
+        
+        return cell
+    }
 }
 // swiftlint:enable all

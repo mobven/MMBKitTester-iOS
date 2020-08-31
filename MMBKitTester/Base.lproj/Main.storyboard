@@ -1870,24 +1870,6 @@ It's secure 🎉</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gid-dh-Lvh">
-                                <rect key="frame" x="20" y="170" width="374" height="39"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="UVC-GT-c6N"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQf-au-BDl">
-                                <rect key="frame" x="20" y="229" width="374" height="39"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="D7n-WT-hRg"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBL-Am-PbM">
                                 <rect key="frame" x="70" y="763" width="274" height="53"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1902,25 +1884,57 @@ It's secure 🎉</string>
                                     <action selector="selectLanguageBttn:" destination="jF4-Md-QIJ" eventType="touchUpInside" id="U8l-hL-wVD"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ba2-vh-kIO">
+                                <rect key="frame" x="15" y="49" width="414" height="470"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="1Tr-el-LEf" customClass="TableViewCell" customModule="MMBKitTester" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Tr-el-LEf" id="knu-bM-MAn">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDF-nB-tqc">
+                                                    <rect key="frame" x="40" y="11" width="334" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bDF-nB-tqc" firstAttribute="top" secondItem="knu-bM-MAn" secondAttribute="topMargin" id="Qk8-xl-f7g"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="bDF-nB-tqc" secondAttribute="trailing" constant="20" id="drX-e5-eYF"/>
+                                                <constraint firstItem="bDF-nB-tqc" firstAttribute="leading" secondItem="knu-bM-MAn" secondAttribute="leadingMargin" constant="20" id="lKd-rn-f1d"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="bDF-nB-tqc" secondAttribute="bottom" id="wcU-Ja-bEN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="languageLabel" destination="bDF-nB-tqc" id="AJz-9t-the"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="jF4-Md-QIJ" id="1RX-GE-Pu6"/>
+                                    <outlet property="delegate" destination="jF4-Md-QIJ" id="aQJ-qD-nBZ"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="ba2-vh-kIO" firstAttribute="trailing" secondItem="QQc-l5-uKR" secondAttribute="trailing" constant="15" id="3By-lC-dnI"/>
                             <constraint firstItem="QQc-l5-uKR" firstAttribute="trailing" secondItem="PBL-Am-PbM" secondAttribute="trailing" constant="70" id="EGs-JI-bLu"/>
-                            <constraint firstItem="rQf-au-BDl" firstAttribute="top" secondItem="gid-dh-Lvh" secondAttribute="bottom" constant="20" id="FcJ-3C-EJv"/>
-                            <constraint firstItem="rQf-au-BDl" firstAttribute="leading" secondItem="QQc-l5-uKR" secondAttribute="leading" constant="20" id="M4T-xk-T8r"/>
-                            <constraint firstItem="gid-dh-Lvh" firstAttribute="top" secondItem="QQc-l5-uKR" secondAttribute="top" constant="126" id="Me9-78-wa3"/>
-                            <constraint firstItem="QQc-l5-uKR" firstAttribute="trailing" secondItem="gid-dh-Lvh" secondAttribute="trailing" constant="20" id="Oxo-uK-MCO"/>
-                            <constraint firstItem="gid-dh-Lvh" firstAttribute="leading" secondItem="QQc-l5-uKR" secondAttribute="leading" constant="20" id="YoA-KW-72a"/>
+                            <constraint firstItem="PBL-Am-PbM" firstAttribute="top" secondItem="ba2-vh-kIO" secondAttribute="bottom" constant="244" id="Erk-Dv-1Kk"/>
+                            <constraint firstItem="ba2-vh-kIO" firstAttribute="top" secondItem="QQc-l5-uKR" secondAttribute="top" constant="5" id="Jza-Qf-KcM"/>
                             <constraint firstItem="QQc-l5-uKR" firstAttribute="bottom" secondItem="PBL-Am-PbM" secondAttribute="bottom" constant="46" id="cKq-RM-ZIu"/>
-                            <constraint firstItem="QQc-l5-uKR" firstAttribute="trailing" secondItem="rQf-au-BDl" secondAttribute="trailing" constant="20" id="pn6-qD-bor"/>
+                            <constraint firstItem="ba2-vh-kIO" firstAttribute="leading" secondItem="QQc-l5-uKR" secondAttribute="leading" constant="15" id="jUY-HZ-tJd"/>
                             <constraint firstItem="PBL-Am-PbM" firstAttribute="leading" secondItem="QQc-l5-uKR" secondAttribute="leading" constant="70" id="xVM-tP-nsD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QQc-l5-uKR"/>
                     </view>
                     <connections>
-                        <outlet property="firstLabel" destination="gid-dh-Lvh" id="lio-pi-hKy"/>
-                        <outlet property="secondLabel" destination="rQf-au-BDl" id="qQo-du-OPa"/>
                         <outlet property="selectLanguageBttn" destination="PBL-Am-PbM" id="RuB-pA-ZaL"/>
+                        <outlet property="tableView" destination="ba2-vh-kIO" id="WVZ-mJ-z3t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IbL-Wi-ZoL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

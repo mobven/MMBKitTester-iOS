@@ -1,56 +1,96 @@
 
 {
     "texts":[
-    {
-        "key" : "app_security",
-        "en"  : "App Security",
-        "tr"  : "Uygulama Güvenliği"
-    },
-    {
-        "key" : "account_security",
-        "en"  : "Account Security",
-        "tr"  : "Hesap Güvenliği"
-    },
-    {
-        "key" : "secure_network",
-        "en"  : "Secure Network",
-        "tr"  : "Güvenli Ağ"
-    },
-    {
-        "key" : "ui_components",
-        "en"  : "UI Components",
-        "tr"  : "Arayüz Bileşenleri"
-    },
-    {
-        "key" : "Language",
-        "en"  : "Language",
-        "tr"  : "Dil"
-    },
-    {
-        "key" : "please_select_an_language",
-        "en"  : "Please Select an Language",
-        "tr"  : "Lütfen Dil Seçiniz"
-    },
-    {
-        "key" : "pin_locator",
-        "en"  : "Pin Locator",
-        "tr"  : "İğne Belirleyici"
-    },
-    {
-        "key" : "one_link",
-        "en"  : "One Link",
-        "tr"  : "Tek Bağlantı"
-    },
-    {
-        "key" : "error_kit",
-        "en"  : "Error Kit",
-        "tr"  : "Hata Kiti"
-    },
-    {
-        "key" : "localize_it",
-        "en"  : "Localize It",
-        "tr"  : "Yerelleştir Onu"
-    }
+        {
+            "key" : "app_security",
+            "en"  : "App Security",
+            "tr"  : "Uygulama Güvenliği"
+        },
+        {
+            "key" : "account_security",
+            "en"  : "Account Security",
+            "tr"  : "Hesap Güvenliği"
+        },
+        {
+            "key" : "secure_network",
+            "en"  : "Secure Network",
+            "tr"  : "Güvenli Ağ"
+        },
+        {
+            "key" : "ui_components",
+            "en"  : "UI Components",
+            "tr"  : "Arayüz Bileşenleri"
+        },
+        {
+            "key" : "Language",
+            "en"  : "Language",
+            "tr"  : "Dil"
+        },
+        {
+            "key" : "please_select_an_language",
+            "en"  : "Please Select an Language",
+            "tr"  : "Lütfen Dil Seçiniz"
+        },
+        {
+            "key" : "pin_locator",
+            "en"  : "Pin Locator",
+            "tr"  : "İğne Belirleyici"
+        },
+        {
+            "key" : "one_link",
+            "en"  : "One Link",
+            "tr"  : "Tek Bağlantı"
+        },
+        {
+            "key" : "error_kit",
+            "en"  : "Error Kit",
+            "tr"  : "Hata Kiti"
+        },
+        {
+            "key" : "state_machine_forms",
+            "en"  : "State Machine Forms",
+            "tr"  : "Durum Makinesi Formları"
+        },
+        {
+            "key" : "permission_manager",
+            "en"  : "Permission Manager",
+            "tr"  : "İzin Yönetimi"
+        },
+        {
+            "key" : "localize_it",
+            "en"  : "Localize It",
+            "tr"  : "Yerelleştir Onu"
+        },
+        {
+            "key" : "birinci",
+            "en"  : "First",
+            "tr"  : "Birinci"
+        },
+        {
+            "key" : "ikinci",
+            "en"  : "Second",
+            "tr"  : "İkinci"
+        },
+        {
+            "key" : "ucuncu",
+            "en"  : "Third",
+            "tr"  : "Üçücü"
+        },
+        {
+            "key" : "dorduncu",
+            "en"  : "Fourth",
+            "tr"  : "Dördüncü"
+        },
+        {
+            "key" : "besinci",
+            "en"  : "Fifth",
+            "tr"  : "Beşinci"
+        },
+        {
+            "key" : "altinci",
+            "en"  : "Sixth",
+            "tr"  : "Altıncı"
+        }
     ]
     
 }
