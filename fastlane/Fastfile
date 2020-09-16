@@ -1,0 +1,116 @@
+PROJECT_NAME               = "MMBKitTester"
+PROJECT_BUNDLE             = "com.mobven.ios.mmbkit.tester.enterprise"
+DEVELOPMENT_PROJECT_BUNDLE = "com.mobven.ios.mmbkit.tester.dev"
+#NOTIFICATION_EXTENSION_SUFFIX = ".NetmeraNotificationServiceExtension"
+#FIREBASE_ID               = "1:515677835136:ios:ae4b855ce9360be3713b65"
+#DEVELOPMENT_FIREBASE_ID   = "1:515677835136:ios:49d6a89bd3c4ff32713b65"
+PROJECT_SCHEME             = "MMBKitTester"
+
+# development build
+lane :build_test do |values|
+  match(app_identifier: PROJECT_BUNDLE, type: "enterprise", readonly: true)
+  build("DevelopmentRelease", 'enterprise', "#{DEVELOPMENT_PROJECT_BUNDLE}", "match InHouse #{DEVELOPMENT_PROJECT_BUNDLE}")
+ end
+
+# production build
+ lane :build_production do |values|
+  match(app_identifier: PROJECT_BUNDLE, type: "enterprise", readonly: true)
+  build("ProductionRelease", 'enterprise', "#{PROJECT_BUNDLE}", "match InHouse #{PROJECT_BUNDLE}")
+ end
+
+# development upload
+ lane :upload_test do
+  dsymUpload
+  uploadFirebase("#{DEVELOPMENT_FIREBASE_ID}", "internal")
+  cleanall
+  reset_git_repo(skip_clean: true, force: true)
+end
+
+# production upload
+lane :upload_production do
+  dsymUpload
+  uploadFirebase("#{FIREBASE_ID}", "internal")
+  cleanall
+  reset_git_repo(skip_clean: true, force: true)
+end
+
+
+# UnitTest
+ lane :tests do
+   scan(scheme: "#{PROJECT_SCHEME}", devices: ["iPhone 11"], code_coverage: true, output_directory: "./reports", derived_data_path:"Build/", clean: true)
+ end
+
+# Code Coverage
+ lane :coverage do
+   slather(
+    llvm_cov: true,
+    jenkins: true,
+    scheme: "#{PROJECT_SCHEME}",
+    output_directory: "./reports",
+    workspace: "./#{PROJECT_NAME}.xcworkspace",
+    proj: "./#{PROJECT_NAME}/#{PROJECT_NAME}.xcodeproj"
+    #cobertura_xml: true
+#    ignore: ['./Pods/*']
+)
+#   sh("cd .. && lizard ./#{PROJECT_NAME} -l swift --xml > ./reports/lizard-report.xml")
+   swiftlint(output_file: "./reports/swiftlint.txt", ignore_exit_status: true)
+ end
+
+
+ lane :xcoverage do
+  xcov(
+    workspace: "./#{PROJECT_NAME}.xcworkspace",
+    scheme: "#{PROJECT_SCHEME}",
+    output_directory: "./reports"
+)
+ end
+
+# SonarQube
+ lane :quality do
+   sonar(
+   project_key: "com.mobven.ios.kutup-yildizi.sb",
+   project_version: "2.0",
+   project_name: "#{PROJECT_NAME}",
+   sonar_login: "0c15b3e6e94f81d28f88bf2a50b446cdb1c8fe83",
+   sources_path: File.expand_path("../#{PROJECT_NAME}")
+   )
+ end
+
+# crashlytics Upload
+ private_lane :dsymUpload do
+   upload_symbols_to_crashlytics(binary_path: "./Kutup\ Yildizi/Kutup\ Yildizi/Frameworks/Fabric.framework/upload-symbols")
+ end
+
+
+# Upload
+ private_lane :cleanall do
+   clean_build_artifacts
+ end
+
+def uploadFirebase(project_bundle, groups)
+  firebase_app_distribution(app: project_bundle, groups: groups)
+end
+
+def build(configuration, export_method, project_bundle, certificateName)
+  gym( scheme: "#{PROJECT_SCHEME}",
+  configuration: configuration,
+  export_method: export_method,
+  export_options: {
+      export_method: export_method,
+      export_xcargs: "-allowProvisioningUpdates",
+      provisioningProfiles: {
+        project_bundle => certificateName,
+        "#{project_bundle}#{NOTIFICATION_EXTENSION_SUFFIX}" => "#{certificateName}#{NOTIFICATION_EXTENSION_SUFFIX}"
+      }
+    }
+  )
+end
+
+lane :increment do 
+  increment_build_number(
+    xcodeproj: "./Kutup\ Yildizi/Kutup\ Yildizi.xcodeproj/"
+  )
+  increment_version_number(
+   xcodeproj: "./Kutup\ Yildizi/Kutup\ Yildizi.xcodeproj/"
+  )
+end
