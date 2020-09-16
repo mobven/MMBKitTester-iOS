@@ -1,0 +1,191 @@
+properties([pipelineTriggers([
+  [$class: 'GitHubPushTrigger'], pollSCM('H/3 * * * *')
+])])
+
+def sendMail(userMail){
+    def logContent = Jenkins.getInstance()
+    .getItemByFullName(env.JOB_NAME)
+    .getBuildByNumber(Integer.parseInt(env.BUILD_NUMBER))
+    .logFile.text
+    // copy the log in the job's own workspace
+    writeFile file: "buildlog.txt", text: logContent
+    
+    emailext (
+        attachmentsPattern: 'buildlog.txt',
+        subject: "FINISH: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
+        body: """
+          STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}] ${env.BUILD_URL}':
+          Check console output at "${env.JOB_NAME} [${env.BUILD_NUMBER}]"
+          """,
+        to: userMail
+    )
+}
+
+node {
+    // def committerEmail = sh (
+    //     script: 'git --no-pager show -s --format=\'%ae\'',
+    //     returnStdout: true
+    // ).trim();
+
+    // def committerName = sh (
+    //     script: 'git --no-pager show -s --format=\'%an\'',
+    //     returnStdout: true
+    // ).trim();
+    def committerEmail = "onur.polat@mobven.com";
+    def committerName = "Rashidium";
+    def ts = "";
+    def PROJECT_ICON = "https://pbs.twimg.com/profile_images/794192531588321280/OybdjoEC.jpg";
+    def WORKSPACE = pwd();
+    // Git Configuration
+    def REPO_URL = "https://github.com/mobven/MMBKitTester-iOS.git";
+    def ARTIFACT_NAME = "'MMBKitTester.ipa'";
+    // Momentum Configuration
+    def MOMENTUM_APPLICATION_ID = 333;
+    def MOMENTUM_SUITE_TOKEN = "MjI1OjE=";
+    def MOMENTUM_ARTIFACT_NAME = "'MMBKitTester.ipa'";
+    def MOMENTUM_APPLICATION_URL = "http://farm.mobven.com:9096/${MOMENTUM_ARTIFACT_NAME}";
+    def SSD_PATH = "/Users/mobvenserver/Public/ApplicationBuilds";
+    // SonarQube Configuration
+    def SONAR_PROJECT_KEY = "com.mobven.ios.mmbkit.tester.sb";
+    def SONAR_PROJECT_NAME = "MMBKitTester-iOS";
+    def SONAR_KEY = "77e23545c9e2f20f96a93b0ffd8b83811471fcb3";
+    def SONAR_URL = "http://farm.mobven.com:9000";
+    def COVERAGE_PATH = "sonarqube-generic-coverage.xml";
+    def SLACK_DATA = "'${SONAR_PROJECT_NAME}' '${env.BUILD_NUMBER}' '${env.BUILD_URL}' '${committerName}' '${env.BRANCH_NAME}' '${PROJECT_ICON}'";
+    def SLACK_SH = "/Users/mobvenserver/.jenkins/workspace/slack-message-broker.sh";
+    
+    stage('Preparation') {
+        try {
+            // Get code from a GitHub repository
+            git branch: env.BRANCH_NAME, credentialsId: 'SS', url: REPO_URL
+            ts = sh(script: "bash ${SLACK_SH} '${env.STAGE_NAME}' 0 ${SLACK_DATA}", returnStdout: true )
+            sh "rm -rf sonar-reports"
+            sh "rm -rf reports/*"
+            sh "cp /Users/mobvenserver/sonar-project.properties ."
+        } catch (e) {
+            sh "bash ${SLACK_SH} 'ErrorStage' '${ts}' ${SLACK_DATA}"
+            sendMail(committerEmail);
+            currentBuild.result = 'ABORTED'
+            error('Aborted due to a encountered error.')
+        }
+    }
+    stage ('Build') {
+        try {
+            sh "bash ${SLACK_SH} '${env.STAGE_NAME}' '${ts}' ${SLACK_DATA}"
+            
+            if (env.BRANCH_NAME == 'Develop') {
+                sh "fastlane build_test"
+            } else {
+                sh "fastlane build_production"
+            }
+        } catch (e) {
+            sh "bash ${SLACK_SH} 'ErrorStage' '${ts}' ${SLACK_DATA}"
+            sendMail(committerEmail);
+            currentBuild.result = 'ABORTED'
+            error('Aborted due to a encountered error.')
+        }
+    } 
+    stage ('Test') {
+        try {
+            sh "bash ${SLACK_SH} '${env.STAGE_NAME}' '${ts}' ${SLACK_DATA}"
+            sh "fastlane tests"
+        } catch (e) {
+            sh "bash ${SLACK_SH} 'ErrorStage' '${ts}' ${SLACK_DATA}"
+            sendMail(committerEmail);
+            currentBuild.result = 'ABORTED'
+            error('Aborted due to a encountered error.')
+        }
+    }
+    stage ('Coverage Generation') {
+        try {
+            sh "bash ${SLACK_SH} '${env.STAGE_NAME}' '${ts}' ${SLACK_DATA}"
+            sh "bash xccov-to-sonarqube-generic.sh Build/Logs/Test/*.xcresult/ > sonarqube-generic-coverage.xml"
+        } catch (e) {
+            sh "bash ${SLACK_SH} 'ErrorStage' '${ts}' ${SLACK_DATA}"
+            sendMail(committerEmail);
+            currentBuild.result = 'ABORTED'
+            error('Aborted due to a encountered error.')
+        }
+    }
+    stage ('Quality Check') {
+        try {
+            sh "bash ${SLACK_SH} '${env.STAGE_NAME}' '${ts}' ${SLACK_DATA}"
+            
+            withSonarQubeEnv('LocalSonarQube'){ // SonarQube taskId is automatically attached to the pipeline context
+                sh "sonar-scanner -Dsonar.host.url=${SONAR_URL} -Dsonar.login=${SONAR_KEY} -Dsonar.projectKey=${SONAR_PROJECT_KEY} -Dsonar.projectName=${SONAR_PROJECT_NAME} -Dsonar.coverageReportPaths=${COVERAGE_PATH} -Dsonar.cfamily.build-wrapper-output.bypass=true"
+            }
+        } catch (e) {
+            sh "bash ${SLACK_SH} 'ErrorStage' '${ts}' ${SLACK_DATA}"
+            sendMail(committerEmail);
+            currentBuild.result = 'ABORTED'
+            error('Aborted due to a encountered error.')
+        }
+    }
+
+    stage('Quality Gate'){
+        sh "bash ${SLACK_SH} '${env.STAGE_NAME}' '${ts}' ${SLACK_DATA}"
+        sleep(15) // Just in case something goes wrong, pipeline will be killed after a timeout
+        def qg = waitForQualityGate()
+        waitForQualityGate abortPipline: true // Reuse taskId previously collected by withSonarQubeEnv
+
+        if (qg.status != 'OK') {
+          sh "bash ${SLACK_SH} 'ErrorSQ2' '${ts}' ${SLACK_DATA}"
+          error "Pipeline aborted due to quality gate failure: ${qg.status}"
+        }
+    }
+    
+    stage ('Deployment') {
+        try {
+          sh "bash ${SLACK_SH} '${env.STAGE_NAME}' '${ts}' ${SLACK_DATA}"
+            if (env.BRANCH_NAME == 'develop') {
+                parallel(
+                //    "TestFlight": { sh 'fastlane upload_test'},
+                    "Momentum": { sh "cp ${WORKSPACE}/${ARTIFACT_NAME}  ${SSD_PATH}/Kutup_Yildizi.ipa"}
+                )
+            } else {
+                sh 'fastlane upload_production'
+            }
+        } catch (e) {
+            sh "bash ${SLACK_SH} 'ErrorStage' '${ts}' ${SLACK_DATA}"
+            sendMail(committerEmail);
+            currentBuild.result = 'ABORTED'
+            error('Aborted due to a encountered error.')
+        }
+    }
+    
+    stage ('Automation') {
+        try {
+            sh "bash ${SLACK_SH} '${env.STAGE_NAME}' '${ts}' ${SLACK_DATA}"
+            greet applicationId: "${MOMENTUM_APPLICATION_ID}", applicationPath: "${MOMENTUM_APPLICATION_URL}", suiteToken: "${MOMENTUM_SUITE_TOKEN}"
+        } catch (e) {
+            sh "bash ${SLACK_SH} 'ErrorStage' '${ts}' ${SLACK_DATA}"
+            sendMail(committerEmail);
+            currentBuild.result = 'ABORTED'
+            error('Aborted due to a encountered error.')
+        }
+    }
+
+    stage ('Jira') {
+        def commitMessage =  sh ( 
+            script: 'git log --format=format:%s -1', // find commitMessage
+            returnStdout: true
+        ).trim()
+        
+        def regex = /[A-Z]{2,3}-\d{1,4}/
+        def commitMessageFormat = (commitMessage =~ regex).findAll() //convert format
+        
+        String [] ary;
+        ary = commitMessageFormat //convert array
+      
+      if (commitMessageFormat.size() == 0){
+        sh "bash ${SLACK_SH} 'Success' '${ts}' ${SLACK_DATA}"
+      } else {
+        
+        for (String values : ary) {
+            sh "bash /Users/mobvenserver/.jenkins/workspace/Jira-Updater.sh '${values}'"
+        }
+        
+        sh "bash ${SLACK_SH} 'Success' '${ts}' ${SLACK_DATA}"
+      }
+    }
+}
