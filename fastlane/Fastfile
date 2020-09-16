@@ -7,7 +7,7 @@ PROJECT_SCHEME             = "MMBKitTester"
 
 # development build
 lane :build_test do |values|
-  match(app_identifier: PROJECT_BUNDLE, type: "enterprise", readonly: true)
+  match(app_identifier: DEVELOPMENT_PROJECT_BUNDLE, type: "enterprise", readonly: true)
   build("DevelopmentRelease", 'enterprise', "#{DEVELOPMENT_PROJECT_BUNDLE}", "match InHouse #{DEVELOPMENT_PROJECT_BUNDLE}")
  end
 
