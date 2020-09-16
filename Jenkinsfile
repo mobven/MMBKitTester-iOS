@@ -72,6 +72,7 @@ node {
     stage ('Build') {
         try {
             sh "bash ${SLACK_SH} '${env.STAGE_NAME}' '${ts}' ${SLACK_DATA}"
+            sh "pod install"
             
             if (env.BRANCH_NAME == 'Develop') {
                 sh "fastlane build_test"
