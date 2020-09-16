@@ -1,6 +1,5 @@
 PROJECT_NAME               = "MMBKitTester"
 DEVELOPMENT_PROJECT_BUNDLE = "com.mobven.ios.mmbkit.tester.dev"
-#NOTIFICATION_EXTENSION_SUFFIX = ".NetmeraNotificationServiceExtension"
 #FIREBASE_ID               = "1:515677835136:ios:ae4b855ce9360be3713b65"
 #DEVELOPMENT_FIREBASE_ID   = "1:515677835136:ios:49d6a89bd3c4ff32713b65"
 PROJECT_SCHEME             = "MMBKitTester"
@@ -60,12 +59,6 @@ end
    )
  end
 
-# crashlytics Upload
- private_lane :dsymUpload do
-   upload_symbols_to_crashlytics(binary_path: "./Kutup\ Yildizi/Kutup\ Yildizi/Frameworks/Fabric.framework/upload-symbols")
- end
-
-
 # Upload
  private_lane :cleanall do
    clean_build_artifacts
@@ -82,10 +75,7 @@ def build(configuration, export_method, project_bundle, certificateName)
   export_options: {
       export_method: export_method,
       export_xcargs: "-allowProvisioningUpdates",
-      provisioningProfiles: {
-        project_bundle => certificateName,
-        "#{project_bundle}#{NOTIFICATION_EXTENSION_SUFFIX}" => "#{certificateName}#{NOTIFICATION_EXTENSION_SUFFIX}"
-      }
+      provisioningProfiles: { project_bundle => certificateName }
     }
   )
 end
