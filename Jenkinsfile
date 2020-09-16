@@ -141,7 +141,7 @@ node {
             if (env.BRANCH_NAME == 'Develop') {
                 parallel(
                 //    "TestFlight": { sh 'fastlane upload_test'},
-                    "Momentum": { sh "cp ${WORKSPACE}/${ARTIFACT_NAME}  ${SSD_PATH}/Kutup_Yildizi.ipa"}
+                    "Momentum": { sh "cp ${WORKSPACE}/${ARTIFACT_NAME}  ${SSD_PATH}/MMBKitTester.ipa"}
                 )
             } else {
                 sh 'fastlane upload_production'
