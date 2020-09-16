@@ -11,6 +11,7 @@
 		651CDC6724F8F5BF0073F4EC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 651CDC6924F8F5BF0073F4EC /* Localizable.strings */; };
 		651CDC6C24F8FB5D0073F4EC /* Test.json in Resources */ = {isa = PBXBuildFile; fileRef = 651CDC6B24F8FB5D0073F4EC /* Test.json */; };
 		651CDC6E24FCCCAB0073F4EC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651CDC6D24FCCCAB0073F4EC /* TableViewCell.swift */; };
+		6D181DDF25123FDF00CD1259 /* MBLocalizeIt.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D5AAABD24FD1BF50073A047 /* MBLocalizeIt.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		6D1F27AF24A1FA8D00ECA5E6 /* CustomXibPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1F27AE24A1FA8D00ECA5E6 /* CustomXibPinView.swift */; };
 		6D1F27B124A1FBE500ECA5E6 /* CustomXibPinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1F27B024A1FBE500ECA5E6 /* CustomXibPinView.xib */; };
 		6D368F4024F9382900E31012 /* MBPermissionManager.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D368F3E24F935CB00E31012 /* MBPermissionManager.xcframework */; };
@@ -144,6 +145,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				6D181DDF25123FDF00CD1259 /* MBLocalizeIt.xcframework in Embed Frameworks */,
 				6DBD919624F55F2900AE8FAE /* MobKitCore.xcframework in Embed Frameworks */,
 				6DBD918824F55F2900AE8FAE /* MBErrorKit.xcframework in Embed Frameworks */,
 				6DBD918E24F55F2900AE8FAE /* MBPinLocator.xcframework in Embed Frameworks */,
