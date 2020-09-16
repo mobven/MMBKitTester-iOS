@@ -16,8 +16,7 @@ storage_mode("git")
 
 type("enterprise") # The default type, can be: appstore, adhoc, enterprise or development
 
-app_identifier(["com.mobven.ios.mmbkit.tester.dev",
-				"com.mobven.ios.mmbkit.tester.enterprise"])
+app_identifier(["com.mobven.ios.mmbkit.tester.dev"])
 username("studio@mobven.com") # Your Apple Developer Portal username
 team_id("TBXF7RJBHZ")
 

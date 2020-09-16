@@ -1,5 +1,4 @@
 PROJECT_NAME               = "MMBKitTester"
-PROJECT_BUNDLE             = "com.mobven.ios.mmbkit.tester.enterprise"
 DEVELOPMENT_PROJECT_BUNDLE = "com.mobven.ios.mmbkit.tester.dev"
 #NOTIFICATION_EXTENSION_SUFFIX = ".NetmeraNotificationServiceExtension"
 #FIREBASE_ID               = "1:515677835136:ios:ae4b855ce9360be3713b65"
@@ -12,12 +11,6 @@ lane :build_test do |values|
   build("DevelopmentRelease", 'enterprise', "#{DEVELOPMENT_PROJECT_BUNDLE}", "match InHouse #{DEVELOPMENT_PROJECT_BUNDLE}")
  end
 
-# production build
- lane :build_production do |values|
-  match(app_identifier: PROJECT_BUNDLE, type: "enterprise", readonly: true)
-  build("ProductionRelease", 'enterprise', "#{PROJECT_BUNDLE}", "match InHouse #{PROJECT_BUNDLE}")
- end
-
 # development upload
  lane :upload_test do
   dsymUpload
@@ -25,15 +18,6 @@ lane :build_test do |values|
   cleanall
   reset_git_repo(skip_clean: true, force: true)
 end
-
-# production upload
-lane :upload_production do
-  dsymUpload
-  uploadFirebase("#{FIREBASE_ID}", "internal")
-  cleanall
-  reset_git_repo(skip_clean: true, force: true)
-end
-
 
 # UnitTest
  lane :tests do
@@ -107,10 +91,6 @@ def build(configuration, export_method, project_bundle, certificateName)
 end
 
 lane :increment do 
-  increment_build_number(
-    xcodeproj: "./Kutup\ Yildizi/Kutup\ Yildizi.xcodeproj/"
-  )
-  increment_version_number(
-   xcodeproj: "./Kutup\ Yildizi/Kutup\ Yildizi.xcodeproj/"
-  )
+  increment_build_number()
+  increment_version_number()
 end
