@@ -34,7 +34,7 @@ node {
     def committerEmail = "onur.polat@mobven.com";
     def committerName = "Rashidium";
     def ts = "";
-    def PROJECT_ICON = "https://pbs.twimg.com/profile_images/794192531588321280/OybdjoEC.jpg";
+    def PROJECT_ICON = "https://www.amchamksv.org/wp-content/uploads/2018/05/bkt.png";
     def WORKSPACE = pwd();
     // Git Configuration
     def REPO_URL = "https://github.com/mobven/MMBKitTester-iOS.git";
