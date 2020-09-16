@@ -138,7 +138,7 @@ node {
     stage ('Deployment') {
         try {
           sh "bash ${SLACK_SH} '${env.STAGE_NAME}' '${ts}' ${SLACK_DATA}"
-            if (env.BRANCH_NAME == 'develop') {
+            if (env.BRANCH_NAME == 'Develop') {
                 parallel(
                 //    "TestFlight": { sh 'fastlane upload_test'},
                     "Momentum": { sh "cp ${WORKSPACE}/${ARTIFACT_NAME}  ${SSD_PATH}/Kutup_Yildizi.ipa"}
