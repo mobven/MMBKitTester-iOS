@@ -61,6 +61,10 @@ extension OneLinkViewController: UITextFieldDelegate {
 
 extension OneLinkViewController: OneLinkDelegate {
     
+    func oneLinkPendingNavigation(_ oneLink: OneLinkable) {
+        // Called when deeplink has no view controller, and application should navigate, manually.
+    }
+    
     func oneLinkAllLinksCompleted() {
         showAlert(title: "OneLink 🌟",
                   message: "All links have been presented successfully.",

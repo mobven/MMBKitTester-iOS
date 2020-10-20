@@ -30,7 +30,7 @@ enum AppLink: OneLinkable {
         }
     }
     
-    var viewController: UIViewController {
+    var viewController: UIViewController? {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         switch self {
         case .announcements:

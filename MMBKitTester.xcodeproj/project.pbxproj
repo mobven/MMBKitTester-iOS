@@ -7,20 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19062AFD253F0B9E0091617D /* MBLocalizeIt.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19062AEE253F0B9E0091617D /* MBLocalizeIt.xcframework */; };
+		19062AFE253F0B9E0091617D /* CryptoSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19062AEF253F0B9E0091617D /* CryptoSwift.xcframework */; };
+		19062AFF253F0B9E0091617D /* MBAppSecurity.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19062AF0253F0B9E0091617D /* MBAppSecurity.xcframework */; };
+		19062B00253F0B9E0091617D /* MBPinLocator.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19062AF1253F0B9E0091617D /* MBPinLocator.xcframework */; };
+		19062B01253F0B9E0091617D /* MBErrorKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19062AF2253F0B9E0091617D /* MBErrorKit.xcframework */; };
+		19062B02253F0B9E0091617D /* MBPermissionManager.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19062AF3253F0B9E0091617D /* MBPermissionManager.xcframework */; };
+		19062B03253F0B9E0091617D /* MBSecureNetwork.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19062AF4253F0B9E0091617D /* MBSecureNetwork.xcframework */; };
+		19062B04253F0B9E0091617D /* MBStateMachineForms.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19062AF5253F0B9E0091617D /* MBStateMachineForms.xcframework */; };
+		19062B05253F0B9E0091617D /* MBNetworking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19062AF6253F0B9E0091617D /* MBNetworking.xcframework */; };
+		19062B06253F0B9E0091617D /* MBUIComponents.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19062AF7253F0B9E0091617D /* MBUIComponents.xcframework */; };
+		19062B07253F0B9E0091617D /* MBAccountSecurity.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19062AF8253F0B9E0091617D /* MBAccountSecurity.xcframework */; };
+		19062B08253F0B9F0091617D /* MobKitCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19062AF9253F0B9E0091617D /* MobKitCore.xcframework */; };
+		19062B09253F0B9F0091617D /* Cryptography.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19062AFA253F0B9E0091617D /* Cryptography.xcframework */; };
+		19062B0A253F0B9F0091617D /* KeychainAccess.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19062AFB253F0B9E0091617D /* KeychainAccess.xcframework */; };
+		19062B0B253F0B9F0091617D /* MBOneLink.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19062AFC253F0B9E0091617D /* MBOneLink.xcframework */; };
 		651CDC5224F7E5AE0073F4EC /* LocalizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651CDC5124F7E5AE0073F4EC /* LocalizationViewController.swift */; };
 		651CDC6724F8F5BF0073F4EC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 651CDC6924F8F5BF0073F4EC /* Localizable.strings */; };
 		651CDC6C24F8FB5D0073F4EC /* Test.json in Resources */ = {isa = PBXBuildFile; fileRef = 651CDC6B24F8FB5D0073F4EC /* Test.json */; };
 		651CDC6E24FCCCAB0073F4EC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651CDC6D24FCCCAB0073F4EC /* TableViewCell.swift */; };
-		6D181DDF25123FDF00CD1259 /* MBLocalizeIt.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D5AAABD24FD1BF50073A047 /* MBLocalizeIt.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		6D1F27AF24A1FA8D00ECA5E6 /* CustomXibPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1F27AE24A1FA8D00ECA5E6 /* CustomXibPinView.swift */; };
 		6D1F27B124A1FBE500ECA5E6 /* CustomXibPinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1F27B024A1FBE500ECA5E6 /* CustomXibPinView.xib */; };
-		6D368F4024F9382900E31012 /* MBPermissionManager.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D368F3E24F935CB00E31012 /* MBPermissionManager.xcframework */; };
-		6D368F4124F9382900E31012 /* MBPermissionManager.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D368F3E24F935CB00E31012 /* MBPermissionManager.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		6D4E40132454DB3100B8CC67 /* KVListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4E40122454DB3100B8CC67 /* KVListViewController.swift */; };
 		6D5410D524474A50000A8B1D /* KVLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5410D424474A50000A8B1D /* KVLabelViewController.swift */; };
 		6D5410DA24477ADE000A8B1D /* UIComponentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5410D924477ADE000A8B1D /* UIComponentsViewController.swift */; };
 		6D5754A124754CB100C23C48 /* AmountInputViewBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5754A024754CB100C23C48 /* AmountInputViewBinder.swift */; };
-		6D5AAABE24FD1BF50073A047 /* MBLocalizeIt.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D5AAABD24FD1BF50073A047 /* MBLocalizeIt.xcframework */; };
 		6D818F5A249A7CA0008943A1 /* ErrorKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D818F59249A7CA0008943A1 /* ErrorKitViewController.swift */; };
 		6D818F5C249A7DB4008943A1 /* ErrorKitSampleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D818F5B249A7DB4008943A1 /* ErrorKitSampleAPI.swift */; };
 		6D8BA196243A44AD004493A9 /* OneLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BA195243A44AD004493A9 /* OneLinkViewController.swift */; };
@@ -58,31 +69,7 @@
 		6DAF9831243B308400CF9AAA /* FCMCurl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF9830243B308400CF9AAA /* FCMCurl.swift */; };
 		6DAF9833243B33B900CF9AAA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF9832243B33B900CF9AAA /* User.swift */; };
 		6DBA5552248FAE4200751941 /* SpotifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBA5551248FAE4200751941 /* SpotifyModels.swift */; };
-		6DBD918324F55F2900AE8FAE /* MBAccountSecurity.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE524B35D4D0007177D /* MBAccountSecurity.xcframework */; };
-		6DBD918424F55F2900AE8FAE /* MBAccountSecurity.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE524B35D4D0007177D /* MBAccountSecurity.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		6DBD918524F55F2900AE8FAE /* MBAppSecurity.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE824B35D4E0007177D /* MBAppSecurity.xcframework */; };
-		6DBD918624F55F2900AE8FAE /* MBAppSecurity.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE824B35D4E0007177D /* MBAppSecurity.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		6DBD918724F55F2900AE8FAE /* MBErrorKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCDF24B35D4D0007177D /* MBErrorKit.xcframework */; };
-		6DBD918824F55F2900AE8FAE /* MBErrorKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCDF24B35D4D0007177D /* MBErrorKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		6DBD918924F55F2900AE8FAE /* MBNetworking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE024B35D4D0007177D /* MBNetworking.xcframework */; };
-		6DBD918A24F55F2900AE8FAE /* MBNetworking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE024B35D4D0007177D /* MBNetworking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		6DBD918B24F55F2900AE8FAE /* MBOneLink.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE424B35D4D0007177D /* MBOneLink.xcframework */; };
-		6DBD918C24F55F2900AE8FAE /* MBOneLink.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE424B35D4D0007177D /* MBOneLink.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		6DBD918D24F55F2900AE8FAE /* MBPinLocator.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D193C7024B5F64C001A8F44 /* MBPinLocator.xcframework */; };
-		6DBD918E24F55F2900AE8FAE /* MBPinLocator.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D193C7024B5F64C001A8F44 /* MBPinLocator.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		6DBD918F24F55F2900AE8FAE /* MBSecureNetwork.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE224B35D4D0007177D /* MBSecureNetwork.xcframework */; };
-		6DBD919024F55F2900AE8FAE /* MBSecureNetwork.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE224B35D4D0007177D /* MBSecureNetwork.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		6DBD919124F55F2900AE8FAE /* MBStateMachineForms.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE324B35D4D0007177D /* MBStateMachineForms.xcframework */; };
-		6DBD919224F55F2900AE8FAE /* MBStateMachineForms.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE324B35D4D0007177D /* MBStateMachineForms.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		6DBD919324F55F2900AE8FAE /* MBUIComponents.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE924B35D4E0007177D /* MBUIComponents.xcframework */; };
-		6DBD919424F55F2900AE8FAE /* MBUIComponents.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE924B35D4E0007177D /* MBUIComponents.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		6DBD919524F55F2900AE8FAE /* MobKitCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE124B35D4D0007177D /* MobKitCore.xcframework */; };
-		6DBD919624F55F2900AE8FAE /* MobKitCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE124B35D4D0007177D /* MobKitCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		6DBD919724F55F2D00AE8FAE /* Cryptography.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE624B35D4D0007177D /* Cryptography.xcframework */; };
-		6DBD919824F55F2D00AE8FAE /* Cryptography.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCCBCE624B35D4D0007177D /* Cryptography.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		6DC7EC65245F0F7C0023537C /* AddOnFeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC7EC64245F0F7C0023537C /* AddOnFeaturesViewController.swift */; };
-		6DCCBC9724B324090007177D /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6DCCBC9624B324090007177D /* CryptoSwift */; };
-		6DCCBC9A24B3242D0007177D /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 6DCCBC9924B3242D0007177D /* KeychainAccess */; };
 		6DFF0F86245CBBB20035C890 /* CustomPopupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF0F85245CBBB20035C890 /* CustomPopupsViewController.swift */; };
 		6DFF0F88245CBBF20035C890 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF0F87245CBBF20035C890 /* CustomAlert.swift */; };
 		6DFF0F8A245CBC640035C890 /* CustomAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DFF0F89245CBC640035C890 /* CustomAlert.xib */; };
@@ -145,19 +132,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6D181DDF25123FDF00CD1259 /* MBLocalizeIt.xcframework in Embed Frameworks */,
-				6DBD919624F55F2900AE8FAE /* MobKitCore.xcframework in Embed Frameworks */,
-				6DBD918824F55F2900AE8FAE /* MBErrorKit.xcframework in Embed Frameworks */,
-				6DBD918E24F55F2900AE8FAE /* MBPinLocator.xcframework in Embed Frameworks */,
-				6DBD919224F55F2900AE8FAE /* MBStateMachineForms.xcframework in Embed Frameworks */,
-				6DBD919424F55F2900AE8FAE /* MBUIComponents.xcframework in Embed Frameworks */,
-				6D368F4124F9382900E31012 /* MBPermissionManager.xcframework in Embed Frameworks */,
-				6DBD918624F55F2900AE8FAE /* MBAppSecurity.xcframework in Embed Frameworks */,
-				6DBD918A24F55F2900AE8FAE /* MBNetworking.xcframework in Embed Frameworks */,
-				6DBD919824F55F2D00AE8FAE /* Cryptography.xcframework in Embed Frameworks */,
-				6DBD918C24F55F2900AE8FAE /* MBOneLink.xcframework in Embed Frameworks */,
-				6DBD919024F55F2900AE8FAE /* MBSecureNetwork.xcframework in Embed Frameworks */,
-				6DBD918424F55F2900AE8FAE /* MBAccountSecurity.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,6 +140,21 @@
 
 /* Begin PBXFileReference section */
 		13BF171A3156D2F1A176E725 /* Pods_MMBKitTester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMBKitTester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19062AEE253F0B9E0091617D /* MBLocalizeIt.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBLocalizeIt.xcframework; path = ../../../Desktop/ss/MobKitFrameworks/MBLocalizeIt.xcframework; sourceTree = "<group>"; };
+		19062AEF253F0B9E0091617D /* CryptoSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CryptoSwift.xcframework; path = ../../../Desktop/ss/MobKitFrameworks/CryptoSwift.xcframework; sourceTree = "<group>"; };
+		19062AF0253F0B9E0091617D /* MBAppSecurity.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBAppSecurity.xcframework; path = ../../../Desktop/ss/MobKitFrameworks/MBAppSecurity.xcframework; sourceTree = "<group>"; };
+		19062AF1253F0B9E0091617D /* MBPinLocator.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBPinLocator.xcframework; path = ../../../Desktop/ss/MobKitFrameworks/MBPinLocator.xcframework; sourceTree = "<group>"; };
+		19062AF2253F0B9E0091617D /* MBErrorKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBErrorKit.xcframework; path = ../../../Desktop/ss/MobKitFrameworks/MBErrorKit.xcframework; sourceTree = "<group>"; };
+		19062AF3253F0B9E0091617D /* MBPermissionManager.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBPermissionManager.xcframework; path = ../../../Desktop/ss/MobKitFrameworks/MBPermissionManager.xcframework; sourceTree = "<group>"; };
+		19062AF4253F0B9E0091617D /* MBSecureNetwork.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBSecureNetwork.xcframework; path = ../../../Desktop/ss/MobKitFrameworks/MBSecureNetwork.xcframework; sourceTree = "<group>"; };
+		19062AF5253F0B9E0091617D /* MBStateMachineForms.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBStateMachineForms.xcframework; path = ../../../Desktop/ss/MobKitFrameworks/MBStateMachineForms.xcframework; sourceTree = "<group>"; };
+		19062AF6253F0B9E0091617D /* MBNetworking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBNetworking.xcframework; path = ../../../Desktop/ss/MobKitFrameworks/MBNetworking.xcframework; sourceTree = "<group>"; };
+		19062AF7253F0B9E0091617D /* MBUIComponents.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBUIComponents.xcframework; path = ../../../Desktop/ss/MobKitFrameworks/MBUIComponents.xcframework; sourceTree = "<group>"; };
+		19062AF8253F0B9E0091617D /* MBAccountSecurity.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBAccountSecurity.xcframework; path = ../../../Desktop/ss/MobKitFrameworks/MBAccountSecurity.xcframework; sourceTree = "<group>"; };
+		19062AF9253F0B9E0091617D /* MobKitCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MobKitCore.xcframework; path = ../../../Desktop/ss/MobKitFrameworks/MobKitCore.xcframework; sourceTree = "<group>"; };
+		19062AFA253F0B9E0091617D /* Cryptography.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Cryptography.xcframework; path = ../../../Desktop/ss/MobKitFrameworks/Cryptography.xcframework; sourceTree = "<group>"; };
+		19062AFB253F0B9E0091617D /* KeychainAccess.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KeychainAccess.xcframework; path = ../../../Desktop/ss/MobKitFrameworks/KeychainAccess.xcframework; sourceTree = "<group>"; };
+		19062AFC253F0B9E0091617D /* MBOneLink.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBOneLink.xcframework; path = ../../../Desktop/ss/MobKitFrameworks/MBOneLink.xcframework; sourceTree = "<group>"; };
 		36D0A9B3522716A4DD97B6D1 /* Pods-MMBKitTester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBKitTester.debug.xcconfig"; path = "Target Support Files/Pods-MMBKitTester/Pods-MMBKitTester.debug.xcconfig"; sourceTree = "<group>"; };
 		3A971D1175BF6057D29D5787 /* Pods-MMBKitTesterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMBKitTesterTests.debug.xcconfig"; path = "Target Support Files/Pods-MMBKitTesterTests/Pods-MMBKitTesterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		651CDC5124F7E5AE0073F4EC /* LocalizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationViewController.swift; sourceTree = "<group>"; };
@@ -173,15 +162,12 @@
 		651CDC6A24F8F5CC0073F4EC /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		651CDC6B24F8FB5D0073F4EC /* Test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Test.json; sourceTree = "<group>"; };
 		651CDC6D24FCCCAB0073F4EC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		6D193C7024B5F64C001A8F44 /* MBPinLocator.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBPinLocator.xcframework; path = Frameworks/MBPinLocator.xcframework; sourceTree = "<group>"; };
 		6D1F27AE24A1FA8D00ECA5E6 /* CustomXibPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomXibPinView.swift; sourceTree = "<group>"; };
 		6D1F27B024A1FBE500ECA5E6 /* CustomXibPinView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomXibPinView.xib; sourceTree = "<group>"; };
-		6D368F3E24F935CB00E31012 /* MBPermissionManager.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBPermissionManager.xcframework; path = Frameworks/MBPermissionManager.xcframework; sourceTree = "<group>"; };
 		6D4E40122454DB3100B8CC67 /* KVListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVListViewController.swift; sourceTree = "<group>"; };
 		6D5410D424474A50000A8B1D /* KVLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVLabelViewController.swift; sourceTree = "<group>"; };
 		6D5410D924477ADE000A8B1D /* UIComponentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponentsViewController.swift; sourceTree = "<group>"; };
 		6D5754A024754CB100C23C48 /* AmountInputViewBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountInputViewBinder.swift; sourceTree = "<group>"; };
-		6D5AAABD24FD1BF50073A047 /* MBLocalizeIt.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBLocalizeIt.xcframework; path = Frameworks/MBLocalizeIt.xcframework; sourceTree = "<group>"; };
 		6D818F59249A7CA0008943A1 /* ErrorKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorKitViewController.swift; sourceTree = "<group>"; };
 		6D818F5B249A7DB4008943A1 /* ErrorKitSampleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorKitSampleAPI.swift; sourceTree = "<group>"; };
 		6D8BA195243A44AD004493A9 /* OneLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLinkViewController.swift; sourceTree = "<group>"; };
@@ -226,16 +212,6 @@
 		6DAF9832243B33B900CF9AAA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6DBA5551248FAE4200751941 /* SpotifyModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyModels.swift; sourceTree = "<group>"; };
 		6DC7EC64245F0F7C0023537C /* AddOnFeaturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOnFeaturesViewController.swift; sourceTree = "<group>"; };
-		6DCCBCDF24B35D4D0007177D /* MBErrorKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBErrorKit.xcframework; path = Frameworks/MBErrorKit.xcframework; sourceTree = "<group>"; };
-		6DCCBCE024B35D4D0007177D /* MBNetworking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBNetworking.xcframework; path = Frameworks/MBNetworking.xcframework; sourceTree = "<group>"; };
-		6DCCBCE124B35D4D0007177D /* MobKitCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MobKitCore.xcframework; path = Frameworks/MobKitCore.xcframework; sourceTree = "<group>"; };
-		6DCCBCE224B35D4D0007177D /* MBSecureNetwork.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBSecureNetwork.xcframework; path = Frameworks/MBSecureNetwork.xcframework; sourceTree = "<group>"; };
-		6DCCBCE324B35D4D0007177D /* MBStateMachineForms.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBStateMachineForms.xcframework; path = Frameworks/MBStateMachineForms.xcframework; sourceTree = "<group>"; };
-		6DCCBCE424B35D4D0007177D /* MBOneLink.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBOneLink.xcframework; path = Frameworks/MBOneLink.xcframework; sourceTree = "<group>"; };
-		6DCCBCE524B35D4D0007177D /* MBAccountSecurity.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBAccountSecurity.xcframework; path = Frameworks/MBAccountSecurity.xcframework; sourceTree = "<group>"; };
-		6DCCBCE624B35D4D0007177D /* Cryptography.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Cryptography.xcframework; path = Frameworks/Cryptography.xcframework; sourceTree = "<group>"; };
-		6DCCBCE824B35D4E0007177D /* MBAppSecurity.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBAppSecurity.xcframework; path = Frameworks/MBAppSecurity.xcframework; sourceTree = "<group>"; };
-		6DCCBCE924B35D4E0007177D /* MBUIComponents.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBUIComponents.xcframework; path = Frameworks/MBUIComponents.xcframework; sourceTree = "<group>"; };
 		6DFF0F85245CBBB20035C890 /* CustomPopupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopupsViewController.swift; sourceTree = "<group>"; };
 		6DFF0F87245CBBF20035C890 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		6DFF0F89245CBC640035C890 /* CustomAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlert.xib; sourceTree = "<group>"; };
@@ -287,22 +263,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DCCBC9724B324090007177D /* CryptoSwift in Frameworks */,
-				6DBD918D24F55F2900AE8FAE /* MBPinLocator.xcframework in Frameworks */,
-				6DCCBC9A24B3242D0007177D /* KeychainAccess in Frameworks */,
-				6DBD919324F55F2900AE8FAE /* MBUIComponents.xcframework in Frameworks */,
-				6DBD919524F55F2900AE8FAE /* MobKitCore.xcframework in Frameworks */,
-				6DBD918B24F55F2900AE8FAE /* MBOneLink.xcframework in Frameworks */,
-				6DBD919724F55F2D00AE8FAE /* Cryptography.xcframework in Frameworks */,
-				6DBD919124F55F2900AE8FAE /* MBStateMachineForms.xcframework in Frameworks */,
-				6DBD918F24F55F2900AE8FAE /* MBSecureNetwork.xcframework in Frameworks */,
-				6D368F4024F9382900E31012 /* MBPermissionManager.xcframework in Frameworks */,
-				6D5AAABE24FD1BF50073A047 /* MBLocalizeIt.xcframework in Frameworks */,
-				6DBD918324F55F2900AE8FAE /* MBAccountSecurity.xcframework in Frameworks */,
-				6DBD918924F55F2900AE8FAE /* MBNetworking.xcframework in Frameworks */,
-				6DBD918724F55F2900AE8FAE /* MBErrorKit.xcframework in Frameworks */,
-				6DBD918524F55F2900AE8FAE /* MBAppSecurity.xcframework in Frameworks */,
+				19062B07253F0B9E0091617D /* MBAccountSecurity.xcframework in Frameworks */,
+				19062B0A253F0B9F0091617D /* KeychainAccess.xcframework in Frameworks */,
+				19062B08253F0B9F0091617D /* MobKitCore.xcframework in Frameworks */,
+				19062B01253F0B9E0091617D /* MBErrorKit.xcframework in Frameworks */,
+				19062B02253F0B9E0091617D /* MBPermissionManager.xcframework in Frameworks */,
+				19062B05253F0B9E0091617D /* MBNetworking.xcframework in Frameworks */,
+				19062B03253F0B9E0091617D /* MBSecureNetwork.xcframework in Frameworks */,
+				19062B06253F0B9E0091617D /* MBUIComponents.xcframework in Frameworks */,
+				19062AFF253F0B9E0091617D /* MBAppSecurity.xcframework in Frameworks */,
+				19062B00253F0B9E0091617D /* MBPinLocator.xcframework in Frameworks */,
+				19062B04253F0B9E0091617D /* MBStateMachineForms.xcframework in Frameworks */,
+				19062B0B253F0B9F0091617D /* MBOneLink.xcframework in Frameworks */,
+				19062AFD253F0B9E0091617D /* MBLocalizeIt.xcframework in Frameworks */,
 				D886C61370196295B4DBC4C8 /* Pods_MMBKitTester.framework in Frameworks */,
+				19062AFE253F0B9E0091617D /* CryptoSwift.xcframework in Frameworks */,
+				19062B09253F0B9F0091617D /* Cryptography.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,19 +615,21 @@
 		8BCFF828680210ED26EC0E12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6D368F3E24F935CB00E31012 /* MBPermissionManager.xcframework */,
-				6DCCBCE624B35D4D0007177D /* Cryptography.xcframework */,
-				6DCCBCE524B35D4D0007177D /* MBAccountSecurity.xcframework */,
-				6DCCBCE824B35D4E0007177D /* MBAppSecurity.xcframework */,
-				6DCCBCDF24B35D4D0007177D /* MBErrorKit.xcframework */,
-				6DCCBCE024B35D4D0007177D /* MBNetworking.xcframework */,
-				6DCCBCE424B35D4D0007177D /* MBOneLink.xcframework */,
-				6DCCBCE224B35D4D0007177D /* MBSecureNetwork.xcframework */,
-				6DCCBCE324B35D4D0007177D /* MBStateMachineForms.xcframework */,
-				6DCCBCE924B35D4E0007177D /* MBUIComponents.xcframework */,
-				6D193C7024B5F64C001A8F44 /* MBPinLocator.xcframework */,
-				6D5AAABD24FD1BF50073A047 /* MBLocalizeIt.xcframework */,
-				6DCCBCE124B35D4D0007177D /* MobKitCore.xcframework */,
+				19062AFA253F0B9E0091617D /* Cryptography.xcframework */,
+				19062AEF253F0B9E0091617D /* CryptoSwift.xcframework */,
+				19062AFB253F0B9E0091617D /* KeychainAccess.xcframework */,
+				19062AF8253F0B9E0091617D /* MBAccountSecurity.xcframework */,
+				19062AF0253F0B9E0091617D /* MBAppSecurity.xcframework */,
+				19062AF2253F0B9E0091617D /* MBErrorKit.xcframework */,
+				19062AEE253F0B9E0091617D /* MBLocalizeIt.xcframework */,
+				19062AF6253F0B9E0091617D /* MBNetworking.xcframework */,
+				19062AFC253F0B9E0091617D /* MBOneLink.xcframework */,
+				19062AF3253F0B9E0091617D /* MBPermissionManager.xcframework */,
+				19062AF1253F0B9E0091617D /* MBPinLocator.xcframework */,
+				19062AF4253F0B9E0091617D /* MBSecureNetwork.xcframework */,
+				19062AF5253F0B9E0091617D /* MBStateMachineForms.xcframework */,
+				19062AF7253F0B9E0091617D /* MBUIComponents.xcframework */,
+				19062AF9253F0B9E0091617D /* MobKitCore.xcframework */,
 				13BF171A3156D2F1A176E725 /* Pods_MMBKitTester.framework */,
 				D095387D2F646E1CC850F603 /* Pods_MMBKitTesterTests.framework */,
 			);
@@ -691,8 +669,6 @@
 			);
 			name = MMBKitTester;
 			packageProductDependencies = (
-				6DCCBC9624B324090007177D /* CryptoSwift */,
-				6DCCBC9924B3242D0007177D /* KeychainAccess */,
 			);
 			productName = MMBKitTester;
 			productReference = 6D931FDA243228EF004C8A3C /* MMBKitTester.app */;
@@ -747,8 +723,6 @@
 			);
 			mainGroup = 6D931FD1243228EF004C8A3C;
 			packageReferences = (
-				6DCCBC9524B324090007177D /* XCRemoteSwiftPackageReference "CryptoSwift" */,
-				6DCCBC9824B3242D0007177D /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			productRefGroup = 6D931FDB243228EF004C8A3C /* Products */;
 			projectDirPath = "";
@@ -1275,38 +1249,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		6DCCBC9524B324090007177D /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.3.1;
-			};
-		};
-		6DCCBC9824B3242D0007177D /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.2.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		6DCCBC9624B324090007177D /* CryptoSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6DCCBC9524B324090007177D /* XCRemoteSwiftPackageReference "CryptoSwift" */;
-			productName = CryptoSwift;
-		};
-		6DCCBC9924B3242D0007177D /* KeychainAccess */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6DCCBC9824B3242D0007177D /* XCRemoteSwiftPackageReference "KeychainAccess" */;
-			productName = KeychainAccess;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6D931FD2243228EF004C8A3C /* Project object */;
 }

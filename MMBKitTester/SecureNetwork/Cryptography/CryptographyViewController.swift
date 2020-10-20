@@ -28,12 +28,12 @@ class CryptographyViewController: UIViewController {
     @IBAction func enableCryptography(_ sender: Any) {
         
         // swiftlint:disable line_length
-        let rsaPublicKey: String = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCyLNbf8jtBlVTGjJZmiRzRhO1ybGKlZpvaL5VbBFTJCKypyc7kpTtOuXRgCY+jYbZ4+OKHicvy9pE8qSqSzFOxXmGK00gziT+8lc0fpk8SLFeE/H1RF+qjh1k4zmqmSRe576bcLGRAJW0NtSWS+/+VwQFyyUjRM67OjCh4huRaGwIDAQAB"
+        let rsaPublicKey: String = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmTMX29XfKjyGZ4bwlHxq47MG0YXzp4ntvOfu8twTmZsJN2a9kPvSCY0tuDw4KNDmDjPuZuodYH0sFE51j8oVqklftimoFjXD9eOetDAHyFZNAyJvoK59GvN8ZhuZLt9kyH4Kiz3zcU3ouDNQ+NNQ/uj1deaMRkN9eEcrfpO92Mw4wEfO4ZgadkqN45JaEBCHVT6PClK8NFK8yCkYaVgMz6QhgBw59cAgwn/fh8P2XwyTd5kbdwor0SqbpIhAiA5t0YKBU26T6YS36f8b/lCbKceXONrBzs4WFpdCemxEDFL9C2zS6DGRjWpLx2edES2qHCgwVtWd4plXCmQzEIhBjwIDAQAB"
          // swiftlint:enable line_length
          
          SecureNetwork.shared().enableCryptography(
              handShakeEndpoint: URL(
-                 forceString: "https://capture.mobven.com/crypt/rsa/validData.php"
+                 forceString: "http://mobile-backend.bkt.com.al:8080/mobile-api-gateway/api/v1/cryptography/handshake"
              ),
              rsaPublicKey: rsaPublicKey
          )
