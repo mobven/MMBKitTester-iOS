@@ -50,7 +50,7 @@ steps:
 
 - script: |
     bash $(SLACK_SH) Test $(ts) $(SLACK_DATA)
-    fastlane tests"
+    fastlane tests
   displayName: 'Test'
 
 - script: |
