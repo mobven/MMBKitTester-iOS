@@ -43,13 +43,13 @@ node {
     def MOMENTUM_APPLICATION_ID = 333;
     def MOMENTUM_SUITE_TOKEN = "MjI1OjE=";
     def MOMENTUM_ARTIFACT_NAME = "'MMBKitTester.ipa'";
-    def MOMENTUM_APPLICATION_URL = "http://farm.mobven.com:9096/${MOMENTUM_ARTIFACT_NAME}";
+    def MOMENTUM_APPLICATION_URL = "http://devops.mobven.local:9096/${MOMENTUM_ARTIFACT_NAME}";
     def SSD_PATH = "/Users/mobvenserver/Public/ApplicationBuilds";
     // SonarQube Configuration
     def SONAR_PROJECT_KEY = "com.mobven.ios.mmbkit.tester.sb";
     def SONAR_PROJECT_NAME = "MMBKitTester-iOS";
     def SONAR_KEY = "77e23545c9e2f20f96a93b0ffd8b83811471fcb3";
-    def SONAR_URL = "http://farm.mobven.com:9000";
+    def SONAR_URL = "http://devops.mobven.local:9000";
     def COVERAGE_PATH = "sonarqube-generic-coverage.xml";
     def SLACK_DATA = "'${SONAR_PROJECT_NAME}' '${env.BUILD_NUMBER}' '${env.BUILD_URL}' '${committerName}' '${env.BRANCH_NAME}' '${PROJECT_ICON}'";
     def SLACK_SH = "/Users/mobvenserver/.jenkins/workspace/slack-message-broker.sh";
